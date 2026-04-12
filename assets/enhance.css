@@ -8,7 +8,7 @@ header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;ba
 header h1{font-size:1.25rem;font-weight:800;color:#fff}
 header .subtitle{color:rgba(255,255,255,.78);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
 header .logo,header img.logo{width:46px;height:46px;border-radius:50%;border:2px solid rgba(200,153,10,.65)}
-.hero{position:relative;min-height:340px;background:linear-gradient(180deg,rgba(13,46,16,.25) 0%,rgba(13,46,16,.85) 100%),radial-gradient(ellipse at 30% 30%,#2a7a30 0%,#0d2e10 70%);color:#fff;padding:60px 36px 90px;overflow:hidden}
+.hero{position:relative;min-height:200px;background:linear-gradient(180deg,rgba(13,46,16,.25) 0%,rgba(13,46,16,.85) 100%),radial-gradient(ellipse at 30% 30%,#2a7a30 0%,#0d2e10 70%);color:#fff;padding:36px 36px 70px;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 80%,rgba(200,153,10,.25) 0%,transparent 40%),radial-gradient(circle at 85% 15%,rgba(200,153,10,.18) 0%,transparent 45%);pointer-events:none}
 .hero-inner{position:relative;max-width:1100px;margin:0 auto;z-index:2}
 .hero .eyebrow{display:inline-block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mvp-gold);font-weight:700;padding:6px 14px;border:1px solid rgba(200,153,10,.55);border-radius:999px;margin-bottom:18px;background:rgba(13,46,16,.35)}
@@ -68,3 +68,12 @@ footer::before{content:"";display:block;width:60px;height:3px;background:var(--m
 
 .back-link{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;background:rgba(255,255,255,.15);color:#fff;text-decoration:none;font-size:.85rem;font-weight:600;transition:background .2s;border:1px solid rgba(255,255,255,.25);font-family:"Inter",sans-serif}
 .back-link:hover{background:rgba(255,255,255,.28)}
+
+/* Category header colors */
+.cat-climate>.card-header{background:linear-gradient(90deg,#1a4a2e,#2d7a4a)}
+.cat-kitchen>.card-header{background:linear-gradient(90deg,#2e5a1a,#4a8a2d)}
+.cat-beds>.card-header{background:linear-gradient(90deg,#1a3a5a,#2d5a7a)}
+
+.card-grid>.card{flex:0 0 auto}
+.card-grid.two-col{display:grid;grid-template-columns:1fr 1fr;align-items:start}
+@media(max-width:768px){.card-grid>.card{width:100% !important;max-width:100% !important}}

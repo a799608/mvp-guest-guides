@@ -87,9 +87,10 @@ header .subtitle, .header .subtitle { font-size: 0.9rem; opacity: 0.85; }
 
 /* Card grid */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 18px;
+  align-items: flex-start;
 }
 .card {
   background: #ffffff;

@@ -6,197 +6,218 @@
 <title>MacCauley &mdash; MVP Rentals Guest Guide</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/enhance.css">
+<style>
+.card-grid{display:flex !important;flex-wrap:wrap !important;gap:8px !important;align-items:flex-start !important}
+.card-grid>.card{flex:0 0 auto !important;width:auto !important;max-width:340px !important;min-width:140px !important}
+@media(max-width:768px){.card-grid>.card{max-width:100% !important;min-width:100% !important}}
+.section-title{margin:16px 0 8px !important;font-size:1.2rem !important}
+.card{border-radius:10px !important}
+.card-body{padding:8px 12px 10px !important}
+.card-body p{font-size:.82rem !important;margin-bottom:4px !important;line-height:1.45 !important}
+.card-header{padding:6px 12px !important}
+.card-header h3{font-size:.72rem !important;white-space:nowrap !important}
+.notes{padding:6px 10px !important;font-size:.78rem !important;margin-bottom:4px !important}
+.info-row{padding:4px 0 !important;font-size:.8rem !important}
+.container{padding:0 16px 24px !important;margin-top:-20px !important}
+.intro-card{padding:14px 18px !important;margin-bottom:14px !important}
+.summary-bar{margin-bottom:8px !important;gap:8px !important}
+.summary-card{padding:4px 12px !important;border-radius:10px !important}
+.hero{min-height:auto !important;padding:16px 28px 20px !important}
+.card-body ul{margin:0 !important;padding-left:18px !important}
+.card-body ul li{padding:2px 0 !important;font-size:.8rem !important}
+.btn{padding:7px 14px !important;font-size:.8rem !important}
+.checklist li{padding:6px 12px !important;font-size:.82rem !important}
+footer{margin-top:20px !important;padding:16px 12px !important}
+.canvas{position:relative;width:1200px;margin:0 auto;min-height:660px;background:#e4ede4;border-radius:12px;padding:10px}
+.pill{position:absolute;border-radius:10px;overflow:visible;box-shadow:0 2px 8px rgba(0,0,0,.12);background:#fdf8e8;border:2px solid transparent;font-family:"Segoe UI",system-ui,sans-serif !important;line-height:normal}
+.pill-header{padding:6px 12px;color:#fff;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:8px 8px 0 0;line-height:normal}
+.cat-default .pill-header{background:linear-gradient(90deg,#0d2e10,#1a5a2e)}
+.cat-beds .pill-header{background:linear-gradient(90deg,#1a3a5a,#2d5a7a)}
+.cat-climate .pill-header{background:linear-gradient(90deg,#1a4a2e,#2d7a4a)}
+.cat-kitchen .pill-header{background:linear-gradient(90deg,#2e5a1a,#4a8a2d)}
+.pill-body{padding:8px 12px 10px;font-size:.78rem;line-height:1.45;color:#333}
+.pill-body p{margin-bottom:4px}
+.pill-body .note{border-left:3px solid #C8990A;background:#fff8e6;padding:4px 8px;font-size:.72rem;margin-top:6px;border-radius:0 4px 4px 0}
+.pill-body .danger{border-left-color:#c0392b;background:#fef0f0}
+.pill-body ul{margin:0;padding-left:16px}
+.pill-body li{padding:1px 0;font-size:.76rem}
+.pill .info-row{display:flex;justify-content:space-between;padding:3px 0 !important;font-size:.76rem !important;border-bottom:none !important}
+.pill .info-label{color:#888 !important;font-weight:400 !important;text-transform:none !important;font-size:.76rem !important}
+.pill .info-value{font-weight:600 !important;font-family:inherit !important;background:none !important;padding:0 !important;border-radius:0 !important;color:#333 !important}
+@media(max-width:768px){
+.canvas{width:100%!important;min-height:auto!important}
+.pill{position:static!important;width:100%!important;height:auto!important;margin-bottom:10px}
+}
+.map-pills{display:inline-flex;flex-wrap:wrap;gap:8px;margin-left:16px;vertical-align:middle;align-items:center}
+.map-pill{display:inline-flex;flex-direction:column;align-items:center;gap:0;font-size:.78rem;padding:5px 14px;border-radius:999px;background:rgba(200,153,10,.5);color:#fff;text-decoration:none;border:none;transition:background .2s;font-weight:600;line-height:1.2}
+.map-pill:hover{background:#b8890a}
+.map-pill svg{width:14px;height:14px;fill:currentColor}
+
+.intro-card{background:#fdf8e8 !important;box-shadow:0 2px 8px rgba(0,0,0,.12);border-radius:10px !important}
+.summary-card{background:#fdf8e8 !important;box-shadow:0 2px 8px rgba(0,0,0,.12) !important}
+.summary-bar,.container{background:transparent}
+.container{background:#e4ede4 !important;border-radius:0 !important;padding-bottom:24px !important}
+body{background:#e4ede4 !important}
+footer{background:#e4ede4 !important}
+.checklist li{background:#fdf8e8 !important}
+.card{background:#fdf8e8 !important;box-shadow:0 2px 8px rgba(0,0,0,.12) !important}
+.map-pill-sub{display:block;font-size:.55rem;font-weight:400;opacity:.85;margin-top:1px}
+.summary-value{font-size:1.1rem !important;margin-bottom:0 !important}
+.summary-label{margin-bottom:0 !important}
+.hero-addr{margin-bottom:2px !important}
+.hero-meta{margin-bottom:0 !important}
+</style>
 </head>
 <body>
 <header>
-<a href="../index.html" class="back-link" title="Back to all properties">&larr; All Properties</a>
+
 <img src="../assets/logo.png" alt="MVP Rentals" class="logo">
 <div><h1>MVP Rentals</h1><p class="subtitle">Guest House Guide</p></div>
 </header>
 <section class="hero">
 <div class="hero-inner">
-<span class="eyebrow">Sleeps a crowd</span>
-<h1 class="hero-title">MacCauley</h1>
+<div style="display:flex;align-items:center;gap:0;flex-wrap:wrap"><h1 class="hero-title" style="margin:0">MacCauley</h1><div class="map-pills"><a class="map-pill" href="https://maps.app.goo.gl/HLaMf8Xah3yVQQib6" target="_blank" rel="noopener">📍 House<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://www.google.com/maps/place/41%C2%B000'43.0%22N+75%C2%B035'38.8%22W" target="_blank" rel="noopener">♻ Trash<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://www.google.com/maps/place/41%C2%B000'43.0%22N+75%C2%B035'38.8%22W" target="_blank" rel="noopener">🏖 Beach<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://maps.app.goo.gl/BEAktbJdJj1J1Bi99" target="_blank" rel="noopener">🏊 Pool<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://maps.app.goo.gl/zZedNTiRXFqW8AYg6" target="_blank" rel="noopener">⛵ Marina<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://maps.app.goo.gl/CBfjziBcLj4kBuX8A" target="_blank" rel="noopener">🎾 Courts<span class="map-pill-sub">click for map</span></a></div></div>
 <p class="hero-addr">82 MacCauley Rd</p>
 <div class="hero-meta"><span>Check-in 4 PM</span><span>Check-out 12 PM</span><span>Welcome home</span></div>
 </div>
 </section>
 <div class="container">
 <div class="intro-card">
-<p>Welcome to MacCauley! We hope you enjoy your stay at 82 MacCauley Rd. Below is everything you need during your visit &mdash; WiFi, door codes, house info, and local tips. If something isn't working or you can't find something, Will's contact info is at the bottom of this page.</p>
+<p>We hope you are all looking forward to your upcoming trip to the Poconos. We are looking forward to hosting you. We&rsquo;ve put together this page of helpful info for you to use during your stay, and to help you plan ahead of time. If you have any questions, please let us know. Thanks again and safe travels!!!</p>
 </div>
 
 <div class="summary-bar">
 <div class="summary-card summary-green"><div class="summary-value">4 PM</div><div class="summary-label">Check-In</div></div>
 <div class="summary-card summary-gold"><div class="summary-value">12 PM</div><div class="summary-label">Check-Out</div></div>
 <div class="summary-card summary-deep"><div class="summary-value">8282</div><div class="summary-label">Door Code</div></div>
-<div class="summary-card summary-neutral"><div class="summary-value">Pochome6</div><div class="summary-label">WiFi Password</div></div>
+<div class="summary-card summary-neutral"><div class="summary-label">WiFi &mdash; wireless@home</div><div class="summary-value" style="font-size:.9rem;white-space:nowrap">Password &mdash; Pochome6</div></div>
 </div>
 <section>
-<h2 class="section-title">&#x1F511; Essentials</h2>
-<div class="card-grid">
-<div class="card">
-<div class="card-header"><h3>&#x1F510; Getting In</h3></div>
-<div class="card-body">
-<div class="info-row"><span class="info-label">Door code</span><span class="info-value">8282</span></div>
+<div class="canvas">
+<div class="pill cat-default" style="left:12px;top:11px;width:364px;height:144px">
+<div class="pill-header">&#x1F510; GETTING IN</div>
+<div class="pill-body">
+<div class="info-row"><span class="info-label">Lock Box Code</span><span class="info-value">8282</span></div>
 <div class="info-row"><span class="info-label">Lock type</span><span class="info-value">Front slider lockbox (key inside)</span></div>
-<div class="info-row"><span class="info-label">Parking pass</span><span class="info-value">On the kitchen counter</span></div>
-<div class="info-row"><span class="info-label">Wristbands</span><span class="info-value">8 provided (same location)</span></div>
-<div class="card-links">
-<a class="btn btn-primary" href="https://maps.app.goo.gl/HLaMf8Xah3yVQQib6" target="_blank" rel="noopener">Open in Maps</a>
-</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header"><h3>&#x1F4F6; WiFi &amp; TVs</h3></div>
-<div class="card-body">
-<div class="info-row"><span class="info-label">Network</span><span class="info-value">wireless@home</span></div>
-<div class="info-row"><span class="info-label">Password</span><span class="info-value">Pochome6</span></div>
-<div class="info-row"><span class="info-label">TVs</span><span class="info-value">7 ROKU TVs</span></div>
-<p>Remotes are located near the TVs or on the mantel. Sling TV is loaded for network/cable channels.</p>
-</div>
-</div>
-<div class="card">
-<div class="card-header"><h3>&#x1F6CF;&#xFE0F; Beds (Sleeps 14+)</h3></div>
-<div class="card-body">
-<p><strong>3 Queens, 4 Fulls</strong></p>
-<p>All beds made up on arrival. Bring your own bedding if you want to control pet hair.</p>
-</div>
-</div>
-</div>
-</section>
-<section>
-<h2 class="section-title">&#x1F321;&#xFE0F; Climate Control</h2>
-<div class="card-grid">
-<div class="card">
-<div class="card-header"><h3>&#x1F525; Heat</h3></div>
-<div class="card-body">
-<p>Wall thermostats are for heat only. Turn them OFF before running A/C.</p>
-</div>
-</div>
-<div class="card">
-<div class="card-header"><h3>&#x2744;&#xFE0F; Air Conditioning</h3></div>
-<div class="card-body">
-<p>Two large mini-splits &mdash; one on each floor in the game rooms. The first floor remote is attached to the kitchen cabinet near the back sliding door. The upstairs remote is attached to the wall shelf above the shuffleboard table.</p>
-<div class="notes warning">Please turn wall thermostats OFF when running A/C.</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header"><h3>&#x1F525; Fireplace</h3></div>
-<div class="card-body">
-<p>Gas fireplace (not wood). Thermostat on the TV side of the mantel.</p>
-<div class="notes danger">DO NOT TOUCH anything other than the remote. DO NOT TOUCH the log set. Non-operational May to August. Non-venting gas &mdash; not intended as a primary heat source.</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-<h2 class="section-title">&#x1F3AE; Game Room &amp; Entertainment</h2>
-<div class="card-grid">
-<div class="card">
-<div class="card-header"><h3>&#x1F579;&#xFE0F; Retrocade Arcade</h3></div>
-<div class="card-body">
-<p>The retrocade arcade machine is in the pool room on the first floor. Adult supervision is recommended for kids. A basic user guide is at the machine. The system contains thousands of old games &mdash; YouTube is a good source for how to play.</p>
-<div class="notes danger">Do NOT update, connect to a network, or change any settings. If a reboot is needed, it takes several hours and cannot be completed remotely during your stay.</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-<h2 class="section-title">&#x1F333; Outdoor</h2>
-<div class="card-grid">
-<div class="card">
-<div class="card-header"><h3>&#x1F356; Grill</h3></div>
-<div class="card-body">
-<p>Charcoal grill on deck. Please clean after use.</p>
-<div class="notes">Charcoal NOT provided. Local Dollar General has it.</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header"><h3>&#x26D4; No Outdoor Fires</h3></div>
-<div class="card-body">
-<div class="notes danger">Outdoor fires are not permitted at this property.</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-<h2 class="section-title">&#x1F4CB; Rules</h2>
-<div class="card-grid">
-<div class="card">
-<div class="card-header"><h3>&#x1F6AB; The Nos</h3></div>
-<div class="card-body">
+<div class="info-row"><span class="info-label">Parking pass</span><span class="info-value">Kitchen counter</span></div>
+<div class="info-row"><span class="info-label">Amenity Passes</span><span class="info-value">8 provided (same location)</span></div>
+</div></div>
+
+<div class="pill cat-beds" style="left:194px;top:472px;width:183px;height:195px">
+<div class="pill-header">&#x1F6CF;&#xFE0F; SLEEPING ARRANGMENTS</div>
+<div class="pill-body">
+<p><b style="font-size:0.78rem;">Sleeps 12</b></p>
+<p><b style="font-size:0.78rem;">3 Queen beds</b></p>
+<p><b style="font-size:0.78rem;">4 Full beds</b></p>
+<p>Beds ready on arrival. Bringing pets? Consider bringing bed covers to manage pet hair.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:381px;top:109px;width:403px;height:100px">
+<div class="pill-header">&#x1F6BD; SEPTIC SYSTEM</div>
+<div class="pill-body">
+<p class="note danger">Septic-safe toilet paper only. No wipes, hygiene products, or feminine products. These will cause serious damage to the septic system.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:384px;top:13px;width:400px;height:89px">
+<div class="pill-header">&#x1F511; FRONT DOOR</div>
+<div class="pill-body">
+<p><b>Front Door:</b> Front slider lockbox contains the key. Please return the key to the lockbox at checkout.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:10px;top:165px;width:366px;height:126px">
+<div class="pill-header">&#x1F6AB; THE NOS</div>
+<div class="pill-body">
 <ul>
-<li>No smoking inside (including marijuana). Outside is fine but away from windows.</li>
-<li>No outdoor fires</li>
-<li>No fireworks</li>
-<li>No noise after 10 PM (quiet hours 10 PM &ndash; 8 AM)</li>
+<li><b>No smoking</b> inside home (including vaping and marijuana). Outside is fine but please away from open windows.</li>
+<li><b>No fireworks</b> ($1000 fine)</li>
+<li><b>No noise</b> after 10 PM (quiet hours 10 PM &#x2013; 8 AM)</li>
 </ul>
-</div>
-</div>
-<div class="card">
-<div class="card-header"><h3>&#x1F436; Pets</h3></div>
-<div class="card-body">
-<p>Pet friendly with proper pet fee paid ($25/day).</p>
+</div></div>
+
+<div class="pill cat-default" style="left:385px;top:217px;width:401px;height:123px">
+<div class="pill-header">&#x1F5D1;&#xFE0F; TRASH COLLECTION</div>
+<div class="pill-body">
+<ul><li>Community does not allow curbside pickup due to bears</li><li>All trash must be taken to the community collection center</li></ul>
+<p class="note danger">Display mirror tag/parking pass at the collection center to access</p>
+<p><a href="https://www.google.com/maps/place/41%C2%B000'43.0%22N+75%C2%B035'38.8%22W" target="_blank" style="color:#1a6b3c;font-weight:bold;text-decoration:underline">📍 Collection center map</a></p>
+</div></div>
+
+<div class="pill cat-climate" style="left:385px;top:448px;width:398px;height:104px">
+<div class="pill-header">&#x1F525; HEAT</div>
+<div class="pill-body">
+<ul><li>Controlled by individual room thermostats</li><li>Thermostats control heat only</li><li>Turn off when running A/C</li></ul>
+</div></div>
+<div class="pill cat-climate" style="left:385px;top:347px;width:398px;height:94px">
+<div class="pill-header">&#x2744;&#xFE0F; A/C</div>
+<div class="pill-body">
+<p>Two large mini-splits&#x2014;one per floor in the game rooms. First floor remote: attached to kitchen cabinet near back sliding door. Upstairs remote: attached to wall shelf above shuffleboard table.</p>
+</div></div>
+<div class="pill cat-climate" style="left:792px;top:167px;width:283px;height:208px">
+<div class="pill-header">&#x1F525; FIREPLACE</div>
+<div class="pill-body">
+<p>Non-venting gas fireplace. Remote to the RIGHT of the mantel operates. Push button timer. Unit will automatically shut off after time has expired. Press off button to turn off. Non-operational May through August.</p>
+<p class="note danger">PLEASE DO NOT TOUCH LOG SET FOR ANY REASON.  Please do not use the fireplace while running the A/C.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:9px;top:300px;width:175px;height:285px">
+<div class="pill-header">&#x2705; WHAT'S PROVIDED</div>
+<div class="pill-body">
 <ul>
-<li>Not on furniture unless you plan to remove hair</li>
-<li>Leashed at all times</li>
-</ul>
-</div>
-</div>
-<div class="card">
-<div class="card-header"><h3>&#x1F6BD; Septic System</h3></div>
-<div class="card-body">
-<div class="notes warning">Nothing can be flushed except septic-safe toilet paper. Hygiene products will cause significant septic damage.</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-<h2 class="section-title">&#x1F5D1;&#xFE0F; Trash</h2>
-<div class="card-grid">
-<div class="card">
-<div class="card-header"><h3>&#x1F5D1;&#xFE0F; Trash Collection</h3></div>
-<div class="card-body">
-<p>Do NOT store trash outside &mdash; bears are a real problem here. All trash must go to the community collection center.</p>
-<div class="card-links">
-<a class="btn btn-primary" href="https://www.google.com/maps/search/44+Towamensing+Trail,+Albrightsville,+PA+18210/@41.0115186,-75.593957,17z" target="_blank" rel="noopener">Collection Center Map</a>
-</div>
-<div class="notes">Parking pass must be displayed to access.</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-<h2 class="section-title">&#x1F6CD;&#xFE0F; What&rsquo;s Provided</h2>
-<div class="card-grid two-col">
-<div class="card">
-<div class="card-header"><h3>&#x2705; Provided</h3></div>
-<div class="card-body">
-<ul>
-<li>Linens &amp; towels (all beds made up)</li>
-<li>Laundry detergent &amp; dryer sheets</li>
-<li>Dish detergent + dishwasher tabs</li>
-<li>Hand soap, body wash</li>
+<li>Toilet paper (septic safe)</li>
+<li>Paper Towels</li>
+<li>Linens for all beds</li>
+<li>Bath &amp; Kitchen towels</li>
+<li>Dody wash</li>
+<li>Hand soap</li>
 <li>Trash bags</li>
-<li>Septic-safe toilet paper</li>
-<li>Paper towels (2 rolls)</li>
+<li>Dish detergent</li>
+<li>Dishwasher tabs</li>
+<li>Full size washer &amp; dryer</li>
+<li>Laundry detergent</li>
+<li>Dryer sheets</li>
 </ul>
-</div>
-</div>
-<div class="card">
-<div class="card-header"><h3>&#x274C; Not Provided</h3></div>
-<div class="card-body">
+</div></div>
+
+<div class="pill cat-default" style="left:193px;top:300px;width:183px;height:165px">
+<div class="pill-header">&#x1F392; WHAT TO BRING</div>
+<div class="pill-body">
 <ul>
 <li>Shampoo &amp; conditioner</li>
 <li>Charcoal for grill</li>
-<li>Firewood</li>
 <li>Beach towels/chairs/gear</li>
 <li>Winter outdoor gear</li>
 <li>Sports gear for amenity courts</li>
 </ul>
-</div>
-</div>
+</div></div>
+
+<div class="pill cat-default" style="left:792px;top:13px;width:283px;height:148px">
+<div class="pill-header">&#x1F436; PETS</div>
+<div class="pill-body">
+<ul>
+<li>3 dog maximum</li>
+<li>$25 per day fee - not charged per dog</li>
+<li>Must be leashed if outside fencing</li>
+</ul>
+<p>We kindly ask that you do not allow them on the furniture unless you plan to remove the hair.</p>
+</div></div>
+
+<div class="pill cat-kitchen" style="left:790px;top:491px;width:286px;height:108px">
+<div class="pill-header">&#x1F356; CHARCOAL GRILL</div>
+<div class="pill-body">
+<ul><li>Located on deck</li><li>Charcoal not provided</li><li>Please clean if used</li></ul>
+</div></div>
+
+<div class="pill cat-kitchen" style="left:790px;top:383px;width:286px;height:101px">
+<div class="pill-header">&#x1F32B;&#xFE0F; HOOD VENT</div>
+<div class="pill-body">
+<ul><li>Run exhaust vent anytime cooking with the range</li><li>Helps reduce strong odors</li></ul>
+</div></div>
+
+<div class="pill cat-default" style="left:384px;top:561px;width:398px;height:85px">
+<div class="pill-header">&#x1F3AE; GAMEROOM ITEMS</div>
+<div class="pill-body">
+<p>Operation is self-explanatory except for the arcade machine. Adult supervision is suggested. Instructions at machine.</p>
+</div></div>
 </div>
 </section>
 <section>
@@ -204,22 +225,20 @@
 <div class="card">
 <div class="card-body">
 <ul class="checklist">
-<li><span class="check-box"></span>Furniture moved back to proper location</li>
-<li><span class="check-box"></span>Dishes washed and put away (dishwasher preferred)</li>
-<li><span class="check-box"></span>Used towels started in washing machine</li>
-<li><span class="check-box"></span>Vacuumed (if pets stayed)</li>
-<li><span class="check-box"></span>Bedding checked for pet hair</li>
-<li><span class="check-box"></span>Grill cleaned (if used)</li>
-<li><span class="check-box"></span>Cigarette butts cleaned up (if smokers)</li>
-<li><span class="check-box"></span>Oven/microwave/fridge spills cleaned</li>
-<li><span class="check-box"></span>Food you brought removed</li>
-<li><span class="check-box"></span>Remotes returned (each bedroom, gameroom, and movie area)</li>
-<li><span class="check-box"></span>Windows closed and locked</li>
-<li><span class="check-box"></span>Trash taken to collection center</li>
-<li><span class="check-box"></span>Manual thermostats and A/C off (WiFi units OK)</li>
-<li><span class="check-box"></span>All lights off</li>
-<li><span class="check-box"></span>Back slider locked, key returned to lockbox</li>
-<li><span class="check-box"></span>Text Will at 610-621-0769 that you&rsquo;ve left</li>
+<li><span class="check-box"></span>Used towels tossed in washing machine please</li>
+<li><span class="check-box"></span>Please remove pet hair from all bedding, no need to strip the beds - cleaners will handle</li>
+<li><span class="check-box"></span>If you relocated any furniture, lamps, appliances etc, we kindly ask that you return them to the original location</li>
+<li><span class="check-box"></span>Dishes, pots n pans, cookware etc. has been cleaned</li>
+<li><span class="check-box"></span>If grill was used, please clean</li>
+<li><span class="check-box"></span>Spills or stains on floorings or appliances have been cleaned</li>
+<li><span class="check-box"></span>Removed all food and personal items</li>
+<li><span class="check-box"></span>Trash to collection center</li>
+<li><span class="check-box"></span>Remotes returned to coffee table and bedroom dresser</li>
+<li><span class="check-box"></span>Turn off Heat and A/C</li>
+<li><span class="check-box"></span>Amenity badges returned</li>
+<li><span class="check-box"></span>Front door key to kitchen counter</li>
+<li><span class="check-box"></span>Windows closed, locked up</li>
+<li><span class="check-box"></span>Text Will at 610-621-0769 that you’ve left</li>
 </ul>
 <div class="notes">Check-out is at 12 noon unless we&rsquo;ve agreed on a later time. Cleaners arrive at noon to start.</div>
 </div>
@@ -253,5 +272,6 @@
 <script>
 document.querySelectorAll(".checklist li").forEach(function(li){li.addEventListener("click",function(){li.classList.toggle("checked");});});
 </script>
+<script src="../assets/editor.js"></script>
 </body>
 </html>

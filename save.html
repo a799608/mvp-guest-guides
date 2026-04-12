@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Save Layout</title></head>
+<body style="display:flex;align-items:center;justify-content:center;height:100vh;background:#0d2e10;font-family:sans-serif">
+<button onclick="doSave()" style="padding:40px 80px;font-size:2rem;background:#C8990A;color:#fff;border:none;border-radius:12px;cursor:pointer;font-weight:bold">Click to Save Your Layout</button>
+<script>
+async function doSave(){
+  try{
+    var text=await navigator.clipboard.readText();
+    var pills=JSON.parse(text);
+    var r=await fetch("/save-layout",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({page:"petrarch",pills:pills})});
+    var d=await r.json();
+    document.body.innerHTML='<h1 style="color:#fff;font-size:3rem">Saved '+d.saved+' pills. You can close this tab.</h1>';
+  }catch(e){
+    document.body.innerHTML='<h1 style="color:red;font-size:2rem">Error: '+e.message+'</h1>';
+  }
+}
+</script>
+</body>
+</html>
