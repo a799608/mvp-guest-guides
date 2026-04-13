@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pill Layout Builder - Petrarch</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#e8e5e0;overflow-x:hidden}
+.toolbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:#0d2e10;color:#fff;padding:10px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.toolbar h1{font-size:1rem;margin-right:auto}
+.toolbar button{padding:8px 20px;border:none;border-radius:6px;font-weight:700;font-size:.82rem;cursor:pointer;transition:background .15s}
+.btn-export{background:#C8990A;color:#fff}
+.btn-export:hover{background:#e6b00e}
+.btn-reset{background:#555;color:#fff}
+.btn-reset:hover{background:#777}
+.size-display{font-size:.75rem;color:rgba(255,255,255,.6);min-width:180px;text-align:right}
+
+.canvas-wrap{margin-top:52px;padding:20px;min-height:calc(100vh - 52px)}
+.canvas{position:relative;width:1200px;margin:0 auto;min-height:2000px;background:#fff;border-radius:12px;box-shadow:0 2px 20px rgba(0,0,0,.1);background-image:radial-gradient(circle,#ddd 1px,transparent 1px);background-size:20px 20px}
+
+.pill{position:absolute;border-radius:10px;overflow:visible;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:grab;user-select:none;border:2px solid transparent;transition:border-color .1s,box-shadow .1s;background:#fff}
+.pill:hover{box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.pill.selected{border-color:#2d7aff;box-shadow:0 4px 20px rgba(45,122,255,.25)}
+.pill.dragging{cursor:grabbing;opacity:.9;z-index:500}
+.pill-body[contenteditable=true]{background:#fff9c4 !important;min-height:30px;padding:10px 12px !important}
+
+.pill-header{padding:6px 12px;color:#fff;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:8px 8px 0 0}
+.pill-body{padding:8px 12px 10px;font-size:.78rem;line-height:1.45;color:#333}
+.pill-body p{margin-bottom:4px}
+.pill-body ul{margin:0;padding-left:16px}
+.pill-body li{padding:1px 0;font-size:.76rem}
+.pill-body .note{border-left:3px solid #C8990A;background:#fff8e6;padding:4px 8px;font-size:.72rem;margin-top:6px;border-radius:0 4px 4px 0}
+.pill-body .danger{border-left-color:#c0392b;background:#fef0f0}
+.pill-body .info-row{display:flex;justify-content:space-between;padding:3px 0;font-size:.76rem}
+.pill-body .info-label{color:#888}
+.pill-body .info-value{font-weight:600}
+
+.cat-default .pill-header{background:linear-gradient(90deg,#0d2e10,#1a5a2e)}
+.cat-climate .pill-header{background:linear-gradient(90deg,#1a4a2e,#2d7a4a)}
+.cat-kitchen .pill-header{background:linear-gradient(90deg,#2e5a1a,#4a8a2d)}
+.cat-beds .pill-header{background:linear-gradient(90deg,#1a3a5a,#2d5a7a)}
+
+/* Resize handles */
+.handle{position:absolute;width:12px;height:12px;background:#2d7aff;border:2px solid #fff;border-radius:2px;z-index:600;display:none;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.pill.selected .handle{display:block}
+.h-tl{top:-7px;left:-7px;cursor:nw-resize}
+.h-tc{top:-7px;left:50%;margin-left:-6px;cursor:n-resize}
+.h-tr{top:-7px;right:-7px;cursor:ne-resize}
+.h-ml{top:50%;margin-top:-6px;left:-7px;cursor:w-resize}
+.h-mr{top:50%;margin-top:-6px;right:-7px;cursor:e-resize}
+.h-bl{bottom:-7px;left:-7px;cursor:sw-resize}
+.h-bc{bottom:-7px;left:50%;margin-left:-6px;cursor:s-resize}
+.h-br{bottom:-7px;right:-7px;cursor:se-resize}
+.handle:hover{background:#0057ff;transform:scale(1.2)}
+
+.pill-size{position:absolute;top:-22px;right:0;font-size:.65rem;color:#2d7aff;font-weight:600;white-space:nowrap;display:none;pointer-events:none}
+.pill.selected .pill-size{display:block}
+
+.output-area{position:fixed;bottom:0;left:0;right:0;z-index:1000;background:#0d2e10;color:#0f0;padding:14px 20px;font-family:monospace;font-size:.78rem;display:none;max-height:200px;overflow:auto;border-top:3px solid #C8990A}
+.output-area .close-btn{position:absolute;top:8px;right:14px;background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="toolbar">
+<h1>Pill Layout Builder - Petrarch</h1>
+<button class="btn-reset" onclick="resetLayout()">Reset Positions</button>
+<button class="btn-export" onclick="exportLayout()">Export Layout</button>
+<div class="size-display" id="sizeDisplay">Click to select | Double-click to edit text</div>
+</div>
+<div class="canvas-wrap"><div class="canvas" id="canvas"></div></div>
+<div class="output-area" id="outputArea"><button class="close-btn" onclick="document.getElementById('outputArea').style.display='none'">&times;</button><pre id="outputText"></pre></div>
+<script>
+var pills = [
+  {id:"getting-in",name:"Getting In",icon:"🔐",cat:"default",
+   body:'<div class="info-row"><span class="info-label">Door code</span><span class="info-value">0413</span></div><div class="info-row"><span class="info-label">Lock type</span><span class="info-value">Side door deadbolt (primary entry)</span></div><div class="info-row"><span class="info-label">Parking pass</span><span class="info-value">Kitchen wall holder near sink</span></div><div class="info-row"><span class="info-label">Wristbands</span><span class="info-value">8 provided (same location)</span></div>'},
+  {id:"front-door",name:"Front Door & Pet Gates",icon:"🔑",cat:"default",
+   body:'<p><b>Front Door:</b> Special mechanism — turn the lock AND the handle at the same time. Clockwise to lock, counter-clockwise to unlock. From outside, turn the key and handle simultaneously. There is a key on the kitchen counter.</p><p><b>Pet Gates:</b> Retractable gates at the front door (to the right, attaches like a window shade) and at the bottom of the interior stairs. Useful for containing pets.</p>'},
+  {id:"trash",name:"Trash Collection",icon:"🗑️",cat:"default",
+   body:'<p>Do NOT store trash outside — bears are a real problem here. All trash must go to the community collection center.</p><p class="note">Parking pass must be displayed to access.</p>'},
+  {id:"the-nos",name:"The Nos",icon:"🚫",cat:"default",
+   body:'<ul><li>No smoking inside (including marijuana). Outside is fine but away from windows.</li><li>No fireworks</li><li>No noise after 10 PM (quiet hours 10 PM – 8 AM)</li></ul>'},
+  {id:"pets",name:"Pets",icon:"🐶",cat:"default",
+   body:'<p>Pet friendly with proper pet fee paid ($25/day).</p><ul><li>Not on furniture unless you plan to remove hair</li><li>Leashed at all times</li></ul>'},
+  {id:"septic",name:"Septic System",icon:"🚽",cat:"default",
+   body:'<p class="note danger">Nothing can be flushed except septic-safe toilet paper. Hygiene products will cause significant septic damage.</p>'},
+  {id:"provided",name:"What's Provided",icon:"✅",cat:"default",
+   body:'<ul><li>Linens & towels (all beds made up)</li><li>Laundry detergent & dryer sheets</li><li>Dish detergent + dishwasher tabs</li><li>Hand soap, body wash</li><li>Trash bags</li><li>Septic-safe toilet paper</li><li>Paper towels (2 rolls)</li></ul>'},
+  {id:"bring",name:"What to Bring",icon:"🎒",cat:"default",
+   body:'<ul><li>Shampoo & conditioner</li><li>Charcoal for grill</li><li>Firewood</li><li>Beach towels/chairs/gear</li><li>Winter outdoor gear</li><li>Sports gear for amenity courts</li></ul>'},
+  {id:"heat",name:"Heat",icon:"🔥",cat:"climate",
+   body:'<p>Wall thermostats are for heat only. Turn them OFF before running A/C.</p>'},
+  {id:"ac",name:"A/C",icon:"❄️",cat:"climate",
+   body:'<p>Three units — one in each queen bedroom and one in the living room.</p><p class="note danger">Run all three units. Running only 1 or 2 will not cool the home adequately.</p>'},
+  {id:"fireplace",name:"Fireplace",icon:"🔥",cat:"climate",
+   body:'<p>Remote-operated. Press and hold the two buttons connected by the line with the flame on it (bottom left and top right) at the same time. The unit will beep and click — it takes a few seconds to light. Once lit, immediately lower the flame using the down-flame button or the house will get very hot.</p><p class="note danger">DO NOT TOUCH anything other than the remote. DO NOT TOUCH the log set. Non-operational May to August. Do not use the fireplace while running the A/C. Non-venting gas — not intended as a primary heat source.</p>'},
+  {id:"hood-vent",name:"Hood Vent",icon:"🌫️",cat:"kitchen",
+   body:'<p>Run on high any time you’re cooking or using the stove. Vents outside and helps reduce strong food odors.</p>'},
+  {id:"disposal",name:"Garbage Disposal",icon:"🌀",cat:"kitchen",
+   body:'<p>Push-button toggle switch on the front of the sink cabinet. Don’t dispose of large quantities of food.</p>'},
+  {id:"grill",name:"Grill",icon:"🍖",cat:"kitchen",
+   body:'<p>Charcoal grill on deck. Please clean after use.</p><p class="note">Charcoal NOT provided. Local Dollar General has it.</p>'},
+  {id:"beds",name:"Beds (Sleeps 6)",icon:"🛏️",cat:"beds",
+   body:'<p><b>2 Queen, 2 Twin</b></p><p>All beds made up on arrival. Bring your own bedding if you want to control pet hair.</p>'}
+];
+
+var selected = null;
+var editMode = false;
+var dragging = null;
+var resizing = null;
+var dragOffX = 0, dragOffY = 0;
+var resizeStartX = 0, resizeStartY = 0, resizeStartRect = null, resizeHandle = "";
+var canvas = document.getElementById("canvas");
+var sizeDisplay = document.getElementById("sizeDisplay");
+
+function renderPills() {
+  canvas.innerHTML = "";
+  pills.forEach(function(p, i) {
+    if (p.x === undefined) { p.x = 20 + (i % 3) * 400; p.y = 20 + Math.floor(i / 3) * 220; }
+    if (p.w === undefined) p.w = 340;
+
+    var el = document.createElement("div");
+    el.className = "pill cat-" + p.cat;
+    el.setAttribute("data-idx", i);
+    el.style.left = p.x + "px";
+    el.style.top = p.y + "px";
+    el.style.width = p.w + "px";
+    if (p.h) el.style.height = p.h + "px";
+
+    var hh = '<div class="handle h-tl" data-h="tl"></div><div class="handle h-tc" data-h="tc"></div><div class="handle h-tr" data-h="tr"></div><div class="handle h-ml" data-h="ml"></div><div class="handle h-mr" data-h="mr"></div><div class="handle h-bl" data-h="bl"></div><div class="handle h-bc" data-h="bc"></div><div class="handle h-br" data-h="br"></div>';
+
+    var sizeText = p.w + " x " + (p.h || "auto");
+    el.innerHTML = '<div class="pill-size">' + sizeText + '</div><div class="pill-header">' + p.icon + " " + p.name + '</div><div class="pill-body">' + p.body + '</div>' + hh;
+
+    if (selected === i) el.classList.add("selected");
+    canvas.appendChild(el);
+  });
+}
+
+// Mouse event handlers
+var clickTimer = null;
+var pendingClick = null;
+
+canvas.addEventListener("mousedown", function(e) {
+  var editable = e.target.closest("[contenteditable=true]");
+  if (editable || editMode) return;
+
+  var handle = e.target.closest(".handle");
+  var pill = e.target.closest(".pill");
+
+  if (handle && pill) {
+    e.preventDefault();
+    e.stopPropagation();
+    var idx = parseInt(pill.getAttribute("data-idx"));
+    selected = idx;
+    resizing = idx;
+    resizeHandle = handle.getAttribute("data-h");
+    resizeStartX = e.clientX;
+    resizeStartY = e.clientY;
+    resizeStartRect = {x: pills[idx].x, y: pills[idx].y, w: pills[idx].w, h: pill.offsetHeight};
+    if (!pills[idx].h) pills[idx].h = pill.offsetHeight;
+    renderPills();
+    return;
+  }
+
+  if (pill) {
+    e.preventDefault();
+    var idx = parseInt(pill.getAttribute("data-idx"));
+    selected = idx;
+    dragging = idx;
+    var rect = pill.getBoundingClientRect();
+    dragOffX = e.clientX - rect.left;
+    dragOffY = e.clientY - rect.top;
+    pill.classList.add("dragging");
+    pill.style.zIndex = 500;
+    updateSizeDisplay(idx, pill);
+    return;
+  }
+
+  selected = null;
+  sizeDisplay.textContent = "Click to select | Double-click to edit text";
+  renderPills();
+});
+
+document.addEventListener("mousemove", function(e) {
+  if (resizing !== null) {
+    var p = pills[resizing];
+    var dx = e.clientX - resizeStartX;
+    var dy = e.clientY - resizeStartY;
+    var r = resizeStartRect;
+    var h = resizeHandle;
+
+    // Width changes
+    if (h==="mr" || h==="tr" || h==="br") { p.w = Math.max(100, r.w + dx); }
+    if (h==="ml" || h==="tl" || h==="bl") { p.w = Math.max(100, r.w - dx); p.x = r.x + dx; }
+
+    // Height changes
+    if (h==="bc" || h==="bl" || h==="br") { p.h = Math.max(40, r.h + dy); }
+    if (h==="tc" || h==="tl" || h==="tr") { p.h = Math.max(40, r.h - dy); p.y = r.y + dy; }
+
+    var el = canvas.querySelector('[data-idx="'+resizing+'"]');
+    if (el) {
+      el.style.left = p.x + "px";
+      el.style.top = p.y + "px";
+      el.style.width = p.w + "px";
+      el.style.height = p.h + "px";
+      var sl = el.querySelector(".pill-size");
+      if (sl) sl.textContent = Math.round(p.w) + " x " + Math.round(p.h);
+    }
+    updateSizeDisplay(resizing);
+    return;
+  }
+
+  if (dragging !== null) {
+    var p = pills[dragging];
+    var canvasRect = canvas.getBoundingClientRect();
+    p.x = Math.max(0, e.clientX - canvasRect.left - dragOffX);
+    p.y = Math.max(0, e.clientY - canvasRect.top - dragOffY);
+
+    var el = canvas.querySelector('[data-idx="'+dragging+'"]');
+    if (el) {
+      el.style.left = p.x + "px";
+      el.style.top = p.y + "px";
+    }
+    updateSizeDisplay(dragging);
+  }
+});
+
+document.addEventListener("mouseup", function() {
+  if (dragging !== null) {
+    pills[dragging].x = Math.round(pills[dragging].x);
+    pills[dragging].y = Math.round(pills[dragging].y);
+    var el = canvas.querySelector('[data-idx="'+dragging+'"]');
+    if (el) { el.classList.remove("dragging"); el.style.zIndex = ""; }
+    dragging = null;
+    // Don't renderPills here - it destroys DOM and kills dblclick
+    // Just update selection visuals
+    var allPills = canvas.querySelectorAll(".pill");
+    allPills.forEach(function(p) {
+      var pi = parseInt(p.getAttribute("data-idx"));
+      if (pi === selected) { p.classList.add("selected"); }
+      else { p.classList.remove("selected"); }
+    });
+  }
+  if (resizing !== null) {
+    pills[resizing].w = Math.round(pills[resizing].w);
+    if (pills[resizing].h) pills[resizing].h = Math.round(pills[resizing].h);
+    pills[resizing].x = Math.round(pills[resizing].x);
+    pills[resizing].y = Math.round(pills[resizing].y);
+    resizing = null;
+    renderPills();
+  }
+});
+
+function updateSizeDisplay(idx, el) {
+  var p = pills[idx];
+  if (!el) el = canvas.querySelector('[data-idx="'+idx+'"]');
+  var h = p.h || (el ? el.offsetHeight : "auto");
+  sizeDisplay.textContent = p.name + "  |  " + Math.round(p.w) + " x " + (typeof h === "number" ? Math.round(h) : h) + "  |  pos: " + Math.round(p.x) + ", " + Math.round(p.y);
+}
+
+function exportLayout() {
+  var data = pills.map(function(p, i) {
+    var el = canvas.querySelector('[data-idx="'+i+'"]');
+    var h = p.h || (el ? el.offsetHeight : null);
+    return {index: i, id: p.id, name: p.name, x: Math.round(p.x), y: Math.round(p.y), width: Math.round(p.w), height: h ? Math.round(h) : "auto", body: p.body};
+  });
+  var json = JSON.stringify(data, null, 2);
+
+  // Save as a downloadable file
+  var blob = new Blob([json], {type: "application/json"});
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "pill-layout.json";
+  a.click();
+  URL.revokeObjectURL(a.href);
+
+  sizeDisplay.textContent = "Layout saved! Tell Claude: apply my pill layout";
+  document.getElementById("outputArea").style.display = "none";
+}
+
+function resetLayout() {
+  pills.forEach(function(p, i) {
+    p.x = 20 + (i % 3) * 400;
+    p.y = 20 + Math.floor(i / 3) * 220;
+    p.w = 340;
+    delete p.h;
+  });
+  selected = null;
+  renderPills();
+  sizeDisplay.textContent = "Layout reset. Click to select | Double-click to edit text.";
+}
+
+renderPills();
+
+// Double-click to edit text
+canvas.addEventListener("dblclick", function(e) {
+  // Find pill from selected index since DOM may have been rebuilt
+  var pill = e.target.closest(".pill");
+  if (!pill) {
+    // Fallback: use selected
+    if (selected === null) return;
+    pill = canvas.querySelector('[data-idx="'+selected+'"]');
+    if (!pill) return;
+  }
+  var idx = parseInt(pill.getAttribute("data-idx"));
+  selected = idx;
+
+  // Make pill body content editable
+  var body = pill.querySelector(".pill-body");
+  var header = pill.querySelector(".pill-header");
+  if (body) {
+    editMode = true;
+    body.contentEditable = "true";
+    body.style.cursor = "text";
+    body.style.outline = "2px solid #2d7aff";
+    body.style.borderRadius = "0 0 8px 8px";
+    body.focus();
+
+    // Also make header text editable (but not the icon)
+    // We wrap just the text part
+    if (header && !header.querySelector(".header-text")) {
+      var icon = pills[idx].icon;
+      var name = pills[idx].name;
+      header.innerHTML = icon + ' <span class="header-text" contenteditable="true" style="cursor:text">' + name + '</span>';
+    }
+  }
+
+  // Prevent drag while editing
+  pill.style.cursor = "default";
+
+  // Stop editing on click outside
+  function stopEdit(ev) {
+    if (ev.target.closest(".pill") === pill) return;
+    editMode = false;
+    body.contentEditable = "false";
+    body.style.cursor = "";
+    body.style.outline = "";
+    pill.style.cursor = "grab";
+
+    // Save edited content back to pill data
+    pills[idx].body = body.innerHTML;
+    var headerText = header.querySelector(".header-text");
+    if (headerText) {
+      pills[idx].name = headerText.textContent.trim();
+    }
+
+    document.removeEventListener("mousedown", stopEdit);
+  }
+  // Delay adding listener so this dblclick doesn't trigger it
+  setTimeout(function() {
+    document.addEventListener("mousedown", stopEdit);
+  }, 100);
+
+  e.preventDefault();
+  e.stopPropagation();
+});
+
+
+
+</script>
+</body>
+</html>

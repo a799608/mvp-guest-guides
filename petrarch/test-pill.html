@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petrarch Test</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F8F5EF}
+.canvas{position:relative;width:1200px;margin:20px auto;min-height:700px;background:#fff;border-radius:12px;box-shadow:0 2px 20px rgba(0,0,0,.1);background-image:radial-gradient(circle,#ddd 1px,transparent 1px);background-size:20px 20px}
+.pill{position:absolute;border-radius:10px;overflow:visible;box-shadow:0 2px 8px rgba(0,0,0,.12);background:#fff;border:2px solid transparent;user-select:none}
+.pill-header{padding:6px 12px;color:#fff;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:8px 8px 0 0}
+.cat-default .pill-header{background:linear-gradient(90deg,#0d2e10,#1a5a2e)}
+.cat-beds .pill-header{background:linear-gradient(90deg,#1a3a5a,#2d5a7a)}
+.pill-body{padding:8px 12px 10px;font-size:.78rem;line-height:1.45;color:#333}
+.pill-body p{margin-bottom:4px}
+.pill-body .note{border-left:3px solid #C8990A;background:#fff8e6;padding:4px 8px;font-size:.72rem;margin-top:6px;border-radius:0 4px 4px 0}
+.pill-body .danger{border-left-color:#c0392b;background:#fef0f0}
+.pill-body ul{margin:0;padding-left:16px}
+.pill-body li{padding:1px 0;font-size:.76rem}
+.info-row{display:flex;justify-content:space-between;padding:3px 0;font-size:.76rem}
+.info-label{color:#888}
+.info-value{font-weight:600}
+.cat-kitchen .pill-header{background:linear-gradient(90deg,#2e5a1a,#4a8a2d)}
+.cat-climate .pill-header{background:linear-gradient(90deg,#1a4a2e,#2d7a4a)}
+</style>
+</head>
+<body>
+<div class="canvas">
+
+<div class="pill cat-default" style="left:6px;top:20px;width:312px;height:144px">
+<div class="pill-header">&#x1F510; GETTING IN</div>
+<div class="pill-body">
+<div class="info-row"><span class="info-label">Door code</span><span class="info-value">0413</span></div>
+<div class="info-row"><span class="info-label">Lock type</span><span class="info-value">Side door deadbolt (primary entry)</span></div>
+<div class="info-row"><span class="info-label">Parking pass</span><span class="info-value">Kitchen wall holder near sink</span></div>
+<div class="info-row"><span class="info-label">Amenity Passes</span><span class="info-value">6 provided (same location)</span></div>
+</div></div>
+
+<div class="pill cat-beds" style="left:324px;top:20px;width:132px;height:292px">
+<div class="pill-header">&#x1F6CF;&#xFE0F; SLEEPING ARRANGMENTS</div>
+<div class="pill-body">
+<p><b style="font-size:0.78rem;">Sleeps 6</b></p>
+<p><b style="font-size:0.78rem;">2 Queen beds</b></p>
+<p><b style="font-size:0.78rem;">2 Twins beds</b></p>
+<p>Beds ready on arrival. Bringing pets? Consider bringing bed covers to manage pet hair.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:462px;top:17px;width:340px;height:100px">
+<div class="pill-header">&#x1F6BD; SEPTIC SYSTEM</div>
+<div class="pill-body">
+<p class="note danger">Nothing can be flushed except septic-safe toilet paper. Hygiene products will cause significant septic damage.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:463px;top:124px;width:340px;height:190px">
+<div class="pill-header">&#x1F511; FRONT DOOR &amp; PET GATES</div>
+<div class="pill-body">
+<p><b>Front Door:</b> There is a key for the front door on the kitchen counter with the remote for the LED Bar lights.  The lock for the door is a bit tricky.  You must turn the lock and the handle at the same time to lock and unlock.  Clockwise locks, Counterclockwise unlocks.</p>
+<p><b>Pet Gates:</b> Retractable gate at the front door (to the right, attaches like a window shade) and at the bottom of the interior stairs. Useful for containing pets.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:6px;top:172px;width:311px;height:141px">
+<div class="pill-header">&#x1F6AB; THE NOS</div>
+<div class="pill-body">
+<ul>
+<li><b>No smoking</b> inside home (including vaping and marijuana). Outside is fine but please away from open windows.</li>
+<li><b>No fireworks</b> ($1000 fine)</li>
+<li><b>No noise</b> after 10 PM (quiet hours 10 PM &#x2013; 8 AM)</li>
+</ul>
+</div></div>
+
+<div class="pill cat-default" style="left:822px;top:18px;width:368px;height:166px">
+<div class="pill-header">&#x1F5D1;&#xFE0F; TRASH COLLECTION</div>
+<div class="pill-body">
+<p>Please do not store trash outside as there are a lot of bear in the area.  This is the reason we are have curbside pick up.  They are a real problem in the area with trash.</p>
+<p class="note">Mirror tag/parking pass must be displayed to access. This is the only real time they check. They often don&#x27;t, but please plan to have the tag with and displayed to avoid issues</p>
+</div></div>
+
+<div class="pill cat-climate" style="left:820px;top:188px;width:372px;height:102px">
+<div class="pill-header">&#x1F525; HEAT</div>
+<div class="pill-body">
+<p>Heat is controlled by individual room thermostats.  These thermostats control the heat only.  Please be sure to have them shut off is running the A/C.</p>
+</div></div>
+<div class="pill cat-climate" style="left:815px;top:295px;width:377px;height:104px">
+<div class="pill-header">&#x2744;&#xFE0F; A/C</div>
+<div class="pill-body">
+<p>There are multiple window A/C units.  It is suggested you run all units on hot days or it will be difficult to keep the downstairs at a comfortable temperature in the late afternoon.</p>
+</div></div>
+<div class="pill cat-climate" style="left:514px;top:321px;width:299px;height:257px">
+<div class="pill-header">&#x1F525; FIREPLACE</div>
+<div class="pill-body">
+<p><b>Remote-operated</b>. Press and hold the two buttons connected by the line with the flame on it (bottom left and top right) at the same time. The unit will beep and click &#x2014; it takes about 20 seconds for it to go through the lighting process.  Once lit, please immediately lower the flame using the down-flame button or the house will get very hot.</p>
+<p class="note danger">PLEASE DO NOT TOUCH LOG SET FOR ANY REASON.  Please do not use the fireplace while running the A/C.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:6px;top:320px;width:187px;height:310px">
+<div class="pill-header">&#x2705; WHAT'S PROVIDED</div>
+<div class="pill-body">
+<ul>
+<li>Toilet paper (septic safe)</li>
+<li>Paper Towels</li>
+<li>Linens for all beds</li>
+<li>Bath &amp; Kitchen towels</li>
+<li>Dody wash</li>
+<li>Hand soap</li>
+<li>Trash bags</li>
+<li>Dish detergent</li>
+<li>Dishwasher tabs</li>
+<li>Full size washer &amp; dryer</li>
+<li>Laundry detergent</li>
+<li>Dryer sheets</li>
+</ul>
+</div></div>
+
+<div class="pill cat-default" style="left:200px;top:322px;width:311px;height:179px">
+<div class="pill-header">&#x1F392; WHAT TO BRING</div>
+<div class="pill-body">
+<ul>
+<li>Shampoo &amp; conditioner</li>
+<li>Charcoal for grill (local grocery or dollar general)</li>
+<li>Firewood for firepit (lots of roadside stands)</li>
+<li>Beach towels/chairs/gear</li>
+<li>Winter outdoor gear</li>
+<li>Sports gear for amenity courts</li>
+</ul>
+</div></div>
+
+<div class="pill cat-default" style="left:200px;top:508px;width:307px;height:142px">
+<div class="pill-header">&#x1F436; PETS</div>
+<div class="pill-body">
+<ul>
+<li>3 dog maximum</li>
+<li>$25 per day fee - not charged per dog</li>
+<li>Must be leashed if outside fencing</li>
+</ul>
+<p>We kindly ask that you do not allow them on the furniture unless you plan to remove the hair.</p>
+</div></div>
+
+<div class="pill cat-kitchen" style="left:820px;top:402px;width:162px;height:124px">
+<div class="pill-header">&#x1F356; CHARCOAL GRILL</div>
+<div class="pill-body">
+<p>Charcoal is not provided.</p>
+<p>Please clean quickly if used</p>
+</div></div>
+
+<div class="pill cat-kitchen" style="left:989px;top:405px;width:198px;height:119px">
+<div class="pill-header">&#x1F32B;&#xFE0F; HOOD VENT</div>
+<div class="pill-body">
+<p>Please run the exhaust vent anytime cooking with the range. This helps reduce strong odors such as bacon</p>
+</div></div>
+
+<div class="pill cat-kitchen" style="left:825px;top:530px;width:358px;height:83px">
+<div class="pill-header">&#x1F300; GARBAGE DISPOSAL</div>
+<div class="pill-body">
+<p>Operates with push button toggle switch under front of sink. Please do not dispose of large quantities of food.</p>
+</div></div>
+
+</div>
+</body>
+</html>
