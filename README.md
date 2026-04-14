@@ -1,96 +1,120 @@
-# Guest Guides Visual Preview (v2)
+# MVP Rentals Guest Guides
 
-**Status:** Ready for deployment to GitHub Pages
-**Created:** 2026-04-10
-**Local preview:** http://localhost:8878/Guest%20Guides/visual_preview/index.html (requires personal-dashboard server)
+Live guest-facing property guides for 6 Pocono Mountain vacation rentals.
 
----
+## Live URLs
 
-## What This Is
+- **Landing Page:** https://a799608.github.io/mvp-guest-guides/
+- **Petrarch:** https://a799608.github.io/mvp-guest-guides/petrarch/
+- **Wylie:** https://a799608.github.io/mvp-guest-guides/wylie/
+- **Pound:** https://a799608.github.io/mvp-guest-guides/pound/
+- **MacCauley:** https://a799608.github.io/mvp-guest-guides/maccauley/
+- **Milton:** https://a799608.github.io/mvp-guest-guides/milton/
+- **Trails:** https://a799608.github.io/mvp-guest-guides/trails/
 
-A polished, visually-enhanced HTML version of the MVP Rentals guest guides. These pages replace the plain Google Docs with a branded, mobile-friendly web experience featuring:
+## How It Works
 
-- Hero banners with property name, address, and eyebrow tagline
-- Summary tiles (Check-in, Check-out, Door Code, WiFi)
-- Card-based layout for all sections (Essentials, Climate, Rules, Trash, etc.)
-- Interactive check-out checklist (click to check off items)
-- Back navigation on every page
-- MVP brand colors (#0d2e10 deep green, #1F6224 accent, #C8990A gold, #F8F5EF cream)
-- Playfair Display headings, Inter body text (Google Fonts)
+Each property has its own `index.html` page with pill-shaped info cards covering:
+- Check-in info (door codes, lock types, parking)
+- Sleeping arrangements
+- House rules (The Nos)
+- Climate controls (Heat, A/C, Fireplace)
+- Kitchen (Charcoal Grill, Hood Vent, Garbage Disposal/Firepit/Gameroom)
+- Trash collection with map link
+- What's Provided / What to Bring
+- Pets policy
+- Septic system warning
+- Checkout checklist
 
-## Pages
+## Pill Layout Editor
 
-| Page | File | Description |
-|------|------|-------------|
-| Landing | index.html | Property chooser with 6 cards + area guide link |
-| Trails | trails/index.html | 845 Towamensing Trails Rd |
-| Pound | pound/index.html | 28 Pound Lane |
-| Milton | milton/index.html | 121 Milton Way |
-| Wylie | wylie/index.html | 119 Wylie Circle |
-| MacCauley | maccauley/index.html | 82 MacCauley Rd |
-| Petrarch | petrarch/index.html | 209 Petrarch Trail |
-| Area Guide | area/index.html | Community amenities + local attractions |
+Each page has an **Edit Layout** button (top right) for repositioning pills:
 
-## Navigation
+1. Click **Edit Layout** (click twice — first loads library, second activates)
+2. Drag pills to move them
+3. Drag edges/corners to resize
+4. Click **Save Layout** to save positions to clipboard
+5. The clipboard watcher or save.html helper saves to the file
 
-- **Landing page:** No back button (top-level entry point)
-- **Property pages:** "All Properties" back button links to landing (../index.html)
-- **Area guide:** "Back" button uses history.back() to return to whichever property page the guest came from
-- **External links:** Open in Maps, Collection Center Map, Weather, etc. all open in new tabs (target="_blank")
+For the save to write to the file, the local server must be running:
+```
+cd visual_preview
+python server.py
+```
+This starts a server on http://localhost:8765 with POST support for saving layouts.
 
-## Bug Fixes Applied (2026-04-10)
+## Map Links
 
-1. **Trash Collection Center Map link** - Original link used text address "44 Towamensing Trail, ALBRIGHTSVLLE, PA 18210" which Google Maps misresolved to Wilkes-Barre (30 miles north). Fixed on all 7 pages to use coordinate-pinned URL: https://www.google.com/maps/search/44+Towamensing+Trail,+Albrightsville,+PA+18210/@41.0115186,-75.593957,17z. Verified via OpenStreetMap geocoding that 44 Towamensing Trail = the Teepee/community clubhouse at 41.0115, -75.5939.
+Each property page has map pills linking to:
+- **House** — property-specific coordinates
+- **Trash** — community collection center (41°00'43.0"N 75°35'38.8"W)
+- **Beach** — community beach
+- **Pool** — community pool
+- **Marina** — community marina
+- **Courts** — tennis/basketball courts
 
-2. **Call Will CTA removed from intro cards** - The prominent gold "Call Will" button was removed from the welcome section of all 6 property pages. Contact info remains at the bottom of each page for when guests actually need it.
+## Property-Specific Content
 
-3. **Back navigation added** - All property pages and area guide now have back buttons in the header.
+These pills have unique wording per property (do NOT standardize across properties):
+- Getting In (door codes, lock types, parking)
+- Front Door & Pet Gates
+- Sleeping Arrangements
+- Fireplace
+- A/C
+- Pets
+- Firepit / Garbage Disposal / Gameroom Items
+
+These pills are standardized across all properties:
+- Trash Collection (bullets + red warning)
+- Septic System (red warning)
+- Heat (bullets)
+- Charcoal Grill (bullets)
+- Hood Vent (bullets)
+- The Nos
+- What's Provided
+- What to Bring
+
+## Checkout Checklist Differences
+
+- **Petrarch:** includes "Front door key to kitchen counter"
+- **All others:** no front door key item
+- **Trails & Milton:** "Remotes returned to coffee table"
+- **Pound & Wylie:** "Remotes returned to entertainment center"
+- **Petrarch & MacCauley:** "Remotes returned to coffee table and bedroom dresser"
 
 ## File Structure
 
+```
+visual_preview/
+├── index.html              # Landing page (admin use — links to all properties)
+├── assets/
+│   ├── style.css           # Shared styles
+│   ├── enhance.css         # Enhanced styles
+│   └── editor.js           # Pill layout editor (drag/resize/save)
+├── petrarch/index.html
+├── wylie/index.html
+├── pound/index.html
+├── maccauley/index.html
+├── milton/index.html
+├── trails/index.html
+├── area/index.html         # Community area guide
+├── server.py               # Local dev server with POST save support
+└── save.html               # Clipboard save helper
+```
 
+## Deployment
 
-## How It Was Built
+Hosted on GitHub Pages from the `main` branch. Push to deploy:
+```
+git add -A
+git commit -m "description of changes"
+git push origin main
+```
+Pages update within 1-2 minutes after push.
 
-1. Restored the original HTML pages from git history (commit a54b778, pre-deletion)
-2. Added enhance.css as a visual overlay (does not modify style.css)
-3. Added hero sections to each property page with eyebrow tags
-4. Converted landing page to full-width hero with property cards
-5. Fixed trash collection link across all pages
-6. Removed prominent Call Will CTA from intro cards
-7. Added back navigation to all sub-pages
+## Guest Usage
 
-## Deployment Plan (Not Yet Executed)
+Send guests the direct link to their property before arrival. Example:
+> "Here's your guest guide for your stay: https://a799608.github.io/mvp-guest-guides/trails/"
 
-**Target:** GitHub Pages at https://a799608.github.io/mvp-guest-guides/
-
-**Prerequisites:**
-- Install GitHub CLI: winget install GitHub.cli
-- Authenticate: gh auth login (browser-based auth)
-- GitHub username: a799608
-
-**Steps:**
-1. Install and authenticate GitHub CLI
-2. Create public repo: gh repo create a799608/mvp-guest-guides --public
-3. Initialize git in visual_preview/, commit all files
-4. Push to GitHub
-5. Enable GitHub Pages (main branch, root folder)
-6. Verify live URL works
-7. Update Guest Guides/README.md with live URL
-8. Update Personal Dashboard with link to live guides
-
-**Estimated time:** 15-20 minutes once prerequisites are met
-
-## Content Source
-
-The content in these HTML files was pulled from the Google Docs (source of truth as of 2026-04-07). If content has been updated in the Google Docs since then, those changes are NOT reflected here. After deployment, the HTML pages become the new guest-facing content and should be kept in sync with any property changes.
-
-## Link Audit (2026-04-10)
-
-All links tested and verified:
-
-- 22 external links (Google Maps, weather.gov, poconomountains.com) - all return HTTP 200
-- 7 internal page-to-page links - all working
-- 7 back navigation buttons - all tested via live click-through in Chrome
-- Trash collection center link verified via geocoding to correct location (41.0115, -75.5939)
-- Milton and Wylie "Open in Maps" links use coordinate-based URLs (correct location but show coords instead of address name in Maps)
+Guests cannot navigate to other properties — the All Properties link has been removed from individual pages. The landing page is for admin use only.
