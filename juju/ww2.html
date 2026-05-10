@@ -7,37 +7,40 @@ body::before{content:"";position:fixed;inset:0;background:url("data:image/svg+xm
 .c{max-width:760px;margin:0 auto;position:relative;z-index:1}
 h1{text-align:center;color:#fff;font-size:1.9em;margin-bottom:6px;text-shadow:0 2px 8px rgba(0,0,0,.3);font-weight:900;letter-spacing:-.5px}
 .sub{text-align:center;color:#bbdefb;margin-bottom:20px;font-weight:600}
-.bar{position:sticky;top:10px;z-index:100;background:rgba(255,255,255,.95);border-radius:18px;padding:10px 14px;margin-bottom:18px;box-shadow:0 6px 20px rgba(0,0,0,.25);backdrop-filter:blur(8px);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.bar .pb{flex:1;min-width:160px;background:rgba(13,71,161,.15);border-radius:18px;height:30px;overflow:hidden}
+.bar{position:sticky;top:10px;z-index:100;background:rgba(255,255,255,.95);border-radius:18px;padding:10px 14px;margin-bottom:18px;box-shadow:0 6px 20px rgba(0,0,0,.25);backdrop-filter:blur(8px);display:flex;gap:12px;align-items:center}
+.bar .pb{flex:1;background:rgba(13,71,161,.15);border-radius:18px;height:30px;overflow:hidden}
 .bar .pf{background:linear-gradient(90deg,#42a5f5,#1976d2);height:100%;border-radius:18px;transition:width .5s;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;min-width:60px;font-size:.95em}
-.bar .toggle{padding:8px 16px;border:none;border-radius:14px;font-size:.95em;cursor:pointer;font-weight:700;background:linear-gradient(135deg,#1976d2,#0d47a1);color:#fff;box-shadow:0 2px 8px rgba(13,71,161,.3);white-space:nowrap}
-.bar .toggle:hover{opacity:.92;transform:translateY(-1px)}
+.bar .lbl{color:#013A80;font-weight:700;font-size:.95em;white-space:nowrap}
 .s{background:#fff;border-radius:16px;padding:24px;margin-bottom:20px;box-shadow:0 6px 24px rgba(0,0,0,.15)}
 .s h2{color:#013A80;margin-bottom:10px;font-weight:800}
 .con{background:#e3f2fd;border-radius:12px;padding:16px;margin-bottom:14px;line-height:1.6;font-size:.95em;color:#1a1a2e}
 .con p{margin-bottom:8px}
 .con a{color:#0d47a1;font-weight:600}
-body.hide-stories .con{display:none}
-.q{border:2px solid #90caf9;border-radius:12px;padding:14px;margin-bottom:10px}
-.q p{margin-bottom:8px;line-height:1.5}
-.q input{padding:8px 12px;border:2px solid #90caf9;border-radius:8px;font-size:1em;width:200px;margin-right:6px}
+.s.iq .con{display:none}
+.q{display:none;border:2px solid #90caf9;border-radius:12px;padding:18px;margin-bottom:10px;background:#f5fbff}
+.q.show{display:block;animation:slidein .3s ease-out}
+@keyframes slidein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.q p{margin-bottom:10px;line-height:1.5;font-size:1.05em}
+.q input{padding:10px 14px;border:2px solid #90caf9;border-radius:8px;font-size:1em;width:200px;margin-right:6px}
 .q input:focus{outline:none;border-color:#1976d2}
-.b{padding:8px 18px;border:none;border-radius:8px;font-size:1em;cursor:pointer;font-weight:700;background:linear-gradient(135deg,#1976d2,#0d47a1);color:#fff;box-shadow:0 2px 8px rgba(13,71,161,.3)}
+.b{padding:10px 22px;border:none;border-radius:10px;font-size:1em;cursor:pointer;font-weight:700;background:linear-gradient(135deg,#1976d2,#0d47a1);color:#fff;box-shadow:0 2px 8px rgba(13,71,161,.3)}
 .b:hover{opacity:.92;transform:translateY(-1px)}
-.fb{margin-top:8px;padding:8px 12px;border-radius:8px;font-weight:600;display:none}
+.b.qbtn{padding:14px 28px;font-size:1.05em;background:linear-gradient(135deg,#ff9800,#f57c00);box-shadow:0 4px 14px rgba(245,124,0,.35)}
+.fb{margin-top:10px;padding:10px 14px;border-radius:8px;font-weight:600;display:none}
 .ok{background:#e8f5e9;color:#2e7d32;display:block}
 .no{background:#ffebee;color:#c62828;display:block}
-.ht{background:#fff8e1;padding:8px 12px;border-radius:8px;margin-top:6px;display:none;color:#e65100}
+.ht{background:#fff8e1;padding:10px 14px;border-radius:8px;margin-top:8px;display:none;color:#e65100}
 .ht.sh{display:block}
 .dn .b{opacity:.5;pointer-events:none}
-</style></head><body class="hide-stories"><div class=c>
+.scomp{text-align:center;padding:14px;background:#e8f5e9;border-radius:12px;color:#2e7d32;font-weight:700;margin-top:10px}
+</style></head><body><div class=c>
 <h1>&#127757; Juju's WWII Study Guide</h1>
-<p class=sub>21 sections &middot; 175 questions</p>
+<p class=sub>21 sections &middot; 175 questions &middot; Read first, then click &quot;Quiz me!&quot; on each section</p>
 <div class=bar>
-  <button class=toggle id=storyBtn onclick=ts()>&#128214; Show Subjects</button>
+  <span class=lbl>Progress</span>
   <div class=pb><div class=pf id=pf style=width:0%>0/0</div></div>
 </div>
-<div class=s>
+<div class=s data-sn="1">
   <h2>🔧 Section 1: Anton Drexler</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -49,7 +52,7 @@ body.hide-stories .con{display:none}
 <li>Hitler muscled Drexler out and took over in <b>1921</b>; Drexler given empty "Honorary President" title</li>
 <li>Without Drexler, no Nazi Party for Hitler to take over; died 1942</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://en.wikipedia.org/wiki/Anton_Drexler" target="_blank">Wikipedia: Anton Drexler</a> · <a href="https://www.britannica.com/biography/Anton-Drexler" target="_blank">Britannica: Anton Drexler</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://en.wikipedia.org/wiki/Anton_Drexler" target="_blank">Wikipedia: Anton Drexler</a> · <a href="https://www.britannica.com/biography/Anton-Drexler" target="_blank">Britannica: Anton Drexler</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(1,1)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv1"><button class="b" onclick="rv(1)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q1>
@@ -108,7 +111,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h7>💡 Hint: two years after the party was founded</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="2">
   <h2>📜 Section 2: Nazi Ideology</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -120,7 +123,7 @@ body.hide-stories .con{display:none}
 <li>Pushed <b>militarism</b> and "<b>Lebensraum</b>" (living space) — excuse to conquer neighbors</li>
 <li>Persecution of Jews, Roma, disabled, LGBTQ, and opponents escalated into the <b>Holocaust</b> (6 million Jews murdered)</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.bbc.co.uk/bitesize/articles/zns3bdm" target="_blank">BBC Bitesize: Nazi Germany</a> · <a href="https://encyclopedia.ushmm.org/content/en/article/nazi-rule" target="_blank">US Holocaust Memorial Museum</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.bbc.co.uk/bitesize/articles/zns3bdm" target="_blank">BBC Bitesize: Nazi Germany</a> · <a href="https://encyclopedia.ushmm.org/content/en/article/nazi-rule" target="_blank">US Holocaust Memorial Museum</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(2,8)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv2"><button class="b" onclick="rv(2)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q8>
@@ -187,7 +190,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h15>💡 Hint: two years after Hitler became Chancellor</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="3">
   <h2>⚡ Section 3: Three Key Nazi Events</h2>
   <div class=con>
 
@@ -215,7 +218,7 @@ body.hide-stories .con{display:none}
 <li>Widely seen as the start of the <b>Holocaust</b> — persecution turned to open state violence</li>
 </ul>
 
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://encyclopedia.ushmm.org/content/en/article/beer-hall-putsch" target="_blank">USHMM: Beer Hall Putsch</a> · <a href="https://encyclopedia.ushmm.org/content/en/article/the-night-of-the-long-knives" target="_blank">USHMM: Night of the Long Knives</a> · <a href="https://encyclopedia.ushmm.org/content/en/article/kristallnacht" target="_blank">USHMM: Kristallnacht</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://encyclopedia.ushmm.org/content/en/article/beer-hall-putsch" target="_blank">USHMM: Beer Hall Putsch</a> · <a href="https://encyclopedia.ushmm.org/content/en/article/the-night-of-the-long-knives" target="_blank">USHMM: Night of the Long Knives</a> · <a href="https://encyclopedia.ushmm.org/content/en/article/kristallnacht" target="_blank">USHMM: Kristallnacht</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(3,16)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv3"><button class="b" onclick="rv(3)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q16>
@@ -298,7 +301,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h25>💡 Hint: the systematic Nazi murder of 6 million Jewish people</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="4">
   <h2>⚫ Section 4: Heinrich Himmler & the SS</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -311,7 +314,7 @@ body.hide-stories .con{display:none}
 <li>Largest death camp: <b>Auschwitz</b> (occupied Poland), 1+ million murdered</li>
 <li>Captured by British <b>May 1945</b>; killed himself with a <b>cyanide pill</b> before trial</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://encyclopedia.ushmm.org/content/en/article/heinrich-himmler" target="_blank">USHMM: Heinrich Himmler</a> · <a href="https://www.britannica.com/biography/Heinrich-Himmler" target="_blank">Britannica: Himmler</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://encyclopedia.ushmm.org/content/en/article/heinrich-himmler" target="_blank">USHMM: Heinrich Himmler</a> · <a href="https://www.britannica.com/biography/Heinrich-Himmler" target="_blank">Britannica: Himmler</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(4,26)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv4"><button class="b" onclick="rv(4)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q26>
@@ -378,7 +381,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h33>💡 Hint: late 1920s — same year the U.S. stock market crashed</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="5">
   <h2>🏭 Section 5: Total War</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -390,7 +393,7 @@ body.hide-stories .con{display:none}
 <li>Wartime science: <b>radar</b>, jet engines, early computers (Bletchley Park's <b>Bombe</b> cracked <b>Enigma</b>), atomic bomb</li>
 <li>Total deaths: <b>70–85 million</b> (~3% of world population); majority were <b>civilians</b></li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/topic/total-war" target="_blank">Britannica: Total War</a> · <a href="https://www.iwm.org.uk/history/the-state-of-total-war" target="_blank">Imperial War Museums</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/topic/total-war" target="_blank">Britannica: Total War</a> · <a href="https://www.iwm.org.uk/history/the-state-of-total-war" target="_blank">Imperial War Museums</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(5,34)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv5"><button class="b" onclick="rv(5)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q34>
@@ -457,7 +460,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h41>💡 Hint: 5 letters; police use it to clock speeders today</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="6">
   <h2>⚡ Section 6: Blitzkrieg — Lightning War</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -469,7 +472,7 @@ body.hide-stories .con{display:none}
 <li><b>Operation Barbarossa</b> (June 1941): blitzkrieg invasion of the <b>Soviet Union</b></li>
 <li>Failed in USSR — too vast, supply lines stretched, brutal <b>Russian winter</b> froze tanks and men</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://encyclopedia.ushmm.org/content/en/article/blitzkrieg-lightning-war" target="_blank">US Holocaust Memorial Museum</a> · <a href="https://www.britannica.com/topic/blitzkrieg" target="_blank">Britannica</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://encyclopedia.ushmm.org/content/en/article/blitzkrieg-lightning-war" target="_blank">US Holocaust Memorial Museum</a> · <a href="https://www.britannica.com/topic/blitzkrieg" target="_blank">Britannica</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(6,42)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv6"><button class="b" onclick="rv(6)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q42>
@@ -536,7 +539,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h49>💡 Hint: a cold season, OR think about how huge Russia is on a map</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="7">
   <h2>🛩️ Section 7: Battle of Britain</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -548,7 +551,7 @@ body.hide-stories .con{display:none}
 <li>October 1940: Hitler called off Sea Lion — <b>first major German defeat of the war</b></li>
 <li><b>Churchill</b> honored the RAF pilots: "so much owed by so many to <b>so few</b>" (~544 RAF pilots died)</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.iwm.org.uk/history/the-battle-of-britain" target="_blank">Imperial War Museums</a> · <a href="https://www.britannica.com/event/Battle-of-Britain-European-history-1940" target="_blank">Britannica</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.iwm.org.uk/history/the-battle-of-britain" target="_blank">Imperial War Museums</a> · <a href="https://www.britannica.com/event/Battle-of-Britain-European-history-1940" target="_blank">Britannica</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(7,50)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv7"><button class="b" onclick="rv(7)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q50>
@@ -623,7 +626,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h58>💡 Hint: think about whether Germany had lost ANY battle before this — what "first" was it?</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="8">
   <h2>🤝 Section 8: The Big Three: Allied Leaders</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -651,7 +654,7 @@ body.hide-stories .con{display:none}
 <li>USSR suffered ~<b>27 million deaths</b> — most of any country</li>
 <li>Brutal authoritarian who purged millions, but Red Army crushed Germany on Eastern Front</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.ducksters.com/history/world_war_ii/winston_churchill.php" target="_blank">Ducksters: Winston Churchill</a> · <a href="https://www.britannica.com/biography/Franklin-D-Roosevelt" target="_blank">Britannica: Franklin D. Roosevelt</a> · <a href="https://www.britannica.com/biography/Joseph-Stalin" target="_blank">Britannica: Joseph Stalin</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.ducksters.com/history/world_war_ii/winston_churchill.php" target="_blank">Ducksters: Winston Churchill</a> · <a href="https://www.britannica.com/biography/Franklin-D-Roosevelt" target="_blank">Britannica: Franklin D. Roosevelt</a> · <a href="https://www.britannica.com/biography/Joseph-Stalin" target="_blank">Britannica: Joseph Stalin</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(8,59)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv8"><button class="b" onclick="rv(8)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q59>
@@ -718,7 +721,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h67>💡 Hint: Hitler and Stalin actually started as partners — then Hitler invaded</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="9">
   <h2>👑 Section 9: Axis Leaders</h2>
   <div class=con>
 <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -745,7 +748,7 @@ body.hide-stories .con{display:none}
 <li>Forced to resign July 1944 as Japan was losing</li>
 <li>Convicted at <b>Tokyo War Crimes Trials</b>; <b>hanged Dec 1948</b></li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/biography/Benito-Mussolini" target="_blank">Britannica: Mussolini</a> · <a href="https://www.britannica.com/biography/Hirohito" target="_blank">Britannica: Hirohito</a> · <a href="https://www.britannica.com/biography/Tojo-Hideki" target="_blank">Britannica: Tojo</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/biography/Benito-Mussolini" target="_blank">Britannica: Mussolini</a> · <a href="https://www.britannica.com/biography/Hirohito" target="_blank">Britannica: Hirohito</a> · <a href="https://www.britannica.com/biography/Tojo-Hideki" target="_blank">Britannica: Tojo</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(9,68)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv9"><button class="b" onclick="rv(9)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q68>
@@ -812,7 +815,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h76>💡 Hint: US Navy base in Hawaii</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="10">
   <h2>⚓ Section 10: Pearl Harbor</h2>
   <div class=con>
 <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -824,7 +827,7 @@ body.hide-stories .con{display:none}
 <li>FDR called it "<b>a date which will live in infamy</b>"; Congress declared war Dec 8</li>
 <li><b>Germany declared war on US Dec 11, 1941</b> — pulling US into European war too</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.history.com/topics/world-war-ii/pearl-harbor" target="_blank">History.com</a> · <a href="https://www.nps.gov/perl/index.htm" target="_blank">National Park Service — Pearl Harbor National Memorial</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.history.com/topics/world-war-ii/pearl-harbor" target="_blank">History.com</a> · <a href="https://www.nps.gov/perl/index.htm" target="_blank">National Park Service — Pearl Harbor National Memorial</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(10,77)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv10"><button class="b" onclick="rv(10)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q77>
@@ -884,7 +887,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h84>💡 Hint: It made the US enter the war it had been trying to avoid</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="11">
   <h2>🚶 Section 11: Bataan Death March</h2>
   <div class=con>
 <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -896,7 +899,7 @@ body.hide-stories .con{display:none}
 <li>Japanese <b>Bushido</b> code viewed surrender as disgraceful — fueled brutal POW treatment</li>
 <li>Gen. <b>Masaharu Homma</b> tried &amp; executed for war crimes; MacArthur returned <b>Oct 1944</b></li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/Bataan-Death-March" target="_blank">Britannica</a> · <a href="https://www.nps.gov/articles/000/the-bataan-death-march.htm" target="_blank">National Park Service</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/Bataan-Death-March" target="_blank">Britannica</a> · <a href="https://www.nps.gov/articles/000/the-bataan-death-march.htm" target="_blank">National Park Service</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(11,85)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv11"><button class="b" onclick="rv(11)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q85>
@@ -956,7 +959,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h92>💡 Hint: 1942 to 1944 = ___ years</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="12">
   <h2>🌊 Section 12: Battle of Midway</h2>
   <div class=con>
 <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -968,7 +971,7 @@ body.hide-stories .con{display:none}
 <li>Japan lost ~250 planes &amp; veteran pilots; US lost <b>Yorktown</b></li>
 <li>Remembered as the <b>turning point</b> of the Pacific war — Japan never on offensive again</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.history.navy.mil/browse-by-topic/wars/world-war-ii/1942/midway.html" target="_blank">US Navy History</a> · <a href="https://www.britannica.com/event/Battle-of-Midway" target="_blank">Britannica</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.history.navy.mil/browse-by-topic/wars/world-war-ii/1942/midway.html" target="_blank">US Navy History</a> · <a href="https://www.britannica.com/event/Battle-of-Midway" target="_blank">Britannica</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(12,93)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv12"><button class="b" onclick="rv(12)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q93>
@@ -1028,7 +1031,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h100>💡 Hint: The opposite of defense</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="13">
   <h2>🏝️ Section 13: Pacific Theater: Tactics &amp; Code</h2>
   <div class=con>
 <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1056,7 +1059,7 @@ body.hide-stories .con{display:none}
 <li>Led by Adm. <b>Nimitz</b> (Navy) and Gen. <b>MacArthur</b> (Army)</li>
 <li>Key islands: <b>Guadalcanal, Tarawa, Saipan, Iwo Jima, Okinawa</b></li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/topic/Bushido" target="_blank">Britannica: Bushido</a> · <a href="https://www.history.com/topics/world-war-ii/kamikaze-pilots-divine-wind" target="_blank">History.com: Kamikaze</a> · <a href="https://www.britannica.com/topic/island-hopping" target="_blank">Britannica: Island Hopping</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/topic/Bushido" target="_blank">Britannica: Bushido</a> · <a href="https://www.history.com/topics/world-war-ii/kamikaze-pilots-divine-wind" target="_blank">History.com: Kamikaze</a> · <a href="https://www.britannica.com/topic/island-hopping" target="_blank">Britannica: Island Hopping</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(13,101)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv13"><button class="b" onclick="rv(13)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q101>
@@ -1116,7 +1119,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h108>💡 Hint: Starts with d — the opposite of honor</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="14">
   <h2>❄️ Section 14: Battle of Stalingrad</h2>
   <div class=con>
 <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1128,7 +1131,7 @@ body.hide-stories .con{display:none}
 <li><b>Feb 2, 1943</b>: Field Marshal <b>Friedrich Paulus</b> surrendered with ~91,000 men</li>
 <li>~<b>2 million casualties</b> total — bloodiest battle in history; <b>turning point on Eastern Front</b></li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/Battle-of-Stalingrad" target="_blank">Britannica</a> · <a href="https://www.iwm.org.uk/history/the-battle-of-stalingrad" target="_blank">Imperial War Museums</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/Battle-of-Stalingrad" target="_blank">Britannica</a> · <a href="https://www.iwm.org.uk/history/the-battle-of-stalingrad" target="_blank">Imperial War Museums</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(14,109)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv14"><button class="b" onclick="rv(14)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q109>
@@ -1188,7 +1191,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h116>💡 Hint: Brutal urban combat in winter, fought house by house</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="15">
   <h2>🪖 Section 15: D-Day</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1200,7 +1203,7 @@ body.hide-stories .con{display:none}
 <li>Opened the <b>"second front"</b> — caught Germany in a vise (Soviets east, Allies west)</li>
 <li>Called the <b>"beginning of the end"</b> for Nazi Germany</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.history.com/topics/world-war-ii/d-day" target="_blank">History.com</a> · <a href="https://www.iwm.org.uk/history/d-day-the-allies-invade-europe-in-1944" target="_blank">Imperial War Museums</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.history.com/topics/world-war-ii/d-day" target="_blank">History.com</a> · <a href="https://www.iwm.org.uk/history/d-day-the-allies-invade-europe-in-1944" target="_blank">Imperial War Museums</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(15,117)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv15"><button class="b" onclick="rv(15)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q117>
@@ -1275,7 +1278,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h125>💡 Hint: The opposite of "ending"</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="16">
   <h2>❄️ Section 16: Battle of the Bulge</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1287,7 +1290,7 @@ body.hide-stories .con{display:none}
 <li>Gen. <b>George S. Patton's</b> Third Army raced north to relieve Bastogne; clear weather let Allied airpower crush German supply lines</li>
 <li>Ended <b>January 25, 1945</b> — <b>largest battle US Army ever fought</b> (~600,000 troops, 19,000 US dead)</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/Battle-of-the-Bulge" target="_blank">Britannica</a> · <a href="https://www.history.com/topics/world-war-ii/battle-of-the-bulge" target="_blank">History.com</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/Battle-of-the-Bulge" target="_blank">Britannica</a> · <a href="https://www.history.com/topics/world-war-ii/battle-of-the-bulge" target="_blank">History.com</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(16,126)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv16"><button class="b" onclick="rv(16)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q126>
@@ -1354,7 +1357,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h133>💡 Hint: Same country whose army stormed Omaha Beach</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="17">
   <h2>📔 Section 17: Anne Frank</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1366,7 +1369,7 @@ body.hide-stories .con{display:none}
 <li><b>August 1944</b> — betrayed; sent to camps. Anne & sister <b>Margot</b> died of <b>typhus</b> at <b>Bergen-Belsen</b>, early 1945</li>
 <li><b>Otto Frank</b> was the only survivor; published the diary in <b>1947</b> — became iconic <b>Holocaust</b> testimony</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.annefrank.org/en/anne-frank/" target="_blank">Anne Frank House</a> · <a href="https://www.ducksters.com/history/world_war_ii/anne_frank.php" target="_blank">Ducksters: Anne Frank</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.annefrank.org/en/anne-frank/" target="_blank">Anne Frank House</a> · <a href="https://www.ducksters.com/history/world_war_ii/anne_frank.php" target="_blank">Ducksters: Anne Frank</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(17,134)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv17"><button class="b" onclick="rv(17)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q134>
@@ -1441,7 +1444,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h142>💡 Hint: The Nazi genocide of Jewish people during WW2</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="18">
   <h2>⚛️ Section 18: The Manhattan Project</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1453,7 +1456,7 @@ body.hide-stories .con{display:none}
 <li><b>July 16, 1945</b> — first nuclear test (<b>Trinity</b>) in New Mexico desert succeeded</li>
 <li>Bombs dropped on <b>Hiroshima</b> (Aug 6) & <b>Nagasaki</b> (Aug 9), ending WW2 and starting the <b>nuclear arms race</b></li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.history.com/topics/world-war-ii/the-manhattan-project" target="_blank">History.com</a> · <a href="https://ahf.nuclearmuseum.org/ahf/history/manhattan-project/" target="_blank">Atomic Heritage Foundation</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.history.com/topics/world-war-ii/the-manhattan-project" target="_blank">History.com</a> · <a href="https://ahf.nuclearmuseum.org/ahf/history/manhattan-project/" target="_blank">Atomic Heritage Foundation</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(18,143)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv18"><button class="b" onclick="rv(18)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q143>
@@ -1520,7 +1523,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h150>💡 Hint: Either of the two Japanese cities works</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="19">
   <h2>🏝️ Section 19: Battle of Okinawa</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1532,7 +1535,7 @@ body.hide-stories .con{display:none}
 <li>~<b>12,000 US</b>, ~<b>110,000 Japanese</b> soldiers, & over <b>100,000 Okinawan civilians</b> killed</li>
 <li>Bloodbath convinced Pres. <b>Truman</b> to drop atomic bombs on <b>Hiroshima</b> & <b>Nagasaki</b> instead of invading Japan</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/Battle-of-Okinawa" target="_blank">Britannica</a> · <a href="https://www.history.com/topics/world-war-ii/battle-of-okinawa" target="_blank">History.com</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/Battle-of-Okinawa" target="_blank">Britannica</a> · <a href="https://www.history.com/topics/world-war-ii/battle-of-okinawa" target="_blank">History.com</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(19,151)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv19"><button class="b" onclick="rv(19)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q151>
@@ -1599,7 +1602,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h158>💡 Hint: Either one works</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="20">
   <h2>☢️ Section 20: The Atomic Bomb (Hiroshima &amp; Nagasaki)</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1611,7 +1614,7 @@ body.hide-stories .con{display:none}
 <li>Started the <b>nuclear age</b> and <b>Cold War arms race</b> (US vs. Soviet Union)</li>
 <li>Only times nuclear weapons used in war; Japanese survivors called <b>hibakusha</b></li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/atomic-bombings-of-Hiroshima-and-Nagasaki" target="_blank">Britannica</a> · <a href="https://ahf.nuclearmuseum.org/ahf/history/bombings-hiroshima-and-nagasaki/" target="_blank">Atomic Heritage Foundation</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://www.britannica.com/event/atomic-bombings-of-Hiroshima-and-Nagasaki" target="_blank">Britannica</a> · <a href="https://ahf.nuclearmuseum.org/ahf/history/bombings-hiroshima-and-nagasaki/" target="_blank">Atomic Heritage Foundation</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(20,159)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv20"><button class="b" onclick="rv(20)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q159>
@@ -1686,7 +1689,7 @@ body.hide-stories .con{display:none}
     <div class=ht id=h167>💡 Hint: Comes from the same word as "nucleus"</div>
   </div>
 </div>
-<div class=s>
+<div class=s data-sn="21">
   <h2>⚖️ Section 21: Nuremberg Trials</h2>
   <div class=con>
     <ul style="line-height:1.6;padding-left:20px;margin:4px 0">
@@ -1698,7 +1701,7 @@ body.hide-stories .con{display:none}
 <li><b>"Just following orders"</b> defense rejected; <b>12 sentenced to death</b> by <b>hanging</b>, 7 prison, 3 acquitted</li>
 <li>Founded modern international criminal law → today's <b>International Criminal Court (ICC)</b> in The Hague</li>
 </ul>
-    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://encyclopedia.ushmm.org/content/en/article/the-nuremberg-trials" target="_blank">US Holocaust Memorial Museum</a> · <a href="https://www.history.com/topics/world-war-ii/nuremberg-trials" target="_blank">History.com</a></p>
+    <p style="margin-top:10px"><b>📖 Learn more:</b> <a href="https://encyclopedia.ushmm.org/content/en/article/the-nuremberg-trials" target="_blank">US Holocaust Memorial Museum</a> · <a href="https://www.history.com/topics/world-war-ii/nuremberg-trials" target="_blank">History.com</a></p><p style="text-align:center;margin-top:14px"><button class="b qbtn" onclick="qs(21,168)">&#127919; Quiz me on this section!</button></p><p style="text-align:center;margin-top:10px;display:none" class="rvbtn rv21"><button class="b" onclick="rv(21)" style="background:linear-gradient(135deg,#26a69a,#00897b)">&#10227; Review subjects again</button></p>
   </div>
 
   <div class=q id=q168>
@@ -1772,11 +1775,64 @@ body.hide-stories .con{display:none}
 let cor=0,tot=0;
 const T={1:"Drexler",2:"Drexler",3:"Drexler",4:"Drexler",5:"Drexler",6:"Drexler",7:"Drexler",8:"Nazi Ideology",9:"Nazi Ideology",10:"Nazi Ideology",11:"Nazi Ideology",12:"Nazi Ideology",13:"Nazi Ideology",14:"Nazi Ideology",15:"Nazi Ideology",16:"Nazi Events",17:"Nazi Events",18:"Nazi Events",19:"Nazi Events",20:"Nazi Events",21:"Nazi Events",22:"Nazi Events",23:"Nazi Events",24:"Nazi Events",25:"Nazi Events",26:"SS / Himmler",27:"SS / Himmler",28:"SS / Himmler",29:"SS / Himmler",30:"SS / Himmler",31:"SS / Himmler",32:"SS / Himmler",33:"SS / Himmler",34:"Total War",35:"Total War",36:"Total War",37:"Total War",38:"Total War",39:"Total War",40:"Total War",41:"Total War",42:"Blitzkrieg",43:"Blitzkrieg",44:"Blitzkrieg",45:"Blitzkrieg",46:"Blitzkrieg",47:"Blitzkrieg",48:"Blitzkrieg",49:"Blitzkrieg",50:"B. of Britain",51:"B. of Britain",52:"B. of Britain",53:"B. of Britain",54:"B. of Britain",55:"B. of Britain",56:"B. of Britain",57:"B. of Britain",58:"B. of Britain",59:"Allied Leaders",60:"Allied Leaders",61:"Allied Leaders",62:"Allied Leaders",63:"Allied Leaders",64:"Allied Leaders",65:"Allied Leaders",66:"Allied Leaders",67:"Allied Leaders",68:"Axis Leaders",69:"Axis Leaders",70:"Axis Leaders",71:"Axis Leaders",72:"Axis Leaders",73:"Axis Leaders",74:"Axis Leaders",75:"Axis Leaders",76:"Axis Leaders",77:"Pearl Harbor",78:"Pearl Harbor",79:"Pearl Harbor",80:"Pearl Harbor",81:"Pearl Harbor",82:"Pearl Harbor",83:"Pearl Harbor",84:"Pearl Harbor",85:"Bataan",86:"Bataan",87:"Bataan",88:"Bataan",89:"Bataan",90:"Bataan",91:"Bataan",92:"Bataan",93:"Midway",94:"Midway",95:"Midway",96:"Midway",97:"Midway",98:"Midway",99:"Midway",100:"Midway",101:"Pacific Tactics",102:"Pacific Tactics",103:"Pacific Tactics",104:"Pacific Tactics",105:"Pacific Tactics",106:"Pacific Tactics",107:"Pacific Tactics",108:"Pacific Tactics",109:"Stalingrad",110:"Stalingrad",111:"Stalingrad",112:"Stalingrad",113:"Stalingrad",114:"Stalingrad",115:"Stalingrad",116:"Stalingrad",117:"D-Day",118:"D-Day",119:"D-Day",120:"D-Day",121:"D-Day",122:"D-Day",123:"D-Day",124:"D-Day",125:"D-Day",126:"Bulge",127:"Bulge",128:"Bulge",129:"Bulge",130:"Bulge",131:"Bulge",132:"Bulge",133:"Bulge",134:"Anne Frank",135:"Anne Frank",136:"Anne Frank",137:"Anne Frank",138:"Anne Frank",139:"Anne Frank",140:"Anne Frank",141:"Anne Frank",142:"Anne Frank",143:"Manhattan",144:"Manhattan",145:"Manhattan",146:"Manhattan",147:"Manhattan",148:"Manhattan",149:"Manhattan",150:"Manhattan",151:"Okinawa",152:"Okinawa",153:"Okinawa",154:"Okinawa",155:"Okinawa",156:"Okinawa",157:"Okinawa",158:"Okinawa",159:"Atomic Bomb",160:"Atomic Bomb",161:"Atomic Bomb",162:"Atomic Bomb",163:"Atomic Bomb",164:"Atomic Bomb",165:"Atomic Bomb",166:"Atomic Bomb",167:"Atomic Bomb",168:"Nuremberg",169:"Nuremberg",170:"Nuremberg",171:"Nuremberg",172:"Nuremberg",173:"Nuremberg",174:"Nuremberg",175:"Nuremberg"};
 const mi={};
-function ts(){document.body.classList.toggle("hide-stories");let h=document.body.classList.contains("hide-stories");document.getElementById("storyBtn").innerHTML=h?"&#128214; Show Subjects":"&#127919; Hide Subjects (Quiz Mode)"}
+// Map sectionNum -> [first qNum, last qNum]
+const SR={};
+/* SR populated below */
+// section ranges: see DOM data attrs
 function up(){let p=tot>0?Math.round(cor/tot*100):0;let e=document.getElementById("pf");e.style.width=Math.max(p,3)+"%";e.textContent=cor+"/"+tot+" ("+p+"%)"}
-function md(n,ok){document.getElementById("q"+n).classList.add("dn");tot++;if(ok)cor++;else mi[T[n]]=1;up()}
+function md(n,ok){
+  let q=document.getElementById("q"+n);q.classList.add("dn");tot++;if(ok)cor++;else mi[T[n]]=1;up();
+  // Auto-advance: find next .q sibling within same section
+  let sec=q.closest(".s");
+  let qs=sec.querySelectorAll(".q");
+  let idx=Array.from(qs).indexOf(q);
+  if(idx>=0&&idx<qs.length-1){
+    setTimeout(()=>qs[idx+1].classList.add("show"),700);
+  }else{
+    // section complete
+    setTimeout(()=>{
+      let sn=sec.dataset.sn;
+      let comp=document.createElement("div");
+      comp.className="scomp";
+      comp.innerHTML="&#10003; Section complete!";
+      sec.appendChild(comp);
+      let rv=sec.querySelector(".rvbtn");
+      if(rv)rv.style.display="block";
+    },700);
+  }
+}
 function ck(n,a,x){let q=document.getElementById("q"+n);if(q.classList.contains("dn"))return;let v=document.getElementById("a"+n).value.trim().toLowerCase();let fb=document.getElementById("f"+n);let ht=document.getElementById("h"+n);let alts=String(a).split("|").map(s=>s.trim().toLowerCase());if(alts.includes(v)){fb.className="fb ok";fb.innerHTML="&#127881; "+x;md(n,1)}else if(!ht.classList.contains("sh")){fb.className="fb no";fb.innerHTML="&#129300; Not quite! Check the hint below.";ht.classList.add("sh")}else{fb.className="fb no";fb.innerHTML="&#128214; Answer: <b>"+(typeof a==="string"?a.split("|").join(" or "):a)+"</b>. "+x;md(n,0)}}
 function cn(n,a,x){let q=document.getElementById("q"+n);if(q.classList.contains("dn"))return;let v=parseFloat(document.getElementById("a"+n).value);let fb=document.getElementById("f"+n);let ht=document.getElementById("h"+n);if(!isNaN(v)&&Math.abs(v-a)<.5){fb.className="fb ok";fb.innerHTML="&#127881; "+x;md(n,1)}else if(!ht.classList.contains("sh")){fb.className="fb no";fb.innerHTML="&#129300; Not quite! Check the hint below.";ht.classList.add("sh")}else{fb.className="fb no";fb.innerHTML="&#128214; Answer: <b>"+a+"</b>. "+x;md(n,0)}}
+// Start quiz for section sn at first question firstQ
+function qs(sn,firstQ){
+  let sec=document.querySelector('.s[data-sn="'+sn+'"]');
+  if(!sec)return;
+  sec.classList.add("iq");
+  let firstq=document.getElementById("q"+firstQ);
+  if(firstq)firstq.classList.add("show");
+  // Hide the quiz button itself
+  let qbtn=sec.querySelector(".qbtn");
+  if(qbtn)qbtn.parentElement.style.display="none";
+  // Smooth scroll the first question into view
+  setTimeout(()=>{if(firstq)firstq.scrollIntoView({behavior:"smooth",block:"center"})},100);
+}
+// Restore subject view for section sn
+function rv(sn){
+  let sec=document.querySelector('.s[data-sn="'+sn+'"]');
+  if(!sec)return;
+  sec.classList.remove("iq");
+  let comp=sec.querySelector(".scomp");
+  if(comp)comp.remove();
+  // Show con bullets again; re-show quiz button
+  let qbtn=sec.querySelector(".qbtn");
+  if(qbtn)qbtn.parentElement.style.display="block";
+  // Hide the review button
+  let rvbtn=sec.querySelector(".rvbtn");
+  if(rvbtn)rvbtn.style.display="none";
+  // Hide all .q in this section (so user can re-quiz from scratch if they want — but answered ones stay marked .dn)
+  sec.querySelectorAll(".q").forEach(q=>q.classList.remove("show"));
+  sec.scrollIntoView({behavior:"smooth",block:"start"});
+}
 function sm(){let s=document.getElementById("ss");s.style.display="block";let p=tot>0?Math.round(cor/tot*100):0;document.getElementById("fs").innerHTML="Score: "+cor+"/"+tot+" ("+p+"%)";let t=Object.keys(mi),h="";if(t.length>0){h="<p>Review these topics:</p><ul>";t.forEach(x=>h+="<li style=color:#c62828;margin:4px>"+x+"</li>");h+="</ul>"}else if(tot>0)h="<p>&#127775; Perfect score! You are SO ready!</p>";document.getElementById("rt").innerHTML=h;s.scrollIntoView({behavior:"smooth"})}
 document.addEventListener("keydown",e=>{if(e.key==="Enter"){let a=document.activeElement;if(a&&a.tagName==="INPUT"){let b=a.nextElementSibling;if(b&&b.classList.contains("b"))b.click()}}});
 </script></div></body></html>
