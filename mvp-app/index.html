@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MVP Rentals</title>
+
+<!-- PWA manifest -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0d2e10">
+
+<!-- iOS Safari Add-to-Home-Screen -->
+<link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MVP">
+
+<style>
+  :root {
+    --green-deep: #0d2e10;
+    --green: #1F6224;
+    --green-light: #D6E8D6;
+    --gold: #C8990A;
+    --cream: #F8F5EF;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; padding: 0; min-height: 100%;
+    background: var(--green-deep);
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    /* Honor iOS safe area on devices with notch */
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  header {
+    text-align: center;
+    padding: 18px 16px 6px;
+    border-bottom: 2px solid var(--gold);
+    background: linear-gradient(135deg, var(--green-deep) 0%, var(--green) 100%);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  header .sub {
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 4px;
+    opacity: 0.9;
+  }
+  main {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  a.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: var(--green);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 22px 12px;
+    min-height: 110px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.08s, background 0.15s;
+  }
+  a.tile:active { transform: scale(0.97); background: #2a7b2f; }
+  a.tile.primary { background: var(--gold); color: var(--green-deep); }
+  a.tile.primary:active { background: #e0b020; }
+  a.tile .icon { font-size: 30px; line-height: 1; margin-bottom: 8px; }
+  a.tile .label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  a.tile.wide { grid-column: 1 / -1; min-height: 70px; flex-direction: row; gap: 10px; padding: 14px 16px; }
+  a.tile.wide .icon { margin-bottom: 0; font-size: 22px; }
+  footer {
+    text-align: center;
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    padding: 18px 12px 24px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MVP Rentals</h1>
+  <div class="sub">Operations Hub</div>
+</header>
+
+<main>
+  <a class="tile primary" href="https://script.google.com/macros/s/AKfycbww4No3u0KRRqWcbMRfqNzgapHwLYvjA8t3RBUCe56dU82q11rw2tGQTr4EZjoTUw_E/exec">
+    <div class="icon">&#129529;</div>
+    <div class="label">Cleaning<br>Operations</div>
+  </a>
+  <a class="tile" href="https://script.google.com/macros/s/AKfycbyXO9zEQ8TMHXZLSsDPk6O7_lhyhsJH1FI-6tAUf4DTCrt6oQYWzlEIbP-59TKc0ARrWg/exec?token=will">
+    <div class="icon">&#128197;</div>
+    <div class="label">Reservation<br>Lifecycle</div>
+  </a>
+  <a class="tile" href="https://script.google.com/macros/s/AKfycbySJl8o0tWp-wJZjbB2hswcHr_9uBjqzDzHsEM55PawYNmlhtzS_Ty0U9qnybAZQOLYbQ/exec?token=will">
+    <div class="icon">&#128198;</div>
+    <div class="label">Occupancy<br>Calendar</div>
+  </a>
+  <a class="tile" href="https://a799608.github.io/mvp-guest-guides/">
+    <div class="icon">&#127968;</div>
+    <div class="label">Guest<br>Guides</div>
+  </a>
+
+  <a class="tile wide" href="file:///C:/Users/wmmmo/OneDrive/Desktop/Claude/MVP%20Rentals/MVP%20Rentals%20Claude%20Project%20File/Personal%20Dashboard/index.html">
+    <div class="icon">&#128203;</div>
+    <div class="label">Personal Dashboard (desktop only)</div>
+  </a>
+</main>
+
+<footer>v1 - 2026-05-15</footer>
+
+</body>
+</html>
