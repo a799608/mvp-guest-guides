@@ -28,13 +28,14 @@
 .btn{padding:7px 14px !important;font-size:.8rem !important}
 .checklist li{padding:6px 12px !important;font-size:.82rem !important}
 footer{margin-top:20px !important;padding:16px 12px !important}
-.canvas{position:relative;width:1200px;margin:0 auto;min-height:702px;background:#e4ede4;border-radius:12px;padding:10px}
+.canvas{position:relative;width:1200px;margin:0 auto;min-height:920px;background:#e4ede4;border-radius:12px;padding:10px}
 .pill{position:absolute;border-radius:10px;overflow:visible;box-shadow:0 2px 8px rgba(0,0,0,.12);background:#fdf8e8;border:2px solid transparent;font-family:"Segoe UI",system-ui,sans-serif !important;line-height:normal}
 .pill-header{padding:6px 12px;color:#fff;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:8px 8px 0 0;line-height:normal}
 .cat-default .pill-header{background:linear-gradient(90deg,#0d2e10,#1a5a2e)}
 .cat-beds .pill-header{background:linear-gradient(90deg,#1a3a5a,#2d5a7a)}
 .cat-climate .pill-header{background:linear-gradient(90deg,#1a4a2e,#2d7a4a)}
 .cat-kitchen .pill-header{background:linear-gradient(90deg,#2e5a1a,#4a8a2d)}
+.cat-alert .pill-header{background:linear-gradient(90deg,#b85c00,#e88a2b)}
 .pill-body{padding:8px 12px 10px;font-size:.78rem;line-height:1.45;color:#333}
 .pill-body p{margin-bottom:4px}
 .pill-body .note{border-left:3px solid #C8990A;background:#fff8e6;padding:4px 8px;font-size:.72rem;margin-top:6px;border-radius:0 4px 4px 0}
@@ -102,8 +103,17 @@ footer{background:#e4ede4 !important}
 <div class="info-row"><span class="info-label">Parking pass</span><span class="info-value">On kitchen table</span></div>
 <div class="info-row"><span class="info-label">Amenity Passes</span><span class="info-value">8 provided (same location)</span></div>
 </div></div>
+<div class="pill cat-alert" style="left:12px;top:159px;width:364px">
+<div class="pill-header">&#x1F3AB; AMENITY BADGES</div>
+<div class="pill-body">
+<p>The community issues one set of badges to be used all year by all guests.</p>
+<p>Badges are checked at the pool and beach during normal hours of operation and anyone over the age of 5 must have a badge.</p>
+<p>I have seen security ask people who are fishing at the lake to see them, but in general, they are not needed to just be "out and about" the community.</p>
+<p class="note danger">The replacement costs is $250 if any badge is lost. After the 3rd lost badge they suspend amenity use for the remainder of the year. Full forfeiture of your security deposit will occur if any badge is lost.</p>
+<p>I am sorry to have to be so strict about this.</p>
+</div></div>
 
-<div class="pill cat-beds" style="left:384px;top:433px;width:177px;height:242px">
+<div class="pill cat-beds" style="left:384px;top:480px;width:177px;height:242px">
 <div class="pill-header">&#x1F6CF;&#xFE0F; SLEEPING ARRANGMENTS</div>
 <div class="pill-body">
 <p><b style="font-size:0.78rem;">Sleeps 10</b></p>
@@ -122,7 +132,7 @@ footer{background:#e4ede4 !important}
 
 
 
-<div class="pill cat-default" style="left:10px;top:165px;width:366px;height:123px">
+<div class="pill cat-default" style="left:10px;top:490px;width:366px;height:123px">
 <div class="pill-header">&#x1F6AB; THE NOS</div>
 <div class="pill-body">
 <ul>
@@ -144,10 +154,10 @@ footer{background:#e4ede4 !important}
 <div class="pill-body">
 <ul><li>Controlled by individual room thermostats</li><li>Thermostats control heat only</li><li>Turn off when running A/C</li></ul>
 </div></div>
-<div class="pill cat-climate" style="left:383px;top:337px;width:398px;height:88px">
+<div class="pill cat-climate" style="left:383px;top:337px;width:398px;height:135px">
 <div class="pill-header">&#x2744;&#xFE0F; A/C</div>
 <div class="pill-body">
-<p>Large whole-house mini-split unit operated by remote. The remote is kept upstairs near the unit, with a second remote at the mantel.</p>
+<p>Large whole-house mini-split unit operated by remote. The remote is on right of mantel. There is a mode button on the side. A is A/C, H is heat. I am also able to control via a WIFI connection if you would like for me to set the temp for you.</p>
 </div></div>
 <div class="pill cat-climate" style="left:790px;top:273px;width:299px;height:206px">
 <div class="pill-header">&#x1F525; FIREPLACE</div>
@@ -156,7 +166,7 @@ footer{background:#e4ede4 !important}
 <p class="note danger">PLEASE DO NOT TOUCH LOG SET FOR ANY REASON.  Please do not use the fireplace while running the A/C.</p>
 </div></div>
 
-<div class="pill cat-default" style="left:9px;top:300px;width:175px;height:285px">
+<div class="pill cat-default" style="left:9px;top:625px;width:175px;height:285px">
 <div class="pill-header">&#x2705; WHAT'S PROVIDED</div>
 <div class="pill-body">
 <ul>
@@ -175,7 +185,7 @@ footer{background:#e4ede4 !important}
 </ul>
 </div></div>
 
-<div class="pill cat-default" style="left:193px;top:300px;width:183px;height:175px">
+<div class="pill cat-default" style="left:193px;top:625px;width:183px;height:175px">
 <div class="pill-header">&#x1F392; WHAT TO BRING</div>
 <div class="pill-body">
 <ul>
@@ -211,11 +221,12 @@ footer{background:#e4ede4 !important}
 <ul><li>Run exhaust vent anytime cooking with the range</li><li>Helps reduce strong odors</li></ul>
 </div></div>
 
-<div class="pill cat-kitchen" style="left:567px;top:435px;width:213px;height:158px">
+<div class="pill cat-kitchen" style="left:567px;top:482px;width:213px;height:158px">
 <div class="pill-header">&#x1F525; FIREPIT</div>
 <div class="pill-body">
 <p>Firepit is located near the charcoal grill and picnic table. You are welcome to use anytime we are not under a burn ban due to dry conditions. Firewood is not provided.</p>
 </div></div>
+
 </div>
 </section>
 <section>
