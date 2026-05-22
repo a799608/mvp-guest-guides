@@ -2,6 +2,8 @@
 
 Live guest-facing property guides for 6 Pocono Mountain vacation rentals.
 
+**Recent changes:** see [CHANGELOG.md](CHANGELOG.md) for a per-change record of edits, intent, and how to revert.
+
 ## Live URLs
 
 - **Landing Page:** https://a799608.github.io/mvp-guest-guides/
@@ -73,6 +75,18 @@ These pills are standardized across all properties:
 - The Nos
 - What's Provided
 - What to Bring
+- **AMENITY BADGES** (amber `cat-alert` header, sits directly below GETTING IN, identical content on all 6 -- community-wide single badge set, where checked, $250 replacement, 3-strike suspension, deposit forfeiture)
+
+## Pill Color Categories (`cat-*`)
+
+Each pill has a `cat-X` class controlling the header gradient:
+- `cat-default` -- dark green. General info pills.
+- `cat-beds` -- navy blue. Sleeping arrangements.
+- `cat-climate` -- mid green. Heat, A/C, Fireplace.
+- `cat-kitchen` -- light green. Charcoal Grill, Hood Vent, Firepit, Garbage Disposal, Gameroom.
+- `cat-alert` -- amber/orange. AMENITY BADGES (added 2026-05-22 for visual contrast against the other green pills).
+
+To add another color, define a new `.cat-NAME .pill-header{background:...}` rule in the inline `<style>` block of each property page that needs it.
 
 ## Checkout Checklist Differences
 
