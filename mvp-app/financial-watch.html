@@ -1,0 +1,590 @@
+<!doctype html><html><head><meta charset="utf-8"><title>MVP Rentals Financial Watch</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', 'Segoe UI', system-ui, sans-serif;
+  background: radial-gradient(ellipse at center, #2F7634 0%, #1F6224 35%, #0d2e10 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: #e8e8e8;
+}
+.brand {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.brand .line1 {
+  font-size: 32px;
+  letter-spacing: 6px;
+  color: #C8990A;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.brand .line2 {
+  font-size: 56px;
+  letter-spacing: 10px;
+  color: #C8990A;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 2px;
+  text-shadow: 0 0 18px rgba(200,153,10,0.55);
+}
+.brand .line3 {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #D6E8D6;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.watch-container {
+  position: relative;
+  width: 760px;
+  height: 760px;
+  max-width: 95vw;
+  max-height: 95vw;
+}
+.watch-container svg { display: block; width: 100%; height: 100%; }
+.mode-toggle {
+  display: inline-flex;
+  background: #0d2e10;
+  border: 2px solid #C8990A;
+  border-radius: 32px;
+  padding: 4px;
+  margin-bottom: 10px;
+  gap: 4px;
+}
+.view-toggle { margin-bottom: 16px; }
+.mt-btn {
+  background: transparent;
+  border: none;
+  color: #D6E8D6;
+  font-family: 'Helvetica Neue', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 9px 22px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.mt-btn:hover { color: #F8F5EF; }
+.mt-btn.active { background: #C8990A; color: #0d2e10; }
+.footer {
+  margin-top: 32px;
+  font-size: 10px;
+  color: #C8990A;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.refresh-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(13, 46, 16, 0.92);
+  z-index: 9999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #C8990A;
+}
+.refresh-overlay.active { display: flex; }
+.refresh-spinner {
+  width: 72px;
+  height: 72px;
+  border: 5px solid #C8990A;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: refreshspin 0.9s linear infinite;
+  margin-bottom: 24px;
+}
+.refresh-text {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+@keyframes refreshspin { to { transform: rotate(360deg); } }
+#refresh-crown:hover rect { filter: brightness(1.45); }
+</style></head>
+<body>
+<div class="brand">
+  <div class="line1">MVP Rentals</div>
+  <div class="line2">Property Watch</div>
+  <div class="line3">Swiss-Inspired Precision</div>
+</div>
+<div class="mode-toggle">
+  <button id="btn-dollars" class="mt-btn active" type="button">$ DOLLARS</button>
+  <button id="btn-nights" class="mt-btn" type="button">NIGHTS</button>
+</div>
+<div class="mode-toggle view-toggle">
+  <button id="btn-calendar" class="mt-btn active" type="button">CALENDAR YEAR</button>
+  <button id="btn-rolling" class="mt-btn" type="button">ROLLING 365</button>
+</div>
+<div id="refresh-overlay" class="refresh-overlay">
+  <div class="refresh-spinner"></div>
+  <div class="refresh-text">Refreshing from mvp_bookings...</div>
+</div>
+<div class="watch-container" id="watch"></div>
+<div class="footer">2026-05-24 16:05 &middot; Calibrated from mvp_bookings</div>
+
+<script>
+const DATA = [{"name": "Trails", "color": "#4BACC6", "calendar": {"dollars": {"py_total": 52128.77, "py_pit": 32642.0, "cy_book": 26420.71}, "nights": {"py_total": 228, "py_pit": 147, "cy_book": 118}}, "rolling": {"dollars": {"py_total": 46212.2, "py_pit": 0, "cy_book": 48269.14}, "nights": {"py_total": 191, "py_pit": 0, "cy_book": 215}}}, {"name": "Pound", "color": "#1B6B2A", "calendar": {"dollars": {"py_total": 49513.0, "py_pit": 24075.74, "cy_book": 30583.46}, "nights": {"py_total": 207, "py_pit": 100, "cy_book": 136}}, "rolling": {"dollars": {"py_total": 51641.63, "py_pit": 0, "cy_book": 53616.33}, "nights": {"py_total": 194, "py_pit": 0, "cy_book": 229}}}, {"name": "Milton", "color": "#70AD47", "calendar": {"dollars": {"py_total": 62741.85, "py_pit": 36709.06, "cy_book": 33544.3}, "nights": {"py_total": 191, "py_pit": 118, "cy_book": 99}}, "rolling": {"dollars": {"py_total": 65074.23, "py_pit": 0, "cy_book": 60486.88}, "nights": {"py_total": 193, "py_pit": 0, "cy_book": 179}}}, {"name": "Wylie", "color": "#ED7D31", "calendar": {"dollars": {"py_total": 45953.6, "py_pit": 26093.54, "cy_book": 31760.9}, "nights": {"py_total": 185, "py_pit": 110, "cy_book": 145}}, "rolling": {"dollars": {"py_total": 49949.51, "py_pit": 0, "cy_book": 46403.56}, "nights": {"py_total": 209, "py_pit": 0, "cy_book": 196}}}, {"name": "MacCauley", "color": "#A6261D", "calendar": {"dollars": {"py_total": 77027.54, "py_pit": 49186.21, "cy_book": 62078.71}, "nights": {"py_total": 201, "py_pit": 139, "cy_book": 154}}, "rolling": {"dollars": {"py_total": 75478.76, "py_pit": 0, "cy_book": 79633.3}, "nights": {"py_total": 189, "py_pit": 0, "cy_book": 199}}}, {"name": "Petrarch", "color": "#6D4C1F", "calendar": {"dollars": {"py_total": 53234.41, "py_pit": 27964.19, "cy_book": 27449.69}, "nights": {"py_total": 244, "py_pit": 141, "cy_book": 133}}, "rolling": {"dollars": {"py_total": 42451.77, "py_pit": 0, "cy_book": 53754.46}, "nights": {"py_total": 224, "py_pit": 0, "cy_book": 236}}}];
+const PORTFOLIO = {"name": "Portfolio", "color": "#d4a017", "calendar": {"dollars": {"py_total": 340599.17, "py_pit": 196670.74, "cy_book": 211837.77}, "nights": {"py_total": 1256, "py_pit": 755, "cy_book": 785}}, "rolling": {"dollars": {"py_total": 330808.1, "py_pit": 0, "cy_book": 342163.67}, "nights": {"py_total": 1200, "py_pit": 0, "cy_book": 1254}}};
+const SUBDIAL_ANGLES = [240, 288, 336, 24, 72, 120];
+const LOGO_B64 = "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";
+const TODAY = "MAY 24 2026";
+let MODE = "dollars";
+
+function metricD(d) { return d[VIEW][MODE]; }
+function metricP()  { return PORTFOLIO[VIEW][MODE]; }
+function pctVs(m)   {
+  const denom = m.py_pit > 0 ? m.py_pit : m.py_total;
+  return denom > 0 ? (m.cy_book - denom) / denom : 0;
+}
+function rankedSubdials() {
+  const sorted = [...DATA].sort((a, b) => pctVs(b[VIEW][MODE]) - pctVs(a[VIEW][MODE]));
+  return sorted.map((d, i) => ({name: d.name, angle: SUBDIAL_ANGLES[i]}));
+}
+function fmtValLong(n) {
+  if (MODE === "nights") return Math.round(n).toLocaleString() + " nights";
+  return "$" + Math.round(n).toLocaleString();
+}
+const BOTTOM = {"left": {"label": "BOOKED 30D", "dollars": {"py_total": 25450.95, "py_pit": 0, "cy_book": 34037.0}, "nights": {"py_total": 93, "py_pit": 0, "cy_book": 126}}, "right": {"label": "STAYS 7D", "dollars": {"py_total": 2848.87, "py_pit": 0, "cy_book": 2715.55}, "nights": {"py_total": 13, "py_pit": 0, "cy_book": 10}}};
+let VIEW = "calendar";  // toggled between "calendar" and "rolling"
+
+function renderSmallDial(scx, scy, r, dialData, title) {
+  const v = dialData[MODE];
+  const py_total = v.py_total || 0;
+  const SCALE = 0.5;  // plus/minus 50% from LY hits the dial endpoints
+  const pctVsLY = py_total > 0 ? (v.cy_book - py_total) / py_total : 0;
+  const dev = Math.max(-1, Math.min(1, pctVsLY / SCALE));
+  const needleAng = (dev * 90 + 360) % 360;  // dev=0 -> 0 (top = LY midpoint), dev=-1 -> 270 (left = -50%), dev=+1 -> 90 (right = +50%)
+  const overshoot = Math.abs(pctVsLY) > SCALE;
+  const above = pctVsLY >= 0;
+  const thick = 7;
+  const startAng = 270, endAng = 90;
+  const track = arcPath(scx, scy, r, startAng, endAng);
+  const [nx, ny] = polar(scx, scy, r - thick/2 - 2, needleAng);
+  let out = "";
+  // Face backing (midnight blue ring matching sub-dials)
+  out += `<circle cx="${scx}" cy="${scy}" r="${r + thick/2 + 12}" fill="#14224a" stroke="#7a8090" stroke-width="1.5"/>`;
+  out += `<circle cx="${scx}" cy="${scy}" r="${r + thick/2 + 8}" fill="#1e2e5a" stroke="#5a6072" stroke-width="0.5"/>`;
+  // Track
+  out += `<path d="${track}" stroke="#FFFFFF" stroke-width="${thick}" fill="none" stroke-linecap="butt"/>`;
+  // Tick marks at -50%, -25%, 0 (LY = midpoint), +25%, +50%
+  const tickAngs = [-90, -45, 0, 45, 90];
+  for (let i = 0; i < tickAngs.length; i++) {
+    const tAng = (tickAngs[i] + 360) % 360;
+    const innerR = r - thick/2 - 2;
+    const outerR = r + thick/2 + (i === 2 ? 7 : 3);
+    const [tx1, ty1] = polar(scx, scy, innerR, tAng);
+    const [tx2, ty2] = polar(scx, scy, outerR, tAng);
+    const tcol = (i === 2) ? "#C8990A" : "#8a8f9c";
+    const tw   = (i === 2) ? 2.2 : 1;
+    out += `<line x1="${tx1}" y1="${ty1}" x2="${tx2}" y2="${ty2}" stroke="${tcol}" stroke-width="${tw}"/>`;
+  }
+  // Title above
+  out += `<text x="${scx}" y="${scy - r - 14}" fill="#C8990A" font-size="8" font-weight="700" text-anchor="middle" letter-spacing="1.5">${title}</text>`;
+  // LY label at TOP (12 o'clock = midpoint)
+  if (py_total > 0) {
+    const [lyx, lyy] = polar(scx, scy, r + thick/2 + 13, 0);
+    out += `<text x="${lyx}" y="${lyy}" fill="#C8990A" font-size="7" font-weight="700" text-anchor="middle" dominant-baseline="middle">LY ${fmtValShort(py_total)}</text>`;
+  }
+  // plus/minus 50% endpoint labels
+  const [lLx, lLy] = polar(scx, scy, r + thick/2 + 9, 270);
+  const [lRx, lRy] = polar(scx, scy, r + thick/2 + 9, 90);
+  out += `<text x="${lLx}" y="${lLy}" fill="#8a8f9c" font-size="6" text-anchor="middle" dominant-baseline="middle">-50%</text>`;
+  out += `<text x="${lRx}" y="${lRy}" fill="#8a8f9c" font-size="6" text-anchor="middle" dominant-baseline="middle">+50%</text>`;
+  // Needle (green above LY, red below; gold for overshoot beyond plus/minus 50%)
+  const [bLx, bLy] = polar(scx, scy, 2.5, needleAng - 90);
+  const [bRx, bRy] = polar(scx, scy, 2.5, needleAng + 90);
+  const needleColor = overshoot ? "#fbbf24" : (above ? "#22c55e" : "#DC2626");
+  out += `<polygon points="${bLx},${bLy} ${nx},${ny} ${bRx},${bRy}" fill="${needleColor}" stroke="#1a1a1a" stroke-width="0.3"/>`;
+  out += `<circle cx="${scx}" cy="${scy}" r="2.5" fill="#0a0c10" stroke="${needleColor}" stroke-width="1"/>`;
+  // CY value (centered, below center) - colored by direction
+  out += `<text x="${scx}" y="${scy + r * 0.65}" fill="${needleColor}" font-size="9" font-weight="700" text-anchor="middle" font-family="Consolas, monospace">${fmtValLong(v.cy_book)}</text>`;
+  // % vs LY (small, below CY value)
+  if (py_total > 0) {
+    const sign = pctVsLY >= 0 ? "+" : "";
+    const col  = pctVsLY >= 0 ? "#4ade80" : "#f87171";
+    out += `<text x="${scx}" y="${scy + r * 0.95}" fill="${col}" font-size="7" font-weight="600" text-anchor="middle">${sign}${(pctVsLY * 100).toFixed(0)}% vs LY</text>`;
+  }
+  return out;
+}
+
+function fmtValShort(n) {
+  if (MODE === "nights") return Math.round(n).toString();
+  if (Math.abs(n) >= 10000) return "$" + Math.round(n / 1000) + "K";
+  if (Math.abs(n) >= 1000)  return "$" + (n / 1000).toFixed(1) + "K";
+  return "$" + Math.round(n);
+}
+
+// ---------- Geometry helpers ----------
+function polar(cx, cy, r, angDeg) {
+  // angDeg: 0 = top (12), increases clockwise (90 = right/3, 180 = bottom/6, 270 = left/9)
+  const a = (angDeg - 90) * Math.PI / 180.0;
+  return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+}
+
+function arcPath(cx, cy, r, startAng, endAng) {
+  const [x1, y1] = polar(cx, cy, r, startAng);
+  const [x2, y2] = polar(cx, cy, r, endAng);
+  const delta = ((endAng - startAng) + 360) % 360;
+  const largeArc = delta > 180 ? 1 : 0;
+  return `M ${x1} ${y1} A ${r} ${r} 0 ${largeArc} 1 ${x2} ${y2}`;
+}
+
+function fmt$(n) {
+  return "$" + Math.round(n).toLocaleString();
+}
+function fmtK(n) {
+  if (Math.abs(n) >= 10000) return "$" + Math.round(n/1000) + "K";
+  return "$" + Math.round(n);
+}
+
+// ---------- Dial renderer ----------
+// 180-degree arc from 270 (=9 o'clock, left horizon) sweeping clockwise to 90 (=3 o'clock).
+// 0% at 270, 50% at 0/360 (12 o'clock top), 100% at 90.
+// For a 180-deg sweep, percent p maps to angle 270 + p * 180, modulo 360.
+function dialArcAngle(pct) {
+  return (270 + pct * 180) % 360;
+}
+
+function renderDial(d, cx, cy, r, opts) {
+  opts = opts || {};
+  const thick = opts.thick || (r * 0.18);
+  const nameSize = opts.nameSize || (r * 0.18);
+  const valueSize = opts.valueSize || (r * 0.20);
+  const isMain = opts.isMain || false;
+
+  const v = metricD(d);
+  const py_total = v.py_total || 0;
+  const ROLLING_SCALE = 0.5;
+  let pct_pit, pct_cy, needleAngOverride, overshoot;
+  if (VIEW === "rolling") {
+    const pctVsLY = py_total > 0 ? (v.cy_book - py_total) / py_total : 0;
+    const dev = Math.max(-1, Math.min(1, pctVsLY / ROLLING_SCALE));
+    needleAngOverride = (dev * 90 + 360) % 360;
+    pct_pit = 0;
+    pct_cy = (dev + 1) / 2;
+    overshoot = Math.abs(pctVsLY) > ROLLING_SCALE;
+  } else {
+    pct_pit  = py_total > 0 ? Math.min(v.py_pit  / py_total, 1.0) : 0;
+    pct_cy   = py_total > 0 ? Math.min(v.cy_book / py_total, 1.0) : 0;
+    overshoot = py_total > 0 && v.cy_book > py_total;
+    needleAngOverride = null;
+  }
+
+  const startAng = 270;
+  const endAng = 90; // crosses through 0/360
+  const pitEnd = dialArcAngle(pct_pit);
+
+  // Track (full 180 arc)
+  const track = arcPath(cx, cy, r, startAng, endAng);
+  // Shaded last-year-pit fill
+  const shaded = pct_pit > 0.001 ? arcPath(cx, cy, r, startAng, pitEnd) : null;
+
+  // Tick marks: 0, 25, 50, 75, 100
+  let ticks = "";
+  if (VIEW === "rolling") {
+    const tickAngles = [-90, -45, 0, 45, 90];
+    for (let i = 0; i < tickAngles.length; i++) {
+      const tAng = (tickAngles[i] + 360) % 360;
+      const innerR = r - thick/2 - 3;
+      const outerR = r + thick/2 + (i === 2 ? 12 : (i % 2 === 0 ? 8 : 4));
+      const [tx1, ty1] = polar(cx, cy, innerR, tAng);
+      const [tx2, ty2] = polar(cx, cy, outerR, tAng);
+      const tw = (i === 2) ? 3 : 1.5;
+      const col = (i === 2) ? "#C8990A" : "#8a8f9c";
+      ticks += `<line x1="${tx1}" y1="${ty1}" x2="${tx2}" y2="${ty2}" stroke="${col}" stroke-width="${tw}"/>`;
+    }
+  } else {
+    for (let i = 0; i <= 4; i++) {
+      const tAng = dialArcAngle(i / 4);
+      const innerR = r - thick/2 - 3;
+      const outerR = r + thick/2 + (i % 2 === 0 ? 8 : 4);
+      const [tx1, ty1] = polar(cx, cy, innerR, tAng);
+      const [tx2, ty2] = polar(cx, cy, outerR, tAng);
+      const tw = (i % 2 === 0) ? 2 : 1.2;
+      const col = (i === 2) ? "#C8990A" : "#8a8f9c";
+      ticks += `<line x1="${tx1}" y1="${ty1}" x2="${tx2}" y2="${ty2}" stroke="${col}" stroke-width="${tw}"/>`;
+    }
+  }
+  // 50% label "12"
+  if (isMain) {
+    const [lx, ly] = polar(cx, cy, r + thick/2 + 22, 0);
+    ticks += `<text x="${lx}" y="${ly}" fill="#d4a017" font-size="14" font-weight="600" text-anchor="middle" dominant-baseline="middle">50%</text>`;
+    const [lx0, ly0] = polar(cx, cy, r + thick/2 + 22, 270);
+    ticks += `<text x="${lx0}" y="${ly0}" fill="#888" font-size="11" text-anchor="middle" dominant-baseline="middle">$0</text>`;
+    const [lx1, ly1] = polar(cx, cy, r + thick/2 + 22, 90);
+    ticks += `<text x="${lx1}" y="${ly1}" fill="#888" font-size="11" text-anchor="middle" dominant-baseline="middle">${fmtK(py_total)}</text>`;
+  }
+
+  // Needle (use rolling override or default calendar mapping)
+  const needleAng = needleAngOverride !== null ? needleAngOverride : dialArcAngle(pct_cy);
+  const needleLen = r - thick/2 - 3;
+  const [nx, ny] = polar(cx, cy, needleLen, needleAng);
+  const needleColor = overshoot ? "#fbbf24" : "#DC2626";
+  // Perimeter triangle marker for main dial (instead of radial needle)
+  let perimeterMarker = "";
+  if (isMain && pct_cy > 0) {
+    const [mx, my] = polar(cx, cy, r - thick/2 - 2, needleAng);
+    const [tipx, tipy] = polar(cx, cy, r - thick/2 - 18, needleAng);
+    const [lx, ly] = polar(cx, cy, r - thick/2 - 14, needleAng - 4);
+    const [rx, ry] = polar(cx, cy, r - thick/2 - 14, needleAng + 4);
+    perimeterMarker = `<polygon points="${mx},${my} ${lx},${ly} ${rx},${ry}" fill="${needleColor}" stroke="${d.color}" stroke-width="1"/>`;
+  }
+
+  // Sub-dial face circle
+  const faceFill = isMain
+    ? `<defs><radialGradient id="mainFace" cx="50%" cy="35%"><stop offset="0%" stop-color="#F8F5EF"/><stop offset="100%" stop-color="#070809"/></radialGradient></defs>`
+    : "";
+
+  // Property name label (above center)
+  const nameY = cy - r * 0.30;
+  // Value label (below center)
+  const valueY = cy + r * 0.55;
+  const compareY = cy + r * 0.75;
+
+  // Compare text (% vs LY pace) + LY full year value
+  let cmp = "";
+  if (v.py_pit > 0 && !isMain) {
+    const diff = v.cy_book - v.py_pit;
+    const pct = diff / v.py_pit * 100;
+    const sign = diff >= 0 ? "+" : "";
+    const cls_color = diff >= 0 ? "#4ade80" : "#f87171";
+    const txt = `${sign}${pct.toFixed(0)}% vs LY`;
+    cmp = `<text x="${cx}" y="${compareY}" fill="${cls_color}" font-size="9" font-weight="600" text-anchor="middle" dominant-baseline="middle">${txt}</text>`;
+  }
+  // LY full-year value placement
+  let lyLabel = "";
+  if (!isMain && v.py_total > 0) {
+    if (VIEW === "rolling") {
+      const [lex, ley] = polar(cx, cy, r + thick/2 + 14, 0);
+      lyLabel = `<text x="${lex}" y="${ley}" fill="#C8990A" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="middle">${fmtValShort(v.py_total)}</text>`;
+    } else {
+      const [lex, ley] = polar(cx, cy, r - thick/2 - 4, 90);
+      lyLabel = `<text x="${lex - 2}" y="${ley + 10}" fill="#a8b0c2" font-size="9" font-weight="700" text-anchor="end">${fmtValShort(v.py_total)}</text>`;
+    }
+  }
+
+  return `
+    ${faceFill}
+    <circle cx="${cx}" cy="${cy}" r="${r + thick/2 + 16}" fill="${isMain ? '#F8F5EF' : '#14224a'}" stroke="${isMain ? '#1F6224' : '#7a8090'}" stroke-width="${isMain ? 3 : 2}"/>
+    <circle cx="${cx}" cy="${cy}" r="${r + thick/2 + 12}" fill="${isMain ? 'url(#mainFace)' : '#1e2e5a'}" stroke="${isMain ? '#5a6072' : '#5a6072'}" stroke-width="${isMain ? 1 : 0.5}"/>
+    <path d="${track}" stroke="${isMain ? '#c4baa4' : '#FFFFFF'}" stroke-width="${thick}" fill="none" stroke-linecap="butt"/>
+    ${(!isMain && VIEW === 'rolling') ? `<path d="${arcPath(cx, cy, r, 270, 0)}" stroke="${d.color}" stroke-width="${thick}" fill="none" stroke-linecap="butt" opacity="0.95"/>` : ""}
+    ${shaded ? `<path d="${shaded}" stroke="${d.color}" stroke-width="${thick}" fill="none" stroke-linecap="butt" opacity="0.95"/>` : ""}
+    ${ticks}
+    ${isMain ? "" : `<text x="${cx}" y="${nameY}" fill="#F8F5EF" font-size="${nameSize}" font-weight="500" font-family="Helvetica Neue, Segoe UI, system-ui, sans-serif" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">${d.name.toUpperCase()}</text>`}
+    ${isMain ? "" : (() => {
+      const baseW = 3.2;
+      const [bLx, bLy] = polar(cx, cy, baseW, needleAng - 90);
+      const [bRx, bRy] = polar(cx, cy, baseW, needleAng + 90);
+      return `<polygon points="${bLx},${bLy} ${nx},${ny} ${bRx},${bRy}" fill="${needleColor}" stroke="#8B0000" stroke-width="0.4"/>`;
+    })()}
+    ${perimeterMarker}
+    ${isMain ? "" : `<circle cx="${cx}" cy="${cy}" r="${r * 0.10}" fill="#0a0c10" stroke="${d.color}" stroke-width="1.5"/><circle cx="${cx}" cy="${cy}" r="${r * 0.04}" fill="${d.color}"/>`}
+    ${opts.suppressValue ? "" : `<text x="${cx}" y="${valueY}" fill="${isMain ? (overshoot ? '#fbbf24' : '#F8F5EF') : (overshoot ? '#fbbf24' : '#DC2626')}" font-size="${valueSize}" font-weight="700" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, monospace">${fmtValLong(v.cy_book)}</text>`}
+    ${cmp}
+    ${lyLabel}
+  `;
+}
+
+// ---------- Render watch ----------
+function render() {
+  const W = 760, H = 760;
+  const cx = W/2, cy = H/2;
+  let svg = `<svg viewBox="0 0 ${W} ${H}">`;
+  svg += `<defs>
+    <radialGradient id="case" cx="50%" cy="40%">
+      <stop offset="0%" stop-color="#e2e6ec"/>
+      <stop offset="60%" stop-color="#9aa0aa"/>
+      <stop offset="100%" stop-color="#4a505c"/>
+    </radialGradient>
+    <radialGradient id="face" cx="50%" cy="35%">
+      <stop offset="0%" stop-color="#F8F5EF"/>
+      <stop offset="60%" stop-color="#EBE4D2"/>
+      <stop offset="100%" stop-color="#D6CDB3"/>
+    </radialGradient>
+    <clipPath id="logoClip"><circle cx="${cx}" cy="${cy}" r="75"/></clipPath>
+  </defs>`;
+  svg += `<circle cx="${cx}" cy="${cy}" r="375" fill="url(#case)" stroke="#1a1d24" stroke-width="2"/>`;
+  svg += `<circle cx="${cx}" cy="${cy}" r="345" fill="url(#face)" stroke="#1F6224" stroke-width="1"/>`;
+  svg += `<g id="refresh-crown" style="cursor:pointer">`;
+  svg += `<title>Click to refresh from mvp_bookings</title>`;
+  svg += `<rect x="${cx + 370}" y="${cy - 15}" width="20" height="30" fill="#7a8090" stroke="#aab0bc" stroke-width="1" rx="3"/>`;
+  svg += `<rect x="${cx + 373}" y="${cy - 10}" width="14" height="20" fill="#5a6072"/>`;
+  svg += `<text x="${cx + 380}" y="${cy + 4}" fill="#C8990A" font-size="14" font-weight="700" text-anchor="middle" pointer-events="none" font-family="Arial, sans-serif">&#x21bb;</text>`;
+  svg += `</g>`;
+
+  // === Main perimeter arc ===
+  const mainR = 320;
+  const mainThick = 26;
+  const startAng = 270, endAng = 90;
+  const mp = metricP();
+  let pct_pit_p, pct_cy_p, mainNeedleAngOverride, mainOvershoot;
+  if (VIEW === "rolling") {
+    const ROLLING_SCALE = 0.5;
+    const pctVsLY = mp.py_total > 0 ? (mp.cy_book - mp.py_total) / mp.py_total : 0;
+    const dev = Math.max(-1, Math.min(1, pctVsLY / ROLLING_SCALE));
+    mainNeedleAngOverride = (dev * 90 + 360) % 360;
+    pct_pit_p = 0;
+    pct_cy_p = (dev + 1) / 2;
+    mainOvershoot = Math.abs(pctVsLY) > ROLLING_SCALE;
+  } else {
+    pct_pit_p  = mp.py_total > 0 ? Math.min(mp.py_pit  / mp.py_total, 1.0) : 0;
+    pct_cy_p   = mp.py_total > 0 ? Math.min(mp.cy_book / mp.py_total, 1.0) : 0;
+    mainNeedleAngOverride = null;
+    mainOvershoot = mp.py_total > 0 && mp.cy_book > mp.py_total;
+  }
+  const trackPath = arcPath(cx, cy, mainR, startAng, endAng);
+  const shadedAng = (270 + pct_pit_p * 180) % 360;
+  const shadedPath = (VIEW !== "rolling" && pct_pit_p > 0.001) ? arcPath(cx, cy, mainR, startAng, shadedAng) : null;
+  svg += `<path d="${trackPath}" stroke="#c4baa4" stroke-width="${mainThick}" fill="none"/>`;
+  if (shadedPath) svg += `<path d="${shadedPath}" stroke="${PORTFOLIO.color}" stroke-width="${mainThick}" fill="none" opacity="0.75"/>`;
+  const mainTickAngles = (VIEW === "rolling")
+    ? [-90, -45, 0, 45, 90].map(a => (a + 360) % 360)
+    : [0, 1, 2, 3, 4].map(i => (270 + (i/4) * 180) % 360);
+  for (let i = 0; i < mainTickAngles.length; i++) {
+    const tAng = mainTickAngles[i];
+    const innerR = mainR - mainThick/2 - 3;
+    const outerR = mainR + mainThick/2 + (i === 2 ? 14 : (i % 2 === 0 ? 10 : 5));
+    const [tx1, ty1] = polar(cx, cy, innerR, tAng);
+    const [tx2, ty2] = polar(cx, cy, outerR, tAng);
+    const col = (i === 2) ? '#C8990A' : '#1F6224';
+    const tw = (i === 2) ? 3.5 : 1.5;
+    svg += `<line x1="${tx1}" y1="${ty1}" x2="${tx2}" y2="${ty2}" stroke="${col}" stroke-width="${tw}"/>`;
+  }
+  const [lx50, ly50] = polar(cx, cy, mainR + mainThick/2 + 22, 0);
+  const centerLabel = (VIEW === "rolling") ? "LY " + fmtValShort(mp.py_total) : "50%";
+  svg += `<text x="${lx50}" y="${ly50}" fill="#C8990A" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="middle">${centerLabel}</text>`;
+  const [lx0, ly0] = polar(cx, cy, mainR - mainThick/2 - 14, 270);
+  const leftLabel = (VIEW === "rolling") ? "-50%" : (MODE === "nights" ? "0" : "$0");
+  svg += `<text x="${lx0}" y="${ly0}" fill="#1F6224" font-size="10" font-weight="600" text-anchor="middle" dominant-baseline="middle">${leftLabel}</text>`;
+  const [lx100, ly100] = polar(cx, cy, mainR - mainThick/2 - 16, 90);
+  const rightLabel = (VIEW === "rolling") ? "+50%" : fmtValShort(mp.py_total);
+  svg += `<text x="${lx100}" y="${ly100}" fill="#1F6224" font-size="10" font-weight="600" text-anchor="middle" dominant-baseline="middle">${rightLabel}</text>`;
+  // (perimeter triangle marker removed - replaced by red main needle drawn last)
+
+  // === Sub-dials ===
+  const subR_dist = 208;
+  const subR_size = 54;
+  rankedSubdials().forEach(sd => {
+    const d = DATA.find(x => x.name === sd.name);
+    if (!d) return;
+    const [sx, sy] = polar(cx, cy, subR_dist, sd.angle);
+    svg += renderDial(d, sx, sy, subR_size, {thick: 10, nameSize: 10, valueSize: 12, isMain: false});
+  });
+
+  // === Logo dead center ===
+  const logoR = 75;
+  svg += `<circle cx="${cx}" cy="${cy}" r="${logoR + 8}" fill="#F8F5EF" stroke="#1F6224" stroke-width="2"/>`;
+  svg += `<circle cx="${cx}" cy="${cy}" r="${logoR + 4}" fill="#F8F5EF" stroke="#C8990A" stroke-width="0.5"/>`;
+  if (LOGO_B64) {
+    const sz = logoR * 2;
+    svg += `<image x="${cx - logoR}" y="${cy - logoR}" width="${sz}" height="${sz}" href="data:image/webp;base64,${LOGO_B64}" clip-path="url(#logoClip)"/>`;
+  }
+
+  // === Bottom flanking small dials ===
+  const smallR = 28;
+  svg += renderSmallDial(cx - 175, cy + 235, smallR, BOTTOM.left,  BOTTOM.left.label);
+  svg += renderSmallDial(cx + 175, cy + 235, smallR, BOTTOM.right, BOTTOM.right.label);
+
+  // === Bottom text stack (between MacCauley at 8 and Wylie at 4) ===
+  const baseline = mp.py_pit > 0 ? mp.py_pit : mp.py_total;
+  const pdiff = mp.cy_book - baseline;
+  const ppct = baseline > 0 ? (pdiff / baseline * 100) : 0;
+  const psign = pdiff >= 0 ? '+' : '';
+  const pcol = pdiff >= 0 ? '#1F6224' : '#9b1c1c';
+  let by = cy + 175;
+  const topLabel = VIEW === "rolling" ? "PORTFOLIO TRAILING 12M" : "PORTFOLIO 2026";
+  const vsLabel  = VIEW === "rolling" ? "vs prior 365D" : "vs LY same date";
+  const bottomLabel = VIEW === "rolling" ? "PRIOR 365D" : "2025 FULL YEAR";
+  svg += `<text x="${cx}" y="${by}" fill="#1F6224" font-size="10" font-weight="600" text-anchor="middle" letter-spacing="3" dominant-baseline="middle">${topLabel}</text>`;
+  by += 28;
+  svg += `<text x="${cx}" y="${by}" fill="#DC2626" font-size="28" font-weight="700" text-anchor="middle" font-family="Consolas, monospace" dominant-baseline="middle">${fmtValLong(mp.cy_book)}</text>`;
+  by += 22;
+  svg += `<text x="${cx}" y="${by}" fill="${pcol}" font-size="11" font-weight="600" text-anchor="middle" dominant-baseline="middle">${psign}${fmtValLong(pdiff)} ${vsLabel} (${psign}${ppct.toFixed(0)}%)</text>`;
+  by += 18;
+  svg += `<text x="${cx}" y="${by}" fill="#6a8470" font-size="9" font-weight="600" text-anchor="middle" dominant-baseline="middle" letter-spacing="2">${bottomLabel} ${fmtValLong(mp.py_total).toUpperCase()}</text>`;
+  by += 28;
+  svg += `<rect x="${cx - 50}" y="${by - 15}" width="100" height="28" fill="#F8F5EF" stroke="#1F6224" stroke-width="1.5" rx="2"/>`;
+  svg += `<text x="${cx}" y="${by}" fill="#0d2e10" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, monospace">${TODAY}</text>`;
+
+  // === MAIN RED NEEDLE: from center of MVP logo out to perimeter at CY position ===
+  if (mp.py_total > 0) {
+    const cyPct = Math.min(mp.cy_book / mp.py_total, 1.0);
+    const overshoot = mainOvershoot;
+    const nAng = (mainNeedleAngOverride !== null) ? mainNeedleAngOverride : (270 + cyPct * 180) % 360;
+    const tipR = mainR - mainThick/2 - 4;
+    const [tipX, tipY] = polar(cx, cy, tipR, nAng);
+    // Tapered tail: width 6 at the center pivot, tapering to 1 at the tip
+    const [lx, ly] = polar(cx, cy, 8, nAng - 90);
+    const [rx, ry] = polar(cx, cy, 8, nAng + 90);
+    const needleFill = overshoot ? "#fbbf24" : "#DC2626";
+    // Drop shadow for depth
+    svg += `<polygon points="${lx + 2},${ly + 2} ${tipX + 2},${tipY + 2} ${rx + 2},${ry + 2}" fill="#000000" opacity="0.35"/>`;
+    // Main needle
+    svg += `<polygon points="${lx},${ly} ${tipX},${tipY} ${rx},${ry}" fill="${needleFill}" stroke="#8B0000" stroke-width="0.6"/>`;
+    // Center pivot dot (sits over the logo center)
+    svg += `<circle cx="${cx}" cy="${cy}" r="5" fill="#1a1d24" stroke="${needleFill}" stroke-width="2"/>`;
+    svg += `<circle cx="${cx}" cy="${cy}" r="2" fill="${needleFill}"/>`;
+  }
+  svg += '</svg>';
+  document.getElementById('watch').innerHTML = svg;
+  const crown = document.getElementById('refresh-crown');
+  if (crown) {
+    crown.addEventListener('click', async () => {
+      const overlay = document.getElementById('refresh-overlay');
+      if (overlay) overlay.classList.add('active');
+      try {
+        const r = await fetch('http://127.0.0.1:8765/refresh-watch', {method: 'POST'});
+        const j = await r.json();
+        if (j.ok) {
+          location.reload();
+        } else {
+          if (overlay) overlay.classList.remove('active');
+          alert('Refresh failed: ' + (j.error || 'unknown'));
+        }
+      } catch (e) {
+        if (overlay) overlay.classList.remove('active');
+        alert('Webhook unreachable at 127.0.0.1:8765 - ' + e.message);
+      }
+    });
+  }
+}
+render();
+document.getElementById("btn-dollars").addEventListener("click", () => {
+  if (MODE === "dollars") return;
+  MODE = "dollars";
+  document.getElementById("btn-dollars").classList.add("active");
+  document.getElementById("btn-nights").classList.remove("active");
+  render();
+});
+document.getElementById("btn-nights").addEventListener("click", () => {
+  if (MODE === "nights") return;
+  MODE = "nights";
+  document.getElementById("btn-nights").classList.add("active");
+  document.getElementById("btn-dollars").classList.remove("active");
+  render();
+});
+document.getElementById("btn-calendar").addEventListener("click", () => {
+  if (VIEW === "calendar") return;
+  VIEW = "calendar";
+  document.getElementById("btn-calendar").classList.add("active");
+  document.getElementById("btn-rolling").classList.remove("active");
+  render();
+});
+document.getElementById("btn-rolling").addEventListener("click", () => {
+  if (VIEW === "rolling") return;
+  VIEW = "rolling";
+  document.getElementById("btn-rolling").classList.add("active");
+  document.getElementById("btn-calendar").classList.remove("active");
+  render();
+});
+</script>
+</body></html>
