@@ -29,7 +29,7 @@ body{
   background:var(--bg);color:var(--ink);
   font-family:var(--font-sans);font-size:16px;line-height:1.5;
   -webkit-font-smoothing:antialiased;
-  padding-bottom:84px; /* room for sticky action bar */
+  padding-bottom:24px;
 }
 .wrap{max-width:640px;margin:0 auto}
 h1,h2,h3{font-family:var(--font-display);color:var(--gold-soft);line-height:1.15;font-weight:700}
@@ -319,9 +319,6 @@ a{color:var(--gold-soft)}
   <footer>MVP Rentals · Milton · 121 Milton Way, Albrightsville PA</footer>
 </div>
 
-<div class="actionbar">
-  <a class="btn btn-gold" href="sms:+16106210769?&body=Hi%20Will%2C%20I'm%20at%20the%20Milton%20house%20and%20had%20a%20question%3A%20"><svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>Message Will</a>
-</div>
 <div class="toast" id="toast">Copied ✓</div>
 <script>
 var toast=document.getElementById("toast"),tT;
