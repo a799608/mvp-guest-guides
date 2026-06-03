@@ -132,3 +132,16 @@ Send guests the direct link to their property before arrival. Example:
 > "Here's your guest guide for your stay: https://a799608.github.io/mvp-guest-guides/trails/"
 
 Guests cannot navigate to other properties — the All Properties link has been removed from individual pages. The landing page is for admin use only.
+
+
+## Guide generator (build_v2.py)
+
+The six property guides (`<prop>/index.html`) are GENERATED, not hand-edited.
+
+- Source of content: `<prop>/v1.html` (the archived original guide).
+- `build_v2.py` parses each v1, regenerates it in the dark-editorial brand, and
+  writes both `index.html` (live) and `v2.html` (mirror).
+- To change all six at once: edit `build_v2.py`, run `python build_v2.py`, then
+  QA with `phone_qa/phone_qa.py` before pushing.
+- Do NOT hand-edit `index.html`/`v2.html` (a regen overwrites them); change the
+  source (`v1.html`) or the generator.
