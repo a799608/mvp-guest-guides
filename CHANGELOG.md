@@ -4,6 +4,39 @@ Significant changes to the guest guide pages. Newest first.
 
 ---
 
+## 2026-06-03 -- Mobile-rendering fixes + phone QA tool
+
+### Fixed
+
+**Petrarch mobile layout.** On phones, Petrarch's info pills did not collapse
+into a single column like the other five pages — they stayed in the shrunken
+desktop multi-column canvas with overlapping, microscopic text. Root cause: its
+`@media(max-width:768px)` `.pill` rule was missing `position:static!important`
+(it had `grid-column:span 1` instead), so the absolutely-positioned pills never
+dropped into normal flow. Fixed by matching the rule to the other five pages.
+
+**"Edit Layout" button visible to guests (all 6 pages).** Every page loaded
+`<script src="../assets/editor.js"></script>`, which unconditionally injected the
+dev-only Edit/Save Layout buttons. Removed the script tag from all six pages.
+(editor.js remains in `assets/` for local layout authoring.)
+
+Both fixes verified live in Chromium + WebKit at 320/390/430px. Commit `3f3e45d`.
+
+### Added
+
+**`phone_qa/`** — an automated mobile-rendering QA tool. Renders every guide at
+phone widths in both browser engines and checks horizontal overflow, tiny text,
+tap-target size, viewport meta, and stray dev UI. **Run before every push.** See
+`phone_qa/README.md`. Root cause of the Petrarch breakage was the absence of any
+mobile QA gate, not the CSS line itself.
+
+### Known accepted
+
+Summary-bar overflows 2–3px at 320px in WebKit only (legacy small phones);
+every current phone ≥375px is clean. Not yet fixed.
+
+---
+
 ## 2026-05-22 -- AMENITY BADGES pill + Trails A/C wording
 
 ### Added

@@ -4,6 +4,40 @@ Significant changes to the iPhone PWA launcher (`mvp-app/`). Newest first.
 
 ---
 
+## 2026-06-03 -- v3: Booking Website tile
+
+### Added
+
+**Booking Website wide tile** inserted between the 2x2 main grid and the
+Financial Watch wide tile.
+
+- Icon: globe (`&#127760;`).
+- Style: `tile wide primary` (full-width, gold background) so the public-facing
+  site stands out from the internal-ops tiles.
+- Link target: `https://a799608.github.io/mvp-rentals-website/` — the public
+  direct-booking website (separate `mvp-rentals-website` repo).
+
+### Changed
+
+Footer version stamp `v2 - 2026-05-24` -> `v3 - 2026-06-03`.
+
+### Why
+
+Will wanted one-tap access to the public booking site from the same home-screen
+launcher that holds the ops dashboards.
+
+### Reverting
+
+Delete the three-line `<a class="tile wide primary" href="https://a799608.github.io/mvp-rentals-website/">...</a>`
+block in `mvp-app/index.html` (sits just above the Financial Watch tile), bump
+the footer stamp, commit and push.
+
+### Source commit
+
+`9ba6447` on `main`.
+
+---
+
 ## 2026-05-24 -- v2: Financial Watch tile
 
 ### Added
