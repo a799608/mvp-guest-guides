@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MacCauley &mdash; MVP Rentals Guest Guide</title>
+<!-- Open Graph / link preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MVP Rentals">
+<meta property="og:url" content="https://a799608.github.io/mvp-guest-guides/maccauley/">
+<meta property="og:title" content="MacCauley — MVP Rentals Guest Guide">
+<meta property="og:description" content="Your guest guide for the MacCauley home — check-in info, WiFi, amenities, and Pocono area tips.">
+<meta property="og:image" content="https://a799608.github.io/mvp-guest-guides/maccauley/hero.jpg">
+<meta property="og:image:alt" content="MacCauley — MVP Rentals Guest Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MacCauley — MVP Rentals Guest Guide">
+<meta name="twitter:description" content="Your guest guide for the MacCauley home — check-in info, WiFi, amenities, and Pocono area tips.">
+<meta name="twitter:image" content="https://a799608.github.io/mvp-guest-guides/maccauley/hero.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/enhance.css">
+<style>
+.card-grid{display:flex !important;flex-wrap:wrap !important;gap:8px !important;align-items:flex-start !important}
+.card-grid>.card{flex:0 0 auto !important;width:auto !important;max-width:340px !important;min-width:140px !important}
+@media(max-width:768px){.card-grid>.card{max-width:100% !important;min-width:100% !important}}
+.section-title{margin:16px 0 8px !important;font-size:1.2rem !important}
+.card{border-radius:10px !important}
+.card-body{padding:8px 12px 10px !important}
+.card-body p{font-size:.82rem !important;margin-bottom:4px !important;line-height:1.45 !important}
+.card-header{padding:6px 12px !important}
+.card-header h3{font-size:.72rem !important;white-space:nowrap !important}
+.notes{padding:6px 10px !important;font-size:.78rem !important;margin-bottom:4px !important}
+.info-row{padding:4px 0 !important;font-size:.8rem !important}
+.container{padding:0 16px 24px !important;margin-top:-20px !important}
+.intro-card{padding:14px 18px !important;margin-bottom:14px !important}
+.summary-bar{margin-bottom:8px !important;gap:8px !important}
+.summary-card{padding:4px 12px !important;border-radius:10px !important}
+.hero{min-height:auto !important;padding:16px 28px 20px !important}
+.card-body ul{margin:0 !important;padding-left:18px !important}
+.card-body ul li{padding:2px 0 !important;font-size:.8rem !important}
+.btn{padding:7px 14px !important;font-size:.8rem !important}
+.checklist li{padding:6px 12px !important;font-size:.82rem !important}
+footer{margin-top:20px !important;padding:16px 12px !important}
+.canvas{position:relative;width:1200px;margin:0 auto;min-height:1005px;background:#e4ede4;border-radius:12px;padding:10px}
+.pill{position:absolute;border-radius:10px;overflow:visible;box-shadow:0 2px 8px rgba(0,0,0,.12);background:#fdf8e8;border:2px solid transparent;font-family:"Segoe UI",system-ui,sans-serif !important;line-height:normal}
+.pill-header{padding:6px 12px;color:#fff;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:8px 8px 0 0;line-height:normal}
+.cat-default .pill-header{background:linear-gradient(90deg,#0d2e10,#1a5a2e)}
+.cat-beds .pill-header{background:linear-gradient(90deg,#1a3a5a,#2d5a7a)}
+.cat-climate .pill-header{background:linear-gradient(90deg,#1a4a2e,#2d7a4a)}
+.cat-kitchen .pill-header{background:linear-gradient(90deg,#2e5a1a,#4a8a2d)}
+.cat-alert .pill-header{background:linear-gradient(90deg,#b85c00,#e88a2b)}
+.pill-body{padding:8px 12px 10px;font-size:.78rem;line-height:1.45;color:#333}
+.pill-body p{margin-bottom:4px}
+.pill-body .note{border-left:3px solid #C8990A;background:#fff8e6;padding:4px 8px;font-size:.72rem;margin-top:6px;border-radius:0 4px 4px 0}
+.pill-body .danger{border-left-color:#c0392b;background:#fef0f0}
+.pill-body ul{margin:0;padding-left:16px}
+.pill-body li{padding:1px 0;font-size:.76rem}
+.pill .info-row{display:flex;justify-content:space-between;padding:3px 0 !important;font-size:.76rem !important;border-bottom:none !important}
+.pill .info-label{color:#888 !important;font-weight:400 !important;text-transform:none !important;font-size:.76rem !important}
+.pill .info-value{font-weight:600 !important;font-family:inherit !important;background:none !important;padding:0 !important;border-radius:0 !important;color:#333 !important}
+@media(max-width:768px){
+.canvas{width:100%!important;min-height:auto!important}
+.pill{position:static!important;width:100%!important;height:auto!important;margin-bottom:10px}
+}
+.map-pills{display:inline-flex;flex-wrap:wrap;gap:8px;margin-left:16px;vertical-align:middle;align-items:center}
+.map-pill{display:inline-flex;flex-direction:column;align-items:center;gap:0;font-size:.78rem;padding:5px 14px;border-radius:999px;background:rgba(200,153,10,.5);color:#fff;text-decoration:none;border:none;transition:background .2s;font-weight:600;line-height:1.2}
+.map-pill:hover{background:#b8890a}
+.map-pill svg{width:14px;height:14px;fill:currentColor}
+
+.intro-card{background:#fdf8e8 !important;box-shadow:0 2px 8px rgba(0,0,0,.12);border-radius:10px !important}
+.summary-card{background:#fdf8e8 !important;box-shadow:0 2px 8px rgba(0,0,0,.12) !important}
+.summary-bar,.container{background:transparent}
+.container{background:#e4ede4 !important;border-radius:0 !important;padding-bottom:24px !important}
+body{background:#e4ede4 !important}
+footer{background:#e4ede4 !important}
+.checklist li{background:#fdf8e8 !important}
+.card{background:#fdf8e8 !important;box-shadow:0 2px 8px rgba(0,0,0,.12) !important}
+.map-pill-sub{display:block;font-size:.55rem;font-weight:400;opacity:.85;margin-top:1px}
+.summary-value{font-size:1.1rem !important;margin-bottom:0 !important}
+.summary-label{margin-bottom:0 !important}
+.hero-addr{margin-bottom:2px !important}
+.hero-meta{margin-bottom:0 !important}
+</style>
+</head>
+<body>
+<header>
+
+<img src="../assets/logo.png" alt="MVP Rentals" class="logo">
+<div><h1>MVP Rentals</h1><p class="subtitle">Guest House Guide</p></div>
+</header>
+<section class="hero">
+<div class="hero-inner">
+<div style="display:flex;align-items:center;gap:0;flex-wrap:wrap"><h1 class="hero-title" style="margin:0">MacCauley</h1><div class="map-pills"><a class="map-pill" href="https://maps.app.goo.gl/HLaMf8Xah3yVQQib6" target="_blank" rel="noopener">📍 House<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://www.google.com/maps/place/41%C2%B000'43.0%22N+75%C2%B035'38.8%22W" target="_blank" rel="noopener">♻ Trash<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://www.google.com/maps?q=40.99446902727764,-75.57663311610446" target="_blank" rel="noopener">🏖 Beach<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://maps.app.goo.gl/BEAktbJdJj1J1Bi99" target="_blank" rel="noopener">🏊 Pool<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://maps.app.goo.gl/zZedNTiRXFqW8AYg6" target="_blank" rel="noopener">⛵ Marina<span class="map-pill-sub">click for map</span></a><a class="map-pill" href="https://maps.app.goo.gl/CBfjziBcLj4kBuX8A" target="_blank" rel="noopener">🎾 Courts<span class="map-pill-sub">click for map</span></a></div></div>
+<p class="hero-addr">82 MacCauley Rd</p>
+<div class="hero-meta"><span>Check-in 4 PM</span><span>Check-out 12 PM</span><span>Welcome home</span></div>
+</div>
+</section>
+<div class="container">
+<div class="intro-card">
+<p>We hope you are all looking forward to your upcoming trip to the Poconos. We are looking forward to hosting you. We&rsquo;ve put together this page of helpful info for you to use during your stay, and to help you plan ahead of time. If you have any questions, please let us know. Thanks again and safe travels!!!</p>
+</div>
+
+<div class="summary-bar">
+<div class="summary-card summary-green"><div class="summary-value">4 PM</div><div class="summary-label">Check-In</div></div>
+<div class="summary-card summary-gold"><div class="summary-value">12 PM</div><div class="summary-label">Check-Out</div></div>
+<div class="summary-card summary-deep"><div class="summary-value">8282</div><div class="summary-label">Door Code</div></div>
+<div class="summary-card summary-neutral"><div class="summary-label">WiFi &mdash; wireless@home</div><div class="summary-value" style="font-size:.9rem;white-space:nowrap">Password &mdash; Pochome6</div></div>
+</div>
+<section>
+<div class="canvas">
+<div class="pill cat-default" style="left:12px;top:11px;width:364px;height:144px">
+<div class="pill-header">&#x1F510; GETTING IN</div>
+<div class="pill-body">
+<div class="info-row"><span class="info-label">Lock Box Code</span><span class="info-value">8282</span></div>
+<div class="info-row"><span class="info-label">Lock type</span><span class="info-value">Front slider lockbox (key inside)</span></div>
+<div class="info-row"><span class="info-label">Parking pass</span><span class="info-value">Kitchen counter</span></div>
+<div class="info-row"><span class="info-label">Amenity Passes</span><span class="info-value">8 provided (same location)</span></div>
+</div></div>
+<div class="pill cat-alert" style="left:12px;top:159px;width:364px">
+<div class="pill-header">&#x1F3AB; AMENITY BADGES</div>
+<div class="pill-body">
+<p>The community issues one set of badges to be used all year by all guests.</p>
+<p>Badges are checked at the pool and beach during normal hours of operation and anyone over the age of 5 must have a badge.</p>
+<p>I have seen security ask people who are fishing at the lake to see them, but in general, they are not needed to just be "out and about" the community.</p>
+<p class="note danger">The replacement costs is $250 if any badge is lost. After the 3rd lost badge they suspend amenity use for the remainder of the year. Full forfeiture of your security deposit will occur if any badge is lost.</p>
+<p>I am sorry to have to be so strict about this.</p>
+</div></div>
+
+<div class="pill cat-beds" style="left:194px;top:797px;width:183px;height:195px">
+<div class="pill-header">&#x1F6CF;&#xFE0F; SLEEPING ARRANGMENTS</div>
+<div class="pill-body">
+<p><b style="font-size:0.78rem;">Sleeps 12</b></p>
+<p><b style="font-size:0.78rem;">3 Queen beds</b></p>
+<p><b style="font-size:0.78rem;">4 Full beds</b></p>
+<p>Beds ready on arrival. Bringing pets? Consider bringing bed covers to manage pet hair.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:381px;top:109px;width:403px;height:100px">
+<div class="pill-header">&#x1F6BD; SEPTIC SYSTEM</div>
+<div class="pill-body">
+<p class="note danger">Septic-safe toilet paper only. No wipes, hygiene products, or feminine products. These will cause serious damage to the septic system.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:384px;top:13px;width:400px;height:89px">
+<div class="pill-header">&#x1F511; FRONT DOOR</div>
+<div class="pill-body">
+<p><b>Front Door:</b> Front slider lockbox contains the key. Please return the key to the lockbox at checkout.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:10px;top:490px;width:366px;height:126px">
+<div class="pill-header">&#x1F6AB; THE NOS</div>
+<div class="pill-body">
+<ul>
+<li><b>No smoking</b> inside home (including vaping and marijuana). Outside is fine but please away from open windows.</li>
+<li><b>No fireworks</b> ($1000 fine)</li>
+<li><b>No noise</b> after 10 PM (quiet hours 10 PM &#x2013; 8 AM)</li>
+</ul>
+</div></div>
+
+<div class="pill cat-default" style="left:385px;top:217px;width:401px;height:123px">
+<div class="pill-header">&#x1F5D1;&#xFE0F; TRASH COLLECTION</div>
+<div class="pill-body">
+<ul><li>Community does not allow curbside pickup due to bears</li><li>All trash must be taken to the community collection center</li></ul>
+<p class="note danger">Display mirror tag/parking pass at the collection center to access</p>
+</div></div>
+
+<div class="pill cat-climate" style="left:385px;top:448px;width:398px;height:104px">
+<div class="pill-header">&#x1F525; HEAT</div>
+<div class="pill-body">
+<ul><li>Controlled by individual room thermostats</li><li>Thermostats control heat only</li><li>Turn off when running A/C</li></ul>
+</div></div>
+<div class="pill cat-climate" style="left:385px;top:347px;width:398px;height:94px">
+<div class="pill-header">&#x2744;&#xFE0F; A/C</div>
+<div class="pill-body">
+<p>Two large mini-splits&#x2014;one per floor in the game rooms. First floor remote: attached to kitchen cabinet near back sliding door. Upstairs remote: attached to wall shelf above shuffleboard table.</p>
+</div></div>
+<div class="pill cat-climate" style="left:792px;top:167px;width:283px;height:208px">
+<div class="pill-header">&#x1F525; FIREPLACE</div>
+<div class="pill-body">
+<p>Non-venting gas fireplace. Remote to the RIGHT of the mantel operates. Push button timer. Unit will automatically shut off after time has expired. Press off button to turn off. Non-operational May through August.</p>
+<p class="note danger">PLEASE DO NOT TOUCH LOG SET FOR ANY REASON.  Please do not use the fireplace while running the A/C.</p>
+</div></div>
+
+<div class="pill cat-default" style="left:9px;top:625px;width:175px;height:285px">
+<div class="pill-header">&#x2705; WHAT'S PROVIDED</div>
+<div class="pill-body">
+<ul>
+<li>Toilet paper (septic safe)</li>
+<li>Paper Towels</li>
+<li>Linens for all beds</li>
+<li>Bath &amp; Kitchen towels</li>
+<li>Dody wash</li>
+<li>Hand soap</li>
+<li>Trash bags</li>
+<li>Dish detergent</li>
+<li>Dishwasher tabs</li>
+<li>Full size washer &amp; dryer</li>
+<li>Laundry detergent</li>
+<li>Dryer sheets</li>
+</ul>
+</div></div>
+
+<div class="pill cat-default" style="left:193px;top:625px;width:183px;height:165px">
+<div class="pill-header">&#x1F392; WHAT TO BRING</div>
+<div class="pill-body">
+<ul>
+<li>Shampoo &amp; conditioner</li>
+<li>Charcoal for grill</li>
+<li>Beach towels/chairs/gear</li>
+<li>Winter outdoor gear</li>
+<li>Sports gear for amenity courts</li>
+</ul>
+</div></div>
+
+<div class="pill cat-default" style="left:792px;top:13px;width:283px;height:148px">
+<div class="pill-header">&#x1F436; PETS</div>
+<div class="pill-body">
+<ul>
+<li>3 dog maximum</li>
+<li>$25 per day fee - not charged per dog</li>
+<li>Must be leashed if outside fencing</li>
+</ul>
+<p>We kindly ask that you do not allow them on the furniture unless you plan to remove the hair.</p>
+</div></div>
+
+<div class="pill cat-kitchen" style="left:790px;top:491px;width:286px;height:108px">
+<div class="pill-header">&#x1F356; CHARCOAL GRILL</div>
+<div class="pill-body">
+<ul><li>Located on deck</li><li>Charcoal not provided</li><li>Please clean if used</li></ul>
+</div></div>
+
+<div class="pill cat-kitchen" style="left:790px;top:383px;width:286px;height:101px">
+<div class="pill-header">&#x1F32B;&#xFE0F; HOOD VENT</div>
+<div class="pill-body">
+<ul><li>Run exhaust vent anytime cooking with the range</li><li>Helps reduce strong odors</li></ul>
+</div></div>
+
+<div class="pill cat-default" style="left:384px;top:561px;width:398px;height:85px">
+<div class="pill-header">&#x1F3AE; GAMEROOM ITEMS</div>
+<div class="pill-body">
+<p>Operation is self-explanatory except for the arcade machine. Adult supervision is suggested. Instructions at machine.</p>
+</div></div>
+</div>
+</section>
+<section>
+<h2 class="section-title">&#x2705; Check-Out Checklist</h2>
+<div class="card">
+<div class="card-body">
+<ul class="checklist">
+<li><span class="check-box"></span>Used towels tossed in washing machine please</li>
+<li><span class="check-box"></span>Please remove pet hair from all bedding, no need to strip the beds - cleaners will handle</li>
+<li><span class="check-box"></span>If you relocated any furniture, lamps, appliances etc, we kindly ask that you return them to the original location</li>
+<li><span class="check-box"></span>Dishes, pots n pans, cookware etc. has been cleaned</li>
+<li><span class="check-box"></span>If grill was used, please clean</li>
+<li><span class="check-box"></span>Spills or stains on floorings or appliances have been cleaned</li>
+<li><span class="check-box"></span>Removed all food and personal items</li>
+<li><span class="check-box"></span>Trash to collection center</li>
+<li><span class="check-box"></span>Remotes returned to coffee table and bedroom dresser</li>
+<li><span class="check-box"></span>Turn off Heat and A/C</li>
+<li><span class="check-box"></span>Amenity badges returned</li>
+<li><span class="check-box"></span>Windows closed, locked up</li>
+<li><span class="check-box"></span>Text Will at 610-621-0769 that you’ve left</li>
+</ul>
+<div class="notes">Check-out is at 12 noon unless we&rsquo;ve agreed on a later time. Cleaners arrive at noon to start.</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="section-title">&#x1F5FA;&#xFE0F; Area Guide</h2>
+<div class="card">
+<div class="card-header"><h3>&#x1F5FA;&#xFE0F; Pocono Area Guide</h3></div>
+<div class="card-body">
+<p>Community amenities (pool, beach, courts), local attractions (Jim Thorpe, Hickory Run State Park), and helpful resources.</p>
+<div class="card-links">
+<a class="btn btn-primary" href="../area/index.html">View Area Guide</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="section-title">&#x1F4DE; Contact</h2>
+<div class="card">
+<div class="card-body">
+<p>Questions or issues during your stay? Text or call Will.</p>
+<div class="card-links">
+<a class="btn btn-gold" href="tel:6106210769">Call Will: 610-621-0769</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer>MVP Rentals &mdash; MacCauley &mdash; 82 MacCauley Rd, Albrightsville PA</footer>
+<script>
+document.querySelectorAll(".checklist li").forEach(function(li){li.addEventListener("click",function(){li.classList.toggle("checked");});});
+</script>
+</body>
+</html>
