@@ -47,7 +47,7 @@ footer{margin-top:20px !important;padding:16px 12px !important}
 .pill .info-value{font-weight:600 !important;font-family:inherit !important;background:none !important;padding:0 !important;border-radius:0 !important;color:#333 !important}
 @media(max-width:768px){
 .canvas{width:100%!important;min-height:auto!important}
-.pill{width:100%!important;height:auto!important;margin-bottom:10px;grid-column:span 1!important}
+.pill{position:static!important;width:100%!important;height:auto!important;margin-bottom:10px}
 }
 .map-pills{display:inline-flex;flex-wrap:wrap;gap:8px;margin-left:16px;vertical-align:middle;align-items:center}
 .map-pill{display:inline-flex;flex-direction:column;align-items:center;gap:0;font-size:.78rem;padding:5px 14px;border-radius:999px;background:rgba(200,153,10,.5);color:#fff;text-decoration:none;border:none;transition:background .2s;font-weight:600;line-height:1.2}
@@ -283,6 +283,5 @@ footer{background:#e4ede4 !important}
 <script>
 document.querySelectorAll(".checklist li").forEach(function(li){li.addEventListener("click",function(){li.classList.toggle("checked");});});
 </script>
-<script src="../assets/editor.js"></script>
 </body>
 </html>
