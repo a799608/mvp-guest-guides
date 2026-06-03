@@ -4,6 +4,27 @@ Significant changes to the guest guide pages. Newest first.
 
 ---
 
+## 2026-06-03 -- Link-preview (Open Graph) images on every page
+
+### Added
+
+`og:image` + `og:title`/`description`/`url` + Twitter-card tags to **all** pages
+so shared links unfurl a proper image instead of the app's first-`<img>` fallback
+(which was the small MVP logo, or nothing on the image-less landing).
+
+- **6 property pages** -> each uses its own `hero.jpg` (forwarding a property's
+  guide previews that property's home).
+- **landing / area / activities / this-week** -> branded landing capture
+  `og-cover.jpg` (added to repo root).
+- **mvp-app launcher** -> its own capture `mvp-app/og-cover.jpg`.
+
+Verified live: every page serves an intentional `og:image` (HTTP 200). Commit
+`9c7cac1`. Standing rule recorded in `technical_index.md` (2026-06-03) — every
+new/edited shareable page must carry verified Open Graph metadata. The sibling
+`mvp-rentals-website` repo got the same treatment (commit `bfebd1d`).
+
+---
+
 ## 2026-06-03 -- Mobile-rendering fixes + phone QA tool
 
 ### Fixed
