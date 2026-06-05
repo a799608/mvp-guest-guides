@@ -41,6 +41,7 @@ FIRST_NAMES = {
     "sam": "Sam",
     "brandee": "Brandee",
     "jack": "Jack",
+    "juju": "Juju",
 }
 
 CLEANERS_DIR = pathlib.Path(__file__).parent
