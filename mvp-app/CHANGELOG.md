@@ -4,6 +4,44 @@ Significant changes to the iPhone PWA launcher (`mvp-app/`). Newest first.
 
 ---
 
+## 2026-06-24 -- v6: House How-To Codes (by-house, data-driven)
+
+### Added
+
+**House How-To Codes wide tile** (clapper icon `&#127916;`) right after the Property
+QR Codes tile. Links to a new `howto.html`.
+
+**`howto.html`** -- mobile page listing how-to QR codes GROUPED BY HOUSE
+(Trails / Pound / Milton / Wylie / MacCauley / Petrarch). Data-driven from an inline
+`HOWTO` object; each entry is `{label, url, img}`. Houses with no codes show "No
+how-to codes yet." Each code opens a per-item guide page on the guest-guide site
+(e.g. .../trails/fireplace/), press-and-hold saveable for a label.
+
+### Changed
+
+Launcher footer `v5 - 2026-06-24` -> `v6 - 2026-06-24`.
+
+### Why
+
+Will wanted a SEPARATE, by-house section (distinct from the one-code-per-house
+"Property QR Codes") to collect per-room how-to/video codes as he produces them.
+Mirrored on the desktop Personal Dashboard.
+
+### Adding a code (workflow)
+
+1. Build the per-item page on the guide site (e.g. `trails/fireplace/`).
+2. Generate the QR PNG into `mvp-app/qr/howto/QR_<house>_<item>.png` (verify decode).
+3. Append `{label, url, img}` to the right house in the `HOWTO` object in BOTH
+   `mvp-app/howto.html` and the dashboard's How-To section.
+4. Commit + push.
+
+### Reverting
+
+Delete the `<a class="tile wide" href="howto.html">...</a>` block in `mvp-app/index.html`,
+optionally delete `mvp-app/howto.html` + `mvp-app/qr/howto/`, bump the footer, commit, push.
+
+---
+
 ## 2026-06-24 -- v5: Property QR Codes
 
 ### Added
