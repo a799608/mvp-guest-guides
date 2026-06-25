@@ -4,6 +4,39 @@ Significant changes to the iPhone PWA launcher (`mvp-app/`). Newest first.
 
 ---
 
+## 2026-06-24 -- v5: Property QR Codes
+
+### Added
+
+**Property QR Codes wide tile** (label icon `&#127991;`) inserted between the "This
+Week" grid tile and the "Reminders & To-Do" wide tile. Links to a new `qr.html`.
+
+**`qr.html`** -- mobile page (MVP green/gold theme, iOS-safe-area-aware) showing a QR
+code for each of the 6 properties. Each code opens that property's guest-guide page,
+built from the same `property_guide_url()` mapping used for the check-in-day link.
+Press-and-hold a code to save/share (printing, label maker); an "Open page" button
+opens the guide directly.
+
+**`qr/QR_<Property>.png`** -- six high-res (1176x1176) bare QR PNGs, high
+error-correction, verified to decode (zbar) to the live guide URLs.
+
+### Changed
+
+Footer version stamp `v4 - 2026-06-10` -> `v5 - 2026-06-24`.
+
+### Why
+
+Will wanted the property QR codes (already on the desktop Personal Dashboard)
+reachable from his phone -- to pull up, show a guest, or save/share for labels.
+
+### Reverting
+
+Delete the `<a class="tile wide" href="qr.html">...</a>` block in `mvp-app/index.html`
+(between This Week and Reminders & To-Do), optionally delete `mvp-app/qr.html` and
+`mvp-app/qr/`, bump the footer stamp, commit and push.
+
+---
+
 ## 2026-06-03 -- v3: Booking Website tile
 
 ### Added

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Property QR Codes — MVP Rentals</title>
+<!-- Open Graph / link preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MVP Rentals">
+<meta property="og:url" content="https://a799608.github.io/mvp-guest-guides/mvp-app/qr.html">
+<meta property="og:title" content="MVP Rentals — Property QR Codes">
+<meta property="og:description" content="Scannable QR codes for each property's guest guide.">
+<meta property="og:image" content="https://a799608.github.io/mvp-guest-guides/mvp-app/og-cover.jpg?v=1">
+<meta property="og:image:alt" content="MVP Rentals — Property QR Codes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MVP Rentals — Property QR Codes">
+<meta name="twitter:image" content="https://a799608.github.io/mvp-guest-guides/mvp-app/og-cover.jpg?v=1">
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0d2e10">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MVP QR">
+<style>
+  :root { --green-deep:#0d2e10; --green:#1F6224; --green-light:#D6E8D6; --gold:#C8990A; --cream:#F8F5EF; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html, body { margin:0; padding:0; min-height:100%; background:var(--green-deep); color:#fff;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing:antialiased; }
+  body { padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+  header { text-align:center; padding:18px 16px 8px; border-bottom:2px solid var(--gold);
+    background:linear-gradient(135deg, var(--green-deep) 0%, var(--green) 100%); position:relative; }
+  header h1 { margin:0; font-size:20px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; }
+  header .sub { font-size:11px; color:var(--gold); letter-spacing:1.2px; text-transform:uppercase; margin-top:4px; opacity:0.9; }
+  .back { position:absolute; left:14px; top:20px; color:#fff; text-decoration:none; font-size:15px; font-weight:700; opacity:0.85; }
+  .hint { text-align:center; font-size:12px; color:var(--green-light); padding:13px 20px 2px; line-height:1.55; max-width:520px; margin:0 auto; }
+  main { padding:14px 16px 8px; max-width:520px; margin:0 auto; display:flex; flex-direction:column; gap:16px; }
+  .qr-card { background:var(--green); border:1px solid rgba(255,255,255,0.06); border-radius:16px; padding:16px 16px 18px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.3); text-align:center; }
+  .qr-card h2 { margin:0 0 12px; font-size:16px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#fff; }
+  .qr-card .panel { background:#fff; border-radius:12px; padding:14px; display:inline-block; line-height:0; }
+  .qr-card img { display:block; width:min(64vw, 260px); height:auto; image-rendering:pixelated; }
+  .qr-card .url { font-size:11px; color:var(--green-light); margin-top:12px; word-break:break-all; line-height:1.4; }
+  .qr-card a.open { display:inline-block; margin-top:12px; background:var(--gold); color:var(--green-deep);
+    text-decoration:none; font-weight:700; font-size:13px; padding:9px 20px; border-radius:9px; letter-spacing:0.4px; }
+  .qr-card a.open:active { background:#e0b020; }
+  footer { text-align:center; font-size:10px; color:rgba(255,255,255,0.4); padding:18px 12px 28px; letter-spacing:0.5px; }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="back" href="index.html">&#8249; Hub</a>
+  <h1>Property QR Codes</h1>
+  <div class="sub">Guest Guide Links</div>
+</header>
+
+<div class="hint">Each code opens that home&rsquo;s guest-guide page &mdash; the same link guests get on check-in day. <strong>Press &amp; hold a code</strong> to save or share it (printing, your label maker), or scan it to test.</div>
+
+<main>
+  <div class="qr-card">
+    <h2>Trails</h2>
+    <div class="panel"><img src="qr/QR_Trails.png" alt="Trails guest-guide QR code"></div>
+    <div class="url">a799608.github.io/mvp-guest-guides/trails/</div>
+    <a class="open" href="https://a799608.github.io/mvp-guest-guides/trails/">Open page</a>
+  </div>
+  <div class="qr-card">
+    <h2>Pound</h2>
+    <div class="panel"><img src="qr/QR_Pound.png" alt="Pound guest-guide QR code"></div>
+    <div class="url">a799608.github.io/mvp-guest-guides/pound/</div>
+    <a class="open" href="https://a799608.github.io/mvp-guest-guides/pound/">Open page</a>
+  </div>
+  <div class="qr-card">
+    <h2>Milton</h2>
+    <div class="panel"><img src="qr/QR_Milton.png" alt="Milton guest-guide QR code"></div>
+    <div class="url">a799608.github.io/mvp-guest-guides/milton/</div>
+    <a class="open" href="https://a799608.github.io/mvp-guest-guides/milton/">Open page</a>
+  </div>
+  <div class="qr-card">
+    <h2>Wylie</h2>
+    <div class="panel"><img src="qr/QR_Wylie.png" alt="Wylie guest-guide QR code"></div>
+    <div class="url">a799608.github.io/mvp-guest-guides/wylie/</div>
+    <a class="open" href="https://a799608.github.io/mvp-guest-guides/wylie/">Open page</a>
+  </div>
+  <div class="qr-card">
+    <h2>MacCauley</h2>
+    <div class="panel"><img src="qr/QR_MacCauley.png" alt="MacCauley guest-guide QR code"></div>
+    <div class="url">a799608.github.io/mvp-guest-guides/maccauley/</div>
+    <a class="open" href="https://a799608.github.io/mvp-guest-guides/maccauley/">Open page</a>
+  </div>
+  <div class="qr-card">
+    <h2>Petrarch</h2>
+    <div class="panel"><img src="qr/QR_Petrarch.png" alt="Petrarch guest-guide QR code"></div>
+    <div class="url">a799608.github.io/mvp-guest-guides/petrarch/</div>
+    <a class="open" href="https://a799608.github.io/mvp-guest-guides/petrarch/">Open page</a>
+  </div>
+</main>
+
+<footer>v5 - 2026-06-24</footer>
+
+</body>
+</html>
