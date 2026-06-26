@@ -142,16 +142,6 @@ h1,h2,h3{font-family:var(--font-display);color:var(--gold-soft);line-height:1.15
 
 footer{text-align:center;color:var(--ink-soft);font-size:.72rem;letter-spacing:.4px;padding:24px 16px 32px}
 a{color:var(--gold-soft)}
-/* ---------- UNLOCK UI ---------- */
-.unlock-prompt{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:12px;display:flex;flex-direction:column;gap:10px}
-.unlock-prompt p{font-size:.85rem;color:var(--ink-soft);margin:0}
-.unlock-row{display:flex;gap:8px}
-.unlock-input{flex:1;background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--ink);font-size:.95rem;font-family:ui-monospace,monospace;letter-spacing:.5px;min-width:0;outline:none;text-transform:uppercase}
-.unlock-input:focus{border-color:var(--gold)}
-.unlock-btn{background:var(--gold);color:#07120a;font-weight:700;border:none;border-radius:10px;padding:10px 16px;cursor:pointer;white-space:nowrap;font-size:.9rem}
-.unlock-msg{font-size:.8rem;text-align:center;min-height:1.2em}
-.unlock-msg.ok{color:#81c784}.unlock-msg.err{color:var(--danger)}
-.locked-placeholder{color:var(--ink-soft);font-size:1.3rem;opacity:.4;letter-spacing:2px}
 </style>
 </head>
 <body>
@@ -168,22 +158,12 @@ a{color:var(--gold-soft)}
 <div class="wrap">
   <div class="keycard">
     <div class="key-grid">
-      <div class="key-tile" id="doorTile"><span class="k-copy" id="doorCopy" style="display:none">tap to copy</span>
-        <div class="k-label">Door Code</div>
-        <div class="k-val" id="doorVal"><span class="locked-placeholder">•  •  •  •</span></div>
-        <div class="k-sub" id="doorSub">🔒 unlock below</div></div>
-      <div class="key-tile" id="wifiTile"><span class="k-copy" id="wifiCopy" style="display:none">tap to copy</span>
-        <div class="k-label">WiFi Password</div>
-        <div class="k-val" id="wifiVal"><span class="locked-placeholder">•  •  •  •</span></div>
-        <div class="k-sub" id="wifiSub">🔒 unlock below</div></div>
-    </div>
-    <div id="unlockPrompt" class="unlock-prompt">
-      <p>Enter your Reservation ID to unlock door &amp; WiFi codes. Codes appear automatically on check-in day.</p>
-      <div class="unlock-row">
-        <input id="resIdInput" class="unlock-input" type="text" placeholder="Reservation ID" autocapitalize="characters" autocomplete="off" spellcheck="false" onkeydown="if(event.key==='Enter')unlockCodes()">
-        <button class="unlock-btn" onclick="unlockCodes()">Unlock</button>
-      </div>
-      <div id="unlockMsg" class="unlock-msg"></div>
+      <div class="key-tile" data-copy="0413"><span class="k-copy">tap to copy</span>
+        <div class="k-label">Door Code</div><div class="k-val">0413</div>
+        <div class="k-sub">Side door deadbolt (primary entry)</div></div>
+      <div class="key-tile" data-copy="pochome5"><span class="k-copy">tap to copy</span>
+        <div class="k-label">WiFi Password</div><div class="k-val">pochome5</div>
+        <div class="k-sub">Network: CGNM-7D68</div></div>
     </div>
     <div class="key-actions">
       <a class="btn btn-gold" href="sms:+16106210769?&body=Hi%20Will%2C%20I'm%20at%20the%20Petrarch%20house%20and%20had%20a%20question%3A%20"><svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>Message Will</a>
@@ -204,7 +184,7 @@ a{color:var(--gold-soft)}
 <div class="section-label">Arrival & Access</div>
 <div class="card ">
 <h3><span class="ico">🔐</span>Getting In</h3>
-<div class="row"><span class="r-l">Door code</span><span class="r-v" id="doorCodeRow"><span style="opacity:.4">🔒</span></span></div>
+<div class="row"><span class="r-l">Door code</span><span class="r-v">0413</span></div>
 <div class="row"><span class="r-l">Lock type</span><span class="r-v">Side door deadbolt (primary entry)</span></div>
 <div class="row"><span class="r-l">Parking pass</span><span class="r-v">Kitchen wall holder near sink</span></div>
 <div class="row"><span class="r-l">Amenity Passes</span><span class="r-v">6 provided (same location)</span></div>
@@ -286,6 +266,33 @@ a{color:var(--gold-soft)}
 </ul>
 <p>We kindly ask that you do not allow them on the furniture unless you plan to remove the hair.</p>
 </div>
+<div class="section-label">Good to Know</div>
+<div class="card ">
+<h3><span class="ico">🍳</span>Kitchen Appliances</h3>
+<ul style="display:grid;grid-template-columns:1fr 1fr;gap:0 12px;padding-left:16px">
+<li>Coffee maker (Keurig &amp; auto-drip)</li>
+<li>Blender</li>
+<li>Toaster</li>
+<li>Microwave</li>
+<li>Oven &amp; stove</li>
+<li>Dishwasher</li>
+<li>Refrigerator &amp; freezer</li>
+<li>Hot water kettle</li>
+<li>Baking sheet</li>
+<li>Pots &amp; pans</li>
+<li>Dishes &amp; silverware</li>
+<li>Wine glasses</li>
+</ul>
+</div>
+<div class="card ">
+<h3><span class="ico">🧺</span>Laundry</h3>
+<ul>
+<li>Washer</li>
+<li>Dryer</li>
+<li>Laundry detergent</li>
+<li>Dryer sheets</li>
+</ul>
+</div>
 <div class="section-label">Provisions</div>
 <div class="cols">
 <div class="card"><h3><span class="ico">✅</span>Provided</h3><ul>
@@ -346,43 +353,11 @@ a{color:var(--gold-soft)}
 <script>
 var toast=document.getElementById("toast"),tT;
 document.querySelectorAll(".key-tile").forEach(function(t){t.addEventListener("click",function(){
-  var v=t.getAttribute("data-copy");if(!v)return;
+  var v=t.getAttribute("data-copy");
   if(navigator.clipboard){navigator.clipboard.writeText(v).catch(function(){});}
   toast.textContent="Copied "+v+" ✓";toast.classList.add("show");
   clearTimeout(tT);tT=setTimeout(function(){toast.classList.remove("show");},1400);});});
 document.querySelectorAll(".check li").forEach(function(li){li.addEventListener("click",function(){li.classList.toggle("done");var u=li.getAttribute("data-sms");if(u){window.location.href=u;}});});
-var GAS_VALIDATE="https://script.google.com/macros/s/AKfycbyg0DSUn5zJQMmyNdziRTn0geDeYnSqoekOeb8LSvWXOMYQs30odlPFMJfdMypjnJ-R/exec";
-var PROP_KEY="petrarch",LS_KEY="mvp_unlock_petrarch";
-function unlockCodes(silent){
-  var rid=(document.getElementById("resIdInput").value||"").trim().toUpperCase();
-  var msg=document.getElementById("unlockMsg");
-  if(!rid){if(!silent){msg.textContent="Enter your Reservation ID.";msg.className="unlock-msg err";}return;}
-  if(!silent){msg.textContent="Checking…";msg.className="unlock-msg";}
-  var cb="mvp_cb_"+Date.now();
-  window[cb]=function(data){
-    var s=document.getElementById("mvp_unlock_scr");if(s)s.parentNode.removeChild(s);
-    delete window[cb];
-    if(data&&data.authorized){localStorage.setItem(LS_KEY,rid);showCodes(data);}
-    else{localStorage.removeItem(LS_KEY);if(!silent){msg.textContent=(data&&data.reason)||"Codes not available yet.";msg.className="unlock-msg err";}}
-  };
-  var s=document.createElement("script");s.id="mvp_unlock_scr";
-  s.src=GAS_VALIDATE+"?action=validate&resId="+encodeURIComponent(rid)+"&property="+encodeURIComponent(PROP_KEY)+"&callback="+cb;
-  s.onerror=function(){if(s.parentNode)s.parentNode.removeChild(s);delete window[cb];if(!silent){msg.textContent="Network error — try again.";msg.className="unlock-msg err";}};
-  document.head.appendChild(s);
-}
-function showCodes(data){
-  document.getElementById("doorVal").textContent=data.door;
-  document.getElementById("doorSub").textContent=data.lock||"";
-  document.getElementById("doorTile").setAttribute("data-copy",data.door);
-  document.getElementById("doorCopy").style.display="";
-  document.getElementById("wifiVal").textContent=data.wifi_pw;
-  document.getElementById("wifiSub").textContent="Network: "+(data.wifi_net||"");
-  document.getElementById("wifiTile").setAttribute("data-copy",data.wifi_pw);
-  document.getElementById("wifiCopy").style.display="";
-  var r=document.getElementById("doorCodeRow");if(r)r.textContent=data.door;
-  document.getElementById("unlockPrompt").style.display="none";
-}
-(function(){var saved=localStorage.getItem(LS_KEY);if(saved){document.getElementById("resIdInput").value=saved;unlockCodes(true);}})();
 </script>
 </body>
 </html>
