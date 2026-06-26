@@ -24,6 +24,7 @@ NICE = {
     "GARBAGE DISPOSAL":"Garbage Disposal","HOOD VENT":"Hood Vent","CHARCOAL GRILL":"Charcoal Grill",
     "FIREPIT":"Firepit","SLEEPING ARRANGMENTS":"Sleeping Arrangements","TRASH COLLECTION":"Trash Collection",
     "PETS":"Pets","WHAT'S PROVIDED":"Provided","WHAT TO BRING":"Bring","GAMEROOM ITEMS":"Gameroom",
+    "KITCHEN APPLIANCES":"Kitchen Appliances","LAUNDRY":"Laundry",
 }
 def section_of(title):
     t = title.upper()
@@ -31,7 +32,7 @@ def section_of(title):
     if "AMENITY BADGES" in t: return "badges"
     if "THE NOS" in t or "SEPTIC" in t: return "rules"
     if t in ("HEAT","A/C") or "FIREPLACE" in t: return "climate"
-    if any(k in t for k in ("GARBAGE DISPOSAL","HOOD VENT","GRILL","FIREPIT")): return "kitchen"
+    if any(k in t for k in ("GARBAGE DISPOSAL","HOOD VENT","GRILL","FIREPIT","KITCHEN APPLIANCES","LAUNDRY")): return "kitchen"
     if "SLEEPING" in t: return "sleeping"
     if "TRASH" in t or "PETS" in t: return "trashpets"
     if "PROVIDED" in t: return "provided"
