@@ -108,15 +108,15 @@ def build(prop):
     items = []
     for li in s.select(".checklist li"):
         t = li.get_text(" ", strip=True)
-        t = re.sub(r"\s*at 610-621-0769", "", t)
+        t = re.sub(r"\s*at (610-621-0769|814-936-3068)", "", t)
         items.append(t)
     notes_el = s.select_one(".notes")
     notes = notes_el.get_text(" ", strip=True) if notes_el else ""
 
     # ---- assemble ----
-    SMS = ("sms:+16106210769?&body=Hi%20Will%2C%20I'm%20at%20the%20"
+    SMS = ("sms:+18149363068?&body=Hi%20Will%2C%20I'm%20at%20the%20"
            + name.replace(" ", "%20") + "%20house%20and%20had%20a%20question%3A%20")
-    CO_SMS = ("sms:+16106210769?&body=Hi%20Will%2C%20we've%20checked%20out%20of%20the%20"
+    CO_SMS = ("sms:+18149363068?&body=Hi%20Will%2C%20we've%20checked%20out%20of%20the%20"
            + name.replace(" ", "%20") + "%20house.%20Thank%20you!")
     MSG_SVG = '<svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>'
     CALL_SVG = '<svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>'
@@ -159,6 +159,7 @@ def build(prop):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
 <title>{esc(name)} — MVP Rentals Guest Guide</title>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MVP Rentals">

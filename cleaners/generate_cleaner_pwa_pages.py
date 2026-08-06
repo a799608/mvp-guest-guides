@@ -54,6 +54,7 @@ def make_index_html(first_name, gas_url):
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
 <title>MVP Schedule - {first_name}</title>
 
 <!-- PWA manifest -->
