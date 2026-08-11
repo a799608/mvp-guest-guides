@@ -141,7 +141,10 @@ def build(prop):
             return f'<li data-sms="{CO_SMS}"><span class="box"></span><span>{esc(i)} <em style="color:var(--gold-soft);font-style:normal">— tap to text</em></span></li>'
         return f'<li><span class="box"></span><span>{esc(i)}</span></li>'
     checks = "\n".join(_li(i) for i in items)
-    sections_html += ('\n<div class="section-label">Before You Go</div>\n<div class="card">'
+    # id="checkout" so the checkout-day message can deep-link straight to the
+    # checklist (Will 2026-08-10) -- the tap-to-text item lives in this card,
+    # so landing here also puts "Text Will that you've left" in front of them.
+    sections_html += ('\n<div class="section-label" id="checkout">Before You Go</div>\n<div class="card">'
         '\n<h3><span class="ico">📋</span>Check-Out Checklist</h3>\n<ul class="check">\n'
         + checks + '\n</ul>' + (f'\n<div class="note">{esc(notes)}</div>' if notes else "") + '\n</div>')
     # explore
