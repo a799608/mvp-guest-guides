@@ -4,6 +4,29 @@ Significant changes to the guest guide pages. Newest first.
 
 ---
 
+## 2026-08-11 -- check-out checklist rewritten (Will-reviewed) + #checkout anchor
+
+### Changed
+
+Full line-by-line rewrite of the Check-Out Checklist on all six guides (commit
+`818663a`): amenity badges first (8; Petrarch 6), "Place used towels/washcloths
+in washer - cleaners will love you if you start the load", pet-hair check,
+stains incl. bedding, grill, dishes returned to cabinets, furniture back,
+house-specific remotes line, food/personal items, trash, windows/doors, Text
+Will tap last. Turn-off-Heat/AC item removed. Petrarch keeps "Front door key on
+kitchen counter" before the tap. Checked-off voice, not commands.
+
+### Added
+
+- `id="checkout"` on the "Before You Go" section label so the 9 AM checkout-day
+  message deep-links straight to the checklist (`.../<prop>/#checkout`).
+
+Edits made in `<prop>/v1.html` + `build_v2.py` regeneration (never hand-edit
+index/v2). Phone QA: 36 renders, 0 FAIL. The tap-to-text SMS body is generated
+independently of the checklist items, so downstream watchers are unaffected.
+
+---
+
 ## 2026-06-03 -- v2 dark-editorial redesign promoted to LIVE (all 6 guides)
 
 ### Changed
