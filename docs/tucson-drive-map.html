@@ -297,15 +297,15 @@
 <div class="wrap">
 
   <header>
-    <div class="eyebrow">August 15 – 27, 2026</div>
+    <div class="eyebrow">August 15 – 29, 2026</div>
     <h1>Poconos to Tucson</h1>
-    <p class="standfirst">Thirteen days across nine states, built around two fixed points: leaving Stroudsburg on Saturday morning, and being in Aspen the Saturday after.</p>
+    <p class="standfirst">Fifteen days across eleven states, built around two fixed points: leaving Stroudsburg on Saturday morning, and reaching Aspen by the Saturday after.</p>
     <div class="stats">
-      <div class="stat"><b>3,300</b><span>Miles</span></div>
-      <div class="stat"><b>13</b><span>Days</span></div>
-      <div class="stat"><b>6</b><span>National parks</span></div>
-      <div class="stat"><b>12,095</b><span>Highest ft</span></div>
-      <div class="stat"><b>3</b><span>Nights in Aspen</span></div>
+      <div class="stat"><b>3,850</b><span>Miles</span></div>
+      <div class="stat"><b>15</b><span>Days</span></div>
+      <div class="stat"><b>7</b><span>National parks</span></div>
+      <div class="stat"><b>12,183</b><span>Highest ft</span></div>
+      <div class="stat"><b>2</b><span>Nights in Aspen</span></div>
     </div>
   </header>
 
@@ -314,7 +314,7 @@
       <h2>The route</h2>
       <p>Hover any day in the table below to isolate its leg.</p>
     </div>
-    <div class="scroller"><svg id="map" role="img" aria-label="Map of the driving route from the Poconos in Pennsylvania west to Tucson, Arizona, by way of Ohio, Illinois, Missouri, Kansas, Colorado, Utah and the Navajo Nation."></svg></div>
+    <div class="scroller"><svg id="map" role="img" aria-label="Map of the driving route from the Poconos in Pennsylvania west to Tucson, Arizona, by way of Ohio, Illinois, Iowa, South Dakota, Wyoming, Colorado and the Navajo Nation."></svg></div>
     <div class="legend">
       <span class="key"><i></i> Driving day</span>
       <span class="key"><i class="dash"></i> Side trip</span>
@@ -326,7 +326,7 @@
   <section class="panel">
     <div class="panel-head">
       <h2>Elevation</h2>
-      <p>Why days 4–9 are the ones to drink water on.</p>
+      <p>A staged climb north, then the thin air.</p>
     </div>
     <div class="scroller"><svg id="profile" role="img" aria-label="Elevation profile of the route, rising from 480 feet in Pennsylvania to 12,095 feet at Independence Pass on day 9, then falling to 2,400 feet in Tucson."></svg></div>
   </section>
@@ -346,7 +346,7 @@
   </section>
 
   <footer>
-    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Maroon Bells shuttle, and rooms in Torrey and Chinle, both small towns with no fallback nearby.
+    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Maroon Bells shuttle, and rooms in Wall and Chinle, both small towns with no fallback nearby.
   </footer>
 
 </div>
@@ -358,7 +358,7 @@
   /* ---------- projection ---------- */
   var LAT0 = Math.cos(37 * Math.PI / 180), S = 42;
   function px(lon) { return (lon + 112.8) * LAT0 * S; }
-  function py(lat) { return (42.6 - lat) * S; }
+  function py(lat) { return (46.2 - lat) * S; }
   function path(pts) {
     return pts.map(function (p, i) {
       return (i ? "L" : "M") + px(p[0]).toFixed(1) + " " + py(p[1]).toFixed(1);
@@ -371,26 +371,30 @@
       via: [[-75.19,40.99],[-80.65,41.10],[-81.55,41.24]] },
     { d: 2,  date: "Sun 16", place: "Galesburg, IL", note: "Ledges Trail, then I-74 through Peoria", mi: 510,
       via: [[-81.55,41.24],[-82.99,39.96],[-86.16,39.77],[-88.24,40.11],[-89.59,40.69],[-90.37,40.95]] },
-    { d: 3,  date: "Mon 17", place: "Hays, KS", note: "Judy\u2019s for breakfast, then Tallgrass Prairie", mi: 490,
-      via: [[-90.37,40.95],[-91.41,39.94],[-91.36,39.71],[-94.58,39.10],[-97.61,38.84],[-99.33,38.88]] },
-    { d: 4,  date: "Tue 18", place: "Great Sand Dunes NP, CO", note: "High Dune at golden hour", mi: 470,
-      via: [[-99.33,38.88],[-100.87,37.97],[-103.54,37.98],[-104.78,37.62],[-105.51,37.73]] },
-    { d: 5,  date: "Wed 19", place: "Mesa Verde NP, CO", note: "Wolf Creek Pass, 10,857 ft", mi: 230,
-      via: [[-105.51,37.73],[-105.87,37.47],[-106.80,37.48],[-107.01,37.27],[-107.88,37.28],[-108.59,37.35]] },
-    { d: 6,  date: "Thu 20", place: "Mesa Verde NP, CO", note: "Cliff Palace and Balcony House", mi: 0, stay: true },
-    { d: 7,  date: "Fri 21", place: "Aspen, CO", note: "Million Dollar Highway, McClure Pass", mi: 250,
-      via: [[-108.59,37.35],[-107.88,37.28],[-107.66,37.81],[-107.67,38.02],[-107.88,38.48],[-108.07,38.74],[-107.29,39.13],[-107.21,39.40],[-106.82,39.19]] },
-    { d: 8,  date: "Sat 22", place: "Aspen, CO", note: "Maroon Bells, then his day to plan", mi: 0, stay: true,
+    { d: 3,  date: "Mon 17", place: "Sioux Falls, SD", note: "Judy\u2019s for breakfast, then across Iowa", mi: 520,
+      via: [[-90.37,40.95],[-91.53,41.66],[-93.61,41.60],[-95.86,41.26],[-96.73,43.55]] },
+    { d: 4,  date: "Tue 18", place: "Wall, SD", note: "Badlands Loop Road, Notch Trail, sunset", mi: 350,
+      via: [[-96.73,43.55],[-98.03,43.71],[-99.33,43.81],[-101.66,43.75],[-102.30,43.86],[-102.22,43.99]] },
+    { d: 5,  date: "Wed 19", place: "Cheyenne, WY", note: "Rushmore, Needles Highway, Custer SP bison", mi: 400,
+      via: [[-102.22,43.99],[-103.23,44.08],[-103.46,43.88],[-103.60,43.77],[-103.48,43.43],[-104.45,42.76],[-104.82,41.14]] },
+    { d: 6,  date: "Thu 20", place: "Granby, CO", note: "Trail Ridge Road, 12,183 ft", mi: 180,
+      via: [[-104.82,41.14],[-105.08,40.59],[-105.52,40.38],[-105.76,40.44],[-105.82,40.25],[-105.94,40.09]] },
+    { d: 7,  date: "Fri 21", place: "Glenwood Springs, CO", note: "Glenwood Canyon, hot springs pool", mi: 150,
+      via: [[-105.94,40.09],[-106.39,40.06],[-106.07,39.63],[-106.37,39.64],[-107.32,39.55]] },
+    { d: 8,  date: "Sat 22", place: "Aspen, CO", note: "Up-valley by 9:30am \u00b7 Maroon Bells", mi: 60,
+      via: [[-107.32,39.55],[-107.21,39.40],[-106.82,39.19]] },
+    { d: 9,  date: "Sun 23", place: "Aspen, CO", note: "His day \u2014 nothing scheduled", mi: 0, stay: true,
       via: [[-106.82,39.19],[-106.89,39.13],[-106.94,39.07]], spur: true },
-    { d: 9,  date: "Sun 23", place: "Aspen, CO", note: "Independence Pass, 12,095 ft", mi: 0, stay: true,
-      via: [[-106.82,39.19],[-106.66,39.13],[-106.56,39.11]], spur: true },
-    { d: 10, date: "Mon 24", place: "Torrey, UT", note: "Glenwood Canyon; I-70 stays north of Moab", mi: 340,
-      via: [[-106.82,39.19],[-107.21,39.40],[-107.32,39.55],[-108.55,39.06],[-110.16,38.99],[-110.71,38.37],[-111.42,38.30]] },
-    { d: 11, date: "Tue 25", place: "Chinle, AZ", note: "UT-95, Natural Bridges, Monument Valley", mi: 330,
-      via: [[-111.42,38.30],[-110.71,38.37],[-110.01,37.60],[-109.48,37.62],[-109.55,37.28],[-110.11,36.98],[-110.25,36.73],[-109.55,36.15]] },
-    { d: 12, date: "Wed 26", place: "Holbrook, AZ", note: "White House Trail, Petrified Forest", mi: 250,
+    { d: 10, date: "Mon 24", place: "Great Sand Dunes NP, CO", note: "Independence Pass out of town, 12,095 ft", mi: 230,
+      via: [[-106.82,39.19],[-106.56,39.11],[-106.13,38.84],[-105.99,38.53],[-105.87,37.47],[-105.51,37.73]] },
+    { d: 11, date: "Tue 25", place: "Mesa Verde NP, CO", note: "Wolf Creek Pass, 10,857 ft", mi: 230,
+      via: [[-105.51,37.73],[-105.87,37.47],[-106.80,37.48],[-107.01,37.27],[-107.88,37.28],[-108.59,37.35]] },
+    { d: 12, date: "Wed 26", place: "Mesa Verde NP, CO", note: "Cliff Palace and Balcony House", mi: 0, stay: true },
+    { d: 13, date: "Thu 27", place: "Chinle, AZ", note: "Four Corners, Monument Valley loop", mi: 230,
+      via: [[-108.59,37.35],[-109.05,37.00],[-110.11,36.98],[-110.25,36.73],[-109.55,36.15]] },
+    { d: 14, date: "Fri 28", place: "Holbrook, AZ", note: "White House Trail, Petrified Forest", mi: 250,
       via: [[-109.55,36.15],[-109.78,35.07],[-110.16,34.90]] },
-    { d: 13, date: "Thu 27", place: "Tucson, AZ", note: "Salt River Canyon, Saguaro East at sunset", mi: 300,
+    { d: 15, date: "Sat 29", place: "Tucson, AZ", note: "Salt River Canyon, Saguaro East at sunset", mi: 300,
       via: [[-110.16,34.90],[-110.03,34.25],[-110.51,33.80],[-110.79,33.39],[-110.97,32.22]] }
   ];
 
@@ -398,31 +402,35 @@
   var STOPS = [
     [-75.19,40.99,"Stroudsburg","Day 0","end",-12,-12,"start"],
     [-81.55,41.24,"Cuyahoga Valley","Day 1","middle",0,-18,"node"],
-    [-90.37,40.95,"Galesburg","Day 2 \u00b7 Judy\u2019s","middle",0,-18,"node"],
-    [-99.33,38.88,"Hays","Day 3","middle",0,-18,"node"],
-    [-105.51,37.73,"Great Sand Dunes","Day 4","middle",4,-18,"node"],
-    [-108.59,37.35,"Mesa Verde","Days 5–6","end",-12,-8,"stay"],
-    [-106.82,39.19,"ASPEN","Days 7–9","start",13,-8,"stay"],
-    [-111.42,38.30,"Capitol Reef","Day 10","middle",-2,-18,"node"],
-    [-109.55,36.15,"Canyon de Chelly","Day 11","start",12,3,"node"],
-    [-110.16,34.90,"Petrified Forest","Day 12","end",-12,-4,"node"],
-    [-110.97,32.22,"TUCSON","Day 13","start",13,4,"end"]
+    [-90.37,40.95,"Galesburg","Day 2 \u00b7 Judy\u2019s","middle",-4,26,"node"],
+    [-96.73,43.55,"Sioux Falls","Day 3","middle",0,-18,"node"],
+    [-102.22,43.99,"BADLANDS","Day 4","middle",0,-18,"node"],
+    [-104.82,41.14,"Cheyenne","Day 5","end",-12,-4,"node"],
+    [-105.94,40.09,"Rocky Mountain NP","Day 6","end",-12,-4,"node"],
+    [-107.32,39.55,"Glenwood Springs","Day 7","end",-12,-6,"node"],
+    [-106.82,39.19,"ASPEN","Days 8\u20139","start",13,-2,"stay"],
+    [-105.51,37.73,"Great Sand Dunes","Day 10","start",12,14,"node"],
+    [-108.59,37.35,"Mesa Verde","Days 11\u201312","end",-12,-8,"stay"],
+    [-109.55,36.15,"Canyon de Chelly","Day 13","start",12,3,"node"],
+    [-110.16,34.90,"Petrified Forest","Day 14","end",-12,-4,"node"],
+    [-110.97,32.22,"TUCSON","Day 15","start",13,4,"end"]
   ];
 
   /* states whose borders are (near enough) lines of latitude and longitude */
   var STATES = [
     { n: "COLORADO",   c: [[-109.05,41],[-102.05,41],[-102.05,37],[-109.05,37]], lx: -103.2, ly: 39.9 },
-    { n: "UTAH",       c: [[-114.05,42],[-111.05,42],[-111.05,41],[-109.05,41],[-109.05,37],[-114.05,37]], lx: -112.2, ly: 39.6 },
+    { n: "UTAH",       c: [[-114.05,42],[-111.05,42],[-111.05,41],[-109.05,41],[-109.05,37],[-114.05,37]], lx: -112.4, ly: 40.8 },
     { n: "NEW MEXICO", c: [[-109.05,37],[-103.00,37],[-103.00,31.9],[-106.6,31.9],[-108.2,31.33],[-109.05,31.33]], lx: -106.2, ly: 34.3 },
     { n: "ARIZONA",    c: [[-114.05,37],[-109.05,37],[-109.05,31.33],[-111.07,31.33],[-114.81,32.49],[-114.57,33.03],[-114.14,34.31],[-114.63,35.00],[-114.05,36.19]], lx: -112.7, ly: 33.6 },
     { n: "KANSAS",     c: [[-102.05,40],[-94.60,40],[-94.60,37],[-102.05,37]], lx: -96.8, ly: 38.2 },
     { n: "WYOMING",    c: [[-111.05,45],[-104.05,45],[-104.05,41],[-111.05,41]], lx: -107.6, ly: 42.6 },
-    { n: "NEBRASKA",   c: [[-104.05,41],[-104.05,43],[-98.5,43],[-95.3,40],[-102.05,40],[-102.05,41]], lx: -100.5, ly: 41.6 }
+    { n: "NEBRASKA",   c: [[-104.05,41],[-104.05,43],[-98.5,43],[-95.3,40],[-102.05,40],[-102.05,41]], lx: -100.5, ly: 41.4 },
+    { n: "SOUTH DAKOTA", c: [[-104.05,45.94],[-96.55,45.94],[-96.45,43.5],[-96.6,42.99],[-104.05,42.99]], lx: -100.3, ly: 44.9 }
   ];
 
   var GHOSTS = [
     ["PENNSYLVANIA",-78.0,42.0],["OHIO",-82.9,40.5],["INDIANA",-86.3,40.3],
-    ["ILLINOIS",-89.1,39.3],["MISSOURI",-92.9,38.6],["OKLAHOMA",-98.0,35.6],["TEXAS",-100.5,33.4]
+    ["ILLINOIS",-89.1,39.3],["MISSOURI",-92.9,38.6],["IOWA",-93.6,42.1],["OKLAHOMA",-98.0,35.6],["TEXAS",-100.5,33.4]
   ];
 
   /* ---------- draw the map ---------- */
@@ -431,7 +439,7 @@
   for (var lon = -110; lon <= -75; lon += 5) {
     out.push('<path class="grat" d="M' + px(lon).toFixed(1) + ' 0 L' + px(lon).toFixed(1) + ' ' + H.toFixed(1) + '"/>');
   }
-  [32,36,40].forEach(function (lat) {
+  [32,36,40,44].forEach(function (lat) {
     out.push('<path class="grat" d="M0 ' + py(lat).toFixed(1) + ' L' + W.toFixed(1) + ' ' + py(lat).toFixed(1) + '"/>');
   });
 
@@ -474,29 +482,30 @@
     { x: 0.0,  ft: 480,   n: "Stroudsburg", show: 1 },
     { x: 1.0,  ft: 900,   n: "Cuyahoga" },
     { x: 2.0,  ft: 771,   n: "Galesburg", show: 1, q: 1 },
-    { x: 3.0,  ft: 2000,  n: "Hays" },
-    { x: 4.0,  ft: 8200,  n: "Great Sand Dunes", show: 1 },
-    { x: 4.5,  ft: 10857, n: "Wolf Creek Pass", show: 1, peak: 1 },
-    { x: 5.0,  ft: 7000,  n: "Mesa Verde" },
-    { x: 6.0,  ft: 7000,  n: "Mesa Verde" },
-    { x: 6.5,  ft: 11018, n: "Red Mountain Pass", show: 1, peak: 1 },
-    { x: 7.0,  ft: 7900,  n: "Aspen", show: 1 },
-    { x: 8.0,  ft: 7900,  n: "Aspen" },
-    { x: 8.5,  ft: 12095, n: "Independence Pass", show: 1, peak: 1 },
+    { x: 3.0,  ft: 1450,  n: "Sioux Falls" },
+    { x: 4.0,  ft: 2800,  n: "Badlands", show: 1, q: 1 },
+    { x: 4.4,  ft: 5725,  n: "Mount Rushmore" },
+    { x: 5.0,  ft: 6060,  n: "Cheyenne", show: 1, q: 1 },
+    { x: 5.6,  ft: 12183, n: "Trail Ridge Road", show: 1, peak: 1 },
+    { x: 6.0,  ft: 7935,  n: "Granby" },
+    { x: 7.0,  ft: 5760,  n: "Glenwood Springs" },
+    { x: 8.0,  ft: 7900,  n: "Aspen", show: 1 },
     { x: 9.0,  ft: 7900,  n: "Aspen" },
-    { x: 9.6,  ft: 4100,  n: "Green River" },
-    { x: 10.0, ft: 6840,  n: "Capitol Reef" },
-    { x: 10.3, ft: 4300,  n: "Hanksville" },
-    { x: 10.6, ft: 6500,  n: "Natural Bridges" },
-    { x: 11.0, ft: 5500,  n: "Chinle" },
-    { x: 11.6, ft: 5800,  n: "Petrified Forest" },
-    { x: 12.0, ft: 5080,  n: "Holbrook" },
-    { x: 12.6, ft: 3300,  n: "Salt River Canyon", show: 1, q: 1, up: 1 },
-    { x: 13.0, ft: 2400,  n: "Tucson", show: 1 }
+    { x: 9.4,  ft: 12095, n: "Independence Pass", show: 1, peak: 1 },
+    { x: 10.0, ft: 8200,  n: "Great Sand Dunes" },
+    { x: 10.6, ft: 10857, n: "Wolf Creek Pass", show: 1, peak: 1 },
+    { x: 11.0, ft: 7000,  n: "Mesa Verde" },
+    { x: 12.0, ft: 7000,  n: "Mesa Verde" },
+    { x: 12.6, ft: 5200,  n: "Monument Valley" },
+    { x: 13.0, ft: 5500,  n: "Chinle" },
+    { x: 13.6, ft: 5800,  n: "Petrified Forest" },
+    { x: 14.0, ft: 5080,  n: "Holbrook" },
+    { x: 14.6, ft: 3300,  n: "Salt River Canyon", show: 1, q: 1, up: 1 },
+    { x: 15.0, ft: 2400,  n: "Tucson", show: 1 }
   ];
 
   var PW = 1180, PH = 300, PL = 54, PR = 26, PT = 34, PB = 34,
-      qx = function (x) { return PL + (x / 13) * (PW - PL - PR); },
+      qx = function (x) { return PL + (x / 15) * (PW - PL - PR); },
       qy = function (ft) { return PH - PB - (ft / 13000) * (PH - PT - PB); },
       p = [];
 
@@ -508,7 +517,7 @@
   var line = PROF.map(function (d, i) {
     return (i ? "L" : "M") + qx(d.x).toFixed(1) + " " + qy(d.ft).toFixed(1);
   }).join(" ");
-  p.push('<path class="prof-area" d="' + line + ' L' + qx(13).toFixed(1) + ' ' + qy(0).toFixed(1) + ' L' + qx(0).toFixed(1) + ' ' + qy(0).toFixed(1) + ' Z"/>');
+  p.push('<path class="prof-area" d="' + line + ' L' + qx(15).toFixed(1) + ' ' + qy(0).toFixed(1) + ' L' + qx(0).toFixed(1) + ' ' + qy(0).toFixed(1) + ' Z"/>');
   p.push('<path class="prof-line" d="' + line + '"/>');
 
   PROF.forEach(function (d) {
@@ -516,12 +525,12 @@
     var x = qx(d.x), y = qy(d.ft), up = d.peak || d.up || d.ft > 7000;
     p.push('<circle class="prof-dot' + (d.peak ? ' prof-peak' : '') + '" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="4"/>');
     p.push('<text class="prof-lbl halo' + (d.q ? ' q' : '') + '" x="' + x.toFixed(1) + '" y="' + (y + (up ? -13 : 20)).toFixed(1) +
-           '" text-anchor="' + (d.x < 1 ? "start" : d.x > 12.4 ? "end" : "middle") + '">' + d.n + '</text>');
+           '" text-anchor="' + (d.x < 1 ? "start" : d.x > 14.4 ? "end" : "middle") + '">' + d.n + '</text>');
     p.push('<text class="prof-tick halo" x="' + x.toFixed(1) + '" y="' + (y + (up ? -27 : 33)).toFixed(1) +
-           '" text-anchor="' + (d.x < 1 ? "start" : d.x > 12.4 ? "end" : "middle") + '">' + d.ft.toLocaleString() + ' ft</text>');
+           '" text-anchor="' + (d.x < 1 ? "start" : d.x > 14.4 ? "end" : "middle") + '">' + d.ft.toLocaleString() + ' ft</text>');
   });
 
-  for (var i = 1; i <= 13; i++) {
+  for (var i = 1; i <= 15; i++) {
     p.push('<text class="prof-tick" x="' + qx(i).toFixed(1) + '" y="' + (PH - 6) + '" text-anchor="middle" opacity=".7">' + i + '</text>');
   }
   p.push('<text class="prof-tick" x="10" y="' + (PH - 6) + '" opacity=".7">DAY</text>');
