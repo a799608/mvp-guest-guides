@@ -1,8 +1,8 @@
 # Poconos → Aspen → Tucson: 13-Day National Park Drive
 
 **Depart:** Sat Aug 15, 2026 · **Aspen:** Fri Aug 21 – Mon Aug 24 · **Arrive Tucson:** Thu Aug 27
-**Route:** Cuyahoga Valley → I-70 west → Great Sand Dunes → Mesa Verde → Aspen → Capitol Reef → the Navajo parks → Tucson
-**Total driving:** ~3,400 mi over 13 days (~260 mi/day, and only one day over 550)
+**Route:** Cuyahoga Valley → I-74 west → Great Sand Dunes → Mesa Verde → Aspen → Capitol Reef → the Navajo parks → Tucson
+**Total driving:** ~3,300 mi over 13 days (~255 mi/day, and no day over 510)
 **Lodging:** hotels on transit nights, camping in/near the parks, Aspen TBD
 
 Two fixed points: you leave tomorrow, and you're in Aspen Saturday. Everything else bends around those. With the Monday deadline gone, this version puts **three nights in Aspen**, recovers every park the earlier draft had to cut, and never asks you to drive 570 miles the morning after seeing your son.
@@ -17,12 +17,14 @@ Two fixed points: you leave tomorrow, and you're in Aspen Saturday. Everything e
 | **Maroon Bells shuttle** (Day 8 or 9) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Your son may already know the drill — ask him before you book blind. |
 | **Great Sand Dunes — Piñon Flats Campground** | recreation.gov | Reservation-only in summer. Fallback: Alamosa hotels. |
 | **Canyon de Chelly canyon-floor tour** (Day 12) | Navajo-authorized guides, Chinle | Only the White House Trail is self-guided. |
-| Hotels: Akron OH, St. Louis, Hays KS, Cortez/Mancos ×2, **Torrey UT**, Chinle, Holbrook/Show Low | anywhere | Torrey and Chinle are the tight ones — both are small towns with few rooms and no fallback nearby. Do these first. |
+| Hotels: Akron OH, Galesburg IL, Hays KS, Cortez/Mancos ×2, **Torrey UT**, Chinle, Holbrook/Show Low | anywhere | Torrey and Chinle are the tight ones — both are small towns with few rooms and no fallback nearby. Do these first. |
 | Aspen: 3 nights (Fri 21 – Sun 23) | — | Only if you're not staying with him. If you are, this line disappears and so does the trip's biggest expense. |
 
 Apart from Maroon Bells, no timed-entry reservations are needed on this version — that was an Arches requirement, and Arches is out.
 
 America the Beautiful annual pass ($80) pays for itself by Mesa Verde. Buy it at Cuyahoga.
+
+Gateway Arch is out — you didn't want it, and dropping it takes 80 miles and two long days down to two manageable ones.
 
 ---
 
@@ -32,13 +34,15 @@ America the Beautiful annual pass ($80) pays for itself by Mesa Verde. Buy it at
 ~430 mi, 7 hr · I-80 W → I-76 W → I-77 N
 Leave by 6am, in the park by early afternoon. **Brandywine Falls** (boardwalk, 15 min from the lot), the **Everett Road Covered Bridge**, sunset at **The Ledges Overlook**. Night: Peninsula, Akron, or Independence OH.
 
-### Day 2 — Sun Aug 16 · Cuyahoga morning → St. Louis, MO
-~550 mi, 8.5 hr · I-77 → I-70 W (you gain an hour into Central time)
-Morning in the park — the **Ledges Trail** (2.2 mi loop) is the signature hike; **Boston Mill Visitor Center** has the canal and Underground Railroad history; the **Scenic Railroad** if the schedule fits. Out around noon, in St. Louis ~7:30pm. Night: downtown St. Louis.
+### Day 2 — Sun Aug 16 · Cuyahoga morning → Galesburg, IL
+~510 mi, 8 hr · I-77 → I-70 W → Indianapolis → **I-74 W** through Champaign and Peoria (you gain an hour into Central time)
+Morning in the park — the **Ledges Trail** (2.2 mi loop) is the signature hike; **Boston Mill Visitor Center** has the canal and Underground Railroad history; the **Scenic Railroad** if the schedule fits. Out around noon, into Galesburg around 7pm.
+Galesburg is a railroad town and Carl Sandburg's birthplace, and it is where you sleep so that breakfast happens at the right place. Night: Galesburg.
 
-### Day 3 — Mon Aug 17 · → Hays, KS
-~550 mi, 8 hr · I-70 W
-**Gateway Arch NP** opens at 8am — tram to the top is 90 minutes all in. With the extra days you can afford it now. Optional midday: **Tallgrass Prairie National Preserve** (Strong City, 50 mi off I-70) — bison and enormous sky. Night: Hays.
+### Day 3 — Mon Aug 17 · **Judy's** → Hays, KS
+~490 mi, 7.5 hr
+**Judy's Family Café** for breakfast — the blueberry pancakes. Two locations in town (1195 N Broad St and 51 N Prairie St); check which is open Monday morning before you drive to one.
+Then southwest: Quincy → Hannibal → Kansas City → I-70 W. Optional midday: **Tallgrass Prairie National Preserve** (Strong City, via I-35 to Emporia and US-177, rejoining I-70 at Junction City) — bison and enormous sky, adds about an hour. Night: Hays.
 
 ### Day 4 — Tue Aug 18 · → Great Sand Dunes NP, CO
 ~470 mi, 7 hr · US-50 W over La Veta Pass. The Rockies appear around Pueblo.
@@ -115,7 +119,7 @@ If 13 turns out to be too many, cut in this order — each is a clean day:
 1. **Day 9** (second full Aspen day) — but only if he's busy Sunday. This is the last thing I'd cut otherwise.
 2. **Day 12** (Canyon de Chelly + Petrified Forest) — run Chinle → Flagstaff → Tucson instead.
 3. **Day 10** (Capitol Reef) — take the short southern line instead: Aspen → **Black Canyon of the Gunnison NP** (160 mi via McClure Pass, a couple of hours of genuinely vertiginous overlooks), night in Montrose, then Montrose → Monument Valley → Chinle the next day. Saves a day and still avoids Moab.
-4. **Day 3's** Tallgrass and Arch stops — saves no day, but buys back two hours each.
+4. **Day 3's** Tallgrass detour — saves no day, but buys back an hour.
 
 Do not cut Day 6 (the second Mesa Verde day). The cliff dwelling tours are the best thing on the route.
 

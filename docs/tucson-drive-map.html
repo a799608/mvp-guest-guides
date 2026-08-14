@@ -301,9 +301,9 @@
     <h1>Poconos to Tucson</h1>
     <p class="standfirst">Thirteen days across nine states, built around two fixed points: leaving Stroudsburg on Saturday morning, and being in Aspen the Saturday after.</p>
     <div class="stats">
-      <div class="stat"><b>3,400</b><span>Miles</span></div>
+      <div class="stat"><b>3,300</b><span>Miles</span></div>
       <div class="stat"><b>13</b><span>Days</span></div>
-      <div class="stat"><b>7</b><span>National parks</span></div>
+      <div class="stat"><b>6</b><span>National parks</span></div>
       <div class="stat"><b>12,095</b><span>Highest ft</span></div>
       <div class="stat"><b>3</b><span>Nights in Aspen</span></div>
     </div>
@@ -314,7 +314,7 @@
       <h2>The route</h2>
       <p>Hover any day in the table below to isolate its leg.</p>
     </div>
-    <div class="scroller"><svg id="map" role="img" aria-label="Map of the driving route from the Poconos in Pennsylvania west to Tucson, Arizona, by way of Ohio, Missouri, Kansas, Colorado, Utah and the Navajo Nation."></svg></div>
+    <div class="scroller"><svg id="map" role="img" aria-label="Map of the driving route from the Poconos in Pennsylvania west to Tucson, Arizona, by way of Ohio, Illinois, Missouri, Kansas, Colorado, Utah and the Navajo Nation."></svg></div>
     <div class="legend">
       <span class="key"><i></i> Driving day</span>
       <span class="key"><i class="dash"></i> Side trip</span>
@@ -369,10 +369,10 @@
   var DAYS = [
     { d: 1,  date: "Sat 15", place: "Cuyahoga Valley NP, OH", note: "Brandywine Falls, sunset at The Ledges", mi: 430,
       via: [[-75.19,40.99],[-80.65,41.10],[-81.55,41.24]] },
-    { d: 2,  date: "Sun 16", place: "St. Louis, MO", note: "Ledges Trail, then west on I-70", mi: 550,
-      via: [[-81.55,41.24],[-82.99,39.96],[-86.16,39.77],[-88.54,39.12],[-90.20,38.63]] },
-    { d: 3,  date: "Mon 17", place: "Hays, KS", note: "Gateway Arch at opening, Tallgrass Prairie", mi: 550,
-      via: [[-90.20,38.63],[-94.58,39.10],[-97.61,38.84],[-99.33,38.88]] },
+    { d: 2,  date: "Sun 16", place: "Galesburg, IL", note: "Ledges Trail, then I-74 through Peoria", mi: 510,
+      via: [[-81.55,41.24],[-82.99,39.96],[-86.16,39.77],[-88.24,40.11],[-89.59,40.69],[-90.37,40.95]] },
+    { d: 3,  date: "Mon 17", place: "Hays, KS", note: "Judy\u2019s for breakfast, then Tallgrass Prairie", mi: 490,
+      via: [[-90.37,40.95],[-91.41,39.94],[-91.36,39.71],[-94.58,39.10],[-97.61,38.84],[-99.33,38.88]] },
     { d: 4,  date: "Tue 18", place: "Great Sand Dunes NP, CO", note: "High Dune at golden hour", mi: 470,
       via: [[-99.33,38.88],[-100.87,37.97],[-103.54,37.98],[-104.78,37.62],[-105.51,37.73]] },
     { d: 5,  date: "Wed 19", place: "Mesa Verde NP, CO", note: "Wolf Creek Pass, 10,857 ft", mi: 230,
@@ -398,7 +398,7 @@
   var STOPS = [
     [-75.19,40.99,"Stroudsburg","Day 0","end",-12,-12,"start"],
     [-81.55,41.24,"Cuyahoga Valley","Day 1","middle",0,-18,"node"],
-    [-90.20,38.63,"St. Louis","Day 2","middle",0,24,"node"],
+    [-90.37,40.95,"Galesburg","Day 2 \u00b7 Judy\u2019s","middle",0,-18,"node"],
     [-99.33,38.88,"Hays","Day 3","middle",0,-18,"node"],
     [-105.51,37.73,"Great Sand Dunes","Day 4","middle",4,-18,"node"],
     [-108.59,37.35,"Mesa Verde","Days 5–6","end",-12,-8,"stay"],
@@ -422,7 +422,7 @@
 
   var GHOSTS = [
     ["PENNSYLVANIA",-78.0,42.0],["OHIO",-82.9,40.5],["INDIANA",-86.3,40.3],
-    ["ILLINOIS",-89.3,40.2],["MISSOURI",-92.9,38.6],["OKLAHOMA",-98.0,35.6],["TEXAS",-100.5,33.4]
+    ["ILLINOIS",-89.1,39.3],["MISSOURI",-92.9,38.6],["OKLAHOMA",-98.0,35.6],["TEXAS",-100.5,33.4]
   ];
 
   /* ---------- draw the map ---------- */
@@ -473,7 +473,7 @@
   var PROF = [
     { x: 0.0,  ft: 480,   n: "Stroudsburg", show: 1 },
     { x: 1.0,  ft: 900,   n: "Cuyahoga" },
-    { x: 2.0,  ft: 465,   n: "St. Louis", show: 1, q: 1 },
+    { x: 2.0,  ft: 771,   n: "Galesburg", show: 1, q: 1 },
     { x: 3.0,  ft: 2000,  n: "Hays" },
     { x: 4.0,  ft: 8200,  n: "Great Sand Dunes", show: 1 },
     { x: 4.5,  ft: 10857, n: "Wolf Creek Pass", show: 1, peak: 1 },
