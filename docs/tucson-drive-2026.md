@@ -1,7 +1,7 @@
 # Poconos → Aspen → Tucson: 13-Day National Park Drive
 
 **Depart:** Sat Aug 15, 2026 · **Aspen:** Fri Aug 21 – Mon Aug 24 · **Arrive Tucson:** Thu Aug 27
-**Route:** Cuyahoga Valley → I-70 west → Great Sand Dunes → Mesa Verde → Aspen → Moab → the Navajo parks → Tucson
+**Route:** Cuyahoga Valley → I-70 west → Great Sand Dunes → Mesa Verde → Aspen → Capitol Reef → the Navajo parks → Tucson
 **Total driving:** ~3,400 mi over 13 days (~260 mi/day, and only one day over 550)
 **Lodging:** hotels on transit nights, camping in/near the parks, Aspen TBD
 
@@ -15,10 +15,11 @@ Two fixed points: you leave tomorrow, and you're in Aspen Saturday. Everything e
 |---|---|---|
 | **Mesa Verde cliff dwelling tours** (Cliff Palace / Balcony House) | recreation.gov | Ticketed, rolling release, sell out days ahead. The one thing that can break the trip. |
 | **Maroon Bells shuttle** (Day 8 or 9) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Your son may already know the drill — ask him before you book blind. |
-| **Arches timed entry** (Day 10, afternoon) | recreation.gov | Required 7am–4pm in August. A late-afternoon entry after 4pm needs no reservation — that's the sunset-at-Delicate-Arch play anyway. |
 | **Great Sand Dunes — Piñon Flats Campground** | recreation.gov | Reservation-only in summer. Fallback: Alamosa hotels. |
 | **Canyon de Chelly canyon-floor tour** (Day 12) | Navajo-authorized guides, Chinle | Only the White House Trail is self-guided. |
-| Hotels: Akron OH, St. Louis, Hays KS, Cortez/Mancos ×2, Moab, Chinle, Holbrook/Show Low | anywhere | Moab and Chinle are the tight ones. |
+| Hotels: Akron OH, St. Louis, Hays KS, Cortez/Mancos ×2, **Torrey UT**, Chinle, Holbrook/Show Low | anywhere | Torrey and Chinle are the tight ones — both are small towns with few rooms and no fallback nearby. Do these first. |
+
+No timed-entry reservations needed anywhere on this version — that was an Arches requirement, and Arches is out.
 | Aspen: 3 nights (Fri 21 – Sun 23) | — | Only if you're not staying with him. If you are, this line disappears and so does the trip's biggest expense. |
 
 America the Beautiful annual pass ($80) pays for itself by Mesa Verde. Buy it at Cuyahoga.
@@ -64,14 +65,16 @@ Note: you're sleeping at 8,000 ft after five days near sea level. Go easy tonigh
 The day the old plan didn't have. **Independence Pass** (CO-82 east, 12,095 ft) to the ghost town and summit overlook is a half-day round trip and spectacular. Or the Silver Queen gondola up Aspen Mountain, or the Rio Grande Trail, or nothing at all.
 Third night in Aspen.
 
-### Day 10 — Mon Aug 24 · Aspen → Moab, UT
-~240 mi, 4.5 hr · CO-82 down-valley → Glenwood Springs → I-70 W → Grand Junction → US-191 S
-An easy, late start — no reason to rush out. Afternoon: **Arches NP**. Enter after 4pm to skip the timed-entry requirement, drive to Delicate Arch Viewpoint or hike the 3-mi trail for sunset, then Windows Section on the way out. Night: Moab.
+### Day 10 — Mon Aug 24 · Aspen → Capitol Reef NP, UT
+~340 mi, 6 hr · CO-82 down-valley → Glenwood Springs → I-70 W through Glenwood Canyon → Green River → UT-24 S
+I-70 runs well north of Moab, so you skip it entirely. Glenwood Canyon in the first hour is one of the great stretches of interstate anywhere.
+Arrive Torrey mid-afternoon. **Capitol Reef** is the least-visited and least-crowded of Utah's five, a hundred-mile buckle of rock with orchards and a Mormon settlement in the middle of it. Drive the **Scenic Drive** at golden hour, walk into **Grand Wash** or **Capitol Gorge** (both flat, both dead-end in narrows), and pick fruit in the Fruita orchards if anything's ripe. Night: Torrey.
 
-### Day 11 — Tue Aug 25 · Moab → Chinle, AZ
-~300 mi, 5.5 hr
-Optional morning: **Canyonlands – Island in the Sky** (Mesa Arch at sunrise, Grand View Point) — 40 min from Moab and worth setting an alarm for.
-Then US-191 S → Bluff → **Monument Valley** on US-163 and the full **17-mi tribal loop drive** this time, not a photo stop. On to Chinle. Late afternoon: Canyon de Chelly's **South Rim Drive** to Spider Rock Overlook. Night: Chinle.
+### Day 11 — Tue Aug 25 · Capitol Reef → Chinle, AZ
+~330 mi, 6.5 hr · and this is the sleeper day of the whole trip.
+UT-24 E to Hanksville, then south on **UT-95, the Bicentennial Highway** — an empty, almost unknown road through Glen Canyon country that people who drive it rank with the Million Dollar Highway. Stop at **Natural Bridges National Monument** (9-mi loop, three enormous spans, an hour or two) and the Hite Overlook above the Colorado.
+Then Blanding → Bluff → **Monument Valley** on US-163 with the full **17-mi tribal loop drive**. On to Chinle; late afternoon on Canyon de Chelly's **South Rim Drive** to Spider Rock Overlook. Night: Chinle.
+Long day, so leave Torrey early — and the UT-95 stretch has almost no services. Fill up in Hanksville.
 
 ### Day 12 — Wed Aug 26 · Canyon de Chelly → Petrified Forest → Show Low/Holbrook
 ~250 mi
@@ -93,11 +96,11 @@ Nothing strenuous after 9am in Tucson in August.
 
 **Monsoon season, and it is not a footnote.** Mid-July through September the Southwest gets violent afternoon thunderstorms.
 - Storms build after ~1pm. Front-load hiking into the morning, every day.
-- **Never enter or park in a wash, slot, or dry creek bed** with clouds anywhere upstream. Flash floods arrive from storms you cannot see. This is the real hazard in Moab, Monument Valley, and Canyon de Chelly.
+- **Never enter or park in a wash, slot, or dry creek bed** with clouds anywhere upstream. Flash floods arrive from storms you cannot see. This is the real hazard in Grand Wash and Capitol Gorge, on UT-95, and in Canyon de Chelly.
 - Dirt roads on the Navajo Nation and in Petrified Forest turn to impassable clay in minutes.
 - Lightning above treeline is the serious one on Days 7–9: the Million Dollar Highway, Independence Pass, the Maroon Bells basin. Be off high ground by early afternoon.
 
-**Heat.** Tucson runs 100–105°F in late August; Moab and Petrified Forest 95–100°F. A gallon of water per person per day in the car, not just on the trail.
+**Heat.** Tucson runs 100–105°F in late August; Capitol Reef and Petrified Forest 95–100°F. A gallon of water per person per day in the car, not just on the trail.
 
 **Altitude, and this route has a lot of it.** Wolf Creek Pass 10,857 ft, Red Mountain Pass 11,018 ft, Independence Pass 12,095 ft — and three nights sleeping at 8,000 ft in Aspen. Days 5–9 are where it bites. The extra Aspen day helps more than any other single change: you acclimate before Independence Pass instead of doing it the same day you arrive.
 
@@ -110,8 +113,8 @@ Nothing strenuous after 9am in Tucson in August.
 If 13 turns out to be too many, cut in this order — each is a clean day:
 
 1. **Day 9** (second full Aspen day) — but only if he's busy Sunday. This is the last thing I'd cut otherwise.
-2. **Day 12** (Canyon de Chelly + Petrified Forest) — run Moab → Flagstaff → Tucson instead.
-3. **Day 11** (Monument Valley + Chinle) — Aspen → Moab → Flagstaff → Tucson.
+2. **Day 12** (Canyon de Chelly + Petrified Forest) — run Chinle → Flagstaff → Tucson instead.
+3. **Day 10** (Capitol Reef) — take the short southern line instead: Aspen → **Black Canyon of the Gunnison NP** (160 mi via McClure Pass, a couple of hours of genuinely vertiginous overlooks), night in Montrose, then Montrose → Monument Valley → Chinle the next day. Saves a day and still avoids Moab.
 4. **Day 3's** Tallgrass and Arch stops — saves no day, but buys back two hours each.
 
 Do not cut Day 6 (the second Mesa Verde day). The cliff dwelling tours are the best thing on the route.
@@ -119,3 +122,5 @@ Do not cut Day 6 (the second Mesa Verde day). The cliff dwelling tours are the b
 ## If you want more
 
 **Grand Canyon South Rim** slots in after Petrified Forest: Holbrook → Tusayan (2.5 hr), a full day at the rim, then down through Sedona and Phoenix to Tucson. Adds ~250 mi and two nights.
+
+**Bryce Canyon** is 2.5 hr west of Torrey on UT-12 — one of the best drives in Utah — but it pulls you decisively away from Tucson and adds two days. Only worth it if you'd rather this become a Utah trip.
