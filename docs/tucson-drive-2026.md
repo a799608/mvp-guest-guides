@@ -1,13 +1,15 @@
 # Poconos → Badlands → Aspen → Tucson: 15-Day Drive
 
-**Depart:** Sat Aug 15, 2026 · **Aspen:** Sat Aug 22 (morning) – Mon Aug 24 · **Arrive Tucson:** Sat Aug 29
-**Route:** Cuyahoga Valley → Galesburg → Badlands → Black Hills → Rocky Mountain NP → Aspen → Great Sand Dunes → Mesa Verde → the Navajo parks → Tucson
-**Total driving:** ~3,850 mi over 15 days
+**Depart:** Sat Aug 15, 2026 · **Aspen:** Sat Aug 22 (morning) – Tue Aug 25 · **Arrive Tucson:** Sat Aug 29
+**Route:** Cuyahoga Valley → Galesburg → Badlands → Black Hills → Rocky Mountain NP → Aspen → Great Sand Dunes → Mesa Verde → straight down to Tucson
+**Total driving:** ~3,750 mi over 15 days
 **Lodging:** hotels on transit nights, camping in/near the parks, Aspen TBD
 
 Going north for the Badlands turns the trip inside out. The Colorado parks that used to come *before* Aspen — Great Sand Dunes, Mesa Verde — now come after it, on the way south to Tucson. Utah is out: no Capitol Reef, no UT-95, no Natural Bridges. In their place: the Badlands, the Black Hills, and **Trail Ridge Road**, which at 12,183 ft is the highest paved through-road in any national park and now the high point of the trip.
 
 You reach Aspen **Saturday morning** by sleeping in Glenwood Springs on Friday, an hour down-valley.
+
+The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley. You'll do those from Tucson, with him. That buys a **third night in Aspen** and turns the last two days into easy transit instead of a park-a-day sprint.
 
 ---
 
@@ -15,13 +17,12 @@ You reach Aspen **Saturday morning** by sleeping in Glenwood Springs on Friday, 
 
 | What | Where | Why urgent |
 |---|---|---|
-| **Mesa Verde cliff dwelling tours** (Day 12) | recreation.gov | Ticketed, rolling release, sell out days ahead. Now falls a week later than the old plan — check the release window still covers it. |
-| **Maroon Bells shuttle** (Day 8 or 9) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Ask your son first — he may know the drill. |
+| **Mesa Verde cliff dwelling tours** (Day 13) | recreation.gov | Ticketed, rolling release, sell out days ahead. Now falls a week later than the old plan — check the release window still covers it. |
+| **Maroon Bells shuttle** (Days 8–10) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Ask your son first — he may know the drill. |
 | **Rocky Mountain NP timed entry** (Day 6) | recreation.gov | Required late May–October. Get the **Trail Ridge Road / park-wide** permit, not the Bear Lake corridor one. |
-| **Great Sand Dunes — Piñon Flats Campground** (Day 10) | recreation.gov | Reservation-only in summer. Fallback: Alamosa hotels. |
-| **Canyon de Chelly canyon-floor tour** (Day 14) | Navajo-authorized guides, Chinle | Only the White House Trail is self-guided. |
-| Hotels: Akron OH, Galesburg IL, Sioux Falls SD, **Wall SD**, Cheyenne WY, Granby CO, Glenwood Springs CO, Cortez ×2, Chinle, Holbrook | anywhere | **Wall** and **Chinle** are the tight ones — small towns, few rooms, no fallback nearby. Book those two first. Glenwood Springs in August is busy too. |
-| Aspen: 2 nights (Sat 22, Sun 23) | — | Only if you're not staying with him. |
+| **Great Sand Dunes — Piñon Flats Campground** (Day 11) | recreation.gov | Reservation-only in summer. Fallback: Alamosa hotels. |
+| Hotels: Akron OH, Galesburg IL, Sioux Falls SD, **Wall SD**, Cheyenne WY, Granby CO, Glenwood Springs CO, Cortez ×2, Gallup NM | anywhere | **Wall** is the tight one — small town, few rooms, no fallback nearby. Book it first. Glenwood Springs in August is busy too. |
+| Aspen: 3 nights (Sat 22 – Mon 24) | — | Only if you're not staying with him. |
 
 America the Beautiful annual pass ($80) — buy it at Cuyahoga; it pays for itself by Rocky Mountain.
 
@@ -71,32 +72,29 @@ You'll have slept at 8,000 ft twice already by now (Granby, and Trail Ridge's al
 ### Day 9 — Sun Aug 23 · Aspen
 A full day with nothing scheduled. The Silver Queen gondola, the Rio Grande Trail, Maroon Bells if you didn't get it Saturday. Second night in Aspen.
 
-### Day 10 — Mon Aug 24 · Aspen → Great Sand Dunes NP, CO
-~230 mi, 5 hr · **Independence Pass** (12,095 ft) eastbound — it's the direct route to Salida, so the pass you'd have driven as a side trip is now simply the way out of town.
-Then Buena Vista → Salida → Poncha Pass → the San Luis Valley.
+### Day 10 — Mon Aug 24 · Aspen
+The day the Arizona parks paid for. Independence Pass as an unhurried half-day out and back, or the Maroon Creek valley, or nothing at all. Third night in Aspen.
+
+### Day 11 — Tue Aug 25 · Aspen → Great Sand Dunes NP, CO
+~230 mi, 5 hr · **Independence Pass** (12,095 ft) eastbound — the direct route to Salida, so the pass is simply the way out of town. Then Buena Vista → Salida → Poncha Pass → the San Luis Valley.
 Arrive late afternoon **on purpose**: the sand hits 150°F midday and cools by 5pm. High Dune at golden hour. Night: Piñon Flats Campground or Alamosa.
 
-### Day 11 — Tue Aug 25 · → Mesa Verde NP
+### Day 12 — Wed Aug 26 · → Mesa Verde NP
 ~230 mi, 5 hr · over **Wolf Creek Pass** (10,857 ft). Lunch in Pagosa Springs or Durango.
 Afternoon: Mesa Top Loop Road and the Cliff Palace overlook — no ticket needed for overlooks. Night: Cortez or Mancos.
 
-### Day 12 — Wed Aug 26 · Mesa Verde, full day
+### Day 13 — Thu Aug 27 · Mesa Verde, full day
 Ranger-led **Cliff Palace** and **Balcony House** (the ladder one), Chapin Mesa Museum, Spruce Tree House overlook. Petroglyph Point Trail (2.4 mi) if you have legs left. Second night, same lodging.
+**This is the last park on the drive.** Everything south of here is Arizona, and Arizona is his.
 
-### Day 13 — Thu Aug 27 · → Chinle, AZ
-~230 mi, 4.5 hr · Four Corners Monument → **Monument Valley** and the full **17-mi tribal loop drive** → Kayenta → Chinle.
-Late afternoon: Canyon de Chelly's **South Rim Drive** to Spider Rock Overlook. Night: Chinle.
+### Day 14 — Fri Aug 28 · Cortez → Gallup, NM
+~250 mi, 4.5 hr · US-491 south through Shiprock, with the Chuska Mountains on your right
+A short, plain transit day — deliberately. You've been driving for two weeks and tomorrow is the last one. Gallup is an old Route 66 town; **El Rancho Hotel** is the one with the movie-star lobby if you want the period version. Night: Gallup.
 
-### Day 14 — Fri Aug 28 · → Petrified Forest → Holbrook, AZ
-~250 mi
-Early: **White House Trail** (2.5 mi, the only self-guided descent to the canyon floor) — exposed, so go at first light.
-Midday: **Petrified Forest NP** — north entrance at Painted Desert, then the 28-mi road south past Blue Mesa, Crystal Forest, Giant Logs. Night: Holbrook (the Wigwam Motel) or push to Show Low.
-
-### Day 15 — Sat Aug 29 · → Tucson & Saguaro NP
-~300 mi · **US-60 through Salt River Canyon** — a 2,000-ft switchbacked gorge. Not an interstate; budget the time.
-Arrive mid-afternoon. **Saguaro NP East** at sunset: Cactus Forest Loop Drive, Freeman Homestead Trail. Save **Saguaro West** and the **Arizona-Sonora Desert Museum** for your first morning in town.
-
-Nothing strenuous after 9am in Tucson in August.
+### Day 15 — Sat Aug 29 · → Tucson
+~380 mi, 6.5 hr · I-40 W → Holbrook → US-60 south through **Salt River Canyon**, a 2,000-ft switchbacked gorge and the best hour of driving in Arizona. Not an interstate; budget the time.
+You'll pass the Petrified Forest entrance around mid-morning. Drive by it — you'll be back with him.
+Arrive Tucson late afternoon.
 
 ---
 
@@ -104,9 +102,11 @@ Nothing strenuous after 9am in Tucson in August.
 
 **Gained:** Badlands NP, the Black Hills and Custer State Park, Rocky Mountain NP and Trail Ridge Road, and a genuinely gentler altitude curve — you climb in stages instead of jumping from Kansas to 11,000 ft in two days.
 
-**Lost:** Capitol Reef, UT-95 and the Bicentennial Highway, Natural Bridges. Utah is gone entirely.
+**Lost:** Capitol Reef, UT-95 and the Bicentennial Highway, Natural Bridges. Utah is gone entirely. The Arizona parks — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley — are deliberately deferred to trips from Tucson with him.
 
-**Moved:** Great Sand Dunes and Mesa Verde now come *after* Aspen rather than before, which is why Tucson slips to Aug 29. Independence Pass stops being a side trip and becomes the road out of Aspen.
+**Moved:** Great Sand Dunes and Mesa Verde now come *after* Aspen rather than before. Independence Pass stops being a side trip and becomes the road out of Aspen.
+
+**One thing worth weighing:** Saguaro is in Tucson and Petrified Forest is 3½ hours away, so deferring those is free. **Monument Valley is about 7 hours from Tucson and Canyon de Chelly 6½** — real expeditions rather than weekends. If there's one Arizona stop worth keeping on the drive, it's those two, and the old Days 13–14 slot them back in at the cost of the third Aspen night.
 
 **Cost:** two extra days and about 550 extra miles versus the Utah version.
 
@@ -116,24 +116,25 @@ Nothing strenuous after 9am in Tucson in August.
 
 **Monsoon season.** Mid-July through September the Southwest gets violent afternoon thunderstorms.
 - Storms build after ~1pm. Front-load hiking into the morning, every day.
-- **Never enter or park in a wash or dry creek bed** with clouds anywhere upstream. Flash floods arrive from storms you cannot see — this is the real hazard in Canyon de Chelly and on the Badlands loop's dirt spurs.
+- **Never enter or park in a wash or dry creek bed** with clouds anywhere upstream. Flash floods arrive from storms you cannot see — the Badlands' dirt spurs turn to grease in minutes.
 - Lightning above treeline is the serious one: **Trail Ridge Road** (Day 6), Independence Pass (Day 10), Wolf Creek Pass (Day 11). Be off high ground by early afternoon. Trail Ridge closes on short notice for weather.
 
 **Heat, both directions.** Tucson runs 100–105°F in late August. The Badlands can hit 100°F with no shade anywhere on the loop — carry more water than you think, and a gallon per person per day in the car.
 
 **Altitude.** Trail Ridge 12,183 ft, Independence Pass 12,095 ft, Wolf Creek Pass 10,857 ft, and nights at 8,000 ft in Granby and Aspen. The staged climb across Days 5–8 (Cheyenne 6,000 → Granby 8,000 → Aspen 8,000) is much kinder than the old route's jump. Still: drink far more than feels necessary, and go easy the first night at altitude.
 
-**Tribal land.** Days 13–14 cross the Navajo Nation. It observes Daylight Saving Time; the rest of Arizona does not — your phone jumps an hour ahead around Monument Valley and back near Holbrook. Alcohol is prohibited. Photographing people requires permission.
+**Tribal land.** Day 14 skirts the Navajo Nation on US-491 through Shiprock. It observes Daylight Saving Time; the rest of Arizona does not, so clocks get strange around the New Mexico–Arizona line on Day 15. Alcohol is prohibited on the reservation.
 
 ---
 
 ## If 15 days is too many
 
-1. **Cut Day 10** (Great Sand Dunes). Aspen → Independence Pass → Salida → Durango → Cortez in one long day, ~380 mi. Saves a day, arrives Tucson Aug 28.
-2. **Cut Day 5's Black Hills stops.** Badlands sunrise, then drive straight to Cheyenne — saves 3 hours but no night.
-3. **Cut Day 12** (second Mesa Verde day) — last resort. The cliff dwelling tours are the best thing on the route.
+1. **Cut Day 10** (the third Aspen night) — arrives Tucson Aug 28.
+2. **Cut Day 11** (Great Sand Dunes). Aspen → Independence Pass → Salida → Durango → Cortez in one long day, ~380 mi.
+3. **Cut Day 5's Black Hills stops.** Badlands sunrise, then drive straight to Cheyenne — saves 3 hours but no night.
+4. **Cut Day 13** (second Mesa Verde day) — last resort. The cliff dwelling tours are the best thing on the route.
 
 ## If you want more
 
-**Wind Cave NP** (Day 5) is an hour's tour and already on the road south through the Black Hills — the cheapest extra park on the whole trip.
+**Wind Cave NP** (Day 5) is an hour's tour and already on the road south through the Black Hills — the cheapest extra park on the whole trip, and it's in South Dakota, not Arizona.
 **Devils Tower** is 2 hours northwest of Rapid City, but it's a detour away from Cheyenne and costs the better part of a day.

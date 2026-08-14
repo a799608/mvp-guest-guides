@@ -301,11 +301,11 @@
     <h1>Poconos to Tucson</h1>
     <p class="standfirst">Fifteen days across eleven states, built around two fixed points: leaving Stroudsburg on Saturday morning, and reaching Aspen by the Saturday after.</p>
     <div class="stats">
-      <div class="stat"><b>3,850</b><span>Miles</span></div>
+      <div class="stat"><b>3,750</b><span>Miles</span></div>
       <div class="stat"><b>15</b><span>Days</span></div>
-      <div class="stat"><b>7</b><span>National parks</span></div>
+      <div class="stat"><b>5</b><span>National parks</span></div>
       <div class="stat"><b>12,183</b><span>Highest ft</span></div>
-      <div class="stat"><b>2</b><span>Nights in Aspen</span></div>
+      <div class="stat"><b>3</b><span>Nights in Aspen</span></div>
     </div>
   </header>
 
@@ -314,7 +314,7 @@
       <h2>The route</h2>
       <p>Hover any day in the table below to isolate its leg.</p>
     </div>
-    <div class="scroller"><svg id="map" role="img" aria-label="Map of the driving route from the Poconos in Pennsylvania west to Tucson, Arizona, by way of Ohio, Illinois, Iowa, South Dakota, Wyoming, Colorado and the Navajo Nation."></svg></div>
+    <div class="scroller"><svg id="map" role="img" aria-label="Map of the driving route from the Poconos in Pennsylvania west to Tucson, Arizona, by way of Ohio, Illinois, Iowa, South Dakota, Wyoming, Colorado and New Mexico."></svg></div>
     <div class="legend">
       <span class="key"><i></i> Driving day</span>
       <span class="key"><i class="dash"></i> Side trip</span>
@@ -346,7 +346,7 @@
   </section>
 
   <footer>
-    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Maroon Bells shuttle, and rooms in Wall and Chinle, both small towns with no fallback nearby.
+    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Rocky Mountain timed-entry permit, the Maroon Bells shuttle, and a room in Wall — a small town with no fallback nearby.
   </footer>
 
 </div>
@@ -385,17 +385,16 @@
       via: [[-107.32,39.55],[-107.21,39.40],[-106.82,39.19]] },
     { d: 9,  date: "Sun 23", place: "Aspen, CO", note: "His day \u2014 nothing scheduled", mi: 0, stay: true,
       via: [[-106.82,39.19],[-106.89,39.13],[-106.94,39.07]], spur: true },
-    { d: 10, date: "Mon 24", place: "Great Sand Dunes NP, CO", note: "Independence Pass out of town, 12,095 ft", mi: 230,
+    { d: 10, date: "Mon 24", place: "Aspen, CO", note: "The day the Arizona parks paid for", mi: 0, stay: true },
+    { d: 11, date: "Tue 25", place: "Great Sand Dunes NP, CO", note: "Independence Pass out of town, 12,095 ft", mi: 230,
       via: [[-106.82,39.19],[-106.56,39.11],[-106.13,38.84],[-105.99,38.53],[-105.87,37.47],[-105.51,37.73]] },
-    { d: 11, date: "Tue 25", place: "Mesa Verde NP, CO", note: "Wolf Creek Pass, 10,857 ft", mi: 230,
+    { d: 12, date: "Wed 26", place: "Mesa Verde NP, CO", note: "Wolf Creek Pass, 10,857 ft", mi: 230,
       via: [[-105.51,37.73],[-105.87,37.47],[-106.80,37.48],[-107.01,37.27],[-107.88,37.28],[-108.59,37.35]] },
-    { d: 12, date: "Wed 26", place: "Mesa Verde NP, CO", note: "Cliff Palace and Balcony House", mi: 0, stay: true },
-    { d: 13, date: "Thu 27", place: "Chinle, AZ", note: "Four Corners, Monument Valley loop", mi: 230,
-      via: [[-108.59,37.35],[-109.05,37.00],[-110.11,36.98],[-110.25,36.73],[-109.55,36.15]] },
-    { d: 14, date: "Fri 28", place: "Holbrook, AZ", note: "White House Trail, Petrified Forest", mi: 250,
-      via: [[-109.55,36.15],[-109.78,35.07],[-110.16,34.90]] },
-    { d: 15, date: "Sat 29", place: "Tucson, AZ", note: "Salt River Canyon, Saguaro East at sunset", mi: 300,
-      via: [[-110.16,34.90],[-110.03,34.25],[-110.51,33.80],[-110.79,33.39],[-110.97,32.22]] }
+    { d: 13, date: "Thu 27", place: "Mesa Verde NP, CO", note: "Cliff Palace \u2014 the last park on the drive", mi: 0, stay: true },
+    { d: 14, date: "Fri 28", place: "Gallup, NM", note: "US-491 through Shiprock, Route 66 town", mi: 250,
+      via: [[-108.59,37.35],[-108.68,36.79],[-108.80,36.31],[-108.74,35.53]] },
+    { d: 15, date: "Sat 29", place: "Tucson, AZ", note: "Salt River Canyon \u2014 driving by Petrified Forest", mi: 380,
+      via: [[-108.74,35.53],[-109.78,35.07],[-110.16,34.90],[-110.03,34.25],[-110.51,33.80],[-110.79,33.39],[-110.97,32.22]] }
   ];
 
   /* stop markers: [lon, lat, label, sublabel, anchor, dx, dy, kind] */
@@ -408,11 +407,10 @@
     [-104.82,41.14,"Cheyenne","Day 5","end",-12,-4,"node"],
     [-105.94,40.09,"Rocky Mountain NP","Day 6","end",-12,-4,"node"],
     [-107.32,39.55,"Glenwood Springs","Day 7","end",-12,-6,"node"],
-    [-106.82,39.19,"ASPEN","Days 8\u20139","start",13,-2,"stay"],
-    [-105.51,37.73,"Great Sand Dunes","Day 10","start",12,14,"node"],
-    [-108.59,37.35,"Mesa Verde","Days 11\u201312","end",-12,-8,"stay"],
-    [-109.55,36.15,"Canyon de Chelly","Day 13","start",12,3,"node"],
-    [-110.16,34.90,"Petrified Forest","Day 14","end",-12,-4,"node"],
+    [-106.82,39.19,"ASPEN","Days 8\u201310","start",13,-2,"stay"],
+    [-105.51,37.73,"Great Sand Dunes","Day 11","start",12,14,"node"],
+    [-108.59,37.35,"Mesa Verde","Days 12\u201313","end",-12,-8,"stay"],
+    [-108.74,35.53,"Gallup","Day 14","start",12,3,"node"],
     [-110.97,32.22,"TUCSON","Day 15","start",13,4,"end"]
   ];
 
@@ -491,15 +489,13 @@
     { x: 7.0,  ft: 5760,  n: "Glenwood Springs" },
     { x: 8.0,  ft: 7900,  n: "Aspen", show: 1 },
     { x: 9.0,  ft: 7900,  n: "Aspen" },
-    { x: 9.4,  ft: 12095, n: "Independence Pass", show: 1, peak: 1 },
-    { x: 10.0, ft: 8200,  n: "Great Sand Dunes" },
-    { x: 10.6, ft: 10857, n: "Wolf Creek Pass", show: 1, peak: 1 },
-    { x: 11.0, ft: 7000,  n: "Mesa Verde" },
-    { x: 12.0, ft: 7000,  n: "Mesa Verde" },
-    { x: 12.6, ft: 5200,  n: "Monument Valley" },
-    { x: 13.0, ft: 5500,  n: "Chinle" },
-    { x: 13.6, ft: 5800,  n: "Petrified Forest" },
-    { x: 14.0, ft: 5080,  n: "Holbrook" },
+    { x: 10.0, ft: 7900,  n: "Aspen" },
+    { x: 10.4, ft: 12095, n: "Independence Pass", show: 1, peak: 1 },
+    { x: 11.0, ft: 8200,  n: "Great Sand Dunes" },
+    { x: 11.6, ft: 10857, n: "Wolf Creek Pass", show: 1, peak: 1 },
+    { x: 12.0, ft: 7000,  n: "Mesa Verde", show: 1, q: 1 },
+    { x: 13.0, ft: 7000,  n: "Mesa Verde" },
+    { x: 14.0, ft: 6470,  n: "Gallup" },
     { x: 14.6, ft: 3300,  n: "Salt River Canyon", show: 1, q: 1, up: 1 },
     { x: 15.0, ft: 2400,  n: "Tucson", show: 1 }
   ];
