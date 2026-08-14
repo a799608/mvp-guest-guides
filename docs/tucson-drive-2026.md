@@ -1,7 +1,7 @@
 # Poconos → Tucson: 10-Day National Park Drive
 
 **Depart:** Sat Aug 15, 2026 · **Arrive Tucson:** Sun Aug 23 (Day 10 is Saguaro)
-**Route:** Central/Southwest — I-80/I-70 west, then the Four Corners parks
+**Route:** Central/Southwest — Cuyahoga Valley, then I-70 west to the Four Corners parks
 **Total driving:** ~2,900 mi over 10 days (~320 mi/day average, two long front-end transit days)
 **Lodging:** hotels on transit nights, camping in/near the parks
 
@@ -14,7 +14,8 @@
 | **Mesa Verde cliff dwelling tours** (Cliff Palace / Balcony House / Long House) | recreation.gov | Ticketed, released on a rolling window, sell out days ahead. This is the single thing that can break the trip. |
 | **Great Sand Dunes — Piñon Flats Campground** | recreation.gov | Reservation-only in summer. Fallback: hotels in Alamosa. |
 | **Canyon de Chelly guided canyon-floor tour** | Navajo-authorized guides, Chinle | Only the White House Trail can be hiked without a guide. |
-| Hotels: Hays KS, Cortez/Mancos CO ×2, Chinle AZ, Holbrook/Flagstaff AZ | anywhere | Chinle has very few rooms. |
+| Hotels: Peninsula/Akron OH, St. Louis, Hays KS, Cortez/Mancos CO ×2, Chinle AZ, Holbrook/Flagstaff AZ | anywhere | Chinle has very few rooms. |
+| Cuyahoga Valley Scenic Railroad (optional, Day 2 morning) | cvsr.org | Runs a limited summer schedule — check before counting on it. |
 
 America the Beautiful annual pass ($80) pays for itself by Mesa Verde — buy it at the first park entrance.
 
@@ -22,17 +23,19 @@ America the Beautiful annual pass ($80) pays for itself by Mesa Verde — buy it
 
 ## Day-by-day
 
-### Day 1 — Sat Aug 15 · Stroudsburg → Columbus/Dayton, OH
-~550 mi, 8.5 hr · I-80 W → I-76 → I-70 W
-Pure transit. Leave early; the goal is to bank miles so days 4–8 can be slow. Night: hotel, Columbus or Springfield OH.
+### Day 1 — Sat Aug 15 · Stroudsburg → Cuyahoga Valley NP, OH
+~430 mi, 7 hr · I-80 W → I-76 W → I-77 N
+Leave by 6am and you're in the park by early afternoon. Ease into it: **Brandywine Falls** (boardwalk, 15 min from the lot, the postcard shot), the **Everett Road Covered Bridge**, then sunset at **The Ledges Overlook** — a west-facing sandstone shelf that is the best evening spot in the park.
+Night: Peninsula, Akron, or Independence OH.
 
-### Day 2 — Sun Aug 16 · → St. Louis, MO
-~400 mi, 6 hr · I-70 W
-**Gateway Arch NP** — small, urban, 2–3 hours is plenty. Tram to the top (book same-morning online) and the museum under the Arch. Night: hotel downtown St. Louis.
+### Day 2 — Sun Aug 16 · Cuyahoga morning → St. Louis, MO
+~550 mi, 8.5 hr · I-77 → I-70 W (you gain an hour crossing into Central time)
+**Morning in the park.** Pick two: the **Ledges Trail** (2.2 mi loop through the cliffs — the signature hike), the **Towpath Trail** along the old Ohio & Erie Canal, the **Boston Mill Visitor Center** for the canal and Underground Railroad history, or the **Cuyahoga Valley Scenic Railroad** if the schedule lines up. Brandywine Gorge Trail (1.5 mi) if you want the falls from below.
+Roll out around noon; arrive St. Louis ~7:30pm local. Night: hotel downtown St. Louis.
 
 ### Day 3 — Mon Aug 17 · → Hays, KS
 ~550 mi, 8 hr · I-70 W
-Detour worth taking: **Tallgrass Prairie National Preserve** (Strong City, ~50 mi off I-70 via US-177). Bison herd, big empty sky, 90 minutes. Night: hotel in Hays.
+Optional before you go: **Gateway Arch NP** opens at 8am — the tram to the top is about 90 minutes all in, and that's genuinely all it needs. Skip it without guilt if you'd rather have the daylight on the far end. Night: hotel in Hays.
 
 ### Day 4 — Tue Aug 18 · → Great Sand Dunes NP, CO
 ~470 mi, 7 hr · US-50 W through La Veta Pass — the Rockies show up on the horizon around Pueblo.
@@ -85,7 +88,7 @@ Do the west district at sunrise, museum midday, east district at sunset. Anythin
 
 ## If you want to compress to 7 days
 
-Cut Days 3 (Tallgrass), 6 (second Mesa Verde day), and 7 (Monument Valley/Canyon de Chelly). Run Hays → Great Sand Dunes → Mesa Verde (one night) → Petrified Forest → Tucson. You lose the cliff dwelling tours, which are the best thing on the route — the 10-day version is the better trip.
+Cut the Cuyahoga morning (Day 2), the second Mesa Verde day (Day 6), and Monument Valley/Canyon de Chelly (Day 7). Run Cuyahoga evening → St. Louis → Hays → Great Sand Dunes → Mesa Verde (one night) → Petrified Forest → Tucson. You lose the cliff dwelling tours, which are the best thing on the route — the 10-day version is the better trip.
 
 ## If you have slack at the end
 
