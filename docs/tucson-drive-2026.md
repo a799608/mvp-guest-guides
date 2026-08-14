@@ -1,9 +1,11 @@
-# Poconos → Tucson: 10-Day National Park Drive
+# Poconos → Aspen → Tucson: 13-Day National Park Drive
 
-**Depart:** Sat Aug 15, 2026 · **Arrive Tucson:** Sun Aug 23 (Day 10 is Saguaro)
-**Route:** Central/Southwest — Cuyahoga Valley, I-70 west, the Four Corners parks, **Aspen Sat Aug 22**, then south
-**Total driving:** ~3,100 mi over 10 days (~350 mi/day, with one 570-mi day after Aspen)
-**Lodging:** hotels on transit nights, camping in/near the parks
+**Depart:** Sat Aug 15, 2026 · **Aspen:** Fri Aug 21 – Mon Aug 24 · **Arrive Tucson:** Thu Aug 27
+**Route:** Cuyahoga Valley → I-70 west → Great Sand Dunes → Mesa Verde → Aspen → Moab → the Navajo parks → Tucson
+**Total driving:** ~3,400 mi over 13 days (~260 mi/day, and only one day over 550)
+**Lodging:** hotels on transit nights, camping in/near the parks, Aspen TBD
+
+Two fixed points: you leave tomorrow, and you're in Aspen Saturday. Everything else bends around those. With the Monday deadline gone, this version puts **three nights in Aspen**, recovers every park the earlier draft had to cut, and never asks you to drive 570 miles the morning after seeing your son.
 
 ---
 
@@ -11,14 +13,15 @@
 
 | What | Where | Why urgent |
 |---|---|---|
-| **Mesa Verde cliff dwelling tours** (Cliff Palace / Balcony House / Long House) | recreation.gov | Ticketed, released on a rolling window, sell out days ahead. This is the single thing that can break the trip. |
-| **Great Sand Dunes — Piñon Flats Campground** | recreation.gov | Reservation-only in summer. Fallback: hotels in Alamosa. |
-| **Maroon Bells shuttle** (Day 8) | recreation.gov / Aspen Highlands | Timed-entry only, no walk-ups in season, August fills. Second only to Mesa Verde in urgency. |
-| **Two nights in Aspen** (Fri 21, Sat 22) | anywhere | Peak summer in an expensive town. If Aspen itself is priced out, stay in **Basalt or Carbondale** (25–35 min down-valley) for a fraction of it. |
-| Hotels: Peninsula/Akron OH, St. Louis, Hays KS, Cortez/Mancos CO ×2, Flagstaff AZ | anywhere | — |
-| Cuyahoga Valley Scenic Railroad (optional, Day 2 morning) | cvsr.org | Runs a limited summer schedule — check before counting on it. |
+| **Mesa Verde cliff dwelling tours** (Cliff Palace / Balcony House) | recreation.gov | Ticketed, rolling release, sell out days ahead. The one thing that can break the trip. |
+| **Maroon Bells shuttle** (Day 8 or 9) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Your son may already know the drill — ask him before you book blind. |
+| **Arches timed entry** (Day 10, afternoon) | recreation.gov | Required 7am–4pm in August. A late-afternoon entry after 4pm needs no reservation — that's the sunset-at-Delicate-Arch play anyway. |
+| **Great Sand Dunes — Piñon Flats Campground** | recreation.gov | Reservation-only in summer. Fallback: Alamosa hotels. |
+| **Canyon de Chelly canyon-floor tour** (Day 12) | Navajo-authorized guides, Chinle | Only the White House Trail is self-guided. |
+| Hotels: Akron OH, St. Louis, Hays KS, Cortez/Mancos ×2, Moab, Chinle, Holbrook/Show Low | anywhere | Moab and Chinle are the tight ones. |
+| Aspen: 3 nights (Fri 21 – Sun 23) | — | Only if you're not staying with him. If you are, this line disappears and so does the trip's biggest expense. |
 
-America the Beautiful annual pass ($80) pays for itself by Mesa Verde — buy it at the first park entrance.
+America the Beautiful annual pass ($80) pays for itself by Mesa Verde. Buy it at Cuyahoga.
 
 ---
 
@@ -26,46 +29,61 @@ America the Beautiful annual pass ($80) pays for itself by Mesa Verde — buy it
 
 ### Day 1 — Sat Aug 15 · Stroudsburg → Cuyahoga Valley NP, OH
 ~430 mi, 7 hr · I-80 W → I-76 W → I-77 N
-Leave by 6am and you're in the park by early afternoon. Ease into it: **Brandywine Falls** (boardwalk, 15 min from the lot, the postcard shot), the **Everett Road Covered Bridge**, then sunset at **The Ledges Overlook** — a west-facing sandstone shelf that is the best evening spot in the park.
-Night: Peninsula, Akron, or Independence OH.
+Leave by 6am, in the park by early afternoon. **Brandywine Falls** (boardwalk, 15 min from the lot), the **Everett Road Covered Bridge**, sunset at **The Ledges Overlook**. Night: Peninsula, Akron, or Independence OH.
 
 ### Day 2 — Sun Aug 16 · Cuyahoga morning → St. Louis, MO
-~550 mi, 8.5 hr · I-77 → I-70 W (you gain an hour crossing into Central time)
-**Morning in the park.** Pick two: the **Ledges Trail** (2.2 mi loop through the cliffs — the signature hike), the **Towpath Trail** along the old Ohio & Erie Canal, the **Boston Mill Visitor Center** for the canal and Underground Railroad history, or the **Cuyahoga Valley Scenic Railroad** if the schedule lines up. Brandywine Gorge Trail (1.5 mi) if you want the falls from below.
-Roll out around noon; arrive St. Louis ~7:30pm local. Night: hotel downtown St. Louis.
+~550 mi, 8.5 hr · I-77 → I-70 W (you gain an hour into Central time)
+Morning in the park — the **Ledges Trail** (2.2 mi loop) is the signature hike; **Boston Mill Visitor Center** has the canal and Underground Railroad history; the **Scenic Railroad** if the schedule fits. Out around noon, in St. Louis ~7:30pm. Night: downtown St. Louis.
 
 ### Day 3 — Mon Aug 17 · → Hays, KS
 ~550 mi, 8 hr · I-70 W
-Optional before you go: **Gateway Arch NP** opens at 8am — the tram to the top is about 90 minutes all in, and that's genuinely all it needs. Skip it without guilt if you'd rather have the daylight on the far end. Night: hotel in Hays.
+**Gateway Arch NP** opens at 8am — tram to the top is 90 minutes all in. With the extra days you can afford it now. Optional midday: **Tallgrass Prairie National Preserve** (Strong City, 50 mi off I-70) — bison and enormous sky. Night: Hays.
 
 ### Day 4 — Tue Aug 18 · → Great Sand Dunes NP, CO
-~470 mi, 7 hr · US-50 W through La Veta Pass — the Rockies show up on the horizon around Pueblo.
-Arrive late afternoon **on purpose**: the sand hits 150°F midday and cools by 5pm. Walk to High Dune at golden hour. Medano Creek is usually dry by August. Night: Piñon Flats Campground (or Alamosa hotel).
+~470 mi, 7 hr · US-50 W over La Veta Pass. The Rockies appear around Pueblo.
+Arrive late afternoon **on purpose** — the sand hits 150°F midday and cools by 5pm. High Dune at golden hour. Medano Creek is usually dry by August. Night: Piñon Flats Campground or Alamosa.
 
 ### Day 5 — Wed Aug 19 · → Mesa Verde NP
-~230 mi, 5 hr · over **Wolf Creek Pass** (10,857 ft) — the best driving of the whole trip. Stop in Pagosa Springs or Durango for lunch.
-Afternoon: Mesa Top Loop Road and the Cliff Palace overlook — no tickets needed for the overlooks. Night: Cortez/Mancos hotel or Morefield Campground.
+~230 mi, 5 hr · over **Wolf Creek Pass** (10,857 ft). Lunch in Pagosa Springs or Durango.
+Afternoon: Mesa Top Loop Road, Cliff Palace overlook — no ticket needed for overlooks. Night: Cortez/Mancos or Morefield Campground.
 
 ### Day 6 — Thu Aug 20 · Mesa Verde, full day
-Ranger-led **Cliff Palace** and **Balcony House** (the ladder one), Chapin Mesa Museum, Spruce Tree House overlook. If you have energy left, Petroglyph Point Trail (2.4 mi). Second night same lodging.
+Ranger-led **Cliff Palace** and **Balcony House** (the ladder one), Chapin Mesa Museum, Spruce Tree House overlook. Petroglyph Point Trail (2.4 mi) if you have legs left. Second night, same lodging.
 
-### Day 7 — Fri Aug 21 · Mesa Verde → Aspen, CO
-~250 mi, 6–7 hr — short miles, long day, and worth every minute.
-Durango → Silverton → Ouray on the **Million Dollar Highway** (US-550): no guardrails, 11,000-ft passes, arguably the most spectacular paved road in the country. Then Ridgway → Montrose → Delta → **McClure Pass** (CO-133) into the Crystal River valley and Carbondale.
-Drive it in the morning. Afternoon monsoon cells on those passes are genuinely unpleasant, and there is nowhere to pull over. Night: Aspen.
+### Day 7 — Fri Aug 21 · Mesa Verde → Aspen
+~250 mi, 6–7 hr — short miles, long day, worth every minute.
+Durango → Silverton → Ouray on the **Million Dollar Highway** (US-550): no guardrails, 11,000-ft passes, the best road on this trip. Then Ridgway → Montrose → Delta → **McClure Pass** (CO-133) down the Crystal River valley through Carbondale.
+Drive it in the morning — afternoon storms on those passes are genuinely bad and there's nowhere to pull over. Night: Aspen. **You arrive in time for dinner with him.**
 
 ### Day 8 — Sat Aug 22 · Aspen
-**Maroon Bells** — the shuttle from Aspen Highlands requires a timed reservation, and August slots go fast. Book it the moment you read this. Maroon Lake Scenic Trail is easy; Crater Lake Trail (3.6 mi) gets you under the peaks.
-Afternoon: drive **Independence Pass** (CO-82 east, 12,095 ft) to the ghost town and the summit overlook, then back. Or the Rio Grande Trail, or ride the Silver Queen gondola up Aspen Mountain.
-You're at 8,000 ft sleeping and 12,000 ft standing — this is the day altitude bites. Night: Aspen.
+**Maroon Bells** in the morning — the shuttle from Aspen Highlands, Maroon Lake Scenic Trail (easy) or Crater Lake Trail (3.6 mi, gets you under the peaks). Back by early afternoon.
+Then leave it open. This is his day to plan, not mine.
+Note: you're sleeping at 8,000 ft after five days near sea level. Go easy tonight — hydrate, skip the alcohol, and don't be surprised by a headache.
 
-### Day 9 — Sun Aug 23 · Aspen → Flagstaff, AZ
-~570 mi, 9 hr — the price of Aspen. CO-82 down-valley → Glenwood Springs → I-70 W → Grand Junction → US-191 S past Moab → Monticello → Bluff → **Monument Valley** (US-163, the classic Forrest Gump straightaway) → Kayenta → Tuba City → Flagstaff.
-Monument Valley is a photo stop today, not a visit — the 17-mi tribal loop drive would add two hours you don't have. Night: Flagstaff.
+### Day 9 — Sun Aug 23 · Aspen
+The day the old plan didn't have. **Independence Pass** (CO-82 east, 12,095 ft) to the ghost town and summit overlook is a half-day round trip and spectacular. Or the Silver Queen gondola up Aspen Mountain, or the Rio Grande Trail, or nothing at all.
+Third night in Aspen.
 
-### Day 10 — Mon Aug 24 · → Tucson & Saguaro NP
-~320 mi, 6 hr · I-17 S → Phoenix → I-10 E, or the slower, better **US-60 through Salt River Canyon** if you leave Flagstaff by 7am.
-Arrive Tucson mid-afternoon. **Saguaro NP East (Rincon Mountain District)** at sunset — Cactus Forest Loop Drive, Freeman Homestead Trail. Save **Saguaro West** and the **Arizona-Sonora Desert Museum** for your first morning in town; the west district at sunrise is the better half anyway.
+### Day 10 — Mon Aug 24 · Aspen → Moab, UT
+~240 mi, 4.5 hr · CO-82 down-valley → Glenwood Springs → I-70 W → Grand Junction → US-191 S
+An easy, late start — no reason to rush out. Afternoon: **Arches NP**. Enter after 4pm to skip the timed-entry requirement, drive to Delicate Arch Viewpoint or hike the 3-mi trail for sunset, then Windows Section on the way out. Night: Moab.
+
+### Day 11 — Tue Aug 25 · Moab → Chinle, AZ
+~300 mi, 5.5 hr
+Optional morning: **Canyonlands – Island in the Sky** (Mesa Arch at sunrise, Grand View Point) — 40 min from Moab and worth setting an alarm for.
+Then US-191 S → Bluff → **Monument Valley** on US-163 and the full **17-mi tribal loop drive** this time, not a photo stop. On to Chinle. Late afternoon: Canyon de Chelly's **South Rim Drive** to Spider Rock Overlook. Night: Chinle.
+
+### Day 12 — Wed Aug 26 · Canyon de Chelly → Petrified Forest → Show Low/Holbrook
+~250 mi
+Early: **White House Trail** (2.5 mi, the only self-guided descent to the canyon floor) — exposed, so go at first light.
+Midday: **Petrified Forest NP** — enter at the north (Painted Desert) end, drive the 28-mi road south, stopping at Blue Mesa, Crystal Forest, Giant Logs. Night: Holbrook (the Wigwam Motel, for the Route 66 version) or push to Show Low to shorten tomorrow.
+
+### Day 13 — Thu Aug 27 · → Tucson & Saguaro NP
+~250–320 mi · **US-60 through Salt River Canyon** — a 2,000-ft switchbacked gorge, the mini Grand Canyon. Not an interstate; budget the time.
+Arrive mid-afternoon. **Saguaro NP East (Rincon Mountain District)** at sunset: Cactus Forest Loop Drive, Freeman Homestead Trail.
+
+### Day 14 — Fri Aug 28 · Saguaro West (first morning in town)
+**Saguaro West (Tucson Mountain District)** at sunrise — denser saguaro forest, Valley View Overlook Trail — then the **Arizona-Sonora Desert Museum** next door, which deserves three hours on its own.
 
 Nothing strenuous after 9am in Tucson in August.
 
@@ -75,39 +93,29 @@ Nothing strenuous after 9am in Tucson in August.
 
 **Monsoon season, and it is not a footnote.** Mid-July through September the Southwest gets violent afternoon thunderstorms.
 - Storms build after ~1pm. Front-load hiking into the morning, every day.
-- **Never enter or park in a wash, slot, or dry creek bed** when there are clouds anywhere upstream. Flash floods arrive from storms you cannot see.
-- Dirt roads on the Navajo Nation turn to impassable clay in minutes.
-- Lightning above treeline is the serious one on this route: the Million Dollar Highway (Day 7), Independence Pass and the Maroon Bells basin (Day 8). Be off the high ground by early afternoon.
+- **Never enter or park in a wash, slot, or dry creek bed** with clouds anywhere upstream. Flash floods arrive from storms you cannot see. This is the real hazard in Moab, Monument Valley, and Canyon de Chelly.
+- Dirt roads on the Navajo Nation and in Petrified Forest turn to impassable clay in minutes.
+- Lightning above treeline is the serious one on Days 7–9: the Million Dollar Highway, Independence Pass, the Maroon Bells basin. Be off high ground by early afternoon.
 
-**Heat.** Tucson runs 100–105°F in late August. Carry a gallon of water per person per day in the car, not just on the trail.
+**Heat.** Tucson runs 100–105°F in late August; Moab and Petrified Forest 95–100°F. A gallon of water per person per day in the car, not just on the trail.
 
-**Altitude, and this version has a lot of it.** Wolf Creek Pass 10,857 ft, Red Mountain Pass 11,018 ft, Independence Pass 12,095 ft — and you sleep at 8,000 ft in Aspen after five days near sea level. Days 5–8 are where it bites: drink far more than feels necessary, skip the alcohol the first night in Aspen, and don't plan anything ambitious for Day 8 morning until you know how you feel.
+**Altitude, and this route has a lot of it.** Wolf Creek Pass 10,857 ft, Red Mountain Pass 11,018 ft, Independence Pass 12,095 ft — and three nights sleeping at 8,000 ft in Aspen. Days 5–9 are where it bites. The extra Aspen day helps more than any other single change: you acclimate before Independence Pass instead of doing it the same day you arrive.
 
-**Tribal land.** Day 9 crosses the Navajo Nation. It observes Daylight Saving Time; the rest of Arizona does not — around Monument Valley your phone jumps an hour ahead and then back near Tuba City. Alcohol is prohibited. Photography of people requires permission.
+**Tribal land.** Days 11–12 cross the Navajo Nation. It observes Daylight Saving Time; the rest of Arizona does not — your phone jumps an hour ahead around Monument Valley and back near Holbrook. Alcohol is prohibited. Photographing people requires permission.
 
 ---
 
-## What Aspen cost
+## Trimming back toward 10 days
 
-Fixing Sat Aug 22 in Aspen pushed the route ~350 mi north of the line to Tucson, and the arrival date absorbed it. Dropped:
+If 13 turns out to be too many, cut in this order — each is a clean day:
 
-- **Canyon de Chelly** (Chinle overnight, White House Trail, Spider Rock)
-- **Petrified Forest NP** and the Painted Desert
-- **Monument Valley** demoted from a visit to a roadside photo stop
-- The relaxed Saguaro day — it's now a sunset at the east district on arrival, with the west district on your first Tucson morning
+1. **Day 9** (second full Aspen day) — but only if he's busy Sunday. This is the last thing I'd cut otherwise.
+2. **Day 12** (Canyon de Chelly + Petrified Forest) — run Moab → Flagstaff → Tucson instead.
+3. **Day 11** (Monument Valley + Chinle) — Aspen → Moab → Flagstaff → Tucson.
+4. **Day 3's** Tallgrass and Arch stops — saves no day, but buys back two hours each.
 
-What replaced it: two nights in Aspen, the Million Dollar Highway, Independence Pass, and Maroon Bells. That's a good trade for scenery and a bad one for archaeology.
+Do not cut Day 6 (the second Mesa Verde day). The cliff dwelling tours are the best thing on the route.
 
-## If you can take an 11th day
+## If you want more
 
-Arrive Tucson **Tue Aug 25** instead and Day 9 stops being a 570-mi slog:
-
-- **Day 9 (Sun):** Aspen → Moab, ~240 mi. Afternoon in **Arches NP** — Delicate Arch at sunset. Night: Moab.
-- **Day 10 (Mon):** Moab → Monument Valley (the real loop drive) → Flagstaff or Holbrook, ~380 mi. **Petrified Forest** fits here if you push.
-- **Day 11 (Tue):** → Tucson via Salt River Canyon, full Saguaro afternoon.
-
-This is the better trip by a clear margin, and it recovers most of what Aspen cost. Arches would need a timed-entry reservation for Day 9.
-
-## If you have slack at the end
-
-Grand Canyon South Rim is a 1.5-day detour off Day 10 (Flagstaff → Tusayan → back down through Sedona to Phoenix → Tucson). It adds roughly 250 mi and one night.
+**Grand Canyon South Rim** slots in after Petrified Forest: Holbrook → Tusayan (2.5 hr), a full day at the rim, then down through Sedona and Phoenix to Tucson. Adds ~250 mi and two nights.
