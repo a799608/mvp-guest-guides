@@ -7,7 +7,7 @@
 **Total driving:** ~3,750 mi over 15 days
 **Lodging:** hotels on transit nights, camping in/near the parks, Aspen TBD
 
-Going north for the Badlands turns the trip inside out. The Colorado parks that used to come *before* Aspen — Great Sand Dunes, Mesa Verde — now come after it, on the way south to Tucson. Utah is out: no Capitol Reef, no UT-95, no Natural Bridges. In their place: the Badlands, the Black Hills, and **Trail Ridge Road**, which at 12,183 ft is the highest paved through-road in any national park and now the high point of the trip.
+Going north for the Badlands turns the trip inside out. The Colorado parks that used to come *before* Aspen — Great Sand Dunes, Mesa Verde — now come after it, on the way south to Tucson. Utah is out — no Capitol Reef, no UT-95, no Natural Bridges — and staying out. In its place: the Badlands, the Black Hills, and **Trail Ridge Road**, which at 12,183 ft is the highest paved through-road in any national park and now the high point of the trip.
 
 You reach Aspen **Saturday morning** by sleeping in Glenwood Springs on Friday, an hour down-valley.
 
@@ -108,7 +108,7 @@ Arrive at Jack's late afternoon.
 
 **Moved:** Great Sand Dunes and Mesa Verde now come *after* Aspen rather than before. Independence Pass stops being a side trip and becomes the road out of Aspen.
 
-**One thing worth weighing:** Saguaro is in Tucson and Petrified Forest is 3½ hours away, so deferring those is free. **Monument Valley is about 7 hours from Tucson and Canyon de Chelly 6½** — real expeditions rather than weekends. If there's one Arizona stop worth keeping on the drive, it's those two — but that trade takes a night from Luke to spend it near Jack's without either of them along, which is the real question, not a mileage one.
+**Settled:** Utah is not happening this trip and doesn't need to. Monument Valley you've already driven. The Arizona parks wait for Jack. That leaves no loose ends in the route — what's below is the trip.
 
 **Cost:** two extra days and about 550 extra miles versus the Utah version.
 
