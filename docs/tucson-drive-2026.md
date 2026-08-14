@@ -18,9 +18,9 @@ Two fixed points: you leave tomorrow, and you're in Aspen Saturday. Everything e
 | **Great Sand Dunes — Piñon Flats Campground** | recreation.gov | Reservation-only in summer. Fallback: Alamosa hotels. |
 | **Canyon de Chelly canyon-floor tour** (Day 12) | Navajo-authorized guides, Chinle | Only the White House Trail is self-guided. |
 | Hotels: Akron OH, St. Louis, Hays KS, Cortez/Mancos ×2, **Torrey UT**, Chinle, Holbrook/Show Low | anywhere | Torrey and Chinle are the tight ones — both are small towns with few rooms and no fallback nearby. Do these first. |
-
-No timed-entry reservations needed anywhere on this version — that was an Arches requirement, and Arches is out.
 | Aspen: 3 nights (Fri 21 – Sun 23) | — | Only if you're not staying with him. If you are, this line disappears and so does the trip's biggest expense. |
+
+Apart from Maroon Bells, no timed-entry reservations are needed on this version — that was an Arches requirement, and Arches is out.
 
 America the Beautiful annual pass ($80) pays for itself by Mesa Verde. Buy it at Cuyahoga.
 
