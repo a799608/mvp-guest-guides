@@ -23,8 +23,8 @@ The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de
 |---|---|---|
 | **Mesa Verde cliff dwelling tours** (Day 11) | recreation.gov | Ticketed, rolling release, sell out days ahead. With a full day you can take any slot — Cliff Palace and Balcony House both. |
 | **Maroon Bells shuttle** (Day 8 or 9) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Ask Luke before booking blind — he lives there and may know the trick to it. |
-| **Rocky Mountain NP timed entry** (Day 6) | recreation.gov | Required late May–October. Get the **Trail Ridge Road / park-wide** permit, not the Bear Lake corridor one. |
-| Hotels: Akron OH, Galesburg IL, Sioux Falls SD, **Wall SD**, Cheyenne WY, Granby CO, Glenwood Springs CO, Cortez ×2 | anywhere | **Wall** is the tight one — small town, few rooms, no fallback nearby. Book it first. Glenwood Springs in August is busy too. |
+| **Rocky Mountain NP timed entry** (Day 7) | recreation.gov | Required late May–October. Get the **Trail Ridge Road / park-wide** permit, not the Bear Lake corridor one. |
+| Hotels: Akron OH, Galesburg IL, Sioux Falls SD, **Wall SD**, Cheyenne WY, Granby CO, **Keystone/Hill City/Custer SD**, Estes Park CO, Glenwood Springs CO, Cortez ×2 | anywhere | **Wall** and the **Black Hills** night are the tight ones — Rushmore's lighting ceremony fills every bed within 20 miles in August. Book those first. Estes Park and Glenwood Springs are busy too. |
 | Aspen: 2 nights (Sat 22, Sun 23) | — | Only if you're not staying with Luke. |
 
 America the Beautiful annual pass ($80) — buy it at Cuyahoga; it pays for itself by Rocky Mountain.
@@ -51,20 +51,25 @@ Then northwest across Iowa. A plain transit day; the payoff starts tomorrow. Nig
 Enter at the **northeast entrance** and drive the **Badlands Loop Road** (SD-240) west: Big Badlands Overlook, Door and Window trails, the **Notch Trail** (1.5 mi, ladder section, the best short hike in the park), Yellow Mounds, Pinnacles.
 Stay out for sunset — low light on banded rock is the entire point, and the crowds are gone by then. Bighorn sheep and bison are routine along the loop. Night: Wall or Interior.
 
-### Day 5 — Wed Aug 19 · Black Hills → Cheyenne, WY
-~400 mi, 7 hr with stops
-Sunrise back in the Badlands if you can manage it, then west: **Wall Drug** for the kitsch, **Mount Rushmore** (90 minutes is plenty), and the part people underrate — **Custer State Park's Needles Highway and Wildlife Loop**, granite spires and a 1,500-head bison herd. **Wind Cave NP** is right there if you want an eighth park; the tour is an hour.
-Then south through Hot Springs and Lusk into Wyoming. Night: Cheyenne.
+### Day 5 — Wed Aug 19 · Badlands → Black Hills (night in the Hills)
+~140 mi, but a full day
+Sunrise back in the Badlands if you can manage it, then west on I-90: **Wall Drug** for the kitsch, and into the Hills.
+- **Crazy Horse Memorial** (midday) — 17 mi from Rushmore on US-16/385. The face is finished; the rest is a work in progress and will be for generations. Private memorial, so the park pass doesn't cover it — roughly $35 per carload. Allow 1½–2 hours for the museum and the viewing terrace. **Note: the Legends in Light laser show ended after the 2023 season and has not returned**, so there's no reason to be here after dark.
+- **Custer State Park** (afternoon) — the **Needles Highway** and the **Wildlife Loop**, granite spires and a 1,500-head bison herd. The underrated highlight of the Black Hills.
+- **Mount Rushmore, evening** — the **Evening Lighting Ceremony starts at 8pm** in late August (it moves an hour earlier on Aug 11 for the rest of the season) and runs about 45 minutes: ranger talk, a 20-minute film, the illumination, Retreat of the Colors. Admission is free; you pay for parking. Get there by 7:15 for a seat in the amphitheater.
 
-### Day 6 — Thu Aug 20 · → Rocky Mountain NP → Granby, CO
-~180 mi, but a full day
-Cheyenne → Fort Collins → Estes Park, then **Trail Ridge Road**: eleven miles above treeline, topping out at **12,183 ft** — higher than anything else on this trip. Stop at Forest Canyon Overlook, the Alpine Visitor Center, Medicine Bow Curve. Elk are everywhere; tundra is fragile, so stay on the paved paths.
-Drive it in the morning — it closes for lightning, and afternoon storms up there are not survivable in the open. Night: Grand Lake or Granby, on the quiet western side.
+Night: Keystone, Hill City, or Custer — whichever has a room. **Wind Cave NP** fits this morning if you want a fifth park; the tour is an hour.
 
-### Day 7 — Fri Aug 21 · → Glenwood Springs, CO
-~150 mi, 3 hr · US-40 over Rabbit Ears Pass or via Kremmling → I-70 W through Vail and **Glenwood Canyon**
-An easy day on purpose. Afternoon: the **Glenwood Hot Springs** pool, or the Hanging Lake trail if you can still get a permit, or just an early dinner and a real night's sleep.
-Night: Glenwood Springs — **one hour from Luke's**, which is the whole point.
+### Day 6 — Thu Aug 20 · Black Hills → Estes Park, CO
+~390 mi, 6.5 hr · south through Hot Springs → Lusk → Cheyenne → Fort Collins → the Big Thompson Canyon
+The price of last night, and a fair one. A plain highway day with the Front Range building ahead of you all afternoon. Night: Estes Park, at the foot of Trail Ridge.
+
+### Day 7 — Fri Aug 21 · Trail Ridge Road → Glenwood Springs, CO
+~230 mi, 5 hr with stops
+**Trail Ridge Road** first thing: eleven miles above treeline, topping out at **12,183 ft**, the highest paved through-road in any national park. Forest Canyon Overlook, the Alpine Visitor Center, Medicine Bow Curve. Elk everywhere; stay on the paved paths, the tundra is fragile.
+Drive it early — it closes for lightning, and afternoon storms up there are not survivable in the open.
+Down the western side to Grand Lake and Granby, then Kremmling → I-70 W through Vail and **Glenwood Canyon**.
+Night: Glenwood Springs — **one hour from Luke's**, which is the whole point. The hot springs pool is right there if you've still got it in you.
 
 ### Day 8 — Sat Aug 22 · → **Aspen**, mid-morning
 ~60 mi, 1¼ hr · CO-82 up-valley through Carbondale and Basalt
@@ -94,7 +99,7 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 
 ## What the northern route changed
 
-**Gained:** Badlands NP, the Black Hills and Custer State Park, Rocky Mountain NP and Trail Ridge Road, and a genuinely gentler altitude curve — you climb in stages instead of jumping from Kansas to 11,000 ft in two days.
+**Gained:** Badlands NP, the Black Hills with Crazy Horse and Rushmore's evening lighting, Rocky Mountain NP and Trail Ridge Road, and a genuinely gentler altitude curve — you climb in stages instead of jumping from Kansas to 11,000 ft in two days.
 
 **Lost:** Capitol Reef, UT-95 and the Bicentennial Highway, Natural Bridges. Utah is gone entirely. The Arizona parks — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley — are deliberately deferred to trips out of Tucson with Jack.
 
@@ -111,7 +116,7 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 **Monsoon season.** Mid-July through September the Southwest gets violent afternoon thunderstorms.
 - Storms build after ~1pm. Front-load hiking into the morning, every day.
 - **Never enter or park in a wash or dry creek bed** with clouds anywhere upstream. Flash floods arrive from storms you cannot see — the Badlands' dirt spurs turn to grease in minutes.
-- Lightning above treeline is the serious one: **Trail Ridge Road** (Day 6) and the **Million Dollar Highway** (Day 10). Be off high ground by early afternoon. Trail Ridge closes on short notice for weather.
+- Lightning above treeline is the serious one: **Trail Ridge Road** (Day 7) and the **Million Dollar Highway** (Day 10). Be off high ground by early afternoon. Trail Ridge closes on short notice for weather.
 
 **Heat, both directions.** Tucson runs 100–105°F in late August. The Badlands can hit 100°F with no shade anywhere on the loop — carry more water than you think, and a gallon per person per day in the car.
 
@@ -129,5 +134,5 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 
 ## If you want more
 
-**Wind Cave NP** (Day 5) is an hour's tour and already on the road south through the Black Hills — the cheapest extra park on the whole trip. It's also the only add on the list that costs no night.
+**Wind Cave NP** (Day 5) is an hour's tour and sits between Custer State Park and Hot Springs — the cheapest extra park on the trip, and the only add that costs no night.
 **Devils Tower** is 2 hours northwest of Rapid City, but it's a detour away from Cheyenne and costs the better part of a day.
