@@ -1,10 +1,10 @@
-# Poconos → Badlands → Aspen → Tucson: 11-Day Drive
+# Poconos → Badlands → Aspen → Tucson: 12-Day Drive
 
 *Luke in Aspen, Jack in Tucson. The parks are what's in between.*
 
-**Depart:** Sat Aug 15, 2026 · **Aspen:** Sat Aug 22 (morning) – Mon Aug 24 · **Arrive Tucson:** Tue Aug 25
+**Depart:** Sat Aug 15, 2026 · **Aspen:** Sat Aug 22 (morning) – Mon Aug 24 · **Arrive Tucson:** Wed Aug 26
 **Route:** Cuyahoga Valley → Galesburg → Badlands → Black Hills → Rocky Mountain NP → Aspen → Mesa Verde → straight down to Tucson
-**Total driving:** ~3,460 mi over 11 days
+**Total driving:** ~3,460 mi over 12 days
 **Lodging:** hotels on transit nights, camping in/near the parks, Aspen TBD
 
 Going north for the Badlands turns the trip inside out. The Colorado parks that used to come *before* Aspen — Great Sand Dunes, Mesa Verde — now come after it, on the way south to Tucson. Utah is out — no Capitol Reef, no UT-95, no Natural Bridges — and staying out. In its place: the Badlands, the Black Hills, and **Trail Ridge Road**, which at 12,183 ft is the highest paved through-road in any national park and now the high point of the trip.
@@ -13,7 +13,7 @@ You reach Aspen **Saturday morning** by sleeping in Glenwood Springs on Friday, 
 
 The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley. Those are for later, out of Tucson, with **Jack**.
 
-**Eleven days is tight, and all the tightness lands after Aspen.** Getting to Luke by Saturday morning takes seven days no matter what, so the compression comes out of the back half: three days from Aspen to Tucson instead of seven. Great Sand Dunes is gone, Mesa Verde drops from two nights to one, and the last day is a genuine haul.
+**Twelve days.** Getting to Luke by Saturday morning takes seven no matter what, so everything flexible sits after Aspen — four days from there to Jack's. The twelfth day goes to **a full day at Mesa Verde**, which does double duty: the cliff-dwelling tours stop being a race, and the long final drive starts fresh at 6am instead of after a morning tour. Great Sand Dunes stays cut.
 
 ---
 
@@ -21,10 +21,10 @@ The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de
 
 | What | Where | Why urgent |
 |---|---|---|
-| **Mesa Verde cliff dwelling tours** (Day 11, **first tour of the morning**) | recreation.gov | Ticketed, sell out days ahead. On this version you need the earliest Cliff Palace slot — anything later and you're driving into the night. |
+| **Mesa Verde cliff dwelling tours** (Day 11) | recreation.gov | Ticketed, rolling release, sell out days ahead. With a full day you can take any slot — Cliff Palace and Balcony House both. |
 | **Maroon Bells shuttle** (Day 8 or 9) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Ask Luke before booking blind — he lives there and may know the trick to it. |
 | **Rocky Mountain NP timed entry** (Day 6) | recreation.gov | Required late May–October. Get the **Trail Ridge Road / park-wide** permit, not the Bear Lake corridor one. |
-| Hotels: Akron OH, Galesburg IL, Sioux Falls SD, **Wall SD**, Cheyenne WY, Granby CO, Glenwood Springs CO, Cortez | anywhere | **Wall** is the tight one — small town, few rooms, no fallback nearby. Book it first. Glenwood Springs in August is busy too. |
+| Hotels: Akron OH, Galesburg IL, Sioux Falls SD, **Wall SD**, Cheyenne WY, Granby CO, Glenwood Springs CO, Cortez ×2 | anywhere | **Wall** is the tight one — small town, few rooms, no fallback nearby. Book it first. Glenwood Springs in August is busy too. |
 | Aspen: 2 nights (Sat 22, Sun 23) | — | Only if you're not staying with Luke. |
 
 America the Beautiful annual pass ($80) — buy it at Cuyahoga; it pays for itself by Rocky Mountain.
@@ -80,14 +80,15 @@ A full day with nothing scheduled — Luke's to fill. The Silver Queen gondola, 
 Out down-valley to Carbondale, over **McClure Pass**, then Delta → Montrose → Ridgway and south onto the **Million Dollar Highway** (US-550): Ouray, Red Mountain Pass at 11,018 ft, Silverton, Durango. No guardrails, and worth every minute.
 Get over the passes before the afternoon storms build. Arrive Cortez late afternoon — enough for the **Mesa Top Loop Road** and the **Cliff Palace overlook**, neither of which needs a ticket. Night: Cortez or Mancos.
 
-### Day 11 — Tue Aug 25 · Mesa Verde morning → Tucson
-**The hard day.** Take the **first Cliff Palace tour of the morning** — usually around 8am, about an hour — and be rolling by 9:30.
-~530 mi, 9 hr · US-491 south through Shiprock → Gallup → I-40 W → Holbrook → US-60 south through **Salt River Canyon** → Globe → Tucson.
-That puts you at Jack's around 7pm, which is fine but leaves no slack. Two ways to buy some back:
-- **Skip the tour**, leave Cortez at 6am, and you're in Tucson by mid-afternoon with the Salt River Canyon drive unhurried.
-- **Skip Salt River Canyon**, staying on I-40 to Flagstaff and down I-17 through Phoenix — about 40 miles longer but faster road, and duller.
+### Day 11 — Tue Aug 25 · Mesa Verde, full day
+The day Wednesday bought. Ranger-led **Cliff Palace** and **Balcony House** (the ladder one), the Chapin Mesa Museum, Spruce Tree House overlook. **Petroglyph Point Trail** (2.4 mi) in the late afternoon if you have legs left.
+Second night, same lodging. Pack the car tonight.
 
-If the day goes sideways, **Show Low** or **Globe** are the places to stop and finish Wednesday morning.
+### Day 12 — Wed Aug 26 · Cortez → Tucson
+~530 mi, 9 hr · US-491 south through Shiprock → Gallup → I-40 W → Holbrook → US-60 south through **Salt River Canyon** → Globe → Tucson.
+Long, but you start it rested and empty-handed. **Leave at 6am** and you're at Jack's by mid-afternoon with the Salt River Canyon stretch driven in daylight and unhurried — it's a 2,000-ft switchbacked gorge and the best hour of driving in Arizona.
+Faster but duller alternative: stay on I-40 to Flagstaff and drop south on I-17 through Phoenix. About 40 miles longer, all interstate.
+If the day goes sideways, **Show Low** or **Globe** are the places to stop and finish Thursday morning.
 
 ---
 
@@ -101,7 +102,7 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 
 **Settled:** Utah is not happening this trip and doesn't need to. Monument Valley you've already driven. The Arizona parks wait for Jack. That leaves no loose ends in the route — what's below is the trip.
 
-**Cost of the 11-day cut:** Great Sand Dunes, the second Mesa Verde day and its unhurried cliff-dwelling tours, the third Aspen night, and any slack on the final day. Independence Pass also goes — the route out of Aspen now runs west over McClure Pass rather than east.
+**Cost of the 12-day cut:** Great Sand Dunes and the third Aspen night. Independence Pass also goes — the route out of Aspen now runs west over McClure Pass rather than east, down the Million Dollar Highway.
 
 ---
 
@@ -116,20 +117,17 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 
 **Altitude.** Trail Ridge 12,183 ft, Red Mountain Pass 11,018 ft, and nights at 8,000 ft in Granby and Aspen. The staged climb across Days 5–8 (Cheyenne 6,000 → Granby 8,000 → Aspen 8,000) is much kinder than the old route's jump. Still: drink far more than feels necessary, and go easy the first night at altitude.
 
-**Tribal land.** Day 11 skirts the Navajo Nation on US-491 through Shiprock. It observes Daylight Saving Time; the rest of Arizona does not, so clocks get strange around the New Mexico–Arizona line. Alcohol is prohibited on the reservation.
+**Tribal land.** Day 12 skirts the Navajo Nation on US-491 through Shiprock. It observes Daylight Saving Time; the rest of Arizona does not, so clocks get strange around the New Mexico–Arizona line. Alcohol is prohibited on the reservation.
 
 ---
 
-## If you get a day or two back
+## If you get another day back
 
-In order of what they buy:
-
-1. **A second Mesa Verde day** (+1). The cliff-dwelling tours stop being a race and the final day starts fresh. This is the first thing I'd add back.
-2. **A night in Gallup or Holbrook** (+1). Splits that 530-mile finish into two easy halves and puts Petrified Forest back within reach.
-3. **Great Sand Dunes** (+1). Routes you out of Aspen over Independence Pass instead, which is its own reward.
-4. **A third Aspen night** (+1) — worth more than any of the above if the point of the trip is Luke.
+1. **A third Aspen night** (+1). If the point of the trip is the two of them, this is worth more than any park on the list. Arrives Tucson Thursday Aug 27.
+2. **A night in Gallup or Holbrook** (+1). Splits the 530-mile finish into two easy halves and puts Petrified Forest back within reach — though you'll see that one with Jack anyway.
+3. **Great Sand Dunes** (+1). Routes you out of Aspen over Independence Pass instead of McClure, which is its own reward.
 
 ## If you want more
 
-**Wind Cave NP** (Day 5) is an hour's tour and already on the road south through the Black Hills — the cheapest extra park on the whole trip. On an 11-day schedule it's also the only add that costs no night.
+**Wind Cave NP** (Day 5) is an hour's tour and already on the road south through the Black Hills — the cheapest extra park on the whole trip. It's also the only add on the list that costs no night.
 **Devils Tower** is 2 hours northwest of Rapid City, but it's a detour away from Cheyenne and costs the better part of a day.

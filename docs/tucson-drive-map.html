@@ -297,12 +297,12 @@
 <div class="wrap">
 
   <header>
-    <div class="eyebrow">August 15 – 25, 2026</div>
+    <div class="eyebrow">August 15 – 26, 2026</div>
     <h1>Poconos to Tucson</h1>
-    <p class="standfirst">Eleven days from Luke in Aspen to Jack in Tucson. Seven of them just get you to Luke by Saturday morning, which is why the last three are the hard ones.</p>
+    <p class="standfirst">Twelve days from Luke in Aspen to Jack in Tucson. Seven of them just get you to Luke by Saturday morning; the rest are the good ones.</p>
     <div class="stats">
       <div class="stat"><b>3,460</b><span>Miles</span></div>
-      <div class="stat"><b>11</b><span>Days</span></div>
+      <div class="stat"><b>12</b><span>Days</span></div>
       <div class="stat"><b>4</b><span>National parks</span></div>
       <div class="stat"><b>12,183</b><span>Highest ft</span></div>
       <div class="stat"><b>2</b><span>Nights in Aspen</span></div>
@@ -346,7 +346,7 @@
   </section>
 
   <footer>
-    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Rocky Mountain timed-entry permit, the Maroon Bells shuttle, a room in Wall, and the <b>earliest</b> Cliff Palace tour on day 11 — a later one turns the last day into a night drive.
+    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Rocky Mountain timed-entry permit, the Maroon Bells shuttle, a room in Wall, and the Cliff Palace and Balcony House tours on day 11.
   </footer>
 
 </div>
@@ -387,7 +387,8 @@
       via: [[-106.82,39.19],[-106.89,39.13],[-106.94,39.07]], spur: true },
     { d: 10, date: "Mon 24", place: "Mesa Verde NP, CO", note: "Million Dollar Highway southbound", mi: 330,
       via: [[-106.82,39.19],[-107.21,39.40],[-107.29,39.13],[-108.07,38.74],[-107.88,38.48],[-107.67,38.02],[-107.66,37.81],[-107.88,37.28],[-108.59,37.35]] },
-    { d: 11, date: "Tue 25", place: "Tucson, AZ", note: "Cliff Palace at 8am, then 530 mi", mi: 530,
+    { d: 11, date: "Tue 25", place: "Mesa Verde NP, CO", note: "Cliff Palace and Balcony House, unhurried", mi: 0, stay: true },
+    { d: 12, date: "Wed 26", place: "Tucson, AZ", note: "Out at 6am \u00b7 Salt River Canyon in daylight", mi: 530,
       via: [[-108.59,37.35],[-108.68,36.79],[-108.74,35.53],[-110.16,34.90],[-110.03,34.25],[-110.51,33.80],[-110.79,33.39],[-110.97,32.22]] }
   ];
 
@@ -402,8 +403,8 @@
     [-105.94,40.09,"Rocky Mountain NP","Day 6","end",-12,-4,"node"],
     [-107.32,39.55,"Glenwood Springs","Day 7","end",-12,-6,"node"],
     [-106.82,39.19,"ASPEN","Days 8\u20139 \u00b7 Luke","start",13,-2,"stay"],
-    [-108.59,37.35,"Mesa Verde","Day 10","end",-12,-8,"node"],
-    [-110.97,32.22,"TUCSON","Day 11 \u00b7 Jack","start",13,4,"end"]
+    [-108.59,37.35,"Mesa Verde","Days 10\u201311","end",-12,-8,"stay"],
+    [-110.97,32.22,"TUCSON","Day 12 \u00b7 Jack","start",13,4,"end"]
   ];
 
   /* states whose borders are (near enough) lines of latitude and longitude */
@@ -483,13 +484,14 @@
     { x: 9.0,  ft: 7900,  n: "Aspen" },
     { x: 9.5,  ft: 11018, n: "Red Mountain Pass", show: 1, peak: 1 },
     { x: 10.0, ft: 6200,  n: "Mesa Verde", show: 1, q: 1 },
-    { x: 10.5, ft: 6470,  n: "Gallup" },
-    { x: 10.8, ft: 3300,  n: "Salt River Canyon", show: 1, q: 1, up: 1 },
-    { x: 11.0, ft: 2400,  n: "Tucson", show: 1 }
+    { x: 11.0, ft: 7000,  n: "Mesa Verde" },
+    { x: 11.5, ft: 6470,  n: "Gallup" },
+    { x: 11.8, ft: 3300,  n: "Salt River Canyon", show: 1, q: 1, up: 1 },
+    { x: 12.0, ft: 2400,  n: "Tucson", show: 1 }
   ];
 
   var PW = 1180, PH = 300, PL = 54, PR = 26, PT = 34, PB = 34,
-      qx = function (x) { return PL + (x / 11) * (PW - PL - PR); },
+      qx = function (x) { return PL + (x / 12) * (PW - PL - PR); },
       qy = function (ft) { return PH - PB - (ft / 13000) * (PH - PT - PB); },
       p = [];
 
@@ -501,7 +503,7 @@
   var line = PROF.map(function (d, i) {
     return (i ? "L" : "M") + qx(d.x).toFixed(1) + " " + qy(d.ft).toFixed(1);
   }).join(" ");
-  p.push('<path class="prof-area" d="' + line + ' L' + qx(11).toFixed(1) + ' ' + qy(0).toFixed(1) + ' L' + qx(0).toFixed(1) + ' ' + qy(0).toFixed(1) + ' Z"/>');
+  p.push('<path class="prof-area" d="' + line + ' L' + qx(12).toFixed(1) + ' ' + qy(0).toFixed(1) + ' L' + qx(0).toFixed(1) + ' ' + qy(0).toFixed(1) + ' Z"/>');
   p.push('<path class="prof-line" d="' + line + '"/>');
 
   PROF.forEach(function (d) {
@@ -509,12 +511,12 @@
     var x = qx(d.x), y = qy(d.ft), up = d.peak || d.up || d.ft > 7000;
     p.push('<circle class="prof-dot' + (d.peak ? ' prof-peak' : '') + '" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="4"/>');
     p.push('<text class="prof-lbl halo' + (d.q ? ' q' : '') + '" x="' + x.toFixed(1) + '" y="' + (y + (up ? -13 : 20)).toFixed(1) +
-           '" text-anchor="' + (d.x < 1 ? "start" : d.x > 10.6 ? "end" : "middle") + '">' + d.n + '</text>');
+           '" text-anchor="' + (d.x < 1 ? "start" : d.x > 11.6 ? "end" : "middle") + '">' + d.n + '</text>');
     p.push('<text class="prof-tick halo" x="' + x.toFixed(1) + '" y="' + (y + (up ? -27 : 33)).toFixed(1) +
-           '" text-anchor="' + (d.x < 1 ? "start" : d.x > 10.6 ? "end" : "middle") + '">' + d.ft.toLocaleString() + ' ft</text>');
+           '" text-anchor="' + (d.x < 1 ? "start" : d.x > 11.6 ? "end" : "middle") + '">' + d.ft.toLocaleString() + ' ft</text>');
   });
 
-  for (var i = 1; i <= 11; i++) {
+  for (var i = 1; i <= 12; i++) {
     p.push('<text class="prof-tick" x="' + qx(i).toFixed(1) + '" y="' + (PH - 6) + '" text-anchor="middle" opacity=".7">' + i + '</text>');
   }
   p.push('<text class="prof-tick" x="10" y="' + (PH - 6) + '" opacity=".7">DAY</text>');
