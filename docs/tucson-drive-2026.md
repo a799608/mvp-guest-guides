@@ -1,5 +1,7 @@
 # Poconos → Badlands → Aspen → Tucson: 15-Day Drive
 
+*One son in Aspen, one in Tucson. The parks are what's in between.*
+
 **Depart:** Sat Aug 15, 2026 · **Aspen:** Sat Aug 22 (morning) – Tue Aug 25 · **Arrive Tucson:** Sat Aug 29
 **Route:** Cuyahoga Valley → Galesburg → Badlands → Black Hills → Rocky Mountain NP → Aspen → Great Sand Dunes → Mesa Verde → straight down to Tucson
 **Total driving:** ~3,750 mi over 15 days
@@ -9,7 +11,7 @@ Going north for the Badlands turns the trip inside out. The Colorado parks that 
 
 You reach Aspen **Saturday morning** by sleeping in Glenwood Springs on Friday, an hour down-valley.
 
-The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley. You'll do those from Tucson, with him. That buys a **third night in Aspen** and turns the last two days into easy transit instead of a park-a-day sprint.
+The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley. Those are for later, out of Tucson, with your **Tucson son**. That buys a **third night in Aspen** with your **Aspen son**, and turns the last two days into easy transit instead of a park-a-day sprint.
 
 ---
 
@@ -18,11 +20,11 @@ The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de
 | What | Where | Why urgent |
 |---|---|---|
 | **Mesa Verde cliff dwelling tours** (Day 13) | recreation.gov | Ticketed, rolling release, sell out days ahead. Now falls a week later than the old plan — check the release window still covers it. |
-| **Maroon Bells shuttle** (Days 8–10) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Ask your son first — he may know the drill. |
+| **Maroon Bells shuttle** (Days 8–10) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Ask your Aspen son before booking blind — he lives there and may know the trick to it. |
 | **Rocky Mountain NP timed entry** (Day 6) | recreation.gov | Required late May–October. Get the **Trail Ridge Road / park-wide** permit, not the Bear Lake corridor one. |
 | **Great Sand Dunes — Piñon Flats Campground** (Day 11) | recreation.gov | Reservation-only in summer. Fallback: Alamosa hotels. |
 | Hotels: Akron OH, Galesburg IL, Sioux Falls SD, **Wall SD**, Cheyenne WY, Granby CO, Glenwood Springs CO, Cortez ×2, Gallup NM | anywhere | **Wall** is the tight one — small town, few rooms, no fallback nearby. Book it first. Glenwood Springs in August is busy too. |
-| Aspen: 3 nights (Sat 22 – Mon 24) | — | Only if you're not staying with him. |
+| Aspen: 3 nights (Sat 22 – Mon 24) | — | Only if you're not staying with your son. |
 
 America the Beautiful annual pass ($80) — buy it at Cuyahoga; it pays for itself by Rocky Mountain.
 
@@ -66,7 +68,7 @@ Night: Glenwood Springs — **one hour from Aspen**, which is the whole point.
 ### Day 8 — Sat Aug 22 · → **Aspen**, mid-morning
 ~60 mi, 1¼ hr · CO-82 up-valley through Carbondale and Basalt
 Leave at 8, and you're in Aspen by 9:30 with the whole day ahead of you.
-**Maroon Bells** if the shuttle slot lines up, otherwise leave it entirely to him. Night: Aspen.
+**Maroon Bells** if the shuttle slot lines up, otherwise leave the day entirely to your son. Night: Aspen.
 You'll have slept at 8,000 ft twice already by now (Granby, and Trail Ridge's altitude the day before) — this version acclimates you far better than the old one did.
 
 ### Day 9 — Sun Aug 23 · Aspen
@@ -85,7 +87,7 @@ Afternoon: Mesa Top Loop Road and the Cliff Palace overlook — no ticket needed
 
 ### Day 13 — Thu Aug 27 · Mesa Verde, full day
 Ranger-led **Cliff Palace** and **Balcony House** (the ladder one), Chapin Mesa Museum, Spruce Tree House overlook. Petroglyph Point Trail (2.4 mi) if you have legs left. Second night, same lodging.
-**This is the last park on the drive.** Everything south of here is Arizona, and Arizona is his.
+**This is the last park on the drive.** Everything south of here is Arizona, and Arizona keeps — you'll see it with your Tucson son.
 
 ### Day 14 — Fri Aug 28 · Cortez → Gallup, NM
 ~250 mi, 4.5 hr · US-491 south through Shiprock, with the Chuska Mountains on your right
@@ -93,7 +95,7 @@ A short, plain transit day — deliberately. You've been driving for two weeks a
 
 ### Day 15 — Sat Aug 29 · → Tucson
 ~380 mi, 6.5 hr · I-40 W → Holbrook → US-60 south through **Salt River Canyon**, a 2,000-ft switchbacked gorge and the best hour of driving in Arizona. Not an interstate; budget the time.
-You'll pass the Petrified Forest entrance around mid-morning. Drive by it — you'll be back with him.
+You'll pass the Petrified Forest entrance around mid-morning. Drive by it — you'll be back, with better company.
 Arrive Tucson late afternoon.
 
 ---
@@ -102,11 +104,11 @@ Arrive Tucson late afternoon.
 
 **Gained:** Badlands NP, the Black Hills and Custer State Park, Rocky Mountain NP and Trail Ridge Road, and a genuinely gentler altitude curve — you climb in stages instead of jumping from Kansas to 11,000 ft in two days.
 
-**Lost:** Capitol Reef, UT-95 and the Bicentennial Highway, Natural Bridges. Utah is gone entirely. The Arizona parks — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley — are deliberately deferred to trips from Tucson with him.
+**Lost:** Capitol Reef, UT-95 and the Bicentennial Highway, Natural Bridges. Utah is gone entirely. The Arizona parks — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley — are deliberately deferred to trips out of Tucson with your son there.
 
 **Moved:** Great Sand Dunes and Mesa Verde now come *after* Aspen rather than before. Independence Pass stops being a side trip and becomes the road out of Aspen.
 
-**One thing worth weighing:** Saguaro is in Tucson and Petrified Forest is 3½ hours away, so deferring those is free. **Monument Valley is about 7 hours from Tucson and Canyon de Chelly 6½** — real expeditions rather than weekends. If there's one Arizona stop worth keeping on the drive, it's those two, and the old Days 13–14 slot them back in at the cost of the third Aspen night.
+**One thing worth weighing:** Saguaro is in Tucson and Petrified Forest is 3½ hours away, so deferring those is free. **Monument Valley is about 7 hours from Tucson and Canyon de Chelly 6½** — real expeditions rather than weekends. If there's one Arizona stop worth keeping on the drive, it's those two — but that trade takes a night from one son to spend it near the other, which is the real question, not a mileage one.
 
 **Cost:** two extra days and about 550 extra miles versus the Utah version.
 
