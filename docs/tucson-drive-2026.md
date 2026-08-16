@@ -67,11 +67,13 @@ A short day. Time for the Milwaukee lakefront in the morning if you want it, and
 ### Day 4 — Tue Aug 18 · Minneapolis → Badlands NP, SD
 ~600 mi, 9 hr — **the long one.** Out early. I-35 → I-90 W, crossing the Missouri at Chamberlain
 Enter at the **northeast entrance** and drive the **Badlands Loop Road** (SD-240) west: Big Badlands Overlook, Door and Window trails, the **Notch Trail** (1.5 mi, ladder section, the best short hike in the park), Yellow Mounds, Pinnacles.
-Stay out for sunset — low light on banded rock is the entire point, and the crowds are gone by then. Bighorn sheep and bison are routine along the loop. **Sleep:** the I-90 rest area at Wall, or **Buffalo Gap National Grassland** just south of the park — free dispersed camping on BLM-style land, no facilities, and the darkest sky you'll get all trip.
+Stay out for sunset — low light on banded rock is the entire point, and the crowds are gone by then. Bighorn sheep and bison are routine along the loop. **Sleep: Sage Creek Campground**, inside the park at the west end of the Sage Creek Rim Road. **Free — no fee, no reservations, first-come.** Vault toilets, no water, no hookups. Bison walk through it. It's a 12-mi gravel road in, fine for any car in dry weather, and it is the darkest sky on this trip.
+You sleep there **so you wake up in the Badlands**. Sunrise on the rim is the reason.
+Fallbacks if it's full: **Buffalo Gap National Grassland** dispersed along the same road, or the I-90 rest area at Wall.
 
 ### Day 5 — Wed Aug 19 · Badlands → Black Hills (night in the Hills)
 ~140 mi, but a full day
-Sunrise back in the Badlands if you can manage it, then west on I-90: **Wall Drug** for the kitsch, and into the Hills.
+**Sunrise on the rim** — you're already there, so this costs nothing but getting up. Pinnacles and Yellow Mounds face east and light up first. Then west on I-90: **Wall Drug** for the kitsch, and into the Hills.
 - **Crazy Horse Memorial** (midday) — 17 mi from Rushmore on US-16/385. The face is finished; the rest is a work in progress and will be for generations. Private memorial, so the park pass doesn't cover it — roughly $35 per carload. Allow 1½–2 hours for the museum and the viewing terrace. **Note: the Legends in Light laser show ended after the 2023 season and has not returned**, so there's no reason to be here after dark.
 - **Custer State Park** (afternoon) — the **Needles Highway** and the **Wildlife Loop**, granite spires and a 1,500-head bison herd. The underrated highlight of the Black Hills.
 - **Mount Rushmore, evening** — the **Evening Lighting Ceremony starts at 8pm** in late August (it moves an hour earlier on Aug 11 for the rest of the season) and runs about 45 minutes: ranger talk, a 20-minute film, the illumination, Retreat of the Colors. Admission is free; you pay for parking. Get there by 7:15 for a seat in the amphitheater.
