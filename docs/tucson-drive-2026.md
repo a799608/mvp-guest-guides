@@ -3,11 +3,11 @@
 *Luke in Aspen, Jack in Tucson. The parks are what's in between.*
 
 **Depart:** Sat Aug 15, 2026 · **Aspen:** Sat Aug 22 (morning) – Mon Aug 24 · **Arrive Tucson:** Wed Aug 26
-**Route:** Cuyahoga Valley → Sleeping Bear Dunes → Mackinac Bridge → Green Bay → Badlands → Black Hills → Rocky Mountain NP → Aspen → Mesa Verde → Tucson
-**Total driving:** ~3,700 mi over 12 days
+**Route:** Cuyahoga Valley → Chicago → Milwaukee → Green Bay → Minneapolis → Badlands → Black Hills → Devils Tower → Rocky Mountain NP → Aspen → Mesa Verde → Tucson
+**Total driving:** ~3,800 mi over 12 days
 **Lodging:** hotels on transit nights, camping in/near the parks, Aspen TBD
 
-The first four days now run up and around the Great Lakes — Michigan's dune coast, the Mackinac Bridge, the Upper Peninsula, Wisconsin, the Twin Cities — instead of straight across the corn belt. Judy's is out.
+**You're already on this one.** Day 1 is done and you're on US-30 in Ohio heading west, so the route goes *south* of Lake Michigan — Chicago, Milwaukee, Green Bay, Minneapolis. Michigan's dune coast and the Mackinac Bridge are off; in exchange you get **Milwaukee**, **Rushmore lit up at night**, and **Devils Tower**.
 
 Going north for the Badlands turns the rest of the trip inside out. The Colorado parks that used to come *before* Aspen — Great Sand Dunes, Mesa Verde — now come after it, on the way south to Tucson. Utah is out — no Capitol Reef, no UT-95, no Natural Bridges — and staying out. In its place: the Badlands, the Black Hills, and **Trail Ridge Road**, which at 12,183 ft is the highest paved through-road in any national park and now the high point of the trip.
 
@@ -26,7 +26,7 @@ The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de
 | **Mesa Verde cliff dwelling tours** (Day 11) | recreation.gov | Ticketed, rolling release, sell out days ahead. With a full day you can take any slot — Cliff Palace and Balcony House both. |
 | **Maroon Bells shuttle** (Day 8 or 9) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Ask Luke before booking blind — he lives there and may know the trick to it. |
 | **Rocky Mountain NP timed entry** (Day 7) | recreation.gov | Required late May–October. Get the **Trail Ridge Road / park-wide** permit, not the Bear Lake corridor one. |
-| Hotels: Akron OH, **Traverse City MI**, Green Bay WI, Sioux Falls SD, **Wall SD**, Fort Collins CO, Glenwood Springs CO, Cortez ×2 | anywhere | **Traverse City** and **Wall** are the tight ones — Traverse City is peak summer season, Wall is tiny. Book those two first. |
+| Milwaukee (tonight), Minneapolis, **Wall SD**, **Rapid City SD**, Fort Collins CO, Glenwood Springs CO, Cortez ×2 | anywhere | **Wall** is tiny and **Rapid City** fills on lighting-ceremony nights — book both now, from the road. Milwaukee tonight you can sort at a rest stop. |
 | Aspen: 2 nights (Sat 22, Sun 23) | — | Only if you're not staying with Luke. |
 
 America the Beautiful annual pass ($80) — buy it at Cuyahoga; it pays for itself by Rocky Mountain.
@@ -39,37 +39,35 @@ America the Beautiful annual pass ($80) — buy it at Cuyahoga; it pays for itse
 ~430 mi, 7 hr · I-80 W → I-76 W → I-77 N
 Leave by 6am, in the park by early afternoon. **Brandywine Falls**, the **Everett Road Covered Bridge**, sunset at **The Ledges Overlook**. Night: Peninsula, Akron, or Independence OH.
 
-### Day 2 — Sun Aug 16 · Cuyahoga → Sleeping Bear Dunes → Traverse City, MI
-~470 mi, 8 hr · I-80/90 W → Toledo → Lansing → Grand Rapids → US-31 up the coast
-Morning in Cuyahoga — the **Ledges Trail** (2.2 mi loop) — then out around 10 and northwest across Michigan.
-Late afternoon: **Sleeping Bear Dunes National Lakeshore**. The **Pierce Stocking Scenic Drive** ends at the Lake Michigan Overlook, a 450-ft sand bluff straight down to the water, and it's the best thing on the northern half of this trip. The **Dune Climb** if you want to earn it; **Empire Bluff Trail** (1.5 mi) for the postcard. Stay for sunset over the lake.
-Night: Traverse City, 25 minutes east — a real town with places to eat.
+### Day 2 — Sun Aug 16 · Ohio → Chicago → Milwaukee, WI
+~330 mi from where you are · US-30 W → **I-69 N at Fort Wayne** → I-80/90 W at Angola → around Chicago → I-94 N
+Skirt Chicago on I-80/94 and up the lakefront. Night: Milwaukee.
 
-### Day 3 — Mon Aug 17 · Over the Mackinac Bridge → Green Bay, WI
-~340 mi, 6 hr · US-31 N → I-75 → **Mackinac Bridge** → US-2 W → Escanaba → Green Bay
-North to the straits and across the **Mackinac Bridge** — five miles of suspension span with Lake Michigan on your left and Lake Huron on your right. Worth the $4 toll for the crossing alone.
-Then west on **US-2 across the Upper Peninsula**, which runs right along the Lake Michigan shore for long stretches — beaches, pine, almost no traffic. Stop wherever it looks good. Down into Wisconsin through Escanaba and Marinette.
-Night: Green Bay. **Lambeau Field** runs stadium tours most days if that appeals.
+### Day 3 — Mon Aug 17 · Milwaukee → Green Bay → Minneapolis, MN
+~410 mi, 7 hr
+Morning: **Green Bay** — **Lambeau Field** runs stadium tours most days. Then west across Wisconsin through Eau Claire.
+**Minneapolis** by evening; Minnehaha Falls is five minutes off the highway if you arrive with light left. Night: Minneapolis.
 
-### Day 4 — Tue Aug 18 · Green Bay → Minneapolis → Sioux Falls, SD
-~530 mi, 8 hr · US-41/I-43 → Eau Claire → the Twin Cities → I-35 → I-90 W
-A long one, and mostly interstate. **Minneapolis** around midday if you want a real lunch stop — Minnehaha Falls is five minutes off the highway and worth the leg-stretch.
-Then west across Minnesota into South Dakota. Night: Sioux Falls.
+### Day 4 — Tue Aug 18 · Minneapolis → Badlands NP, SD
+~600 mi, 9 hr — **the long one.** Out early.
+I-35 → I-90 W across Minnesota and South Dakota. Cross the Missouri at Chamberlain, and the country changes.
+Enter the Badlands at the **northeast entrance** and drive the **Badlands Loop Road** (SD-240) west: Big Badlands Overlook, Door and Window trails, Yellow Mounds, Pinnacles. Arriving late is fine here — **sunset on banded rock is the point**, and the crowds are gone. Night: Wall or Interior.
 
-### Day 5 — Wed Aug 19 · → Badlands NP, SD
-~350 mi, 5 hr · I-90 W across the Missouri at Chamberlain
-Enter at the **northeast entrance** and drive the **Badlands Loop Road** (SD-240) west: Big Badlands Overlook, Door and Window trails, the **Notch Trail** (1.5 mi, ladder section, the best short hike in the park), Yellow Mounds, Pinnacles.
-Stay out for sunset — low light on banded rock is the entire point, and the crowds are gone by then. Bighorn sheep and bison are routine along the loop. Night: Wall or Interior.
+### Day 5 — Wed Aug 19 · Black Hills — **Rushmore lit at 8pm**
+~130 mi, but a full day
+The **Notch Trail** (1.5 mi, ladder section) back in the Badlands first thing if you have it in you, then west.
+- **Wall Drug** for the kitsch on the way out.
+- **Crazy Horse Memorial** — the face is finished, the rest is generations from done. Private memorial, park pass doesn't cover it, roughly $35 per carload. **The Legends in Light laser show ended after 2023 and has not returned.**
+- **Custer State Park** — the **Needles Highway** and the **Wildlife Loop**, granite spires and a 1,500-head bison herd. The underrated highlight of the Hills.
+- **Mount Rushmore, 8pm** — the **Evening Lighting Ceremony** runs about 45 minutes: ranger talk, a 20-minute film, the illumination, Retreat of the Colors. Free; you pay for parking. Be there by 7:15 for an amphitheater seat.
 
-### Day 6 — Thu Aug 20 · Black Hills → Fort Collins, CO
-~400 mi, 7 hr with stops — a full, moving day
-**Wall Drug** for the kitsch on the way out, then into the Hills:
-- **Mount Rushmore** — 90 minutes is plenty in daylight.
-- **Crazy Horse Memorial** — 17 mi south on US-16/385. The face is finished; the rest is generations from done. Private memorial, so the park pass doesn't cover it — roughly $35 per carload. **Note: the Legends in Light laser show ended after the 2023 season and has not returned.**
-- **Custer State Park** — the **Needles Highway** and the **Wildlife Loop**, granite spires and a 1,500-head bison herd. If the day is running late, this is the one to keep and Crazy Horse is the one to drop.
+Night: **Rapid City** — 30 minutes from the memorial, plenty of rooms, and it points you at tomorrow.
 
-Then south through Hot Springs → Lusk → Cheyenne → Fort Collins. Night: Fort Collins, an hour from the park gate.
-**Wind Cave NP** fits between Custer SP and Hot Springs if you're moving well; the tour is an hour.
+### Day 6 — Thu Aug 20 · **Devils Tower** → Fort Collins, CO
+~485 mi, 9 hr with the stop — the second long day, so leave by 7.
+**Devils Tower National Monument**, 110 mi northwest: an 867-ft laccolith of fluted columns standing alone above the Belle Fourche. Teddy Roosevelt made it the **first national monument in the country** in 1906. Walk the **Tower Trail**, a 1.3-mi paved loop around the base — close up, the columns are astonishing, and there are usually climbers on them. The prairie dog town by the entrance road is worth five minutes. Allow 1½–2 hours; the park pass covers it.
+Then south on WY-585 and US-85 through Newcastle and Lusk to Cheyenne, and down to **Fort Collins**.
+Running late? **Cheyenne** is a fine substitute and saves 45 miles — it just makes tomorrow slightly longer.
 
 ### Day 7 — Fri Aug 21 · Trail Ridge Road → Glenwood Springs, CO
 ~270 mi, 6 hr with stops
@@ -106,7 +104,7 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 
 ## What the northern route changed
 
-**Gained:** Sleeping Bear Dunes, the Mackinac Bridge and the UP shore, Badlands NP, the Black Hills, Rocky Mountain NP and Trail Ridge Road, and a genuinely gentler altitude curve — you climb in stages instead of jumping from Kansas to 11,000 ft in two days.
+**Gained:** Milwaukee, Rushmore's evening lighting, **Devils Tower**, Badlands NP, the Black Hills, Rocky Mountain NP and Trail Ridge Road, and a genuinely gentler altitude curve — you climb in stages instead of jumping from Kansas to 11,000 ft in two days.
 
 **Lost:** Capitol Reef, UT-95 and the Bicentennial Highway, Natural Bridges. Utah is gone entirely. The Arizona parks — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley — are deliberately deferred to trips out of Tucson with Jack.
 
@@ -134,11 +132,11 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 
 ---
 
-## What the Great Lakes route cost
+## What the southern route cost
 
-**Rushmore at night.** The evening lighting ceremony needs a Black Hills overnight, and the northern loop spends that night in Michigan and Wisconsin instead. You'll see Rushmore in daylight on Day 6 and drive on. If the lit-up version matters more than the lake crossing, say so and I'll put the Black Hills night back — it costs Sleeping Bear or Milwaukee.
+**Michigan.** Sleeping Bear Dunes, the Mackinac Bridge, the UP shore — all gone the moment the route passes south of Lake Michigan. Also gone: Judy's and Galesburg, Sioux Falls, and the Estes Park night (Fort Collins instead).
 
-Also gone: Judy's, Galesburg, the Estes Park night (Fort Collins instead, an hour further out), and **Milwaukee** — it sits 120 mi south of the Green Bay line, so it's a detour rather than a waypoint on the northern route. If you want it, swap: overnight in Milwaukee on Day 3 instead (~440 mi) and make Day 4 a 580-mi push to Sioux Falls.
+**Two long days.** Tuesday is 600 mi to the Badlands and Thursday is 485 with Devils Tower in the middle. Both need early starts. Everything either side of them is short.
 
 ## If you get another day back
 
@@ -148,5 +146,4 @@ Also gone: Judy's, Galesburg, the Estes Park night (Fort Collins instead, an hou
 
 ## If you want more
 
-**Wind Cave NP** (Day 5) is an hour's tour and sits between Custer State Park and Hot Springs — the cheapest extra park on the trip, and the only add that costs no night.
-**Devils Tower** is 2 hours northwest of Rapid City, but it's a detour away from Cheyenne and costs the better part of a day.
+**Wind Cave NP** (Day 5) is an hour's tour between Custer State Park and Hot Springs — but Day 5 already ends with an 8pm ceremony, so only if the day is running ahead.

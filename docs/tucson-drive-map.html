@@ -299,9 +299,9 @@
   <header>
     <div class="eyebrow">August 15 – 26, 2026</div>
     <h1>Poconos to Tucson</h1>
-    <p class="standfirst">Twelve days from Luke in Aspen to Jack in Tucson, over the Mackinac Bridge and back down the Rockies. Seven of them just get you to Luke by Saturday morning.</p>
+    <p class="standfirst">Twelve days from Luke in Aspen to Jack in Tucson, south of the Great Lakes and down through the Black Hills. Seven of them just get you to Luke by Saturday morning.</p>
     <div class="stats">
-      <div class="stat"><b>3,700</b><span>Miles</span></div>
+      <div class="stat"><b>3,800</b><span>Miles</span></div>
       <div class="stat"><b>12</b><span>Days</span></div>
       <div class="stat"><b>5</b><span>NPS sites</span></div>
       <div class="stat"><b>12,183</b><span>Highest ft</span></div>
@@ -314,7 +314,7 @@
       <h2>The route</h2>
       <p>Hover any day in the table below to isolate its leg.</p>
     </div>
-    <div class="scroller"><svg id="map" role="img" aria-label="Map of the driving route from the Poconos in Pennsylvania west to Tucson, Arizona, by way of Ohio, Michigan, Wisconsin, Minnesota, South Dakota, Wyoming, Colorado and New Mexico."></svg></div>
+    <div class="scroller"><svg id="map" role="img" aria-label="Map of the driving route from the Poconos in Pennsylvania west to Tucson, Arizona, by way of Ohio, Indiana, Illinois, Wisconsin, Minnesota, South Dakota, Wyoming, Colorado and New Mexico."></svg></div>
     <div class="legend">
       <span class="key"><i></i> Driving day</span>
       <span class="key"><i class="dash"></i> Side trip</span>
@@ -346,7 +346,7 @@
   </section>
 
   <footer>
-    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Rocky Mountain timed-entry permit, rooms in Traverse City and Wall, the Maroon Bells shuttle, and the Cliff Palace and Balcony House tours on day 11.
+    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Rocky Mountain timed-entry permit, rooms in Wall and Rapid City, the Maroon Bells shuttle, and the Cliff Palace and Balcony House tours on day 11.
   </footer>
 
 </div>
@@ -369,16 +369,16 @@
   var DAYS = [
     { d: 1,  date: "Sat 15", place: "Cuyahoga Valley NP, OH", note: "Brandywine Falls, sunset at The Ledges", mi: 430,
       via: [[-75.19,40.99],[-80.65,41.10],[-81.55,41.24]] },
-    { d: 2,  date: "Sun 16", place: "Traverse City, MI", note: "Up the coast to Sleeping Bear Dunes", mi: 470,
-      via: [[-81.55,41.24],[-83.55,41.65],[-84.55,42.73],[-85.67,42.96],[-86.25,43.23],[-86.24,44.32],[-86.06,44.81],[-85.62,44.76]] },
-    { d: 3,  date: "Mon 17", place: "Green Bay, WI", note: "Mackinac Bridge, then US-2 along the UP shore", mi: 340,
-      via: [[-85.62,44.76],[-84.78,45.42],[-84.72,45.87],[-85.62,45.95],[-86.25,45.96],[-87.06,45.75],[-87.63,45.10],[-88.02,44.51]] },
-    { d: 4,  date: "Tue 18", place: "Sioux Falls, SD", note: "Eau Claire, Minneapolis, then west", mi: 530,
-      via: [[-88.02,44.51],[-91.50,44.81],[-93.27,44.98],[-95.58,44.45],[-96.73,43.55]] },
-    { d: 5,  date: "Wed 19", place: "Wall, SD", note: "Badlands Loop Road, Notch Trail, sunset", mi: 350,
-      via: [[-96.73,43.55],[-98.03,43.71],[-99.33,43.81],[-101.66,43.75],[-102.30,43.86],[-102.22,43.99]] },
-    { d: 6,  date: "Thu 20", place: "Fort Collins, CO", note: "Rushmore, Crazy Horse, Needles Highway", mi: 400,
-      via: [[-102.22,43.99],[-103.23,44.08],[-103.46,43.88],[-103.60,43.77],[-103.48,43.43],[-104.45,42.76],[-104.82,41.14],[-105.08,40.59]] },
+    { d: 2,  date: "Sun 16", place: "Milwaukee, WI", note: "US-30 \u2192 I-69 \u2192 around Chicago", mi: 330,
+      via: [[-81.55,41.24],[-83.28,40.83],[-85.14,41.07],[-85.60,41.65],[-86.90,41.68],[-87.63,41.88],[-87.91,43.04]] },
+    { d: 3,  date: "Mon 17", place: "Minneapolis, MN", note: "Lambeau Field, then across Wisconsin", mi: 410,
+      via: [[-87.91,43.04],[-88.02,44.51],[-89.63,44.80],[-91.50,44.81],[-93.27,44.98]] },
+    { d: 4,  date: "Tue 18", place: "Wall, SD", note: "600 mi \u2014 Badlands Loop Road at sunset", mi: 600,
+      via: [[-93.27,44.98],[-95.58,44.45],[-96.73,43.55],[-98.03,43.71],[-99.33,43.81],[-101.66,43.75],[-102.30,43.86],[-102.22,43.99]] },
+    { d: 5,  date: "Wed 19", place: "Rapid City, SD", note: "Crazy Horse, Needles Hwy, Rushmore lit at 8pm", mi: 130,
+      via: [[-102.22,43.99],[-103.23,44.08],[-103.60,43.77],[-103.46,43.88],[-103.23,44.08]] },
+    { d: 6,  date: "Thu 20", place: "Fort Collins, CO", note: "Devils Tower, then south through Lusk", mi: 485,
+      via: [[-103.23,44.08],[-104.72,44.59],[-104.20,43.85],[-104.45,42.76],[-104.82,41.14],[-105.08,40.59]] },
     { d: 7,  date: "Fri 21", place: "Glenwood Springs, CO", note: "Trail Ridge Road, then Glenwood Canyon", mi: 270,
       via: [[-105.08,40.59],[-105.52,40.38],[-105.76,40.44],[-105.82,40.25],[-105.94,40.09],[-106.39,40.06],[-106.07,39.63],[-106.37,39.64],[-107.32,39.55]] },
     { d: 8,  date: "Sat 22", place: "Aspen, CO", note: "Up-valley by 9:30am \u00b7 Luke\u2019s by lunch", mi: 60,
@@ -396,11 +396,11 @@
   var STOPS = [
     [-75.19,40.99,"Stroudsburg","Day 0","end",-12,-12,"start"],
     [-81.55,41.24,"Cuyahoga Valley","Day 1","middle",6,26,"node"],
-    [-86.06,44.81,"Sleeping Bear Dunes","Day 2","end",-12,-6,"node"],
-    [-84.72,45.87,"Mackinac Bridge","Day 3","start",11,-6,"node"],
-    [-88.02,44.51,"Green Bay","Day 3","start",12,-4,"node"],
-    [-96.73,43.55,"Sioux Falls","Day 4","middle",0,-18,"node"],
-    [-102.22,43.99,"BADLANDS","Day 5","middle",0,-18,"node"],
+    [-87.91,43.04,"Milwaukee","Day 2","start",12,4,"node"],
+    [-93.27,44.98,"Minneapolis","Day 3","middle",0,-18,"node"],
+    [-102.22,43.99,"BADLANDS","Day 4","middle",4,-18,"node"],
+    [-103.23,44.08,"Black Hills","Day 5 \u00b7 Rushmore","end",-12,10,"node"],
+    [-104.72,44.59,"Devils Tower","Day 6","end",-12,-6,"node"],
     [-105.08,40.59,"Rocky Mountain NP","Days 6\u20137","end",-12,-4,"node"],
     [-107.32,39.55,"Glenwood Springs","Day 7","end",-12,10,"node"],
     [-106.82,39.19,"ASPEN","Days 8\u20139 \u00b7 Luke","start",13,-2,"stay"],
@@ -473,11 +473,11 @@
   var PROF = [
     { x: 0.0,  ft: 480,   n: "Stroudsburg", show: 1 },
     { x: 1.0,  ft: 900,   n: "Cuyahoga" },
-    { x: 2.0,  ft: 620,   n: "Sleeping Bear", show: 1, q: 1 },
-    { x: 3.0,  ft: 580,   n: "Green Bay" },
-    { x: 4.0,  ft: 1450,  n: "Sioux Falls" },
-    { x: 5.0,  ft: 2800,  n: "Badlands", show: 1, q: 1 },
-    { x: 5.5,  ft: 5725,  n: "Mount Rushmore", show: 1, q: 1 },
+    { x: 2.0,  ft: 617,   n: "Milwaukee", show: 1, q: 1 },
+    { x: 3.0,  ft: 830,   n: "Minneapolis" },
+    { x: 4.0,  ft: 2800,  n: "Badlands", show: 1, q: 1 },
+    { x: 5.0,  ft: 5725,  n: "Mount Rushmore", show: 1, q: 1 },
+    { x: 5.6,  ft: 5112,  n: "Devils Tower", show: 1, q: 1 },
     { x: 6.0,  ft: 5003,  n: "Fort Collins" },
     { x: 6.4,  ft: 12183, n: "Trail Ridge Road", show: 1, peak: 1 },
     { x: 7.0,  ft: 5760,  n: "Glenwood Springs" },
