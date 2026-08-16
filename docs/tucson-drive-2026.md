@@ -3,11 +3,13 @@
 *Luke in Aspen, Jack in Tucson. The parks are what's in between.*
 
 **Depart:** Sat Aug 15, 2026 · **Aspen:** Sat Aug 22 (morning) – Mon Aug 24 · **Arrive Tucson:** Wed Aug 26
-**Route:** Cuyahoga Valley → Galesburg → Badlands → Black Hills → Rocky Mountain NP → Aspen → Mesa Verde → straight down to Tucson
-**Total driving:** ~3,460 mi over 12 days
+**Route:** Cuyahoga Valley → Sleeping Bear Dunes → Lake Michigan ferry → Green Bay → Badlands → Black Hills → Rocky Mountain NP → Aspen → Mesa Verde → Tucson
+**Total driving:** ~3,590 mi over 12 days, plus one lake crossing
 **Lodging:** hotels on transit nights, camping in/near the parks, Aspen TBD
 
-Going north for the Badlands turns the trip inside out. The Colorado parks that used to come *before* Aspen — Great Sand Dunes, Mesa Verde — now come after it, on the way south to Tucson. Utah is out — no Capitol Reef, no UT-95, no Natural Bridges — and staying out. In its place: the Badlands, the Black Hills, and **Trail Ridge Road**, which at 12,183 ft is the highest paved through-road in any national park and now the high point of the trip.
+The first four days now run up and around the Great Lakes — Michigan's dune coast, a steamship across Lake Michigan, Wisconsin, the Twin Cities — instead of straight across the corn belt. Judy's is out.
+
+Going north for the Badlands turns the rest of the trip inside out. The Colorado parks that used to come *before* Aspen — Great Sand Dunes, Mesa Verde — now come after it, on the way south to Tucson. Utah is out — no Capitol Reef, no UT-95, no Natural Bridges — and staying out. In its place: the Badlands, the Black Hills, and **Trail Ridge Road**, which at 12,183 ft is the highest paved through-road in any national park and now the high point of the trip.
 
 You reach Aspen **Saturday morning** by sleeping in Glenwood Springs on Friday, an hour down-valley.
 
@@ -21,10 +23,11 @@ The Arizona parks are off the itinerary — Saguaro, Petrified Forest, Canyon de
 
 | What | Where | Why urgent |
 |---|---|---|
+| **SS Badger ferry** (Day 3, 9am from Ludington) | ssbadger.com or 800-841-4243 | **Book tonight.** Sails May 15–Oct 11; roughly $89/person and $102+ for the car, one way. Without it, Day 3 becomes a 340-mi drive around the top through Mackinac and the UP — scenic, but it eats Milwaukee. |
 | **Mesa Verde cliff dwelling tours** (Day 11) | recreation.gov | Ticketed, rolling release, sell out days ahead. With a full day you can take any slot — Cliff Palace and Balcony House both. |
 | **Maroon Bells shuttle** (Day 8 or 9) | recreation.gov / Aspen Highlands | Timed-entry, no walk-ups in season. Ask Luke before booking blind — he lives there and may know the trick to it. |
 | **Rocky Mountain NP timed entry** (Day 7) | recreation.gov | Required late May–October. Get the **Trail Ridge Road / park-wide** permit, not the Bear Lake corridor one. |
-| Hotels: Akron OH, Galesburg IL, Sioux Falls SD, **Wall SD**, Cheyenne WY, Granby CO, **Keystone/Hill City/Custer SD**, Estes Park CO, Glenwood Springs CO, Cortez ×2 | anywhere | **Wall** and the **Black Hills** night are the tight ones — Rushmore's lighting ceremony fills every bed within 20 miles in August. Book those first. Estes Park and Glenwood Springs are busy too. |
+| Hotels: Akron OH, **Ludington MI**, Green Bay WI, Sioux Falls SD, **Wall SD**, Fort Collins CO, Glenwood Springs CO, Cortez ×2 | anywhere | **Ludington** and **Wall** are the tight ones — Ludington because the ferry fills the town, Wall because it's tiny. Book those two first. |
 | Aspen: 2 nights (Sat 22, Sun 23) | — | Only if you're not staying with Luke. |
 
 America the Beautiful annual pass ($80) — buy it at Cuyahoga; it pays for itself by Rocky Mountain.
@@ -37,39 +40,44 @@ America the Beautiful annual pass ($80) — buy it at Cuyahoga; it pays for itse
 ~430 mi, 7 hr · I-80 W → I-76 W → I-77 N
 Leave by 6am, in the park by early afternoon. **Brandywine Falls**, the **Everett Road Covered Bridge**, sunset at **The Ledges Overlook**. Night: Peninsula, Akron, or Independence OH.
 
-### Day 2 — Sun Aug 16 · Cuyahoga morning → Galesburg, IL
-~510 mi, 8 hr · I-77 → I-70 W → Indianapolis → **I-74 W** through Champaign and Peoria (you gain an hour into Central time)
-Morning in the park — the **Ledges Trail** (2.2 mi loop), **Boston Mill Visitor Center**, the **Scenic Railroad** if the schedule fits. Out around noon, into Galesburg around 7pm. Night: Galesburg.
+### Day 2 — Sun Aug 16 · Cuyahoga → Sleeping Bear Dunes → Ludington, MI
+~490 mi, 8 hr · I-80/90 W → Toledo → Lansing → Grand Rapids → US-31 up the coast
+Morning in Cuyahoga — the **Ledges Trail** (2.2 mi loop) — then out around 10 and northwest across Michigan.
+Late afternoon: **Sleeping Bear Dunes National Lakeshore**. The **Pierce Stocking Scenic Drive** ends at the Lake Michigan Overlook, a 450-ft sand bluff straight down to the water, and it is the single best thing on the northern half of this trip. The **Dune Climb** if you want to earn it; **Empire Bluff Trail** (1.5 mi) for the postcard.
+Then back south to **Ludington** — you sleep there because of the boat. Night: Ludington.
 
-### Day 3 — Mon Aug 17 · **Judy's** → Sioux Falls, SD
-~520 mi, 8 hr · US-34 → I-80 W → Des Moines → I-29 N
-**Judy's Family Café** for breakfast — the blueberry pancakes. Two locations in town (1195 N Broad St and 51 N Prairie St); confirm Monday hours before you drive to one.
-Then northwest across Iowa. A plain transit day; the payoff starts tomorrow. Night: Sioux Falls.
+### Day 3 — Mon Aug 17 · **SS Badger across Lake Michigan** → Milwaukee → Green Bay, WI
+~200 mi driving, plus a 4-hour crossing
+The **SS Badger** leaves Ludington at **9am ET** and lands in Manitowoc at **noon CT** — a coal-fired 1953 steamship, a National Historic Landmark, and the only way to drive across Lake Michigan. Be at the dock an hour early.
+Afternoon: south to **Milwaukee** (80 mi) — the lakefront and the Calatrava-winged art museum, the Historic Third Ward, or the Harley-Davidson Museum. Then north to **Green Bay** (120 mi); **Lambeau Field** runs stadium tours most days if that's your thing.
+Night: Green Bay.
 
-### Day 4 — Tue Aug 18 · → Badlands NP, SD
+### Day 4 — Tue Aug 18 · Green Bay → Minneapolis → Sioux Falls, SD
+~530 mi, 8 hr · US-41/I-43 → Eau Claire → the Twin Cities → I-35 → I-90 W
+A long one, and mostly interstate. **Minneapolis** around midday if you want a real lunch stop — Minnehaha Falls is five minutes off the highway and worth the leg-stretch.
+Then west across Minnesota into South Dakota. Night: Sioux Falls.
+
+### Day 5 — Wed Aug 19 · → Badlands NP, SD
 ~350 mi, 5 hr · I-90 W across the Missouri at Chamberlain
 Enter at the **northeast entrance** and drive the **Badlands Loop Road** (SD-240) west: Big Badlands Overlook, Door and Window trails, the **Notch Trail** (1.5 mi, ladder section, the best short hike in the park), Yellow Mounds, Pinnacles.
 Stay out for sunset — low light on banded rock is the entire point, and the crowds are gone by then. Bighorn sheep and bison are routine along the loop. Night: Wall or Interior.
 
-### Day 5 — Wed Aug 19 · Badlands → Black Hills (night in the Hills)
-~140 mi, but a full day
-Sunrise back in the Badlands if you can manage it, then west on I-90: **Wall Drug** for the kitsch, and into the Hills.
-- **Crazy Horse Memorial** (midday) — 17 mi from Rushmore on US-16/385. The face is finished; the rest is a work in progress and will be for generations. Private memorial, so the park pass doesn't cover it — roughly $35 per carload. Allow 1½–2 hours for the museum and the viewing terrace. **Note: the Legends in Light laser show ended after the 2023 season and has not returned**, so there's no reason to be here after dark.
-- **Custer State Park** (afternoon) — the **Needles Highway** and the **Wildlife Loop**, granite spires and a 1,500-head bison herd. The underrated highlight of the Black Hills.
-- **Mount Rushmore, evening** — the **Evening Lighting Ceremony starts at 8pm** in late August (it moves an hour earlier on Aug 11 for the rest of the season) and runs about 45 minutes: ranger talk, a 20-minute film, the illumination, Retreat of the Colors. Admission is free; you pay for parking. Get there by 7:15 for a seat in the amphitheater.
+### Day 6 — Thu Aug 20 · Black Hills → Fort Collins, CO
+~400 mi, 7 hr with stops — a full, moving day
+**Wall Drug** for the kitsch on the way out, then into the Hills:
+- **Mount Rushmore** — 90 minutes is plenty in daylight.
+- **Crazy Horse Memorial** — 17 mi south on US-16/385. The face is finished; the rest is generations from done. Private memorial, so the park pass doesn't cover it — roughly $35 per carload. **Note: the Legends in Light laser show ended after the 2023 season and has not returned.**
+- **Custer State Park** — the **Needles Highway** and the **Wildlife Loop**, granite spires and a 1,500-head bison herd. If the day is running late, this is the one to keep and Crazy Horse is the one to drop.
 
-Night: Keystone, Hill City, or Custer — whichever has a room. **Wind Cave NP** fits this morning if you want a fifth park; the tour is an hour.
-
-### Day 6 — Thu Aug 20 · Black Hills → Estes Park, CO
-~390 mi, 6.5 hr · south through Hot Springs → Lusk → Cheyenne → Fort Collins → the Big Thompson Canyon
-The price of last night, and a fair one. A plain highway day with the Front Range building ahead of you all afternoon. Night: Estes Park, at the foot of Trail Ridge.
+Then south through Hot Springs → Lusk → Cheyenne → Fort Collins. Night: Fort Collins, an hour from the park gate.
+**Wind Cave NP** fits between Custer SP and Hot Springs if you're moving well; the tour is an hour.
 
 ### Day 7 — Fri Aug 21 · Trail Ridge Road → Glenwood Springs, CO
-~230 mi, 5 hr with stops
-**Trail Ridge Road** first thing: eleven miles above treeline, topping out at **12,183 ft**, the highest paved through-road in any national park. Forest Canyon Overlook, the Alpine Visitor Center, Medicine Bow Curve. Elk everywhere; stay on the paved paths, the tundra is fragile.
+~270 mi, 6 hr with stops
+Up the Big Thompson Canyon to Estes Park, then **Trail Ridge Road** first thing: eleven miles above treeline, topping out at **12,183 ft**, the highest paved through-road in any national park. Forest Canyon Overlook, the Alpine Visitor Center, Medicine Bow Curve. Elk everywhere; stay on the paved paths, the tundra is fragile.
 Drive it early — it closes for lightning, and afternoon storms up there are not survivable in the open.
 Down the western side to Grand Lake and Granby, then Kremmling → I-70 W through Vail and **Glenwood Canyon**.
-Night: Glenwood Springs — **one hour from Luke's**, which is the whole point. The hot springs pool is right there if you've still got it in you.
+Night: Glenwood Springs — **one hour from Luke's**, which is the whole point.
 
 ### Day 8 — Sat Aug 22 · → **Aspen**, mid-morning
 ~60 mi, 1¼ hr · CO-82 up-valley through Carbondale and Basalt
@@ -99,7 +107,7 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 
 ## What the northern route changed
 
-**Gained:** Badlands NP, the Black Hills with Crazy Horse and Rushmore's evening lighting, Rocky Mountain NP and Trail Ridge Road, and a genuinely gentler altitude curve — you climb in stages instead of jumping from Kansas to 11,000 ft in two days.
+**Gained:** Sleeping Bear Dunes and the Lake Michigan crossing, Badlands NP, the Black Hills, Rocky Mountain NP and Trail Ridge Road, and a genuinely gentler altitude curve — you climb in stages instead of jumping from Kansas to 11,000 ft in two days.
 
 **Lost:** Capitol Reef, UT-95 and the Bicentennial Highway, Natural Bridges. Utah is gone entirely. The Arizona parks — Saguaro, Petrified Forest, Canyon de Chelly, Monument Valley — are deliberately deferred to trips out of Tucson with Jack.
 
@@ -116,7 +124,8 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 **Monsoon season.** Mid-July through September the Southwest gets violent afternoon thunderstorms.
 - Storms build after ~1pm. Front-load hiking into the morning, every day.
 - **Never enter or park in a wash or dry creek bed** with clouds anywhere upstream. Flash floods arrive from storms you cannot see — the Badlands' dirt spurs turn to grease in minutes.
-- Lightning above treeline is the serious one: **Trail Ridge Road** (Day 7) and the **Million Dollar Highway** (Day 10). Be off high ground by early afternoon. Trail Ridge closes on short notice for weather.
+- Lightning above treeline is the serious one: **Trail Ridge Road** (Day 7) and the **Million Dollar Highway** (Day 10).
+- Lake Michigan can cancel a sailing in bad weather. If the Badger doesn't run, it's 340 mi around the north through Mackinac — plan on losing the Milwaukee afternoon, not the day. Be off high ground by early afternoon. Trail Ridge closes on short notice for weather.
 
 **Heat, both directions.** Tucson runs 100–105°F in late August. The Badlands can hit 100°F with no shade anywhere on the loop — carry more water than you think, and a gallon per person per day in the car.
 
@@ -125,6 +134,12 @@ If the day goes sideways, **Show Low** or **Globe** are the places to stop and f
 **Tribal land.** Day 12 skirts the Navajo Nation on US-491 through Shiprock. It observes Daylight Saving Time; the rest of Arizona does not, so clocks get strange around the New Mexico–Arizona line. Alcohol is prohibited on the reservation.
 
 ---
+
+## What the Great Lakes route cost
+
+**Rushmore at night.** The evening lighting ceremony needs a Black Hills overnight, and the northern loop spends that night in Michigan and Wisconsin instead. You'll see Rushmore in daylight on Day 6 and drive on. If the lit-up version matters more than the lake crossing, say so and I'll put the Black Hills night back — it costs Sleeping Bear or Milwaukee.
+
+Also gone: Judy's, Galesburg, and the Estes Park night (Fort Collins instead, an hour further out).
 
 ## If you get another day back
 
