@@ -299,9 +299,9 @@
   <header>
     <div class="eyebrow">August 15 – 26, 2026</div>
     <h1>Poconos to Tucson</h1>
-    <p class="standfirst">Twelve days from Luke in Aspen to Jack in Tucson, out around the Great Lakes and back down the Rockies. Seven of them just get you to Luke by Saturday morning.</p>
+    <p class="standfirst">Twelve days from Luke in Aspen to Jack in Tucson, over the Mackinac Bridge and back down the Rockies. Seven of them just get you to Luke by Saturday morning.</p>
     <div class="stats">
-      <div class="stat"><b>3,590</b><span>Miles</span></div>
+      <div class="stat"><b>3,700</b><span>Miles</span></div>
       <div class="stat"><b>12</b><span>Days</span></div>
       <div class="stat"><b>5</b><span>NPS sites</span></div>
       <div class="stat"><b>12,183</b><span>Highest ft</span></div>
@@ -346,7 +346,7 @@
   </section>
 
   <footer>
-    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Rocky Mountain timed-entry permit, the SS Badger crossing on day 3, rooms in Ludington and Wall, the Maroon Bells shuttle, and the Cliff Palace and Balcony House tours on day 11.
+    Schematic — straight-line segments between waypoints, not turn-by-turn. <b>Book first:</b> Mesa Verde cliff-dwelling tours, the Rocky Mountain timed-entry permit, rooms in Traverse City and Wall, the Maroon Bells shuttle, and the Cliff Palace and Balcony House tours on day 11.
   </footer>
 
 </div>
@@ -369,10 +369,10 @@
   var DAYS = [
     { d: 1,  date: "Sat 15", place: "Cuyahoga Valley NP, OH", note: "Brandywine Falls, sunset at The Ledges", mi: 430,
       via: [[-75.19,40.99],[-80.65,41.10],[-81.55,41.24]] },
-    { d: 2,  date: "Sun 16", place: "Ludington, MI", note: "Sleeping Bear Dunes, then down to the ferry dock", mi: 490,
-      via: [[-81.55,41.24],[-83.55,41.65],[-84.55,42.73],[-85.67,42.96],[-86.24,44.32],[-86.06,44.81],[-86.45,43.95]] },
-    { d: 3,  date: "Mon 17", place: "Green Bay, WI", note: "SS Badger at 9am, Milwaukee, Lambeau", mi: 200,
-      via: [[-86.45,43.95],[-87.66,44.09],[-87.91,43.04],[-88.02,44.51]] },
+    { d: 2,  date: "Sun 16", place: "Traverse City, MI", note: "Up the coast to Sleeping Bear Dunes", mi: 470,
+      via: [[-81.55,41.24],[-83.55,41.65],[-84.55,42.73],[-85.67,42.96],[-86.25,43.23],[-86.24,44.32],[-86.06,44.81],[-85.62,44.76]] },
+    { d: 3,  date: "Mon 17", place: "Green Bay, WI", note: "Mackinac Bridge, then US-2 along the UP shore", mi: 340,
+      via: [[-85.62,44.76],[-84.78,45.42],[-84.72,45.87],[-85.62,45.95],[-86.25,45.96],[-87.06,45.75],[-87.63,45.10],[-88.02,44.51]] },
     { d: 4,  date: "Tue 18", place: "Sioux Falls, SD", note: "Eau Claire, Minneapolis, then west", mi: 530,
       via: [[-88.02,44.51],[-91.50,44.81],[-93.27,44.98],[-95.58,44.45],[-96.73,43.55]] },
     { d: 5,  date: "Wed 19", place: "Wall, SD", note: "Badlands Loop Road, Notch Trail, sunset", mi: 350,
@@ -397,6 +397,7 @@
     [-75.19,40.99,"Stroudsburg","Day 0","end",-12,-12,"start"],
     [-81.55,41.24,"Cuyahoga Valley","Day 1","middle",6,26,"node"],
     [-86.06,44.81,"Sleeping Bear Dunes","Day 2","end",-12,-6,"node"],
+    [-84.72,45.87,"Mackinac Bridge","Day 3","start",11,-6,"node"],
     [-88.02,44.51,"Green Bay","Day 3","start",12,-4,"node"],
     [-96.73,43.55,"Sioux Falls","Day 4","middle",0,-18,"node"],
     [-102.22,43.99,"BADLANDS","Day 5","middle",0,-18,"node"],
@@ -472,7 +473,7 @@
   var PROF = [
     { x: 0.0,  ft: 480,   n: "Stroudsburg", show: 1 },
     { x: 1.0,  ft: 900,   n: "Cuyahoga" },
-    { x: 2.0,  ft: 600,   n: "Sleeping Bear", show: 1, q: 1 },
+    { x: 2.0,  ft: 620,   n: "Sleeping Bear", show: 1, q: 1 },
     { x: 3.0,  ft: 580,   n: "Green Bay" },
     { x: 4.0,  ft: 1450,  n: "Sioux Falls" },
     { x: 5.0,  ft: 2800,  n: "Badlands", show: 1, q: 1 },
