@@ -3,7 +3,7 @@
 *Luke in Aspen, Jack in Tucson. The parks are what's in between.*
 
 **Depart:** Sat Aug 15, 2026 · **Aspen:** Sat Aug 22 (morning) – Mon Aug 24 · **Arrive Tucson:** Wed Aug 26
-**Route:** Cuyahoga Valley → Milwaukee → Minneapolis → Badlands → Black Hills → Devils Tower → Rocky Mountain NP → Aspen → Mesa Verde → straight down to Tucson
+**Route:** Cuyahoga Valley → I-94 corridor → Badlands → Black Hills → Devils Tower → Rocky Mountain NP → Aspen → Mesa Verde → straight down to Tucson
 **Total driving:** ~3,700 mi over 12 days
 **Sleeping:** rest areas, waysides and truck stops. No hotel bookings on the road.
 
@@ -54,18 +54,16 @@ Nothing on this trip needs to be booked for a bed. The only reservations are the
 ~430 mi, 7 hr · I-80 W → I-76 W → I-77 N
 Leave by 6am, in the park by early afternoon. **Brandywine Falls**, the **Everett Road Covered Bridge**, sunset at **The Ledges Overlook**. **Sleep:** Ohio Turnpike service plazas, or the I-77 rest area south of the park.
 
-### Day 2 — Sun Aug 16 · Cuyahoga → around Chicago → Milwaukee, WI
-~490 mi · I-80/90 W → I-69 N at Fort Wayne → I-80/90 W at Angola → I-80/94 around Chicago → I-94 N
-Skirt Chicago on the south side and up the lakefront.
-**Sleep:** Wisconsin welcome center on I-94 north of the state line, or the **Lake Forest Oasis** on I-94 south of it. Truck stops on I-94 at Racine and Oak Creek if the rest areas look wrong.
+### Day 2 — Sun Aug 16 · West on the I-94 corridor
+Around Chicago (I-80/94) and up past Milwaukee. No stops — this is a transit day.
+**Sleep:** wherever you land on I-94. The Wisconsin welcome center north of the Illinois line if you make it that far; the Lake Forest Oasis or a Racine/Oak Creek truck stop if you don't.
 
-### Day 3 — Mon Aug 17 · Milwaukee → Minneapolis, MN
-~340 mi, 5.5 hr · I-94 W through Madison, Eau Claire and the St. Croix
-A short day. Time for the Milwaukee lakefront in the morning if you want it, and Minnehaha Falls when you land.
-**Sleep:** Minnesota rest areas on I-94 west of the Twin Cities — **Enfield** and **Big Spunk Lake** are the usual ones. Or push past St. Cloud and sleep at a wayside on I-94 toward Fergus Falls.
+### Day 3 — Mon Aug 17 · I-94 across Wisconsin and Minnesota
+Madison → Eau Claire → past the Twin Cities. Still transit — the further you get tonight, the easier Tuesday's run to the Badlands.
+**Sleep:** Minnesota waysides on I-94 west of the Twin Cities — Enfield, Big Spunk Lake — or push past St. Cloud toward Fergus Falls. Every mile past Minneapolis tonight comes off tomorrow.
 
-### Day 4 — Tue Aug 18 · Minneapolis → Badlands NP, SD
-~600 mi, 9 hr — **the long one.** Out early. I-35 → I-90 W, crossing the Missouri at Chamberlain
+### Day 4 — Tue Aug 18 · → Badlands NP, SD
+~550–650 mi depending on where Monday ended — **the long one.** Out early, I-94 → I-90 W, crossing the Missouri at Chamberlain
 Enter at the **northeast entrance** and drive the **Badlands Loop Road** (SD-240) west: Big Badlands Overlook, Door and Window trails, the **Notch Trail** (1.5 mi, ladder section, the best short hike in the park), Yellow Mounds, Pinnacles.
 Stay out for sunset — low light on banded rock is the entire point, and the crowds are gone by then. Bighorn sheep and bison are routine along the loop. **Sleep: Sage Creek Campground**, inside the park at the west end of the Sage Creek Rim Road. **Free — no fee, no reservations, first-come.** Vault toilets, no water, no hookups. Bison walk through it. It's a 12-mi gravel road in, fine for any car in dry weather, and it is the darkest sky on this trip.
 You sleep there **so you wake up in the Badlands**. Sunrise on the rim is the reason.
