@@ -1,0 +1,297 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Truck Deals under $5k</title>
+<style>
+body{font-family:-apple-system,Segoe UI,Arial,sans-serif;margin:24px;background:#fafafa;color:#1a1a1a}
+h1{margin:0 0 2px} .sub{color:#666;margin:0 0 16px;font-size:14px}
+table{border-collapse:collapse;width:100%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.12);font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}
+th{background:#1f4e5f;color:#fff;cursor:pointer;position:sticky;top:0;white-space:nowrap}
+th:hover{background:#2e7d8a} .num{text-align:right;white-space:nowrap}
+td a{color:#1155cc;text-decoration:none;font-weight:600} td a:hover{text-decoration:underline}
+.take{color:#333;max-width:520px} .flag{font-size:11px;font-weight:700;color:#a33;margin-left:6px}
+.rm{display:inline-block;border:1px solid #c66;color:#c33;border-radius:12px;padding:1px 8px;font-size:12px;font-weight:700;cursor:pointer;user-select:none}
+.rm:hover{background:#c33;color:#fff}
+h2{margin:26px 0 8px;font-size:16px;color:#a33}
+.hint{color:#888;font-size:12px;margin:6px 0 0}
+.msort{display:none;margin:10px 0 6px;font-size:15px;font-weight:600}
+.msort select{font-size:16px;padding:6px 8px;border-radius:6px;border:1px solid #bbb;margin-left:6px}
+@media (max-width:760px){
+  .msort{display:block}
+  body{margin:10px;font-size:15px} h1{font-size:20px}
+  table{box-shadow:none;background:transparent;font-size:15px}
+  thead{display:none}
+  tbody tr{display:block;border:1px solid #ddd;border-radius:10px;margin:0 0 12px;padding:10px 12px;
+           box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  tbody td{display:flex;justify-content:space-between;gap:14px;border:0;padding:4px 0;text-align:left}
+  tbody td:before{content:attr(data-label);font-weight:700;color:#5a5a5a;font-size:12px;
+                  text-transform:uppercase;letter-spacing:.3px;flex:0 0 auto}
+  tbody td.take{display:block} tbody td.take:before{display:block;margin-bottom:3px}
+  tbody td.rmcell{justify-content:flex-end;padding-top:6px} tbody td.rmcell:before{display:none}
+  .rm{padding:6px 14px;font-size:14px}
+  td a{font-size:16px} .take{max-width:none}
+}
+</style></head><body>
+<h1>Trucks under $5k — 25 mi of Forty Fort</h1>
+<p class="sub">Scanned Sep 09, 2026 12:54 PM · FB Marketplace + Craigslist + dealers · sorted by value (click any header to re-sort) · "Est. Value" = my private-party estimate</p>
+<div class="msort">Sort: <select onchange="s(+this.value)"><option value="1">Best value</option><option value="2">Price</option><option value="4">Miles</option><option value="6">Miles away</option></select></div>
+<p class="hint">✕ removes a truck from your list (remembered on this browser) · <a href="#" onclick="resetRm();return false">show removed / reset</a></p>
+<table id="t"><thead><tr>
+<th></th><th onclick="s(1)">Under Mkt</th><th onclick="s(2)">Price</th><th onclick="s(3)">Truck (opens listing)</th>
+<th onclick="s(4)">Miles</th><th onclick="s(5)">Est. Value</th><th onclick="s(6)">Mi away</th><th onclick="s(7)">My take</th>
+</tr></thead><tbody>
+<tr style="background:#ffffff" data-key="https://www.craigslist.org/view/d/lehman-2001-dodge-ram-1500/mDdjRZmxkrBNphWeVh39YQ">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="74" class="num">74%</td>
+      <td data-label="Price" data-v="1000" class="num">$1,000</td>
+      <td data-label="Truck"><a href="https://www.craigslist.org/view/d/lehman-2001-dodge-ram-1500/mDdjRZmxkrBNphWeVh39YQ" target="_blank">2001 Dodge Ram 1500</a> </td>
+      <td data-label="Miles">195k</td>
+      <td data-label="Est. value" data-v="3800" class="num">$3,800</td>
+      <td data-label="Mi away" data-v="8" class="num">8</td>
+      <td data-label="My take" class="take">Cheapest + closest, runs, clean title — &#x27;needs work&#x27;.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.craigslist.org/view/d/saylorsburg-07-ford-foot-bed-work-truck/mEfRajJ1uRoAHTEDVqSzBP">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="60" class="num">60%</td>
+      <td data-label="Price" data-v="2200" class="num">$2,200</td>
+      <td data-label="Truck"><a href="https://www.craigslist.org/view/d/saylorsburg-07-ford-foot-bed-work-truck/mEfRajJ1uRoAHTEDVqSzBP" target="_blank">2007 Ford F-150 work truck</a> </td>
+      <td data-label="Miles">170k</td>
+      <td data-label="Est. value" data-v="5500" class="num">$5,500</td>
+      <td data-label="Mi away" data-v="40" class="num">40</td>
+      <td data-label="My take" class="take">Seller: &#x27;runs great&#x27;. Downside: ~40 mi out.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/2476932212804080/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="58" class="num">58%</td>
+      <td data-label="Price" data-v="2500" class="num">$2,500</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/2476932212804080/" target="_blank">2008 Nissan Frontier 4x4 crew (4.0 V6)</a> </td>
+      <td data-label="Miles">142k</td>
+      <td data-label="Est. value" data-v="6000" class="num">$6,000</td>
+      <td data-label="Mi away" data-v="23" class="num">23</td>
+      <td data-label="My take" class="take">RUNS &amp; DRIVES per ad; frame good for the year, rockers OK, has title. Needs tires + battery; bed &amp; rear bumper shot (cosmetic); AC out. $2,500 OBO — real value.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/2143739856172032/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="42" class="num">42%</td>
+      <td data-label="Price" data-v="3800" class="num">$3,800</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/2143739856172032/" target="_blank">2007 Chevy Silverado 1500 LT</a> </td>
+      <td data-label="Miles">134k</td>
+      <td data-label="Est. value" data-v="6500" class="num">$6,500</td>
+      <td data-label="Mi away" data-v="1.9" class="num">1.9</td>
+      <td data-label="My take" class="take">Strong mechanicals per seller, solid frame, cosmetic body rust. Best full-size.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/2557349301395139/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="36" class="num">36%</td>
+      <td data-label="Price" data-v="3495" class="num">$3,495</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/2557349301395139/" target="_blank">2005 Chevy Colorado Z71 4x4</a> </td>
+      <td data-label="Miles">153k</td>
+      <td data-label="Est. value" data-v="5500" class="num">$5,500</td>
+      <td data-label="Mi away" data-v="20" class="num">20</td>
+      <td data-label="My take" class="take">Low miles; seller: motor/trans perfect, frame no holes.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/1037540058758860/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="33" class="num">33%</td>
+      <td data-label="Price" data-v="3000" class="num">$3,000</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1037540058758860/" target="_blank">2012 Chevy Colorado</a> </td>
+      <td data-label="Miles">200k</td>
+      <td data-label="Est. value" data-v="4500" class="num">$4,500</td>
+      <td data-label="Mi away" data-v="19" class="num">19</td>
+      <td data-label="My take" class="take">NEW trans ~2k mi ago, solid frame. Ad actually asks $3,500.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/1627487135666889/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="33" class="num">33%</td>
+      <td data-label="Price" data-v="3000" class="num">$3,000</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1627487135666889/" target="_blank">2006 Ford F-150 (Moosic)</a> </td>
+      <td data-label="Miles">unreliable</td>
+      <td data-label="Est. value" data-v="4500" class="num">$4,500</td>
+      <td data-label="Mi away" data-v="9.2" class="num">9.2</td>
+      <td data-label="My take" class="take">INSPECTED UNTIL APRIL 2027. &#x27;Runs good,&#x27; frame good, body rot already repaired; seller towed a lift with it. Needs a brake caliper + tires; odometer not trusted; mismatched cap on bed. Firm $3k.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.craigslist.org/view/d/barnesville-2006-chevy-colorado-crew/bmGvkTXjNXJ63dnWqVazW3">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="29" class="num">29%</td>
+      <td data-label="Price" data-v="3900" class="num">$3,900</td>
+      <td data-label="Truck"><a href="https://www.craigslist.org/view/d/barnesville-2006-chevy-colorado-crew/bmGvkTXjNXJ63dnWqVazW3" target="_blank">2006 Chevy Colorado Crew 4x4</a> </td>
+      <td data-label="Miles">131k</td>
+      <td data-label="Est. value" data-v="5500" class="num">$5,500</td>
+      <td data-label="Mi away" data-v="33" class="num">33</td>
+      <td data-label="My take" class="take">Runs great, low miles, 4x4. ~33 mi out.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.facebook.com/marketplace/item/2670195143400061/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="28" class="num">28%</td>
+      <td data-label="Price" data-v="4300" class="num">$4,300</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/2670195143400061/" target="_blank">2014 Nissan Frontier crew SV</a> <span class="flag">RISK</span></td>
+      <td data-label="Miles">118k</td>
+      <td data-label="Est. value" data-v="6000" class="num">$6,000</td>
+      <td data-label="Mi away" data-v="20" class="num">20</td>
+      <td data-label="My take" class="take">As-is, NOT inspected, considerable rust, needs brakes+muffler, goes into limp mode.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/1529220678500026/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="26" class="num">26%</td>
+      <td data-label="Price" data-v="3700" class="num">$3,700</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1529220678500026/" target="_blank">2010 GMC Canyon 4x4</a> </td>
+      <td data-label="Miles">191k</td>
+      <td data-label="Est. value" data-v="5000" class="num">$5,000</td>
+      <td data-label="Mi away" data-v="1.9" class="num">1.9</td>
+      <td data-label="My take" class="take">INSPECTED, frame rust pro-repaired, all works; local. 5-cyl head-gasket risk.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.cars.com/vehicledetail/e5118636-bcbd-4f78-b0f5-a095d06621c0/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="25" class="num">25%</td>
+      <td data-label="Price" data-v="4495" class="num">$4,495</td>
+      <td data-label="Truck"><a href="https://www.cars.com/vehicledetail/e5118636-bcbd-4f78-b0f5-a095d06621c0/" target="_blank">2014 Ford F-150 XL 5.0 (dealer)</a> </td>
+      <td data-label="Miles">236k</td>
+      <td data-label="Est. value" data-v="6000" class="num">$6,000</td>
+      <td data-label="Mi away" data-v="4" class="num">4</td>
+      <td data-label="My take" class="take">Clean 1-owner title, local lot, inspect today. High miles.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.cargurus.com/details/456002261">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="25" class="num">25%</td>
+      <td data-label="Price" data-v="4500" class="num">$4,500</td>
+      <td data-label="Truck"><a href="https://www.cargurus.com/details/456002261" target="_blank">2006 Ford F-150 XLT 4WD (dealer)</a> </td>
+      <td data-label="Miles">177k</td>
+      <td data-label="Est. value" data-v="6000" class="num">$6,000</td>
+      <td data-label="Mi away" data-v="4" class="num">4</td>
+      <td data-label="My take" class="take">4WD, fewer miles, dealer. Title unconfirmed.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/1568652938389679/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="22" class="num">22%</td>
+      <td data-label="Price" data-v="3500" class="num">$3,500</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1568652938389679/" target="_blank">2002 Chevy S-10 crew 4.3 V6 4WD</a> </td>
+      <td data-label="Miles">155k</td>
+      <td data-label="Est. value" data-v="4500" class="num">$4,500</td>
+      <td data-label="Mi away" data-v="1.9" class="num">1.9</td>
+      <td data-label="My take" class="take">Loaded, V6 4WD; only flaw stated is AC out. Local.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/4307207462829832/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="20" class="num">20%</td>
+      <td data-label="Price" data-v="3200" class="num">$3,200</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/4307207462829832/" target="_blank">2003 Chevy S-10 5-speed</a> </td>
+      <td data-label="Miles">178k</td>
+      <td data-label="Est. value" data-v="4000" class="num">$4,000</td>
+      <td data-label="Mi away" data-v="25" class="num">25</td>
+      <td data-label="My take" class="take">4-cyl manual, great MPG, runs great. Small — not a tow truck.</td></tr>
+<tr style="background:#fdf3c9" data-key="https://www.facebook.com/marketplace/item/3247451125452820/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="20" class="num">20%</td>
+      <td data-label="Price" data-v="4000" class="num">$4,000</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/3247451125452820/" target="_blank">2007 GMC Canyon 4x4 ext cab</a> <span class="flag">VERIFY</span></td>
+      <td data-label="Miles">n/a</td>
+      <td data-label="Est. value" data-v="5000" class="num">$5,000</td>
+      <td data-label="Mi away" data-v="6" class="num">6</td>
+      <td data-label="My take" class="take">Ad: &#x27;4WD, extended cab, great work truck&#x27; — runs implied, NO miles given. Listed 16 wks ago (stale; may be gone). Ask miles + confirm still available.</td></tr>
+<tr style="background:#fdf3c9" data-key="https://www.facebook.com/marketplace/item/1060949156650836/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="18" class="num">18%</td>
+      <td data-label="Price" data-v="3300" class="num">$3,300</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1060949156650836/" target="_blank">2005 GMC Canyon (Hazle Twp)</a> <span class="flag">VERIFY</span></td>
+      <td data-label="Miles">170k</td>
+      <td data-label="Est. value" data-v="4000" class="num">$4,000</td>
+      <td data-label="Mi away" data-v="23.7" class="num">23.7</td>
+      <td data-label="My take" class="take">Ad only says &#x27;good condition&#x27; (in Spanish). No runs/inspection info; 5-cyl head-gasket risk. Ask.</td></tr>
+<tr style="background:#fbe6c9" data-key="https://www.facebook.com/marketplace/item/1429046462436363/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="17" class="num">17%</td>
+      <td data-label="Price" data-v="2500" class="num">$2,500</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1429046462436363/" target="_blank">2002 Ford F-150 reg cab</a> <span class="flag">CAUTION</span></td>
+      <td data-label="Miles">176k</td>
+      <td data-label="Est. value" data-v="3000" class="num">$3,000</td>
+      <td data-label="Mi away" data-v="22" class="num">22</td>
+      <td data-label="My take" class="take">RUSTED FRAME (seller&#x27;s words). Hard pass for a keeper.</td></tr>
+<tr style="background:#fbe6c9" data-key="https://www.facebook.com/marketplace/item/1393153969390050/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="17" class="num">17%</td>
+      <td data-label="Price" data-v="2500" class="num">$2,500</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1393153969390050/" target="_blank">2001 Dodge Dakota SLT</a> <span class="flag">CAUTION</span></td>
+      <td data-label="Miles">150k</td>
+      <td data-label="Est. value" data-v="3000" class="num">$3,000</td>
+      <td data-label="Mi away" data-v="16" class="num">16</td>
+      <td data-label="My take" class="take">4WD not working + exhaust leak.</td></tr>
+<tr style="background:#fdf3c9" data-key="https://www.facebook.com/marketplace/item/2098857467384347/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="14" class="num">14%</td>
+      <td data-label="Price" data-v="3000" class="num">$3,000</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/2098857467384347/" target="_blank">2000 Chevy S-10 4.3L</a> <span class="flag">VERIFY</span></td>
+      <td data-label="Miles">n/a</td>
+      <td data-label="Est. value" data-v="3500" class="num">$3,500</td>
+      <td data-label="Mi away" data-v="23" class="num">23</td>
+      <td data-label="My take" class="take">Ad: &#x27;runs and drives&#x27;; heavily modified by a prior owner (mods unknown); rust &#x27;not bad for a 2000&#x27;. No miles given — ask.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/1584664043135915/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="13" class="num">13%</td>
+      <td data-label="Price" data-v="3900" class="num">$3,900</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1584664043135915/" target="_blank">2010 Toyota Tacoma SR5</a> </td>
+      <td data-label="Miles">322k</td>
+      <td data-label="Est. value" data-v="4500" class="num">$4,500</td>
+      <td data-label="Mi away" data-v="24" class="num">24</td>
+      <td data-label="My take" class="take">Reliable model, but 322k miles.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/2938488149819596/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="10" class="num">10%</td>
+      <td data-label="Price" data-v="3600" class="num">$3,600</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/2938488149819596/" target="_blank">2005 Chevy Colorado 4x4 (Hazleton)</a> </td>
+      <td data-label="Miles">191k</td>
+      <td data-label="Est. value" data-v="4000" class="num">$4,000</td>
+      <td data-label="Mi away" data-v="19" class="num">19</td>
+      <td data-label="My take" class="take">ABS light on; runs/drives, new tires.</td></tr>
+<tr style="background:#fbe6c9" data-key="https://www.facebook.com/marketplace/item/1093991103056621/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="4" class="num">4%</td>
+      <td data-label="Price" data-v="4800" class="num">$4,800</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1093991103056621/" target="_blank">1992 Ford F-150</a> <span class="flag">CAUTION</span></td>
+      <td data-label="Miles">94k</td>
+      <td data-label="Est. value" data-v="5000" class="num">$5,000</td>
+      <td data-label="Mi away" data-v="9" class="num">9</td>
+      <td data-label="My take" class="take">Low miles, but NJ title (PA retitle hassle) + 33 yrs old.</td></tr>
+<tr style="background:#fdf3c9" data-key="https://www.facebook.com/marketplace/item/1711545160120744/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="4" class="num">4%</td>
+      <td data-label="Price" data-v="4300" class="num">$4,300</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/1711545160120744/" target="_blank">2002 Nissan Frontier king cab</a> <span class="flag">VERIFY</span></td>
+      <td data-label="Miles">206k</td>
+      <td data-label="Est. value" data-v="4500" class="num">$4,500</td>
+      <td data-label="Mi away" data-v="19" class="num">19</td>
+      <td data-label="My take" class="take">Seller&#x27;s description is genuinely blank; 206k; newer seller account (2025). Over market for the miles. Ask if it runs / inspected.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.facebook.com/marketplace/item/4377555065790683/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="2" class="num">2%</td>
+      <td data-label="Price" data-v="3900" class="num">$3,900</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/4377555065790683/" target="_blank">2005 Chevy Colorado 4x4 (Hazleton)</a> </td>
+      <td data-label="Miles">191k</td>
+      <td data-label="Est. value" data-v="4000" class="num">$4,000</td>
+      <td data-label="Mi away" data-v="19" class="num">19</td>
+      <td data-label="My take" class="take">ABS light on. Priced above the $3,600 twin nearby.</td></tr>
+<tr style="background:#fbe6c9" data-key="https://www.facebook.com/marketplace/item/2236474737250374/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="2" class="num">2%</td>
+      <td data-label="Price" data-v="4400" class="num">$4,400</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/2236474737250374/" target="_blank">1990 Dodge Dakota Convertible 318 V8</a> <span class="flag">CAUTION</span></td>
+      <td data-label="Miles">~140k body / 130k eng</td>
+      <td data-label="Est. value" data-v="4500" class="num">$4,500</td>
+      <td data-label="Mi away" data-v="10.8" class="num">10.8</td>
+      <td data-label="My take" class="take">Rust-free Texas body, V8 swap, &#x27;runs very well&#x27; (prior daily driver). Collector project, not a work truck — CRACKED WINDSHIELD fails PA inspection until replaced; needs a mirror too.</td></tr>
+<tr style="background:#fbe6c9" data-key="https://www.facebook.com/marketplace/item/958228987269748/">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">✕ remove</span></td>
+      <td data-label="Under mkt" data-v="-12" class="num">-12%</td>
+      <td data-label="Price" data-v="4500" class="num">$4,500</td>
+      <td data-label="Truck"><a href="https://www.facebook.com/marketplace/item/958228987269748/" target="_blank">2000 Nissan Frontier XE crew</a> <span class="flag">CAUTION</span></td>
+      <td data-label="Miles">n/a</td>
+      <td data-label="Est. value" data-v="4000" class="num">$4,000</td>
+      <td data-label="Mi away" data-v="8" class="num">8</td>
+      <td data-label="My take" class="take">Ad: &#x27;extremely low miles, runs and drives, like new&#x27; — but no actual mileage, priced over market, and seller JOINED FACEBOOK IN 2026 with 0 ratings. Scam pattern — treat as suspect.</td></tr>
+</tbody></table>
+<p class="hint">No shading = clean pick · yellow = verify (missing data) · orange = caution (stated problem) · red = risk · bottom table = avoid.</p>
+<h2>Avoid</h2>
+<table><thead><tr><th>Price</th><th>Truck</th><th>Miles</th><th>Mi</th><th>Why</th></tr></thead><tbody>
+<tr style="background:#f2c6c6">
+  <td class="num">$3,000</td><td><a href="https://www.craigslist.org/view/d/skytop-2021-ram-1500-big-horn-edition/bDBURZLfb52CFr8JrVv1uM" target="_blank">2021 Ram 1500 Big Horn Hemi</a></td>
+  <td>95k</td><td class="num">35</td><td class="take">SCAM — ~$30k still owed to bank, &#x27;permission to drive&#x27; not a title.</td></tr>
+</tbody></table>
+<script>
+var RK='truck_deals_removed';
+function getRm(){try{return JSON.parse(localStorage.getItem(RK)||'[]')}catch(e){return []}}
+function rm(el){var tr=el.closest('tr');var k=tr.dataset.key;var l=getRm();if(l.indexOf(k)<0)l.push(k);
+try{localStorage.setItem(RK,JSON.stringify(l))}catch(e){}tr.style.display='none';}
+function applyRm(){var l=getRm();document.querySelectorAll('#t tbody tr').forEach(function(tr){if(l.indexOf(tr.dataset.key)>=0)tr.style.display='none';});}
+function resetRm(){try{localStorage.removeItem(RK)}catch(e){}document.querySelectorAll('#t tbody tr').forEach(function(tr){tr.style.display='';});}
+document.addEventListener('DOMContentLoaded',applyRm);
+function s(c){var tb=document.querySelector('#t tbody');var rs=[...tb.rows];
+var asc=tb.getAttribute('sc')!=c+'a';rs.sort((a,b)=>{
+var x=a.cells[c].dataset.v??a.cells[c].innerText,y=b.cells[c].dataset.v??b.cells[c].innerText;
+var nx=parseFloat(x),ny=parseFloat(y);if(!isNaN(nx)&&!isNaN(ny)){x=nx;y=ny}
+return (x>y?1:x<y?-1:0)*(asc?1:-1);});
+tb.setAttribute('sc',c+(asc?'d':'a'));rs.forEach(r=>tb.appendChild(r));}
+</script></body></html>
