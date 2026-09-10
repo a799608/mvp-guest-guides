@@ -293,5 +293,5 @@ var asc=tb.getAttribute('sc')!=c+'a';rs.sort((a,b)=>{
 var x=a.cells[c].dataset.v??a.cells[c].innerText,y=b.cells[c].dataset.v??b.cells[c].innerText;
 var nx=parseFloat(x),ny=parseFloat(y);if(!isNaN(nx)&&!isNaN(ny)){x=nx;y=ny}
 return (x>y?1:x<y?-1:0)*(asc?1:-1);});
-tb.setAttribute('sc',c+(asc?'d':'a'));rs.forEach(r=>tb.appendChild(r));}
+tb.setAttribute('sc',c+(asc?'a':'d'));rs.forEach(r=>tb.appendChild(r));}
 </script></body></html>
