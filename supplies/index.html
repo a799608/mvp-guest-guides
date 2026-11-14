@@ -1,0 +1,769 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rental Supply Prices</title>
+<meta property="og:title" content="MVP Rentals - Supply Price Comparison">
+<meta property="og:description" content="Unit-cost comparison across Costco, Sam's Club, Walmart, Target, Amazon and the commercial channel.">
+<meta property="og:image" content="https://a799608.github.io/mvp-guest-guides/og-cover.jpg">
+<meta property="og:url" content="https://a799608.github.io/mvp-guest-guides/supplies/">
+<style>
+body{font-family:-apple-system,Segoe UI,Arial,sans-serif;margin:24px;background:#fafafa;color:#1a1a1a}
+h1{margin:0 0 2px} .sub{color:#666;margin:0 0 14px;font-size:14px}
+table{border-collapse:collapse;width:100%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.12);font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}
+th{background:#1f4e5f;color:#fff;cursor:pointer;position:sticky;top:0;white-space:nowrap}
+th:hover{background:#2e7d8a} .num{text-align:right;white-space:nowrap}
+td a{color:#1155cc;text-decoration:none;font-weight:600} td a:hover{text-decoration:underline}
+.take{color:#333;max-width:560px} .u{color:#777;font-size:11px}
+.badge{font-size:10px;font-weight:800;letter-spacing:.4px;margin-left:6px;white-space:nowrap}
+.rm{display:inline-block;border:1px solid #c66;color:#c33;border-radius:12px;padding:1px 8px;font-size:12px;font-weight:700;cursor:pointer;user-select:none}
+.rm:hover{background:#c33;color:#fff}
+.hint{color:#888;font-size:12px;margin:6px 0 10px}
+.ctrl{margin:10px 0;font-size:15px;font-weight:600}
+.ctrl select{font-size:16px;padding:6px 8px;border-radius:6px;border:1px solid #bbb;margin:0 14px 0 6px}
+.msort{display:none}
+@media (max-width:760px){
+  .msort{display:inline}
+  body{margin:10px;font-size:15px} h1{font-size:20px}
+  .ctrl select{display:block;margin:6px 0 12px;width:100%}
+  table{box-shadow:none;background:transparent;font-size:15px}
+  thead{display:none}
+  tbody tr{display:block;border:1px solid #ddd;border-radius:10px;margin:0 0 12px;padding:10px 12px;
+           box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  tbody td{display:flex;justify-content:space-between;gap:14px;border:0;padding:4px 0;text-align:left}
+  tbody td:before{content:attr(data-label);font-weight:700;color:#5a5a5a;font-size:12px;
+                  text-transform:uppercase;letter-spacing:.3px;flex:0 0 auto}
+  tbody td.take{display:block} tbody td.take:before{display:block;margin-bottom:3px}
+  tbody td.rmcell{justify-content:flex-end;padding-top:6px} tbody td.rmcell:before{display:none}
+  .rm{padding:6px 14px;font-size:14px}
+  td a{font-size:16px} .take{max-width:none}
+}
+</style></head><body>
+<h1>Rental supplies &mdash; unit cost comparison</h1>
+<p class="sub">Priced Sep 10, 2026 04:20 PM &middot; Costco, Sam's Club, Walmart, Target, Amazon, WebstaurantStore and hotel supply &middot; every row ranked on unit cost, not pack price</p>
+<div class="ctrl">Category: <select id="f" onchange="filt()"><option value="">All</option>
+<option value="Paper towels">Paper towels</option>
+<option value="Toilet paper">Toilet paper</option>
+<option value="Kitchen bags 13gal">Kitchen bags 13gal</option>
+<option value="Small bags 4gal">Small bags 4gal</option>
+<option value="Dish tabs">Dish tabs</option>
+<option value="Laundry detergent">Laundry detergent</option>
+<option value="Coffee - K-Cups">Coffee - K-Cups</option>
+<option value="Coffee - drip">Coffee - drip</option>
+<option value="Tea">Tea</option>
+<option value="Sponges">Sponges</option>
+<option value="Hand soap">Hand soap</option>
+<option value="Dish soap">Dish soap</option>
+<option value="Body wash">Body wash</option>
+<option value="Dispensers &amp; pumps">Dispensers &amp; pumps</option>
+</select><span class="msort">Sort: <select onchange="s(+this.value)"><option value="4">Unit cost</option><option value="5">Pack price</option><option value="1">Category</option><option value="2">Product</option></select></span></div>
+<p class="hint">Green = my pick &middot; red = do not buy &middot; yellow = back-of-house or insurance only &middot; &#10005; drops a row for good on this browser &middot; <a href="#" onclick="resetRm();return false">show removed / reset</a></p>
+<table id="t"><thead><tr>
+<th></th><th onclick="s(1)">Category</th><th onclick="s(2)">Product (opens the listing)</th><th onclick="s(3)">Where</th>
+<th onclick="s(4)">Unit cost</th><th onclick="s(5)">Pack price</th><th onclick="s(6)">Pack</th><th onclick="s(7)">My take</th>
+</tr></thead><tbody>
+<tr style="background:#e6f4ec" data-key="https://www.costco.com/kirkland-signature-paper-towels-2-ply-160-sheets-12-individually-wrapped-rolls.product.100234271.html" data-cat="Paper towels">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Paper towels</td>
+      <td data-label="Product"><a href="https://www.costco.com/kirkland-signature-paper-towels-2-ply-160-sheets-12-individually-wrapped-rolls.product.100234271.html" target="_blank">Kirkland Signature Create-A-Size 2-ply</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Costco warehouse</td>
+      <td data-label="Unit cost" data-v="2.0" class="num"><b>$2.00</b> <span class="u">/100 sq ft</span></td>
+      <td data-label="Pack price" data-v="20.49" class="num">$20.49</td>
+      <td data-label="Pack">12 rolls / 1,027 sq ft</td>
+      <td data-label="My take" class="take">Biggest sheet in the study at 11x7, 4.8 stars on 40,704 reviews, cheapest verified price per square foot. Costco.com charges 17% more for the same box, so this one is a warehouse run.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.samsclub.com/p/members-mark-super-premium-individually-wrapped-paper-towels/prod21231906" data-cat="Paper towels">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Paper towels</td>
+      <td data-label="Product"><a href="https://www.samsclub.com/p/members-mark-super-premium-individually-wrapped-paper-towels/prod21231906" target="_blank">Member&#x27;s Mark Select &amp; Tear 2-ply</a> </td>
+      <td data-label="Where">Sam&#x27;s Club</td>
+      <td data-label="Unit cost" data-v="2.03" class="num"><b>$2.03</b> <span class="u">/100 sq ft</span></td>
+      <td data-label="Pack price" data-v="20.93" class="num">$20.93</td>
+      <td data-label="Pack">15 rolls / 1,031 sq ft</td>
+      <td data-label="My take" class="take">Best quality signal anywhere in the study at 4.9 stars on 153,800 ratings, and the lowest cost per roll at $1.40. The smaller 11x6 sheet actually wastes less per guest grab. Sam&#x27;s site was bot-blocked, so this price came off a search tile.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.walmart.com/ip/Great-Value-Ultra-Strong-Paper-Towels-Triple-Rolls-12-Count/970754121" data-cat="Paper towels">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Paper towels</td>
+      <td data-label="Product"><a href="https://www.walmart.com/ip/Great-Value-Ultra-Strong-Paper-Towels-Triple-Rolls-12-Count/970754121" target="_blank">Great Value Ultra Strong, 12 triple</a> </td>
+      <td data-label="Where">Walmart</td>
+      <td data-label="Unit cost" data-v="2.24" class="num"><b>$2.24</b> <span class="u">/100 sq ft</span></td>
+      <td data-label="Pack price" data-v="19.97" class="num">$19.97</td>
+      <td data-label="Pack">12 rolls / 892 sq ft</td>
+      <td data-label="My take" class="take">Cheapest real 2-ply outside the clubs, 4.7 stars on 19,100 ratings. Currently on rollback from $22.56, so expect it to drift back toward $2.53.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/kirkland-signature-paper-towels-2-ply-160-sheets-12-individually-wrapped-rolls.product.100234271.html" data-cat="Paper towels">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Paper towels</td>
+      <td data-label="Product"><a href="https://www.costco.com/kirkland-signature-paper-towels-2-ply-160-sheets-12-individually-wrapped-rolls.product.100234271.html" target="_blank">Kirkland Create-A-Size, delivered</a> </td>
+      <td data-label="Where">Costco.com</td>
+      <td data-label="Unit cost" data-v="2.34" class="num"><b>$2.34</b> <span class="u">/100 sq ft</span></td>
+      <td data-label="Pack price" data-v="23.99" class="num">$23.99</td>
+      <td data-label="Pack">12 rolls / 1,027 sq ft</td>
+      <td data-label="My take" class="take">The same box delivered instead of driving. You pay 34 cents per 100 sq ft for the convenience.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/lavex-more-than-enough-2ply-premium-half-sheet-paper-towel-roll-160-half-sheetsroll-case/5002HRMRENBOX12.html" data-cat="Paper towels">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Paper towels</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/lavex-more-than-enough-2ply-premium-half-sheet-paper-towel-roll-160-half-sheetsroll-case/5002HRMRENBOX12.html" target="_blank">Lavex More Than Enough 2-ply, 2+ cases</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="2.43" class="num"><b>$2.43</b> <span class="u">/100 sq ft</span></td>
+      <td data-label="Pack price" data-v="24.99" class="num">$24.99</td>
+      <td data-label="Pack">12 rolls / 1,027 sq ft</td>
+      <td data-label="My take" class="take">Spec-for-spec a Kirkland clone: 2-ply, 12 rolls, 160 half sheets at 11x7. Same product, same price, and freight is on top. Buy it only if you want it delivered.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.amazon.com/s?k=presto+ultra-strong+paper+towels+huge+rolls" data-cat="Paper towels">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Paper towels</td>
+      <td data-label="Product"><a href="https://www.amazon.com/s?k=presto+ultra-strong+paper+towels+huge+rolls" target="_blank">Presto! Ultra-Strong, 12 huge</a> </td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="2.81" class="num"><b>$2.81</b> <span class="u">/100 sq ft</span></td>
+      <td data-label="Pack price" data-v="24.0" class="num">$24.00</td>
+      <td data-label="Pack">12 rolls / ~855 sq ft</td>
+      <td data-label="My take" class="take">The delivered-to-the-door option with no membership and no freight surprise. Sold and shipped by Amazon, 4.6 stars on 115,000 ratings.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/p/-/bounty-advanced-paper-towels-2-ply-103-sheets-12-count/4000346087" data-cat="Paper towels">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Paper towels</td>
+      <td data-label="Product"><a href="https://www.costco.com/p/-/bounty-advanced-paper-towels-2-ply-103-sheets-12-count/4000346087" target="_blank">Bounty Advanced, warehouse sale</a> </td>
+      <td data-label="Where">Costco warehouse</td>
+      <td data-label="Unit cost" data-v="3.35" class="num"><b>$3.35</b> <span class="u">/100 sq ft</span></td>
+      <td data-label="Pack price" data-v="22.39" class="num">$22.39</td>
+      <td data-label="Pack">12 rolls / 669 sq ft</td>
+      <td data-label="My take" class="take">Genuinely the strongest sheet made, and it costs 68% more per square foot to get it. Both house brands are already 2-ply rated 4.8 or better, so the durability premium does not pay for itself.</td></tr>
+<tr style="background:#fdf3c9" data-key="https://www.webstaurantstore.com/lavex-janitorial-800-white-hardwound-roll-paper-towel-case/5001RT800B.html" data-cat="Paper towels">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Paper towels</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/lavex-janitorial-800-white-hardwound-roll-paper-towel-case/5001RT800B.html" target="_blank">Lavex 8in hardwound roll, 1-ply</a> <span class="badge" style="color:#7a5b12">CLEANERS</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.92" class="num"><b>$0.92</b> <span class="u">/100 sq ft</span></td>
+      <td data-label="Pack price" data-v="29.49" class="num">$29.49</td>
+      <td data-label="Pack">6 rolls / 3,200 sq ft</td>
+      <td data-label="My take" class="take">Cheapest paper on this page by a mile, but it needs a bolted wall dispenser and reads as gas-station restroom. Buy one case for the cleaners&#x27; supply closet, never for a guest kitchen.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.amazon.com/dp/B0DX33Q9QH" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.amazon.com/dp/B0DX33Q9QH" target="_blank">Scott ComfortPlus 1-ply, 48 rolls</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.1947" class="num"><b>$0.1947</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="21.59" class="num">$21.59</td>
+      <td data-label="Pack">48 rolls / 11,088 sheets</td>
+      <td data-label="My take" class="take">The one product that resolves the tension: 1-ply so it dissolves, but engineered 3x thicker than the leading value brand so guests read it as premium. It carries a dissolve claim with a named comparator, which almost nothing else does.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.target.com/p/scott-comfortplus-1-ply-toilet-paper-36-rolls/-/A-95195025" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.target.com/p/scott-comfortplus-1-ply-toilet-paper-36-rolls/-/A-95195025" target="_blank">Scott ComfortPlus, 36 rolls</a> </td>
+      <td data-label="Where">Target</td>
+      <td data-label="Unit cost" data-v="0.2043" class="num"><b>$0.2043</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="16.99" class="num">$16.99</td>
+      <td data-label="Pack">36 rolls / 8,316 sheets</td>
+      <td data-label="My take" class="take">Identical product for a top-up run rather than a portfolio buy.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.samsclub.com/ip/Scott-1000-1-Ply-Toilet-Paper-45-rolls-1-000-sheets-roll/5400048554" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.samsclub.com/ip/Scott-1000-1-Ply-Toilet-Paper-45-rolls-1-000-sheets-roll/5400048554" target="_blank">Scott 1000 1-ply, 45 rolls</a> </td>
+      <td data-label="Where">Sam&#x27;s Club</td>
+      <td data-label="Unit cost" data-v="0.0677" class="num"><b>$0.0677</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="30.48" class="num">$30.48</td>
+      <td data-label="Pack">45 rolls / 45,000 sheets</td>
+      <td data-label="My take" class="take">Cheapest septic-qualified paper found anywhere and the strongest dissolve claim on the market. It is also thin, and thin paper is a documented review complaint. Use it in utility and basement baths, not the primary guest bath.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.walmart.com/ip/Great-Value-1000-Sheets-per-Roll-Toilet-Paper-12-Rolls/15110314418" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.walmart.com/ip/Great-Value-1000-Sheets-per-Roll-Toilet-Paper-12-Rolls/15110314418" target="_blank">Great Value 1000 sheets, 12 rolls</a> </td>
+      <td data-label="Where">Walmart</td>
+      <td data-label="Unit cost" data-v="0.079" class="num"><b>$0.079</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="9.48" class="num">$9.48</td>
+      <td data-label="Pack">12 rolls / 12,000 sheets</td>
+      <td data-label="My take" class="take">Same play as Scott 1000 with a weaker claim. The 1-ply construction is the real evidence, not the label.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/kirkland-signature-bath-tissue-2-ply-380-sheets-30-rolls.product.100645583.html" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.costco.com/kirkland-signature-bath-tissue-2-ply-380-sheets-30-rolls.product.100645583.html" target="_blank">Kirkland Signature 2-ply, 30 rolls</a> </td>
+      <td data-label="Where">Costco warehouse</td>
+      <td data-label="Unit cost" data-v="0.1754" class="num"><b>$0.1754</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="19.99" class="num">$19.99</td>
+      <td data-label="Pack">30 rolls / 11,400 sheets</td>
+      <td data-label="My take" class="take">Guest-presentable 2-ply at a good warehouse price. Its septic evidence is just the two words on the box, so it ranks below ComfortPlus on the thing you actually care about.</td></tr>
+<tr style="background:#fdf3c9" data-key="https://www.amazon.com/dp/B0FSP8HRLK" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.amazon.com/dp/B0FSP8HRLK" target="_blank">Scott Rapid-Dissolving, 48 rolls</a> <span class="badge" style="color:#7a5b12">INSURANCE</span></td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.2885" class="num"><b>$0.2885</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="31.99" class="num">$31.99</td>
+      <td data-label="Pack">48 rolls / 11,088 sheets</td>
+      <td data-label="My take" class="take">The only national brand with a genuine RV and marine dissolve rating. It costs 48% more per sheet, so it is not the everyday stock. Put it in whichever property has the weakest drain field.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.amazon.com/dp/B08XYQP5QM" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.amazon.com/dp/B08XYQP5QM" target="_blank">Amazon Basics RV/Marine 2-ply, 24 rolls</a> </td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.2915" class="num"><b>$0.2915</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="20.99" class="num">$20.99</td>
+      <td data-label="Pack">24 rolls / 7,200 sheets</td>
+      <td data-label="My take" class="take">The only 2-ply with a real waste-tank rating. This is the swap if a property gets a specific guest complaint about 1-ply.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.costco.com/CatalogSearch?keyword=charmin+ultra+soft" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.costco.com/CatalogSearch?keyword=charmin+ultra+soft" target="_blank">Charmin Ultra Soft, 30 rolls</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.592" class="num"><b>$0.592</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="34.99" class="num">$34.99</td>
+      <td data-label="Pack">30 rolls / 5,910 sheets</td>
+      <td data-label="My take" class="take">Most expensive per sheet in the study and the worst thing you can put in a drain field. Plush cushioned 2-ply built for wet strength, which is the opposite of dissolving.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.samsclub.com/ip/Quilted-Northern-Ultra-Plush-3-Ply-Toilet-Paper-36-rolls-255-sheets-roll/13611256081" data-cat="Toilet paper">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Toilet paper</td>
+      <td data-label="Product"><a href="https://www.samsclub.com/ip/Quilted-Northern-Ultra-Plush-3-Ply-Toilet-Paper-36-rolls-255-sheets-roll/13611256081" target="_blank">Quilted Northern Ultra Plush 3-ply, 36 rolls</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">Sam&#x27;s Club</td>
+      <td data-label="Unit cost" data-v="0.3048" class="num"><b>$0.3048</b> <span class="u">/100 sheets</span></td>
+      <td data-label="Pack price" data-v="27.98" class="num">$27.98</td>
+      <td data-label="Pack">36 rolls / 9,180 sheets</td>
+      <td data-label="My take" class="take">3-ply plush is the single worst construction for a septic system. Every septic source says the same thing: avoid 3-ply, quilted and lotion-infused.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.costco.com/p/-/kirkland-signature-flex-tech-13-gallon-kitchen-trash-bag-200-count/100342484" data-cat="Kitchen bags 13gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Kitchen bags 13gal</td>
+      <td data-label="Product"><a href="https://www.costco.com/p/-/kirkland-signature-flex-tech-13-gallon-kitchen-trash-bag-200-count/100342484" target="_blank">Kirkland Flex-Tech drawstring, 200ct</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Costco warehouse</td>
+      <td data-label="Unit cost" data-v="0.079" class="num"><b>$0.079</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="15.79" class="num">$15.79</td>
+      <td data-label="Pack">200 bags</td>
+      <td data-label="My take" class="take">The only bag in the field that publishes its thickness: a 1.8 mil reinforced top over a 0.9 mil body. The top is exactly where a drawstring bag tears on lift-out. 4.8 stars on 11,857 reviews.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/p/-/kirkland-signature-flex-tech-13-gallon-kitchen-trash-bag-200-count/100342484" data-cat="Kitchen bags 13gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Kitchen bags 13gal</td>
+      <td data-label="Product"><a href="https://www.costco.com/p/-/kirkland-signature-flex-tech-13-gallon-kitchen-trash-bag-200-count/100342484" target="_blank">Kirkland Flex-Tech, regular price</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.1125" class="num"><b>$0.1125</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="22.49" class="num">$22.49</td>
+      <td data-label="Pack">200 bags</td>
+      <td data-label="My take" class="take">The same bag off sale. Still second cheapest in the field, and a non-member pays only 5% over that online.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.samsclub.com/p/members-mark-power-flex-tall-kitchen-drawstring-trash-bags-13-gal-200ct/P03020054" data-cat="Kitchen bags 13gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Kitchen bags 13gal</td>
+      <td data-label="Product"><a href="https://www.samsclub.com/p/members-mark-power-flex-tall-kitchen-drawstring-trash-bags-13-gal-200ct/P03020054" target="_blank">Member&#x27;s Mark Power Flex, 200ct</a> </td>
+      <td data-label="Where">Sam&#x27;s Club</td>
+      <td data-label="Unit cost" data-v="0.0884" class="num"><b>$0.0884</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="17.68" class="num">$17.68</td>
+      <td data-label="Pack">200 bags</td>
+      <td data-label="My take" class="take">Cheapest number found, but Sam&#x27;s was bot-blocked so nothing on this row is page-verified, including the thickness.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.amazon.com/Amazon-Basics-Flextra-Kitchen-Drawstring/dp/B092VPGJB9" data-cat="Kitchen bags 13gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Kitchen bags 13gal</td>
+      <td data-label="Product"><a href="https://www.amazon.com/Amazon-Basics-Flextra-Kitchen-Drawstring/dp/B092VPGJB9" target="_blank">Amazon Basics Flextra, 120ct</a> </td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.142" class="num"><b>$0.142</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="17.08" class="num">$17.08</td>
+      <td data-label="Pack">120 bags</td>
+      <td data-label="My take" class="take">The substitute if Costco is out of stock. Flextra is the reinforced line, not the base Amazon Basics.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/lavex-13-gallon-0-9-mil-24-x-27-unscented-low-density-medium-duty-white-tall-kitchen-drawstring-can-liner-trash-bag-case/501LD13WU.html" data-cat="Kitchen bags 13gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Kitchen bags 13gal</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/lavex-13-gallon-0-9-mil-24-x-27-unscented-low-density-medium-duty-white-tall-kitchen-drawstring-can-liner-trash-bag-case/501LD13WU.html" target="_blank">Lavex 501LD13WU drawstring, 2+ cases</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.1233" class="num"><b>$0.1233</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="19.49" class="num">$19.49</td>
+      <td data-label="Pack">200 bags</td>
+      <td data-label="My take" class="take">Identical published construction to the Kirkland bag and 56% more expensive once measured freight is added. The commercial channel loses this one outright.</td></tr>
+<tr style="background:#fdf3c9" data-key="https://www.webstaurantstore.com/15-gallon-8-micron-24-x-33-olympian-high-density-can-liner-trash-bag-case/50224338CL.html" data-cat="Kitchen bags 13gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Kitchen bags 13gal</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/15-gallon-8-micron-24-x-33-olympian-high-density-can-liner-trash-bag-case/50224338CL.html" target="_blank">Lavex 15gal 8-micron flat liner, 2+ cases</a> <span class="badge" style="color:#7a5b12">CLEANERS</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.035" class="num"><b>$0.035</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="34.99" class="num">$34.99</td>
+      <td data-label="Pack">1,000 bags</td>
+      <td data-label="My take" class="take">Half the price of Kirkland on sale, but there is no drawstring, it is clear rather than white, and it will tear on bottle caps. Fine where the cleaner ties the knot, wrong where a guest changes the bag.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.walmart.com/ip/Hefty-Ultra-Strong-13-gallon-Trash-Bags-Tall-Kitchen-Trash-Bags-White-Unscented-150-Bags/386903095" data-cat="Kitchen bags 13gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Kitchen bags 13gal</td>
+      <td data-label="Product"><a href="https://www.walmart.com/ip/Hefty-Ultra-Strong-13-gallon-Trash-Bags-Tall-Kitchen-Trash-Bags-White-Unscented-150-Bags/386903095" target="_blank">Hefty Ultra Strong, 150ct</a> </td>
+      <td data-label="Where">Walmart</td>
+      <td data-label="Unit cost" data-v="0.173" class="num"><b>$0.173</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="25.89" class="num">$25.89</td>
+      <td data-label="Pack">150 bags</td>
+      <td data-label="My take" class="take">The same 0.9 mil body as Kirkland at 119% more per bag.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.webstaurantstore.com/4-gallon-6-micron-17-x-18-olympian-high-density-can-liner-trash-bag-case/50217186CL.html" data-cat="Small bags 4gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Small bags 4gal</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/4-gallon-6-micron-17-x-18-olympian-high-density-can-liner-trash-bag-case/50217186CL.html" target="_blank">Lavex 4gal 6-micron liner, 2+ cases</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.0087" class="num"><b>$0.0087</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="17.49" class="num">$17.49</td>
+      <td data-label="Pack">2,000 bags</td>
+      <td data-label="My take" class="take">The biggest single win in the whole study: a factor of nine to fourteen cheaper than retail, and freight is zero when you bundle it onto any other Webstaurant order. One case is over a year of supply across all six houses. Bathroom liners hold tissue and packaging, so a thin flat liner does that job perfectly.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.amazon.com/s?k=plasticplace+4+gallon+high+density+liner+2000" data-cat="Small bags 4gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Small bags 4gal</td>
+      <td data-label="Product"><a href="https://www.amazon.com/s?k=plasticplace+4+gallon+high+density+liner+2000" target="_blank">Plasticplace 4gal liner, 2,000ct</a> </td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.0163" class="num"><b>$0.0163</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="32.59" class="num">$32.59</td>
+      <td data-label="Pack">2,000 bags</td>
+      <td data-label="My take" class="take">The same flat liner delivered free with no freight math and no order structuring. Twice the Lavex price and still a fraction of retail.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.walmart.com/ip/Great-Value-4-Gallon-Small-Drawstring-Trash-Bags-40-Bags/5343498243" data-cat="Small bags 4gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Small bags 4gal</td>
+      <td data-label="Product"><a href="https://www.walmart.com/ip/Great-Value-4-Gallon-Small-Drawstring-Trash-Bags-40-Bags/5343498243" target="_blank">Great Value 4gal small drawstring, 40ct</a> </td>
+      <td data-label="Where">Walmart</td>
+      <td data-label="Unit cost" data-v="0.131" class="num"><b>$0.131</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="5.22" class="num">$5.22</td>
+      <td data-label="Pack">40 bags</td>
+      <td data-label="My take" class="take">Cheapest unscented drawstring small bag at retail, 4.7 stars on 3,393 reviews. Drawstring is only worth paying for where guests handle the bag.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/kirkland-signature-10-gallon-wastebasket-liner-clear-500-count.product.100224137.html" data-cat="Small bags 4gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Small bags 4gal</td>
+      <td data-label="Product"><a href="https://www.costco.com/kirkland-signature-10-gallon-wastebasket-liner-clear-500-count.product.100224137.html" target="_blank">Kirkland 10gal wastebasket liner, 500ct</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.03" class="num"><b>$0.03</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="14.99" class="num">$14.99</td>
+      <td data-label="Pack">500 bags</td>
+      <td data-label="My take" class="take">Costco does not sell a 4-gallon bag at all. This is the closest thing, and at 0.34 mil it is genuinely flimsy, clear, and has no drawstring.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.amazon.com/Amazon-Basics-Gallon-Trash-Bags/dp/B09NQGR39K" data-cat="Small bags 4gal">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Small bags 4gal</td>
+      <td data-label="Product"><a href="https://www.amazon.com/Amazon-Basics-Gallon-Trash-Bags/dp/B09NQGR39K" target="_blank">Amazon Basics small 4gal, 80ct</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.15" class="num"><b>$0.15</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="12.01" class="num">$12.01</td>
+      <td data-label="Pack">80 bags</td>
+      <td data-label="My take" class="take">Scented. Fresh Scent is the only version Amazon makes in this size, so there is no unscented fallback.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.walmart.com/ip/Great-Value-Automatic-Dishwasher-Pacs-Fresh-Scent-115-Count/16759055075" data-cat="Dish tabs">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dish tabs</td>
+      <td data-label="Product"><a href="https://www.walmart.com/ip/Great-Value-Automatic-Dishwasher-Pacs-Fresh-Scent-115-Count/16759055075" target="_blank">Great Value Original Dishwasher Pacs, 115ct</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Walmart</td>
+      <td data-label="Unit cost" data-v="0.1212" class="num"><b>$0.1212</b> <span class="u">/tab</span></td>
+      <td data-label="Pack price" data-v="13.94" class="num">$13.94</td>
+      <td data-label="Pack">115 tabs</td>
+      <td data-label="My take" class="take">Lowest verified cost per tab, and the only product here whose retail page actually prints &#x27;Safe for septic systems&#x27;. No membership fee, same-day pickup, 4.6 stars on 1,030 ratings.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/p/-/kirkland-signature-platinum-performance-ultrashine-dishwasher-detergent-pacs-115-count/100737171" data-cat="Dish tabs">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dish tabs</td>
+      <td data-label="Product"><a href="https://www.costco.com/p/-/kirkland-signature-platinum-performance-ultrashine-dishwasher-detergent-pacs-115-count/100737171" target="_blank">Kirkland Platinum UltraShine, 115ct</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.1216" class="num"><b>$0.1216</b> <span class="u">/tab</span></td>
+      <td data-label="Pack price" data-v="13.99" class="num">$13.99</td>
+      <td data-label="Pack">115 tabs</td>
+      <td data-label="My take" class="take">Ties on price with more reviews, and its published ingredient list independently confirms no phosphates. Currently out of stock for delivery to 18704 and not sold at the Allentown warehouse, which is why it is not the pick.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.amazon.com/Finish-Dishwasher-Pre-Rinse-Detergent-Virtually/dp/B0GR6M1Q5C" data-cat="Dish tabs">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dish tabs</td>
+      <td data-label="Product"><a href="https://www.amazon.com/Finish-Dishwasher-Pre-Rinse-Detergent-Virtually/dp/B0GR6M1Q5C" target="_blank">Finish Quantum, 100ct</a> </td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.2167" class="num"><b>$0.2167</b> <span class="u">/tab</span></td>
+      <td data-label="Pack price" data-v="21.67" class="num">$21.67</td>
+      <td data-label="Pack">100 tabs</td>
+      <td data-label="My take" class="take">The one product with a first-party septic sentence on the manufacturer&#x27;s own site. You pay 79% more per tab for that wording. 4.8 stars on 45,248 ratings.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.costco.com/cascade-platinum-plus-dishwasher-detergent-actionpacs-fresh-82-count.product.4000350951.html" data-cat="Dish tabs">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dish tabs</td>
+      <td data-label="Product"><a href="https://www.costco.com/cascade-platinum-plus-dishwasher-detergent-actionpacs-fresh-82-count.product.4000350951.html" target="_blank">Cascade Platinum Plus ActionPacs, 82ct</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.2926" class="num"><b>$0.2926</b> <span class="u">/tab</span></td>
+      <td data-label="Pack price" data-v="23.99" class="num">$23.99</td>
+      <td data-label="Pack">82 tabs</td>
+      <td data-label="My take" class="take">Two and a half times the Great Value pac for no septic advantage. Every tab on this page is already phosphate-free by Pennsylvania law and the 2010 industry ban, so &#x27;septic safe&#x27; on a dish tab is a legal baseline, not a feature.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.walmart.com/ip/ARM-HAMMER-Sensitive-Skin-Free-Clear-Liquid-Laundry-Detergent-Soap-170-fl-oz-170-Loads/5144605535" data-cat="Laundry detergent">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Laundry detergent</td>
+      <td data-label="Product"><a href="https://www.walmart.com/ip/ARM-HAMMER-Sensitive-Skin-Free-Clear-Liquid-Laundry-Detergent-Soap-170-fl-oz-170-Loads/5144605535" target="_blank">Arm &amp; Hammer Sensitive Skin Free &amp; Clear, 170oz</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Walmart</td>
+      <td data-label="Unit cost" data-v="0.0734" class="num"><b>$0.0734</b> <span class="u">/load</span></td>
+      <td data-label="Pack price" data-v="12.48" class="num">$12.48</td>
+      <td data-label="Pack">170 loads</td>
+      <td data-label="My take" class="take">Cheapest verified load in the study and the right chemistry for bleached white towels: no oxygen bleach to double the septic load, no enzymes for your chlorine to destroy, plus an optical brightener and a chelating agent for hard well water. Arm &amp; Hammer&#x27;s own FAQ states its liquids are safe for septic systems.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.target.com/p/arm-38-hammer-sensitive-skin-free-clear-liquid-laundry-detergent-170-loads-170oz/-/A-94877093" data-cat="Laundry detergent">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Laundry detergent</td>
+      <td data-label="Product"><a href="https://www.target.com/p/arm-38-hammer-sensitive-skin-free-clear-liquid-laundry-detergent-170-loads-170oz/-/A-94877093" target="_blank">Arm &amp; Hammer Sensitive Skin Free &amp; Clear, 170oz</a> </td>
+      <td data-label="Where">Target</td>
+      <td data-label="Unit cost" data-v="0.0735" class="num"><b>$0.0735</b> <span class="u">/load</span></td>
+      <td data-label="Pack price" data-v="12.49" class="num">$12.49</td>
+      <td data-label="Pack">170 loads</td>
+      <td data-label="My take" class="take">The same jug a penny apart, confirmed in stock at Wilkes-Barre. Two chains pricing it identically is what cross-checks the figure.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.target.com/p/purex-unscented-free-clear-liquid-laundry-detergents-115-loads-150oz/-/A-94874782" data-cat="Laundry detergent">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Laundry detergent</td>
+      <td data-label="Product"><a href="https://www.target.com/p/purex-unscented-free-clear-liquid-laundry-detergents-115-loads-150oz/-/A-94874782" target="_blank">Purex Unscented Free &amp; Clear, 150oz</a> </td>
+      <td data-label="Where">Target</td>
+      <td data-label="Unit cost" data-v="0.0869" class="num"><b>$0.0869</b> <span class="u">/load</span></td>
+      <td data-label="Pack price" data-v="9.99" class="num">$9.99</td>
+      <td data-label="Pack">115 loads</td>
+      <td data-label="My take" class="take">The sensible backup, and it drops to about $0.074 with the $1.50 Target coupon.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.webstaurantstore.com/arm-hammer-free-clear-5-gallon-2x-he-liquid-laundry-detergent/22597550.html" data-cat="Laundry detergent">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Laundry detergent</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/arm-hammer-free-clear-5-gallon-2x-he-liquid-laundry-detergent/22597550.html" target="_blank">Arm &amp; Hammer Free &amp; Clear 2X HE, 5 gallon</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.1133" class="num"><b>$0.1133</b> <span class="u">/load</span></td>
+      <td data-label="Pack price" data-v="72.49" class="num">$72.49</td>
+      <td data-label="Pack">640 loads</td>
+      <td data-label="My take" class="take">The counterintuitive result: the commercial pail costs 54% MORE per load than the retail jug of the same brand, needs a dispensing valve, and is awkward to move between six houses. Buy jugs, not pails.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/kirkland-signature-ultra-clean-free--clear-he-liquid-laundry-detergent-146-loads-194-fl-oz.product.100525739.html" data-cat="Laundry detergent">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Laundry detergent</td>
+      <td data-label="Product"><a href="https://www.costco.com/kirkland-signature-ultra-clean-free--clear-he-liquid-laundry-detergent-146-loads-194-fl-oz.product.100525739.html" target="_blank">Kirkland Ultra Clean Free &amp; Clear HE, 194oz</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.1472" class="num"><b>$0.1472</b> <span class="u">/load</span></td>
+      <td data-label="Pack price" data-v="21.49" class="num">$21.49</td>
+      <td data-label="Pack">146 loads</td>
+      <td data-label="My take" class="take">Twice the Arm &amp; Hammer cost plus a membership fee.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.costco.com/CatalogSearch?keyword=tide+pods+free+and+gentle" data-cat="Laundry detergent">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Laundry detergent</td>
+      <td data-label="Product"><a href="https://www.costco.com/CatalogSearch?keyword=tide+pods+free+and+gentle" target="_blank">Tide Pods Free &amp; Gentle, 152ct</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.2302" class="num"><b>$0.2302</b> <span class="u">/load</span></td>
+      <td data-label="Pack price" data-v="34.99" class="num">$34.99</td>
+      <td data-label="Pack">152 loads</td>
+      <td data-label="My take" class="take">Pods cost about 3.1x the cheapest fragrance-free liquid. They only earn that premium when an untrained guest is dosing the machine, and your cleaners are dosing it.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.webstaurantstore.com/noble-chemical-50lb-low-suds-concentrated-laundry-detergent-powder/147LOWSUDS50.html" data-cat="Laundry detergent">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Laundry detergent</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/noble-chemical-50lb-low-suds-concentrated-laundry-detergent-powder/147LOWSUDS50.html" target="_blank">Noble 50 lb low-suds powder</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.37" class="num"><b>$0.37</b> <span class="u">/load</span></td>
+      <td data-label="Pack price" data-v="55.49" class="num">$55.49</td>
+      <td data-label="Pack">~150 loads</td>
+      <td data-label="My take" class="take">Powder is out on principle, not price. University of Minnesota septic guidance warns that powder adds fine particles to tank sludge. On six systems that is a maintenance bill, not a saving.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://app.warehouserunner.com/costco/4054210-kirkland-signature-summit-roast-120-ct-organic-k-cups-pods" data-cat="Coffee - K-Cups">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Coffee - K-Cups</td>
+      <td data-label="Product"><a href="https://app.warehouserunner.com/costco/4054210-kirkland-signature-summit-roast-120-ct-organic-k-cups-pods" target="_blank">Kirkland Summit Roast Organic, 120ct</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.333" class="num"><b>$0.333</b> <span class="u">/pod</span></td>
+      <td data-label="Pack price" data-v="39.99" class="num">$39.99</td>
+      <td data-label="Pack">120 pods</td>
+      <td data-label="My take" class="take">Medium roast, organic, Fair Trade, in stock at 627 of 641 warehouses, and less than half the per-pod cost of every foodservice case. It has hit $31.99 in the last 60 days, so it is worth timing.</td></tr>
+<tr style="background:#ffffff" data-key="https://app.warehouserunner.com/costco/4054210-kirkland-signature-summit-roast-120-ct-organic-k-cups-pods" data-cat="Coffee - K-Cups">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Coffee - K-Cups</td>
+      <td data-label="Product"><a href="https://app.warehouserunner.com/costco/4054210-kirkland-signature-summit-roast-120-ct-organic-k-cups-pods" target="_blank">Kirkland Summit Roast, 60-day low</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.267" class="num"><b>$0.267</b> <span class="u">/pod</span></td>
+      <td data-label="Pack price" data-v="31.99" class="num">$31.99</td>
+      <td data-label="Pack">120 pods</td>
+      <td data-label="My take" class="take">What the same box costs when the instant savings run. Buy deep when it does.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/caffe-de-aroma-colombian-supreme-coffee-single-serve-cups-24-case/876CDACOLOM.html" data-cat="Coffee - K-Cups">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Coffee - K-Cups</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/caffe-de-aroma-colombian-supreme-coffee-single-serve-cups-24-case/876CDACOLOM.html" target="_blank">Caffe de Aroma Colombian Supreme, 24ct</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.645" class="num"><b>$0.645</b> <span class="u">/pod</span></td>
+      <td data-label="Pack price" data-v="15.49" class="num">$15.49</td>
+      <td data-label="Pack">24 pods</td>
+      <td data-label="My take" class="take">The cheapest foodservice case found, and still nearly double Costco. Every commercial K-Cup channel lands between $0.65 and $0.88.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.webstaurantstore.com/green-mountain-breakfast-blend-coffee-single-serve-cups-96-case/876GMT6520.html" data-cat="Coffee - K-Cups">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Coffee - K-Cups</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/green-mountain-breakfast-blend-coffee-single-serve-cups-96-case/876GMT6520.html" target="_blank">Green Mountain Breakfast Blend, 96ct</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.76" class="num"><b>$0.76</b> <span class="u">/pod</span></td>
+      <td data-label="Pack price" data-v="72.99" class="num">$72.99</td>
+      <td data-label="Pack">96 pods</td>
+      <td data-label="My take" class="take">A name brand through the restaurant channel at 2.3x the Costco pod.</td></tr>
+<tr style="background:#ffffff" data-key="https://app.warehouserunner.com/costco/756053-kirkland-signature-medium-roast-coffee-40-oz-2-5-lbs" data-cat="Coffee - drip">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Coffee - drip</td>
+      <td data-label="Product"><a href="https://app.warehouserunner.com/costco/756053-kirkland-signature-medium-roast-coffee-40-oz-2-5-lbs" target="_blank">Kirkland Medium Roast ground, 40oz</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.462" class="num"><b>$0.462</b> <span class="u">/oz ground</span></td>
+      <td data-label="Pack price" data-v="18.49" class="num">$18.49</td>
+      <td data-label="Pack">40 oz</td>
+      <td data-label="My take" class="take">Cheapest verified medium roast, about $0.173 a cup. Buy this if you would rather the cleaners pre-load the machines. Kirkland Colombian is a hair cheaper but it is a dark roast, which is the wrong call for a rental.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.webstaurantstore.com/folgers-classic-roast-coffee-packet-1-5-oz-case/110FGPK6430.html" data-cat="Coffee - drip">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Coffee - drip</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/folgers-classic-roast-coffee-packet-1-5-oz-case/110FGPK6430.html" target="_blank">Folgers Classic Roast 1.5oz frac packs, 42/case</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.643" class="num"><b>$0.643</b> <span class="u">/oz ground</span></td>
+      <td data-label="Pack price" data-v="40.49" class="num">$40.49</td>
+      <td data-label="Pack">42 packets</td>
+      <td data-label="My take" class="take">About 39% more per ounce than loose ground, which lands near thirty cents a pot. That buys you out of the guest-dosing problem entirely, and one review complaining the coffee was undrinkable costs far more than that.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.target.com/s?searchTerm=folgers+classic+roast+ground+coffee" data-cat="Coffee - drip">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Coffee - drip</td>
+      <td data-label="Product"><a href="https://www.target.com/s?searchTerm=folgers+classic+roast+ground+coffee" target="_blank">Folgers Classic Roast, 25.9oz can</a> </td>
+      <td data-label="Where">Target</td>
+      <td data-label="Unit cost" data-v="0.552" class="num"><b>$0.552</b> <span class="u">/oz ground</span></td>
+      <td data-label="Pack price" data-v="14.29" class="num">$14.29</td>
+      <td data-label="Pack">25.9 oz</td>
+      <td data-label="My take" class="take">Sale price on the retail can, for when a Costco run is not happening.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.webstaurantstore.com/search/folgers-classic-roast-coffee.html" data-cat="Coffee - drip">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Coffee - drip</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/search/folgers-classic-roast-coffee.html" target="_blank">Folgers Classic, single can</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.907" class="num"><b>$0.907</b> <span class="u">/oz ground</span></td>
+      <td data-label="Pack price" data-v="23.49" class="num">$23.49</td>
+      <td data-label="Pack">25.9 oz</td>
+      <td data-label="My take" class="take">Roughly double the warehouse-club rate for the identical can. Never buy loose ground coffee through the restaurant channel.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.webstaurantstore.com/lipton-classic-black-tea-bags-case/110LIP2912CS.html" data-cat="Tea">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Tea</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/lipton-classic-black-tea-bags-case/110LIP2912CS.html" target="_blank">Lipton Classic Black, 1,000/case</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.051" class="num"><b>$0.051</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="50.99" class="num">$50.99</td>
+      <td data-label="Pack">1,000 bags</td>
+      <td data-label="My take" class="take">Individually wrapped envelopes at a nickel a bag, verified on the listing. This is the everyday black tea.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://app.warehouserunner.com/costco/291446-bigelow-herbal-tea-assortment-6-28-ct-168-ct" data-cat="Tea">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Tea</td>
+      <td data-label="Product"><a href="https://app.warehouserunner.com/costco/291446-bigelow-herbal-tea-assortment-6-28-ct-168-ct" target="_blank">Bigelow Herbal Assortment, 168ct</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.125" class="num"><b>$0.125</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="20.99" class="num">$20.99</td>
+      <td data-label="Pack">168 bags</td>
+      <td data-label="My take" class="take">Six flavors, foil-sealed, covering the caffeine-free and flavored side. Running these two together costs about a third of putting Bigelow everywhere.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/search/bromley-estate-tea.html" data-cat="Tea">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Tea</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/search/bromley-estate-tea.html" target="_blank">Bromley Estate Regular, 1,000/case</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.031" class="num"><b>$0.031</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="30.99" class="num">$30.99</td>
+      <td data-label="Pack">1,000 bags</td>
+      <td data-label="My take" class="take">Cheapest tea found, but the listing says nothing about individual wrapping and I would not assume it.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.webstaurantstore.com/bigelow-assorted-green-and-black-teas-case/11015577.html" data-cat="Tea">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Tea</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/bigelow-assorted-green-and-black-teas-case/11015577.html" target="_blank">Bigelow Variety Tray, 384ct</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.216" class="num"><b>$0.216</b> <span class="u">/bag</span></td>
+      <td data-label="Pack price" data-v="82.99" class="num">$82.99</td>
+      <td data-label="Pack">384 bags</td>
+      <td data-label="My take" class="take">Four times the Lipton cost for the same job. The tray is built for a hotel lobby, not six kitchens.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://dzeeusa.com/individually-wrapped-sponge-combo-300-case.html" data-cat="Sponges">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Sponges</td>
+      <td data-label="Product"><a href="https://dzeeusa.com/individually-wrapped-sponge-combo-300-case.html" target="_blank">DZee Individually Wrapped Sponge Combo, 2 cases</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">DZee</td>
+      <td data-label="Unit cost" data-v="0.265" class="num"><b>$0.265</b> <span class="u">/sponge</span></td>
+      <td data-label="Pack price" data-v="158.9" class="num">$158.90</td>
+      <td data-label="Pack">600 sponges</td>
+      <td data-label="My take" class="take">Real scouring pad, individually wrapped, landed price including the flat $39 delivery. Roughly 40% under the best Costco price. Six hundred sponges is close to a year of turnovers across six properties.</td></tr>
+<tr style="background:#ffffff" data-key="https://dzeeusa.com/individually-wrapped-sponge-combo-300-case.html" data-cat="Sponges">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Sponges</td>
+      <td data-label="Product"><a href="https://dzeeusa.com/individually-wrapped-sponge-combo-300-case.html" target="_blank">DZee sponge combo, one case landed</a> </td>
+      <td data-label="Where">DZee</td>
+      <td data-label="Unit cost" data-v="0.33" class="num"><b>$0.33</b> <span class="u">/sponge</span></td>
+      <td data-label="Pack price" data-v="98.95" class="num">$98.95</td>
+      <td data-label="Pack">300 sponges</td>
+      <td data-label="My take" class="take">The same product, one case. The flat $39 freight under $999 is why buying two at a time matters.</td></tr>
+<tr style="background:#ffffff" data-key="https://app.warehouserunner.com/costco/1717856-scotch-brite-zero-scratch-sponge-24-count" data-cat="Sponges">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Sponges</td>
+      <td data-label="Product"><a href="https://app.warehouserunner.com/costco/1717856-scotch-brite-zero-scratch-sponge-24-count" target="_blank">Scotch-Brite Zero Scratch, 24ct</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.45" class="num"><b>$0.45</b> <span class="u">/sponge</span></td>
+      <td data-label="Pack price" data-v="10.79" class="num">$10.79</td>
+      <td data-label="Pack">24 sponges</td>
+      <td data-label="My take" class="take">The practical Costco fallback with no freight and no minimum. It has no aggressive abrasive side, which matters on baked-on pans.</td></tr>
+<tr style="background:#ffffff" data-key="https://app.warehouserunner.com/costco/1717853-scotch-brite-heavy-duty-sponge-24-ct" data-cat="Sponges">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Sponges</td>
+      <td data-label="Product"><a href="https://app.warehouserunner.com/costco/1717853-scotch-brite-heavy-duty-sponge-24-ct" target="_blank">Scotch-Brite Heavy Duty, 24ct</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.542" class="num"><b>$0.542</b> <span class="u">/sponge</span></td>
+      <td data-label="Pack price" data-v="13.01" class="num">$13.01</td>
+      <td data-label="Pack">24 sponges</td>
+      <td data-label="My take" class="take">Genuinely individually wrapped with a true abrasive side, and out of stock at 87% of warehouses right now.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.homedepot.com/s/boardwalk%2520BWK174%2520sponge" data-cat="Sponges">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Sponges</td>
+      <td data-label="Product"><a href="https://www.homedepot.com/s/boardwalk%2520BWK174%2520sponge" target="_blank">Boardwalk BWK174, 20ct</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">Home Depot</td>
+      <td data-label="Unit cost" data-v="1.353" class="num"><b>$1.35</b> <span class="u">/sponge</span></td>
+      <td data-label="Pack price" data-v="27.05" class="num">$27.05</td>
+      <td data-label="Pack">20 sponges</td>
+      <td data-label="My take" class="take">Five times the DZee price for the same wrapped-sponge job.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.amazon.com/dp/B0BYKQW3DN" data-cat="Hand soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Hand soap</td>
+      <td data-label="Product"><a href="https://www.amazon.com/dp/B0BYKQW3DN" target="_blank">Ginger Lily Farms Club &amp; Fitness, fragrance free, 1 gal</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.1562" class="num"><b>$0.1562</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="19.99" class="num">$19.99</td>
+      <td data-label="Pack">128 fl oz</td>
+      <td data-label="My take" class="take">Unscented so it offends nobody, gentle on sensitive skin, not antibacterial, 4.6 stars on 1,305 reviews, and free delivery over $35 with no membership and no freight surprise.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/softsoap-advanced-clean-liquid-hand-soap-refill-80-oz-2-pack.product.100385266.html" data-cat="Hand soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Hand soap</td>
+      <td data-label="Product"><a href="https://www.costco.com/softsoap-advanced-clean-liquid-hand-soap-refill-80-oz-2-pack.product.100385266.html" target="_blank">Softsoap Advanced Clean, 80oz x 2</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.0812" class="num"><b>$0.0812</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="12.99" class="num">$12.99</td>
+      <td data-label="Pack">160 fl oz</td>
+      <td data-label="My take" class="take">Half the price of the true gallons, 4.8 stars on 8,146 ratings. Two 80oz jugs pour into a dispenser exactly like a gallon does. Limit five per membership.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/noble-chemical-1-gallon-128-oz-free-clear-liquid-hand-soap/999FREECLR.html" data-cat="Hand soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Hand soap</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/noble-chemical-1-gallon-128-oz-free-clear-liquid-hand-soap/999FREECLR.html" target="_blank">Noble Free &amp; Clear, 4-gallon case</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.0752" class="num"><b>$0.0752</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="38.49" class="num">$38.49</td>
+      <td data-label="Pack">512 fl oz</td>
+      <td data-label="My take" class="take">Less than half the Amazon gallon per ounce, dye and fragrance free. Budget for unverified freight on a 36 lb case before committing.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/advantage-chemicals-1-gallon-hand-soap-case/146HANDSOAP.html" data-cat="Hand soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Hand soap</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/advantage-chemicals-1-gallon-hand-soap-case/146HANDSOAP.html" target="_blank">Advantage Chemicals, 4-gallon case</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.0605" class="num"><b>$0.0605</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="30.99" class="num">$30.99</td>
+      <td data-label="Pack">512 fl oz</td>
+      <td data-label="My take" class="take">Absolute floor price per ounce in the study. The page does not specify scent, and freight is unquoted.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.webstaurantstore.com/search/dial-antibacterial-hand-soap-gallon.html" data-cat="Hand soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Hand soap</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/search/dial-antibacterial-hand-soap-gallon.html" target="_blank">Dial Antibacterial &amp; Sensitive, 1 gal</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.2148" class="num"><b>$0.2148</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="27.49" class="num">$27.49</td>
+      <td data-label="Pack">128 fl oz</td>
+      <td data-label="My take" class="take">Antibacterial. The biocide kills the working bacteria in the septic tank along with everything else. Same reason to skip Dial Gold, Member&#x27;s Mark Commercial Antibacterial and any Softsoap Antibacterial variant.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.costco.com/dawn-professional-dish-detergent-original-1-gal.product.100768392.html" data-cat="Dish soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dish soap</td>
+      <td data-label="Product"><a href="https://www.costco.com/dawn-professional-dish-detergent-original-1-gal.product.100768392.html" target="_blank">Dawn Professional Original, 1 gal, item 169750</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.1234" class="num"><b>$0.1234</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="15.79" class="num">$15.79</td>
+      <td data-label="Pack">128 fl oz</td>
+      <td data-label="My take" class="take">Cheapest verified gallon in the study and it ships with a locking pump included, which is a $7.89 part you do not have to buy six of. The page states no phosphate and biodegradable surfactants. The $3.20 instant saving runs 8/24 through 9/20, limit 5 per member.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.costco.com/CatalogSearch?keyword=dish+soap" data-cat="Dish soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dish soap</td>
+      <td data-label="Product"><a href="https://www.costco.com/CatalogSearch?keyword=dish+soap" target="_blank">Kirkland Signature Ultra Shine, 90oz</a> </td>
+      <td data-label="Where">Costco</td>
+      <td data-label="Unit cost" data-v="0.111" class="num"><b>$0.111</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="9.99" class="num">$9.99</td>
+      <td data-label="Pack">90 fl oz</td>
+      <td data-label="My take" class="take">Cheapest per ounce, but it is not a gallon and not a concentrate, so it does not fit the pump-and-refill setup as cleanly.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.amazon.com/Ginger-Lily-Farms-Fragrance-Free-802309/dp/B08QL53RFN" data-cat="Dish soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dish soap</td>
+      <td data-label="Product"><a href="https://www.amazon.com/Ginger-Lily-Farms-Fragrance-Free-802309/dp/B08QL53RFN" target="_blank">Ginger Lily Farms Plant-Based, fragrance free, 1 gal</a> </td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.1562" class="num"><b>$0.1562</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="19.99" class="num">$19.99</td>
+      <td data-label="Pack">128 fl oz</td>
+      <td data-label="My take" class="take">The only product in the entire report that states &#x27;is septic tank safe&#x27; in writing and names the compounds it leaves out. Buy this one if you want the explicit wording rather than the lowest price.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/palmolive-ultra-professional-cpc61034142ea-145-oz-original-scent-dishwashing-liquid/999CPCP6134142.html" data-cat="Dish soap">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dish soap</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/palmolive-ultra-professional-cpc61034142ea-145-oz-original-scent-dishwashing-liquid/999CPCP6134142.html" target="_blank">Palmolive Ultra Professional, 4-pack case</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.1293" class="num"><b>$0.1293</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="74.99" class="num">$74.99</td>
+      <td data-label="Pack">580 fl oz</td>
+      <td data-label="My take" class="take">Ready-to-use rather than concentrated, and freight is on top.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.amazon.com/Ginger-Lily-Farms-Botanicals-Cruelty-Free/dp/B00DQSKVIO" data-cat="Body wash">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Body wash</td>
+      <td data-label="Product"><a href="https://www.amazon.com/Ginger-Lily-Farms-Botanicals-Cruelty-Free/dp/B00DQSKVIO" target="_blank">Ginger Lily Farms Island Tranquility, 1 gal</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">Amazon</td>
+      <td data-label="Unit cost" data-v="0.1718" class="num"><b>$0.1718</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="21.99" class="num">$21.99</td>
+      <td data-label="Pack">128 fl oz</td>
+      <td data-label="My take" class="take">Green tea, lemongrass and ginger. It smells like a spa, which is exactly the failure mode of the institutional hair-and-body gallons. 4.5 stars on 8,076 reviews is the deepest review base in the category.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.walmart.com/ip/Ginger-Lily-Farms-Club-Fitness-Conditioning-Liquid-Hand-Soap-Refill-100-Vegan-Cruelty-Free-Fragrance-Free-1-Gallon-128-fl-oz/3289431897" data-cat="Body wash">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Body wash</td>
+      <td data-label="Product"><a href="https://www.walmart.com/ip/Ginger-Lily-Farms-Club-Fitness-Conditioning-Liquid-Hand-Soap-Refill-100-Vegan-Cruelty-Free-Fragrance-Free-1-Gallon-128-fl-oz/3289431897" target="_blank">Ginger Lily Farms Club &amp; Fitness, fragrance free, 1 gal</a> </td>
+      <td data-label="Where">Walmart</td>
+      <td data-label="Unit cost" data-v="0.1562" class="num"><b>$0.1562</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="19.99" class="num">$19.99</td>
+      <td data-label="Pack">128 fl oz</td>
+      <td data-label="My take" class="take">The unscented option, and the cheapest gallon body wash found.</td></tr>
+<tr style="background:#ffffff" data-key="https://zogics.com/bath-body/zogics-organics-fresh-air-body-wash-1-gallon" data-cat="Body wash">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Body wash</td>
+      <td data-label="Product"><a href="https://zogics.com/bath-body/zogics-organics-fresh-air-body-wash-1-gallon" target="_blank">Zogics Organics Fresh Air, 1 gal</a> </td>
+      <td data-label="Where">Zogics</td>
+      <td data-label="Unit cost" data-v="0.1559" class="num"><b>$0.1559</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="19.95" class="num">$19.95</td>
+      <td data-label="Pack">128 fl oz</td>
+      <td data-label="My take" class="take">Citrus scent, free of parabens and phthalates. Only two reviews, so there is no real quality signal behind it.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/dial-dia03986-1-gallon-hair-and-body-wash-refill/999DIA03986.html" data-cat="Body wash">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Body wash</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/dial-dia03986-1-gallon-hair-and-body-wash-refill/999DIA03986.html" target="_blank">Dial Professional Hair + Body, 4-gallon case</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="0.1494" class="num"><b>$0.1494</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="76.49" class="num">$76.49</td>
+      <td data-label="Pack">512 fl oz</td>
+      <td data-label="My take" class="take">Cheaper per ounce in a case, but the fragrance is unnamed institutional and it reads as gym locker room in a guest shower.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://store.pharmacopia.net/products/verbena-hotel-collection-body-wash-1-gallon-refill" data-cat="Body wash">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Body wash</td>
+      <td data-label="Product"><a href="https://store.pharmacopia.net/products/verbena-hotel-collection-body-wash-1-gallon-refill" target="_blank">Pharmacopia Verbena Hotel Collection, 1 gal</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">Pharmacopia</td>
+      <td data-label="Unit cost" data-v="0.9766" class="num"><b>$0.9766</b> <span class="u">/fl oz</span></td>
+      <td data-label="Pack price" data-v="125.0" class="num">$125.00</td>
+      <td data-label="Pack">128 fl oz</td>
+      <td data-label="My take" class="take">Nearly six times the pick for a scent nobody will name in a review.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.webstaurantstore.com/dispenser-amenities-37250-aviva-20-oz-solid-white-2-chamber-wall-mounted-locking-shower-dispenser-with-bottles/52637250.html" data-cat="Dispensers &amp; pumps">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dispensers &amp; pumps</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/dispenser-amenities-37250-aviva-20-oz-solid-white-2-chamber-wall-mounted-locking-shower-dispenser-with-bottles/52637250.html" target="_blank">Dispenser Amenities Aviva 2-chamber shower unit</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="34.49" class="num"><b>$34.49</b> <span class="u">each</span></td>
+      <td data-label="Pack price" data-v="34.49" class="num">$34.49</td>
+      <td data-label="Pack">20 oz, 2 chambers</td>
+      <td data-label="My take" class="take">Body wash and shampoo in one shower unit, tamper-proof locking lid, adhesive mount so you are not drilling tile. Six of these is $206.94.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.webstaurantstore.com/dispenser-amenities-36134-aviva-10-oz-satin-silver-wall-mounted-locking-soap-dispenser-with-translucent-bottle/52636134.html" data-cat="Dispensers &amp; pumps">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dispensers &amp; pumps</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/dispenser-amenities-36134-aviva-10-oz-satin-silver-wall-mounted-locking-soap-dispenser-with-translucent-bottle/52636134.html" target="_blank">Dispenser Amenities Aviva 1-chamber, satin silver</a> </td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="25.49" class="num"><b>$25.49</b> <span class="u">each</span></td>
+      <td data-label="Pack price" data-v="25.49" class="num">$25.49</td>
+      <td data-label="Pack">10 oz</td>
+      <td data-label="My take" class="take">The vanity version. Translucent bottle so cleaners can see the level without opening it. Twelve of these is $305.88.</td></tr>
+<tr style="background:#e6f4ec" data-key="https://www.webstaurantstore.com/lavex-11-1-oz-plastic-pump-dispenser-for-1-gallon-plastic-bottles/000DP30CC.html" data-cat="Dispensers &amp; pumps">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dispensers &amp; pumps</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/lavex-11-1-oz-plastic-pump-dispenser-for-1-gallon-plastic-bottles/000DP30CC.html" target="_blank">Lavex 11in gallon pump, lot of 10</a> <span class="badge" style="color:#1b7f4b">PICK</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="5.99" class="num"><b>$5.99</b> <span class="u">each</span></td>
+      <td data-label="Pack price" data-v="5.99" class="num">$5.99</td>
+      <td data-label="Pack">1 oz per stroke</td>
+      <td data-label="My take" class="take">Back-of-house only. Screws onto the gallon jugs in the utility closet so cleaners pump into a carry bottle and top off the wall units on turnover. Fits a 38mm cap, trimmable dip tube.</td></tr>
+<tr style="background:#ffffff" data-key="https://www.wholesalesuppliesplus.com/products/38-400-gallon-jug-pump.aspx" data-cat="Dispensers &amp; pumps">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dispensers &amp; pumps</td>
+      <td data-label="Product"><a href="https://www.wholesalesuppliesplus.com/products/38-400-gallon-jug-pump.aspx" target="_blank">38/400 white gallon jug pump</a> </td>
+      <td data-label="Where">Wholesale Supplies Plus</td>
+      <td data-label="Unit cost" data-v="3.86" class="num"><b>$3.86</b> <span class="u">each</span></td>
+      <td data-label="Pack price" data-v="3.86" class="num">$3.86</td>
+      <td data-label="Pack">1 oz per stroke</td>
+      <td data-label="My take" class="take">Cheapest verified US pump, 4.88 stars on 103 reviews, Ohio seller. Forty-six dollars for twelve.</td></tr>
+<tr style="background:#f6d0d0" data-key="https://www.webstaurantstore.com/search/lavex-manual-soap-dispenser.html" data-cat="Dispensers &amp; pumps">
+      <td data-label="" class="rmcell"><span class="rm" onclick="rm(this)" title="Remove from list">&#10005; remove</span></td>
+      <td data-label="Category">Dispensers &amp; pumps</td>
+      <td data-label="Product"><a href="https://www.webstaurantstore.com/search/lavex-manual-soap-dispenser.html" target="_blank">Lavex 40oz manual soap dispenser</a> <span class="badge" style="color:#a33">AVOID</span></td>
+      <td data-label="Where">WebstaurantStore</td>
+      <td data-label="Unit cost" data-v="14.49" class="num"><b>$14.49</b> <span class="u">each</span></td>
+      <td data-label="Pack price" data-v="14.49" class="num">$14.49</td>
+      <td data-label="Pack">40 oz</td>
+      <td data-label="My take" class="take">2.3 stars on 6 reviews with repeated leak complaints. Cheap for a reason.</td></tr>
+</tbody></table>
+<p class="hint">Sam's Club blocked every automated read with a bot wall, so its rows came off search tiles and are not page-verified. Costco warehouse prices differ from Costco.com. Costco membership is $65 a year or a 5% online surcharge; Sam's is $60 a year or a 10% guest surcharge. WebstaurantStore freight is real money on paper goods and zero on small liners bundled onto a bigger order.</p>
+<script>
+var RK='supply_prices_removed';
+function getRm(){try{return JSON.parse(localStorage.getItem(RK)||'[]')}catch(e){return []}}
+function rm(el){var tr=el.closest('tr');var k=tr.dataset.key;var l=getRm();if(l.indexOf(k)<0)l.push(k);
+try{localStorage.setItem(RK,JSON.stringify(l))}catch(e){}tr.dataset.rm='1';show(tr);}
+function show(tr){var f=document.getElementById('f').value;
+tr.style.display=(tr.dataset.rm=='1'||(f&&tr.dataset.cat!=f))?'none':'';}
+function applyRm(){var l=getRm();document.querySelectorAll('#t tbody tr').forEach(function(tr){
+if(l.indexOf(tr.dataset.key)>=0)tr.dataset.rm='1';show(tr);});}
+function resetRm(){try{localStorage.removeItem(RK)}catch(e){}
+document.querySelectorAll('#t tbody tr').forEach(function(tr){tr.dataset.rm='';show(tr);});}
+function filt(){document.querySelectorAll('#t tbody tr').forEach(show);}
+document.addEventListener('DOMContentLoaded',applyRm);
+function s(c){var tb=document.querySelector('#t tbody');var rs=[].slice.call(tb.rows);
+var asc=tb.getAttribute('sc')!=c+'a';rs.sort(function(a,b){
+var x=a.cells[c].dataset.v!==undefined?a.cells[c].dataset.v:a.cells[c].innerText;
+var y=b.cells[c].dataset.v!==undefined?b.cells[c].dataset.v:b.cells[c].innerText;
+var nx=parseFloat(x),ny=parseFloat(y);if(!isNaN(nx)&&!isNaN(ny)){x=nx;y=ny}
+return (x>y?1:x<y?-1:0)*(asc?1:-1);});
+tb.setAttribute('sc',c+(asc?'a':'d'));rs.forEach(function(r){tb.appendChild(r)});}
+</script></body></html>
