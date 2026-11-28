@@ -1,0 +1,21 @@
+{
+  "name": "MVP Schedule - MaryAnne",
+  "short_name": "MaryAnne",
+  "start_url": "/mvp-guest-guides/cleaners/maryanne/",
+  "scope": "/mvp-guest-guides/cleaners/maryanne/",
+  "display": "standalone",
+  "background_color": "#0d2e10",
+  "theme_color": "#0d2e10",
+  "icons": [
+    {
+      "src": "/mvp-guest-guides/mvp-app/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/mvp-guest-guides/mvp-app/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
